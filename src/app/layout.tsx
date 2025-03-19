@@ -10,8 +10,27 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Budget Better - Financial Templates',
-  description: 'Take control of your finances with simple, effective Google Sheets templates',
+  title: 'Budget Master - Google Sheets Budget Templates for Personal Finance',
+  description: 'Take control of your finances with Budget Master\'s powerful Google Sheets templates. Free and premium budget trackers for individuals and families.',
+  keywords: 'budget template, Google Sheets budget, personal finance, expense tracker, subscription tracker, net worth tracker, free budget template, family budget',
+  authors: [{ name: 'Budget Master Team' }],
+  openGraph: {
+    title: 'Budget Master - Google Sheets Budget Templates',
+    description: 'Take control of your finances with powerful Google Sheets templates. Free and premium budget trackers that help you master your money.',
+    url: 'https://www.budgetmaster.com',
+    siteName: 'Budget Master',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Budget Master - Google Sheets Budget Templates',
+    description: 'Take control of your finances with powerful Google Sheets templates. Free and premium budget trackers that help you master your money.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
@@ -21,6 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://www.budgetmaster.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className={`${inter.variable} font-sans`}>{children}</body>
     </html>
   )
