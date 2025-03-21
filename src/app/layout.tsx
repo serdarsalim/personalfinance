@@ -8,6 +8,8 @@ import { Suspense } from 'react'
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
+// Simple loading component
+const Loading = () => <div className="min-h-screen flex items-center justify-center">Loading...</div>;
 
 // Load Inter as a fallback font (one of the most similar to Geist Sans)
 const inter = Inter({ 
@@ -54,12 +56,11 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans`}>
         <GoogleAnalytics />
-        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
-        
-      <Navbar />
-          {children}  
-          <Footer />
+        <Navbar />
+        <Suspense fallback={<Loading />}>
+          {children}
         </Suspense>
+        <Footer />
       </body>
     </html>
   )
