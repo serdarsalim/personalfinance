@@ -1,9 +1,15 @@
-// src/app/components/GoogleTagManager.tsx
 "use client";
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
+
+// Declare dataLayer for TypeScript
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
 
 // Your GTM container ID
 const GTM_ID = 'GTM-M9LLX3SW';
@@ -13,14 +19,21 @@ export default function GoogleTagManager() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
+    // Initialize dataLayer
+    window.dataLayer = window.dataLayer || [];
+    
+    // Log for debugging
+    console.log('GTM initialized with ID:', GTM_ID);
+    
     if (pathname) {
-      // Push page view event to dataLayer when the route changes
-      window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'pageview',
         page: pathname,
         query: searchParams ? Object.fromEntries(searchParams.entries()) : {}
       });
+      
+      // Log for debugging
+      console.log('Pageview pushed to dataLayer:', pathname);
     }
   }, [pathname, searchParams]);
 
@@ -38,6 +51,12 @@ export default function GoogleTagManager() {
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','${GTM_ID}');
           `
+        }}
+        onLoad={() => {
+          console.log('GTM script loaded successfully');
+        }}
+        onError={(e) => {
+          console.error('GTM script failed to load:', e);
         }}
       />
       

@@ -31,6 +31,17 @@ export default function Home() {
     );
   };
 
+  const trackTemplateInteraction = (action: string, template: string) => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'template_interaction',
+        action: action,
+        template: template
+      });
+      console.log('🔍 Template interaction tracked:', { action, template });
+    }
+  };
+
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       
