@@ -26,11 +26,23 @@ export default function TemplateCard({
   downloadLink = "#"
 }: TemplateCardProps) {
   
+  // Function to track preview events
+  const trackPreview = () => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'template_preview',
+        templateName: title,
+        templatePrice: isFree ? 'Free' : price,
+        templateType: isFree ? 'Free Template' : 'Paid Template'
+      });
+    }
+  };
+  
   // Function to track download events
   const trackDownload = () => {
     if (typeof window !== 'undefined' && window.dataLayer) {
       window.dataLayer.push({
-        event: 'templateDownload',
+        event: 'template_download',
         templateName: title,
         templatePrice: isFree ? 'Free' : price,
         templateType: isFree ? 'Free Template' : 'Paid Template'
@@ -89,6 +101,7 @@ export default function TemplateCard({
             href={previewLink}
             className="text-blue-600 font-medium hover:underline text-sm flex items-center"
             onClick={(e) => {
+              trackPreview();
               if (previewLink === "#preview-section") {
                 e.preventDefault();
                 document.getElementById('preview-section')?.scrollIntoView({ behavior: 'smooth' });

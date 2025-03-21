@@ -44,8 +44,8 @@ export default function Navbar() {
               <Image 
                 src="/logo.png" 
                 alt="Simplify Budget Logo" 
-                width={80} 
-                height={80}
+                width={90} 
+                height={90}
                 className="mr-2" 
               />
               <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
