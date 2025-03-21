@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import OrganizationSchema from './components/OrganizationSchma'
+
 
 // Load Inter as a fallback font (one of the most similar to Geist Sans)
 const inter = Inter({ 
