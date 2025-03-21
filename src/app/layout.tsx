@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import OrganizationSchema from './components/OrganizationSchma'
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 
 // Load Inter as a fallback font (one of the most similar to Geist Sans)
