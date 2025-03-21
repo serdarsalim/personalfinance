@@ -10,6 +10,8 @@ interface TemplateCardProps {
   isFree?: boolean;
   features?: string[];
   price: string;
+  previewLink?: string;
+  downloadLink?: string;
 }
 
 export default function TemplateCard({ 
@@ -19,27 +21,38 @@ export default function TemplateCard({
   color, 
   isFree = false,
   features = [],
-  price 
+  price,
+  previewLink = "#preview-section",
+  downloadLink = "#"
 }: TemplateCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100">
-      <div className={`relative h-24 flex items-center justify-center ${color}`}>
+      {/* Icon area without the price */}
+      <div className={`relative h-10 flex items-center justify-center ${color}`}>
         <div className="text-3xl">{icon}</div>
-        <div className="absolute top-3 right-3">
-          <div className="bg-white rounded-full shadow-md px-3 py-1.5 font-bold text-gray-800">
-            {price}
+      </div>
+      
+      <div className="p-6">
+        {/* Title area with price moved here */}
+        <div className="flex justify-between items-start mb-2">
+          <div className="flex flex-col">
+            <h3 className="text-xl font-bold text-gray-900">{title}</h3>
+          </div>
+          
+          <div className="flex items-center space-x-2">
+            {/* Only show either FREE badge or price, not both */}
+            {isFree ? (
+              <span className="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">
+                FREE
+              </span>
+            ) : (
+              <span className="bg-gray-100 text-gray-800 text-sm font-bold px-3 py-1 rounded-full">
+                {price}
+              </span>
+            )}
           </div>
         </div>
-      </div>
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-xl font-bold text-gray-900">{title}</h3>
-          {isFree && (
-            <span className="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">
-              FREE
-            </span>
-          )}
-        </div>
+        
         <p className="text-gray-600 mb-4">{description}</p>
         
         {features.length > 0 && (
@@ -60,11 +73,13 @@ export default function TemplateCard({
         
         <div className="flex space-x-3">
           <a
-            href="#preview-section"
+            href={previewLink}
             className="text-blue-600 font-medium hover:underline text-sm flex items-center"
             onClick={(e) => {
-              e.preventDefault();
-              document.getElementById('preview-section')?.scrollIntoView({ behavior: 'smooth' });
+              if (previewLink === "#preview-section") {
+                e.preventDefault();
+                document.getElementById('preview-section')?.scrollIntoView({ behavior: 'smooth' });
+              }
             }}
           >
             Preview Template
@@ -74,12 +89,10 @@ export default function TemplateCard({
             </svg>
           </a>
           <a
-            href={isFree ? "#free-template" : "#bundle"}
+            href={downloadLink}
             className="text-blue-600 font-medium hover:underline text-sm flex items-center"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById(isFree ? 'free-template' : 'bundle')?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {isFree ? "Download Free" : "Get This Template"}
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
