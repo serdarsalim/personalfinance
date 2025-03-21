@@ -1,9 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import OrganizationSchema from './components/OrganizationSchma'
+import OrganizationSchema from './components/OrganizationSchema' 
 import GoogleAnalytics from './components/GoogleAnalytics';
-
 
 // Load Inter as a fallback font (one of the most similar to Geist Sans)
 const inter = Inter({ 
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Simplify Budget - Google Sheets Budget Templates',
     description: 'Take control of your finances with powerful Google Sheets templates. Free and premium budget trackers that help you master your money.',
-    url: 'https://www.budgetmaster.com',
+    url: 'https://www.simplifybudget.com',
     siteName: 'Simplify Budget',
     locale: 'en_US',
     type: 'website',
@@ -44,10 +43,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://www.budgetmaster.com" />
+        <link rel="canonical" href="https://www.simplifybudget.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Organization schema markup */}
+        <OrganizationSchema />
       </head>
-      <body className={`${inter.variable} font-sans`}>{children}</body>
+      <body className={`${inter.variable} font-sans`}>
+        {/* Add Google Analytics */}
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   )
 }
