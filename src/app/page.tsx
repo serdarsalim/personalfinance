@@ -36,7 +36,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <Suspense fallback={<SectionLoader />}>
-        <section className="bg-white pt-24 pb-16">
+        <section className="bg-gradient-to-r from-white to-blue-50 pt-24 pb-16">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex flex-col md:flex-row items-center">
               {/* Background pattern - very subtle */}
@@ -103,7 +103,7 @@ export default function Home() {
       
       {/* Templates Section */}
       <Suspense fallback={<SectionLoader />}>
-        <section id="templates" className="bg-gray-50 py-20 scroll-mt-323422">
+        <section id="templates" className="bg-gradient-to-r from-green-50 to-white py-20 scroll-mt-323422">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-gray-900 ">
               Our Personal Finance Templates
@@ -233,7 +233,7 @@ export default function Home() {
 
       {/* How Our Templates Help Section */}
       <Suspense fallback={<SectionLoader />}>
-        <section className="bg-blue-50 py-20 scroll-mt-20">
+        <section className="bg-gradient-to-r from-blue-50 to-white py-20 scroll-mt-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
               Let Templates Our Help You Transform Your Finances
@@ -410,7 +410,7 @@ export default function Home() {
 
       {/* FAQ Section */}
       <Suspense fallback={<SectionLoader />}>
-        <section className="bg-emerald-50 py-20 scroll-mt-20">
+        <section className="bg-gradient-to-r from-emerald-50 to-white py-20 scroll-mt-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 sm:mb-12 text-center text-gray-900">
               Frequently Asked Questions
