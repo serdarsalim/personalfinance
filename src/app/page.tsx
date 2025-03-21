@@ -7,181 +7,161 @@ import TemplateCard from "./components/templateCard";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#f0f4f8] to-[#dfe7f2] font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen bg-gradient-to-b from-[#ffffff] to-[#ffffff] font-[family-name:var(--font-geist-sans)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
-        <header className="text-center mb-16">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
-            Budget Master
-          </h1>
-          
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Take control of your finances with our easy-to-use, powerful Google Sheets templates designed for beginners to intermediate users and families.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#templates"
-              className="rounded-md bg-blue-600 px-5 py-3 font-medium text-white transition-colors hover:bg-blue-700"
-            >
-              See All Templates
-            </a>
-            
+        <header className="flex flex-col md:flex-row items-center mb-24 pt-8">
+          <div className="md:w-3/5 text-center md:text-left mb-10 md:mb-0 md:pr-8">
+           
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
+              Take Control of Your Finances
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 max-w-lg">
+              Simple yet powerful Google Sheets templates that help you track expenses, save more, and finally achieve your financial goals.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
+            </div>
+          </div>
+
+          {/* Replacing card with hero image */}
+          <div className="md:w-2/5 relative">
+            <div className="relative w-full h-full rounded-xl overflow-hidden shadow-xl">
+              <Image 
+                src="/hero.png" 
+                alt="Budget Master financial dashboard" 
+                width={500} 
+                height={400} 
+                className="w-full h-auto object-cover"
+                priority
+              />
+           
+            </div>
           </div>
         </header>
 
-        {/* Featured Benefits */}
-        <section className="mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Easy to Use",
-                description: "No technical skills needed - just enter your numbers and the spreadsheets do the work",
-                icon: "🔄"
-              },
-              {
-                title: "Fully Customizable",
-                description: "30+ custom categories to match your unique financial situation",
-                icon: "🛠️"
-              },
-              {
-                title: "Visual Reports",
-                description: "Clear charts and dashboards show your progress month over month",
-                icon: "📊"
-              },
-              {
-                title: "Privacy Focused",
-                description: "Your data stays in your Google Drive - we never see your financial information",
-                icon: "🔒"
-              }
-            ].map((feature, i) => (
-              <div key={i} className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-       
         
-      
+        {/* Featured Templates */}
+        <section id="templates" className="mb-20">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900">
+            Our Budget Tracking Templates
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            <TemplateCard
+              title="Monthly Budget Tracker"
+              description="Set a monthly budget and track your income and expenses with this easy-to-use Google Sheets template."
+              icon="Free"
+              price="$0"
+              color="bg-blue-500"
+              isFree={true}
+              features={[
+                "30 custom categories",
+                "Monthly budget settings",
+                "Automatic charts and reports",
+                "Saving and debt payment goals"
+              ]}
+            />
+            <TemplateCard
+              title="Subscription Tracker"
+              description="Never miss a recurring payment again. Our smart tracker automatically displays all subscription payments for the month."
+              icon="Premium"
+              price="$10"
+              color="bg-green-500"
+              isFree={false}
+              features={[
+                "Automatic payment tracking",
+                "Start/end date management",
+                "Monthly payment summaries",
+                "Renewal calendar",
+              ]}
+            />
+            <TemplateCard
+              title="Net Worth Tracker"
+              description="Monitor your assets and liabilities over time to visualize your financial progress and true financial health."
+              icon="Premium"
+              price="$10"
+              color="bg-purple-500"
+              isFree={false}
+              features={[
+                "Asset & liability tracking",
+                "Financial health dashboard",
+                "Net worth over time charts",
+                "Goal setting and monitoring"
+              ]}
+            />
+          </div>
 
-      {/* Featured Templates */}
-      <section id="templates" className="mb-20">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900">
-          Our Budget Tracking Templates
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-          <TemplateCard
-            title="Monthly Budget Tracker"
-            description="Set a monthly budget and track your income and expenses with this easy-to-use Google Sheets template."
-            icon="Free"
-            color="bg-blue-50"
-            isFree={true}
-            features={[
-              "30 custom categories",
-              "Monthly budget settings",
-              "Automatic charts and reports",
-              "Saving and debt payment goals"
-            ]}
-          />
-          <TemplateCard
-            title="Subscription Tracker"
-            description="Never miss a recurring payment again. Our smart tracker automatically displays all subscription payments for the month."
-            icon="$10"
-            color="bg-green-50"
-            isFree={false}
-            features={[
-              "Automatic payment tracking",
-              "Start/end date management",
-              "Monthly payment summaries",
-              "Renewal calendar",
-            ]}
-          />
-          <TemplateCard
-            title="Net Worth Tracker"
-            description="Monitor your assets and liabilities over time to visualize your financial progress and true financial health."
-            icon="$10"
-            color="bg-purple-50"
-            isFree={false}
-            features={[
-              "Asset & liability tracking",
-              "Financial health dashboard",
-              "Net worth over time charts",
-              "Goal setting and monitoring"
-            ]}
-          />
-        </div>
-
-        {/* Bundle Highlight */}
-        <div id="bundle" className="bg-gradient-to-r from-blue-600 to-emerald-600 rounded-xl p-8 text-white shadow-lg mb-6">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-2/3 mb-6 md:mb-0 md:pr-8">
-              <h3 className="text-2xl font-bold mb-4">Budget Tracker Bundle</h3>
-              <p className="mb-4">
-                Get all three powerful templates in one integrated package. The ultimate solution for complete financial visibility and control.
-              </p>
-              <ul className="mb-6 space-y-2">
-                <li className="flex items-center">
-                  <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  Monthly Budget Tracker
-                </li>
-                <li className="flex items-center">
-                  <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  Subscription Tracker
-                </li>
-                <li className="flex items-center">
-                  <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  Net Worth Tracker
-                </li>
-                <li className="flex items-center font-bold">
-                  <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                  </svg>
-                  BONUS: 3 Months Email Support
-                </li>
-              </ul>
-              <div className="flex gap-3">
-                <a
-                  href="#preview-bundle"
-                  className="inline-block rounded-md bg-white text-blue-600 px-6 py-3 font-medium transition-colors hover:bg-gray-100"
-                >
-                  Preview Bundle
-                </a>
-                <a
-                  href="#download-bundle"
-                  className="inline-block rounded-md bg-emerald-500 text-white px-6 py-3 font-medium transition-colors hover:bg-emerald-600"
-                >
-                  Get Premium Bundle
-                </a>
+          {/* Bundle Highlight */}
+          <div id="bundle" className="bg-gradient-to-r from-blue-600 to-emerald-600 rounded-xl p-8 text-white shadow-lg mb-6">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="md:w-2/3 mb-6 md:mb-0 md:pr-8">
+                <div className="flex items-center mb-2">
+                  <h3 className="text-2xl font-bold">Budget Tracker Bundle</h3>
+                  <span className="bg-white text-blue-600 text-sm font-bold px-3 py-1 rounded-full ml-3">Save 25%</span>
+                </div>
+                <p className="mb-4">
+                  Get all three powerful templates in one integrated package. The ultimate solution for complete financial visibility and control.
+                </p>
+                <ul className="mb-6 space-y-2">
+                  <li className="flex items-center">
+                    <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                    </svg>
+                    Monthly Budget Tracker
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                    </svg>
+                    Subscription Tracker
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                    </svg>
+                    Net Worth Tracker
+                  </li>
+                  <li className="flex items-center font-bold">
+                    <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                    </svg>
+                    BONUS: 1 Month Email Support
+                  </li>
+                </ul>
+                <div className="flex gap-3">
+                  <a
+                    href="#preview-bundle"
+                    className="inline-block rounded-md bg-white text-blue-600 px-6 py-3 font-medium transition-colors hover:bg-gray-100"
+                  >
+                    Preview Bundle
+                  </a>
+                  <a
+                    href="#download-bundle"
+                    className="inline-block rounded-md bg-emerald-500 text-white px-6 py-3 font-medium transition-colors hover:bg-emerald-600"
+                  >
+                    Get Premium Bundle
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="md:w-1/3 flex justify-center">
-              <div className="relative h-48 w-48">
-                <div className="absolute top-0 left-0 h-40 w-40 bg-white/10 rounded-lg shadow-lg transform rotate-6"></div>
-                <div className="absolute top-4 left-4 h-40 w-40 bg-white/20 rounded-lg shadow-lg transform rotate-3"></div>
-                <div className="absolute h-40 w-40 bg-white/30 rounded-lg shadow-lg flex items-center justify-center">
-                  <span className="text-4xl">$15</span>
+              <div className="md:w-1/3 flex justify-center">
+                <div className="relative">
+                  <div className="bg-white/20 p-6 rounded-lg shadow-lg text-center">
+                    <div className="mb-2">
+                      <span className="text-sm font-medium line-through opacity-70">$20</span>
+                      <span className="text-4xl font-bold ml-2">$15</span>
+                    </div>
+                    <span className="text-sm font-medium">One-time purchase</span>
+                    <div className="mt-3 bg-white/20 rounded-md py-1 px-2 text-sm">
+                      30-day money back guarantee
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-       
-        
-        
-        </div>
-      </section>
+        </section>
 
-
-       {/* How It Works */}
-       <section id="how-it-works" className="mb-20">
+        {/* How It Works */}
+        <section id="how-it-works" className="mb-20">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900">
             Follow This Simple 3-Step Process to Financial Control
           </h2>
@@ -215,127 +195,129 @@ export default function Home() {
             ))}
           </div>
         </section>
-      <section className="mb-20">xzj
-        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900">
-         And Let Templates Help You Transform Your Finances
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
-            <div className="text-3xl mb-4">🎯</div>
-            <h3 className="text-xl font-bold mb-3 text-slate-800">Set Clear Financial Goals</h3>
-            <p className="text-gray-600 mb-4">
-              Our templates help you establish specific saving, spending, and debt payment goals with visual progress tracking to keep you motivated.
-            </p>
-            <ul className="space-y-2 text-gray-600 mb-4">
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Create specific monthly savings targets</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Track progress with automatically updating charts</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Visualize debt payoff timelines</span>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
-            <div className="text-3xl mb-4">📊</div>
-            <h3 className="text-xl font-bold mb-3 text-slate-800">See Your Full Financial Picture</h3>
-            <p className="text-gray-600 mb-4">
-              Our premium bundle connects your daily spending, recurring payments, and long-term assets/liabilities for complete financial awareness.
-            </p>
-            <ul className="space-y-2 text-gray-600 mb-4">
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Monthly spending vs. income analysis</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Fixed vs. variable expense breakdown</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Net worth growth trends over time</span>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
-            <div className="text-3xl mb-4">🔍</div>
-            <h3 className="text-xl font-bold mb-3 text-slate-800">Identify Spending Patterns</h3>
-            <p className="text-gray-600 mb-4">
-              Our templates automatically organize your expenses into 30+ customizable categories to help you spot areas for improvement.
-            </p>
-            <ul className="space-y-2 text-gray-600 mb-4">
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Category spending breakdown charts</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Month-over-month category comparisons</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Budget vs. actual spending analysis</span>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
-            <div className="text-3xl mb-4">⏱️</div>
-            <h3 className="text-xl font-bold mb-3 text-slate-800">Save Time with Automation</h3>
-            <p className="text-gray-600 mb-4">
-              Our templates feature built-in formulas and automated reports so you spend less time managing and more time planning.
-            </p>
-            <ul className="space-y-2 text-gray-600 mb-4">
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Automatic subscription payment tracking</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Self-generating monthly reports</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                </svg>
-                <span>Pre-built charts that update automatically</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
-  {/* Why Track Your Budget Section */}
-  <section id="why-track" className="mb-20">
+        {/* How Our Templates Help Section */}
+        <section className="mb-20">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900">
+            Let Templates Help You Transform Your Finances
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
+              <div className="text-3xl mb-4">🎯</div>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">Set Clear Financial Goals</h3>
+              <p className="text-gray-600 mb-4">
+                Our templates help you establish specific saving, spending, and debt payment goals with visual progress tracking to keep you motivated.
+              </p>
+              <ul className="space-y-2 text-gray-600 mb-4">
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Create specific monthly savings targets</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Track progress with automatically updating charts</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Visualize debt payoff timelines</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
+              <div className="text-3xl mb-4">📊</div>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">See Your Full Financial Picture</h3>
+              <p className="text-gray-600 mb-4">
+                Our premium bundle connects your daily spending, recurring payments, and long-term assets/liabilities for complete financial awareness.
+              </p>
+              <ul className="space-y-2 text-gray-600 mb-4">
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Monthly spending vs. income analysis</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Fixed vs. variable expense breakdown</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Net worth growth trends over time</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
+              <div className="text-3xl mb-4">🔍</div>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">Identify Spending Patterns</h3>
+              <p className="text-gray-600 mb-4">
+                Our templates automatically organize your expenses into 30+ customizable categories to help you spot areas for improvement.
+              </p>
+              <ul className="space-y-2 text-gray-600 mb-4">
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Category spending breakdown charts</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Month-over-month category comparisons</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Budget vs. actual spending analysis</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
+              <div className="text-3xl mb-4">⏱️</div>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">Save Time with Automation</h3>
+              <p className="text-gray-600 mb-4">
+                Our templates feature built-in formulas and automated reports so you spend less time managing and more time planning.
+              </p>
+              <ul className="space-y-2 text-gray-600 mb-4">
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Automatic subscription payment tracking</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Self-generating monthly reports</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-5 w-5 mr-2 text-green-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Pre-built charts that update automatically</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Track Your Budget Section */}
+        <section id="why-track" className="mb-20">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900">
             Why Choose Our Google Sheets Budget Templates?
           </h2>
@@ -355,6 +337,22 @@ export default function Home() {
                 title: "Powerful Analysis",
                 description: "Track 30+ custom categories with month-over-month comparisons to identify spending patterns.",
                 icon: "📈"
+              },
+              {
+                title: "Easy to Use",
+                description: "No technical skills needed - just enter your numbers and the spreadsheets do the work",
+                icon: "🔄"
+              },
+             
+              {
+                title: "Visual Reports",
+                description: "Clear charts and dashboards show your progress month over month",
+                icon: "📊"
+              },
+              {
+                title: "Privacy Focused",
+                description: "Your data stays in your Google Drive - we never see your financial information",
+                icon: "🔒"
               }
             ].map((feature, i) => (
               <div key={i} className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow">
@@ -366,9 +364,6 @@ export default function Home() {
           </div>
         </section>
 
-      
-
-   
 
         {/* FAQ Section */}
         <section className="mb-20">
@@ -409,8 +404,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-       
       </div>
 
       {/* Footer */}
@@ -426,8 +419,6 @@ export default function Home() {
               </p>
             </div>
             <nav className="flex flex-wrap gap-6 items-center">
-         
-            
               <a href="#download-bundle" className="text-gray-600 hover:text-blue-600">
                 Terms
               </a>
@@ -439,9 +430,6 @@ export default function Home() {
               </a>
             </nav>
           </div>
-          
-         
-          
           <div className="mt-8 text-center text-gray-500 text-sm">
             <p>© {new Date().getFullYear()} Budget Master. All rights reserved.</p>
             <p className="mt-2">The ultimate resource for Google Sheets budget templates.</p>

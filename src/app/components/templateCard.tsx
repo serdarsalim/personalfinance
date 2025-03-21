@@ -9,6 +9,7 @@ interface TemplateCardProps {
   color: string;
   isFree?: boolean;
   features?: string[];
+  price: string;
 }
 
 export default function TemplateCard({ 
@@ -17,12 +18,18 @@ export default function TemplateCard({
   icon, 
   color, 
   isFree = false,
-  features = [] 
+  features = [],
+  price 
 }: TemplateCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
-      <div className={`h-32 flex items-center justify-center ${color}`}>
-        <div className="text-5xl">{icon}</div>
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100">
+      <div className={`relative h-24 flex items-center justify-center ${color}`}>
+        <div className="text-3xl">{icon}</div>
+        <div className="absolute top-3 right-3">
+          <div className="bg-white rounded-full shadow-md px-3 py-1.5 font-bold text-gray-800">
+            {price}
+          </div>
+        </div>
       </div>
       <div className="p-6">
         <div className="flex justify-between items-start mb-2">
