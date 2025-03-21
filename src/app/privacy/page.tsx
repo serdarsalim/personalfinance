@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
-      <Navbar />
+
       
       <main className="relative z-10 flex flex-col items-center justify-center px-6 py-24">
         <div className="relative z-10 max-w-4xl mb-12">
@@ -76,7 +76,7 @@ export default function PrivacyPolicy() {
         </div>
       </main>
       
-      <Footer />
+
     </div>
   );
 }

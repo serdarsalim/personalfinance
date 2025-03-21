@@ -9,7 +9,7 @@ import { ProductSchema } from "../components/SchemaMarkup";
 export default function Terms() {
   return (
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
-      <Navbar />
+
       
       <main className="relative z-10 flex flex-col items-center justify-center px-6 py-24">
         <div className="relative z-10 max-w-4xl mb-12">
@@ -26,7 +26,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Google Services Disclaimer</h2>
             <p className="mb-4 text-gray-700">
-              Sheets Master is not affiliated with, endorsed by, sponsored by, or connected to Google LLC in any way. 
+              Simplify Budget is not affiliated with, endorsed by, sponsored by, or connected to Google LLC in any way. 
               Google Sheets™, Google Drive™, and related marks and logos are trademarks of Google LLC. Our templates 
               are independently created and maintained to work with Google's services.
             </p>
@@ -83,7 +83,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">6. Limitation of Liability</h2>
             <p className="mb-4 text-gray-700">
-              Sheets Master shall not be liable for any indirect, incidental, special, consequential, or punitive 
+              Simplify Budget shall not be liable for any indirect, incidental, special, consequential, or punitive 
               damages resulting from the use or inability to use our templates.
             </p>
           </section>
@@ -106,7 +106,7 @@ export default function Terms() {
         </div>
       </main>
       
-      <Footer />
+    
     </div>
   );
 }

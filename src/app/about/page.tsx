@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       {/* Navigation */}
-      <Navbar />
+   
       
       {/* Hero Section */}
       <section className="bg-white pt-24 pb-8">
@@ -184,9 +184,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      
-      {/* Footer */}
-      <Footer />
+     
     </div>
   );
 }

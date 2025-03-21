@@ -1,9 +1,12 @@
+// src/app/layout.tsx
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import OrganizationSchema from './components/OrganizationSchema' 
 import GoogleAnalytics from './components/GoogleAnalytics';
 import { Suspense } from 'react'
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 
 // Load Inter as a fallback font (one of the most similar to Geist Sans)
@@ -52,7 +55,10 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans`}>
         <GoogleAnalytics />
         <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
-          {children}
+        
+      <Navbar />
+          {children}  
+          <Footer />
         </Suspense>
       </body>
     </html>

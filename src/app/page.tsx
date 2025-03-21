@@ -4,8 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import TemplateCard from "./components/templateCard";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 export default function Home() {
   // Add state to track which FAQ items are open
@@ -22,8 +20,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      {/* Navigation */}
-      <Navbar />
+     
       
       {/* Hero Section - White background */}
       <section className="bg-white pt-24 pb-16">
@@ -453,8 +450,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer />
+   
     </div>
   );
 }
