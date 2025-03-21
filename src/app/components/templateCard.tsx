@@ -25,6 +25,19 @@ export default function TemplateCard({
   previewLink = "#preview-section",
   downloadLink = "#"
 }: TemplateCardProps) {
+  
+  // Function to track download events
+  const trackDownload = () => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'templateDownload',
+        templateName: title,
+        templatePrice: isFree ? 'Free' : price,
+        templateType: isFree ? 'Free Template' : 'Paid Template'
+      });
+    }
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100">
       {/* Icon area without the price */}
@@ -93,6 +106,7 @@ export default function TemplateCard({
             className="text-blue-600 font-medium hover:underline text-sm flex items-center"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackDownload} // Add the tracking function here
           >
             {isFree ? "Download Free" : "Get This Template"}
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

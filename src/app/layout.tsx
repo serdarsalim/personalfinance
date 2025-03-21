@@ -7,6 +7,8 @@ import GoogleAnalytics from './components/GoogleAnalytics';
 import { Suspense } from 'react'
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import GoogleTagManager from './components/GoogleTagManager'
+
 
 // Simple loading component
 const Loading = () => <div className="min-h-screen flex items-center justify-center">Loading...</div>;
@@ -56,6 +58,8 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans`}>
         <GoogleAnalytics />
+        <GoogleTagManager />
+
         <Navbar />
         <Suspense fallback={<Loading />}>
           {children}
