@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import OrganizationSchema from './components/OrganizationSchema' 
 import GoogleAnalytics from './components/GoogleAnalytics';
+import { Suspense } from 'react'
+
 
 // Load Inter as a fallback font (one of the most similar to Geist Sans)
 const inter = Inter({ 
@@ -45,13 +47,13 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://www.simplifybudget.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Organization schema markup */}
         <OrganizationSchema />
       </head>
       <body className={`${inter.variable} font-sans`}>
-        {/* Add Google Analytics */}
         <GoogleAnalytics />
-        {children}
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+          {children}
+        </Suspense>
       </body>
     </html>
   )
