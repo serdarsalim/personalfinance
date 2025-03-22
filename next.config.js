@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Change this from 'standalone' to either nothing or 'export'
-  // Remove the output setting completely or use export
+  // Vercel handles image optimization automatically
   images: {
-    unoptimized: true 
+    // Add domains if you're loading images from external URLs
+    // domains: ['example.com']
   },
   experimental: {
     missingSuspenseWithCSRBailout: false

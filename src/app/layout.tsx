@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   title: 'Simplify Budget | Google Sheets Templates for Budget Management',
   description: 'Free and premium Google Sheets templates to track your finances, budget effectively, and reach your financial goals.',
   keywords: 'google sheets, budget template, financial tracking, expense tracker, free budget template',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
