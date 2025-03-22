@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "simplify-budget",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.25"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "14.2.25",
+    "sharp": "^0.33.2" 
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "postcss": "^8.4.32",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
+    "eslint": "^8.56.0",
     "eslint-config-next": "14.2.25",
     "@netlify/plugin-nextjs": "^4.41.3"
   }

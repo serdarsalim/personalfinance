@@ -1,11 +1,32 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
-import TemplateSection from "./components/sections/TemplateSection";
-import FAQSection from "./components/sections/FAQSection";
-import HowItWorksSection from "./components/sections/HowItWorksSection";
-import FeaturesSection from "./components/sections/FeaturesSection";
-import WhyTrackSection from "./components/sections/WhyTrackSection";
-import HeroSection from "./components/sections/HeroSection";
+import dynamic from 'next/dynamic';
+
+// Dynamically import components with error boundaries
+const TemplateSection = dynamic(() => import("./components/sections/TemplateSection"), { 
+  ssr: true,
+  loading: () => <SectionLoader />
+});
+const FAQSection = dynamic(() => import("./components/sections/FAQSection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
+const HowItWorksSection = dynamic(() => import("./components/sections/HowItWorksSection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
+const FeaturesSection = dynamic(() => import("./components/sections/FeaturesSection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
+const WhyTrackSection = dynamic(() => import("./components/sections/WhyTrackSection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
+const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
 
 // Define page metadata for SEO
 export const metadata: Metadata = {
@@ -35,36 +56,22 @@ const SectionLoader = () => (
 
 export default function Home() {
   return (
-    <>
-        <Suspense fallback={<SectionLoader />}>
-        <HeroSection />
-      </Suspense>
-      <Suspense fallback={<SectionLoader />}>
-        <TemplateSection />
-      </Suspense>
+    <main>
+      <HeroSection />
+      <TemplateSection />
       
-      <Suspense fallback={<SectionLoader />}>
-        <section className="bg-gradient-to-r from-blue-50 to-white py-20 scroll-mt-20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
-              Let Templates Our Help You Transform Your Finances
-            </h2>
-            <FeaturesSection />
-          </div>
-        </section>
-      </Suspense>
+      <section className="bg-gradient-to-r from-blue-50 to-white py-20 scroll-mt-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
+            Let Our Templates Help You Transform Your Finances
+          </h2>
+          <FeaturesSection />
+        </div>
+      </section>
 
-      <Suspense fallback={<SectionLoader />}>
-        <WhyTrackSection />
-      </Suspense>
-
-      <Suspense fallback={<SectionLoader />}>
-        <HowItWorksSection />
-      </Suspense>
-
-      <Suspense fallback={<SectionLoader />}>
-        <FAQSection />
-      </Suspense>
-    </>
+      <WhyTrackSection />
+      <HowItWorksSection />
+      <FAQSection />
+    </main>
   );
 }

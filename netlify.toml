@@ -5,10 +5,14 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Handle redirects
+# Set environment variables
+[build.environment]
+  NEXT_TELEMETRY_DISABLED = "1"
+  
+# Handle not-found pages properly
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/next"
   status = 200
   
 # Cache control for static assets

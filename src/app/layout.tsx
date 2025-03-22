@@ -2,10 +2,11 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import OrganizationSchema from './components/OrganizationSchema' 
-import GoogleTagManager from './components/GoogleTagManager'
 import { Suspense } from 'react'
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
+import GoogleTagManager from './components/GoogleTagManager'
+import ErrorBoundary from './components/ErrorBoundary'
 
 // Simple loading component
 const Loading = () => (
@@ -21,6 +22,12 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+export const metadata: Metadata = {
+  title: 'Simplify Budget | Google Sheets Templates for Budget Management',
+  description: 'Free and premium Google Sheets templates to track your finances, budget effectively, and reach your financial goals.',
+  keywords: 'google sheets, budget template, financial tracking, expense tracker, free budget template',
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -31,26 +38,22 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://www.simplifybudget.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <OrganizationSchema />
       </head>
       <body className={`${inter.variable} font-sans`}>
-        {/* GTM components */}
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=GTM-M9LLX3SW`}
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
+        {/* GTM components - moved to client component */}
         <GoogleTagManager />
         
         {/* Main content */}
-        <Suspense fallback={<Loading />}>
-          <Navbar />
-          {children}
-          <Footer />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<Loading />}>
+            <Navbar />
+            {children}
+            <Footer />
+          </Suspense>
+        </ErrorBoundary>
+        
+        {/* Schema markup */}
+        <OrganizationSchema />
       </body>
     </html>
   )

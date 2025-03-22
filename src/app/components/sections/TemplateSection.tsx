@@ -1,6 +1,6 @@
 "use client";
 
-import TemplateCard from "../../components/templateCard";
+import TemplateCard from "../templateCard";
 
 export default function TemplateSection() {
   const trackTemplateInteraction = (action: string, template: string) => {

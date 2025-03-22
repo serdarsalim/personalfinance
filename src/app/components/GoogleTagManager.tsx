@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // Declare dataLayer for TypeScript
 declare global {
@@ -17,11 +17,14 @@ const GTM_ID = 'GTM-M9LLX3SW';
 export default function GoogleTagManager() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    // Mark component as client-side rendered
+    setIsClient(true);
+    
     // Initialize dataLayer
     window.dataLayer = window.dataLayer || [];
-    
     
     if (pathname) {
       window.dataLayer.push({
@@ -29,9 +32,11 @@ export default function GoogleTagManager() {
         page: pathname,
         query: searchParams ? Object.fromEntries(searchParams.entries()) : {}
       });
-      
     }
   }, [pathname, searchParams]);
+
+  // Only render script on client-side to prevent hydration mismatch
+  if (!isClient) return null;
 
   return (
     <>
@@ -48,7 +53,6 @@ export default function GoogleTagManager() {
             })(window,document,'script','dataLayer','${GTM_ID}');
           `
         }}
-      
         onError={(e) => {
           console.error('GTM script failed to load:', e);
         }}
