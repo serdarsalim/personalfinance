@@ -6,7 +6,7 @@ import { Suspense } from 'react'
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import GoogleTagManager from './components/GoogleTagManager'
-import ErrorBoundary from './components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 
 // Simple loading component
 const Loading = () => (
