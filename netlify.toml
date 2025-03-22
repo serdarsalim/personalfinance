@@ -1,33 +1,29 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = ".next"  # This is the only change needed
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Set environment variables
+# Keep all these sections below
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
   
-# Handle not-found pages properly
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/next"
   status = 200
   
-# Cache control for static assets
 [[headers]]
   for = "/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Cache control for images
 [[headers]]
   for = "/_next/image/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Cache control for fonts
 [[headers]]
   for = "/fonts/*"
   [headers.values]
