@@ -2,7 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import OrganizationSchema from './components/OrganizationSchema' 
-import GoogleAnalytics from './components/GoogleAnalytics'
 import GoogleTagManager from './components/GoogleTagManager'
 import { Suspense } from 'react'
 import Footer from "./components/Footer"
@@ -45,7 +44,6 @@ export default function RootLayout({
           />
         </noscript>
         <GoogleTagManager />
-        <GoogleAnalytics />
         
         {/* Main content */}
         <Suspense fallback={<Loading />}>

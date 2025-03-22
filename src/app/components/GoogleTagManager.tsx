@@ -22,8 +22,6 @@ export default function GoogleTagManager() {
     // Initialize dataLayer
     window.dataLayer = window.dataLayer || [];
     
-    // Log for debugging
-    console.log('GTM initialized with ID:', GTM_ID);
     
     if (pathname) {
       window.dataLayer.push({
@@ -32,8 +30,6 @@ export default function GoogleTagManager() {
         query: searchParams ? Object.fromEntries(searchParams.entries()) : {}
       });
       
-      // Log for debugging
-      console.log('Pageview pushed to dataLayer:', pathname);
     }
   }, [pathname, searchParams]);
 
@@ -52,9 +48,7 @@ export default function GoogleTagManager() {
             })(window,document,'script','dataLayer','${GTM_ID}');
           `
         }}
-        onLoad={() => {
-          console.log('GTM script loaded successfully');
-        }}
+      
         onError={(e) => {
           console.error('GTM script failed to load:', e);
         }}
