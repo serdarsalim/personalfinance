@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Metadata } from "next";
 import dynamic from 'next/dynamic';
 
+
 // Dynamically import components with error boundaries
 const TemplateSection = dynamic(() => import("./components/sections/TemplateSection"), { 
   ssr: true,
