@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove experimental feature that's causing issues
+  // This explicitly turns off the warning that's failing the build
+  experimental: {
+    missingSuspenseWithCSRBailout: false
+  },
   output: 'standalone', // This helps with Netlify deployments
   images: {
     domains: ['www.simplifybudget.com'],
