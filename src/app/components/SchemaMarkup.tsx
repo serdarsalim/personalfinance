@@ -60,7 +60,7 @@ export function ProductSchema({
   features = [],
 }: ProductSchemaProps) {
   const pathname = usePathname();
-  const baseUrl = "https://www.simplifybudget.com";
+  const baseUrl = "https://simplifybudget.com";
   const url = `${baseUrl}${pathname}`;
   
   // Construct the schema object with proper typing

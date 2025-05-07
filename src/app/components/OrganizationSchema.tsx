@@ -13,8 +13,8 @@ interface OrganizationSchemaProps {
 
 export default function OrganizationSchema({
   name = "Simplify Budget",
-  url = "https://www.simplifybudget.com",
-  logo = "https://www.simplifybudget.com/logo.png",
+  url = "https://simplifybudget.com",
+  logo = "https://simplifybudget.com/logo.png",
   description = "Simple and effective Google Sheets templates for personal finance management",
   sameAs = [],
 }: OrganizationSchemaProps = {}) {  // Default empty object

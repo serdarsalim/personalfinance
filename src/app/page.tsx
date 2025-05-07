@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Simplify Budget | Free Financial Templates",
     description: "Free and premium Google Sheets budget templates to help manage your finances and track expenses easily.",
-    url: "https://www.simplifybudget.com",
+    url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
     type: "website"
   }
