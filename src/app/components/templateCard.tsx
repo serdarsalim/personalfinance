@@ -10,8 +10,9 @@ interface TemplateCardProps {
   isFree?: boolean;
   features?: string[];
   price: string;
-  previewLink?: string;
+  previewLink?: string | null;  
   downloadLink?: string;
+   buttonText?: string;
 }
 
 export default function TemplateCard({ 
@@ -23,7 +24,8 @@ export default function TemplateCard({
   features = [],
   price,
   previewLink = "#preview-section",
-  downloadLink = "#"
+  downloadLink = "#",
+    buttonText
 }: TemplateCardProps) {
   
   // Function to track preview events
@@ -96,32 +98,34 @@ export default function TemplateCard({
           </div>
         )}
         
-        <div className="flex space-x-3">
-          <a
-            href={previewLink}
-            className="text-blue-600 font-medium hover:underline text-sm flex items-center"
-            onClick={(e) => {
-              trackPreview();
-              if (previewLink === "#preview-section") {
-                e.preventDefault();
-                document.getElementById('preview-section')?.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-          >
-            Preview Template
-            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-            </svg>
-          </a>
+               <div className="flex space-x-3">
+          {previewLink !== null && (
+            <a
+              href={previewLink}
+              className="text-blue-600 font-medium hover:underline text-sm flex items-center"
+              onClick={(e) => {
+                trackPreview();
+                if (previewLink === "#preview-section") {
+                  e.preventDefault();
+                  document.getElementById('preview-section')?.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              Preview Template
+              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+            </a>
+          )}
           <a
             href={downloadLink}
             className="text-blue-600 font-medium hover:underline text-sm flex items-center"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={trackDownload} // Add the tracking function here
+            onClick={trackDownload}
           >
-            {isFree ? "Download Free" : "Get This Template"}
+            {buttonText || (isFree ? "Download Free" : "Get This Template")}
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>

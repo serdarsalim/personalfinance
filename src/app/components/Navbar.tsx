@@ -62,8 +62,16 @@ export default function Navbar() {
               About
             </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
-              Templates
+              Budget Trackers
             </Link>
+            <a 
+              href="https://halqa.xyz/pf" 
+              className="text-gray-700 hover:text-blue-600 font-medium"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
           </div>
           
           {/* Mobile menu button */}
@@ -97,6 +105,14 @@ export default function Navbar() {
           <Link href="/#templates" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             Templates
           </Link>
+          <a 
+            href="https://halqa.xyz/pf"
+            className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blog
+          </a>
           <Link href="/#bundle" className="block px-3 py-2 bg-blue-600 text-white rounded w-full text-left">
             Get Bundle
           </Link>
