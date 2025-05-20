@@ -14,6 +14,7 @@ interface ProductSchemaProps {
   ratingValue?: number;
   reviewCount?: number;
   features?: string[];
+  
 }
 
 // Define schema interfaces to fix type errors

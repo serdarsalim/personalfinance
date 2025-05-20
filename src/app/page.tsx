@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
 import dynamic from 'next/dynamic';
+import FAQSchema from './components/FAQSchema';
 
 
 // Dynamically import components with error boundaries
@@ -29,16 +30,23 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
   loading: () => <SectionLoader />
 });
 
-// Define page metadata for SEO
+// Update metadata in src/app/page.tsx
 export const metadata: Metadata = {
-  title: "Simplify Budget | Free Financial Templates",
-  description: "Free and premium Google Sheets budget templates to help manage your finances and track expenses easily.",
+  title: "Google Sheets Budget Templates | Free & Premium Financial Trackers | Simplify Budget",
+  description: "Download free & premium Google Sheets budget templates to track expenses, manage subscriptions & build wealth. Customizable financial trackers with automatic calculations.",
+  keywords: "google sheets budget template, expense tracker spreadsheet, financial tracking template, free budget spreadsheet, subscription tracker google sheets",
   openGraph: {
-    title: "Simplify Budget | Free Financial Templates",
-    description: "Free and premium Google Sheets budget templates to help manage your finances and track expenses easily.",
+    title: "Google Sheets Budget Templates | Free & Premium Financial Trackers",
+    description: "Download customizable Google Sheets templates to track expenses, manage subscriptions & build wealth with automatic calculations and visualizations.",
     url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
-    type: "website"
+    type: "website",
+    images: [{
+      url: "https://simplifybudget.com/og-image.png", // Make sure to create this image
+      width: 1200,
+      height: 630,
+      alt: "Simplify Budget Google Sheets Templates"
+    }]
   }
 };
 
@@ -73,6 +81,7 @@ export default function Home() {
       <WhyTrackSection />
       <HowItWorksSection />
       <FAQSection />
+      <FAQSchema />
     </main>
   );
 }

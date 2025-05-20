@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense } from "react";
-
+import BreadcrumbSchema from '../components/BreadcrumbSchema';
 export const dynamic = 'force-dynamic';
 
 // Simple loading component
@@ -190,6 +190,7 @@ export default function About() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Suspense fallback={<Loading />}>
         <AboutContent />
+        <BreadcrumbSchema pageName="About Us" />
       </Suspense>
     </div>
   );
