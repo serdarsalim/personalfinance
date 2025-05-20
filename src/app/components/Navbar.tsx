@@ -113,9 +113,7 @@ export default function Navbar() {
           >
             Blog
           </a>
-          <Link href="/#bundle" className="block px-3 py-2 bg-blue-600 text-white rounded w-full text-left">
-            Get Bundle
-          </Link>
+  
         </div>
       </div>
     </nav>
