@@ -21,21 +21,31 @@ export default function HeroSection() {
 </h1>
           </div>
 
-          {/* Hero image - larger and centered */}
+          {/* Hero video - larger and centered */}
           <div className="w-full max-w-4xl mx-auto mb-10">
             <div className="relative w-full">
-              <Image
-                src="/hero.png"
-                alt="Simplify Budget financial dashboard"
-                width={1100}
-                height={880}
-                className="w-full h-auto object-cover"
-                priority
-              />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/hero.png"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              >
+                <source src="/SimplifyBudget.mp4" type="video/mp4" />
+                {/* Fallback image if video fails to load */}
+                <Image
+                  src="/hero.png"
+                  alt="Simplify Budget financial dashboard"
+                  width={1100}
+                  height={880}
+                  className="w-full h-auto object-cover"
+                />
+              </video>
             </div>
           </div>
 
-          {/* Subtext and buttons below the image */}
+          {/* Subtext and buttons below the video */}
           <div className="w-full max-w-2xl mx-auto text-center z-10">
             <p className="text-xl text-gray-600 mb-8">
               Simplify Budget is a simple yet powerful Google Sheets tracker
