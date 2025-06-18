@@ -3,10 +3,11 @@ import { useEffect } from "react";
 
 export default function AppPage() {
   useEffect(() => {
-    const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const ua = navigator.userAgent;
+    const isChrome = /Chrome/.test(ua) && /Google Inc/.test(navigator.vendor) && !/Edg/.test(ua);
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(ua);
     
-    // If not Chrome OR if mobile, redirect to the app directly
+    // ONLY Chrome on desktop gets iframe
     if (!isChrome || isMobile) {
       window.location.href = "https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec";
     }
