@@ -3,25 +3,20 @@ import { Metadata } from "next";
 import dynamic from 'next/dynamic';
 import FAQSchema from './components/FAQSchema';
 
-
 // Dynamically import components with error boundaries
 const TemplateSection = dynamic(() => import("./components/sections/TemplateSection"), { 
   ssr: true,
   loading: () => <SectionLoader />
 });
+const FeatureCarousel = dynamic(() => import("./components/sections/FeatureCarousel"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
+const WhySimplifySection = dynamic(() => import("./components/sections/WhySimplifySection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
 const FAQSection = dynamic(() => import("./components/sections/FAQSection"), {
-  ssr: true,
-  loading: () => <SectionLoader />
-});
-const HowItWorksSection = dynamic(() => import("./components/sections/HowItWorksSection"), {
-  ssr: true,
-  loading: () => <SectionLoader />
-});
-const FeaturesSection = dynamic(() => import("./components/sections/FeaturesSection"), {
-  ssr: true,
-  loading: () => <SectionLoader />
-});
-const WhyTrackSection = dynamic(() => import("./components/sections/WhyTrackSection"), {
   ssr: true,
   loading: () => <SectionLoader />
 });
@@ -30,7 +25,7 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
   loading: () => <SectionLoader />
 });
 
-// Update metadata in src/app/page.tsx
+// Update metadata
 export const metadata: Metadata = {
   title: "Google Sheets Budget Templates | Free & Premium Financial Trackers | Simplify Budget",
   description: "Download free & premium Google Sheets budget templates to track expenses, manage subscriptions & build wealth. Customizable financial trackers with automatic calculations.",
@@ -42,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Simplify Budget",
     type: "website",
     images: [{
-      url: "https://simplifybudget.com/og-image.png", // Make sure to create this image
+      url: "https://simplifybudget.com/og-image.png",
       width: 1200,
       height: 630,
       alt: "Simplify Budget Google Sheets Templates"
@@ -68,18 +63,8 @@ export default function Home() {
     <main>
       <HeroSection />
       <TemplateSection />
-      
-      <section className="bg-gradient-to-r from-blue-50 to-white py-20 scroll-mt-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
-            Let Our Templates Help You Transform Your Finances
-          </h2>
-          <FeaturesSection />
-        </div>
-      </section>
-
-      <WhyTrackSection />
-      <HowItWorksSection />
+      <FeatureCarousel />
+      <WhySimplifySection />
       <FAQSection />
       <FAQSchema />
     </main>
