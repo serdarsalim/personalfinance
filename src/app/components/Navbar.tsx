@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +22,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Hide navbar on /app page - AFTER all hooks
+  if (pathname === '/app') {
+    return null;
+  }
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      // This is the key change - add a fixed amount to scroll further down
-      const extraOffset = -55; // Adjust this number to control how much further down it scrolls
+      const extraOffset = -55;
       
       setTimeout(() => {
         const y = element.getBoundingClientRect().top + window.pageYOffset - extraOffset;
@@ -54,7 +60,7 @@ export default function Navbar() {
             </Link>
           </div>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium">
               Home
             </Link>
@@ -72,6 +78,12 @@ export default function Navbar() {
             >
               Blog
             </a>
+            <Link 
+              href="/app" 
+              className="px-4 py-2 text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition-colors font-medium"
+            >
+              Open App
+            </Link>
           </div>
           
           {/* Mobile menu button */}
@@ -113,7 +125,12 @@ export default function Navbar() {
           >
             Blog
           </a>
-  
+          <Link 
+            href="/app" 
+            className="block px-3 py-2 text-white bg-blue-600 font-medium w-full text-left rounded mx-2"
+          >
+            Open App
+          </Link>
         </div>
       </div>
     </nav>
