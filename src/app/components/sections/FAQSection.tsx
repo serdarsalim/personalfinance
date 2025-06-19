@@ -2,36 +2,48 @@
 
 import { useState } from "react";
 
-const faqs = [
-  {
-    question: "What currencies are these templates available in?",
-    answer: "The trackers are set to USD by default, but you can easily change the currency once you get the sheet. If you need a specific currency format before purchase, reach out to us and we'll share a sheet in your desired currency (only for premium sheets)."
-  },
-  {
-    question: "Do I need advanced Google Sheets skills to use these templates?",
-    answer: "Not at all! Our templates are designed for beginners to intermediate users. You only need to enter your data in clearly marked cells, and all calculations and charts update automatically."
-  },
-  {
-    question: "Can I customize the categories in the budget tracker?",
-    answer: "Absolutely! Our templates feature 30+ pre-built categories, but you can easily rename or modify these to match your specific financial situation and goals."
-  },
-  {
-    question: "How does the subscription tracker work?",
-    answer: "The subscription tracker allows you to enter the name, amount, and start date of any recurring payment. The template automatically tracks when payments are due and calculates your total monthly subscription costs."
-  },
-  {
-    question: "Will these templates work on my phone or tablet?",
-    answer: "Yes, you can access and edit your sheets using the Google Sheets mobile app. While some advanced features work best on desktop, all basic tracking and viewing functions work perfectly on mobile devices."
-  },
-  {
-    question: "What's the difference between the free and premium templates?",
-    answer: "Our free Monthly Budget Tracker offers essential income and expense tracking with basic reporting. Premium templates add features like subscription management, net worth tracking, and more advanced visualizations, plus email support."
-  },
-  {
-    question: "How do I get updates to the templates?",
-    answer: "Budget Tracker Bundle Template comes with free lifetime updates. When we release a new version, you can download it from the Google Drive."
-  }
-];
+  const faqs = [
+    {
+      question: "How does SimplifyBudget connect to my Google Sheets?",
+      answer: "You copy our Google Sheets template, then paste your sheet URL into SimplifyBudget. The app connects to your sheet and provides a visual interface for tracking expenses, but all your data stays in your own Google Drive."
+    },
+    {
+      question: "Can multiple people use the same budget?",
+      answer: "Yes! Since your data lives in Google Sheets, anyone you share the sheet with can use the same budget in SimplifyBudget. Perfect for couples, families, or business partners who want to track expenses together."
+    },
+    {
+      question: "What happens to my data if I stop using SimplifyBudget?",
+      answer: "Your financial data stays in your Google Sheets forever. Since we don't store your data on our servers, you can stop using the app anytime and still access all your financial history in Google Sheets."
+    },
+    {
+      question: "How does the visual monthly grid work?",
+      answer: "The monthly grid shows each day as a row and expense categories as columns. Amounts are color-coded by size, creating a heat map of your spending. You can add expenses in 3 taps and see your entire month's spending pattern at a glance."
+    },
+    {
+      question: "Does SimplifyBudget work on mobile devices?",
+      answer: "Yes! SimplifyBudget is fully mobile optimized. Most users add expenses on their phone throughout the day since it's so quick and visual. The app works perfectly on phones, tablets, and desktop."
+    },
+    {
+      question: "How does the subscription tracker work?",
+      answer: "Set up each recurring payment once with its amount, frequency (monthly/quarterly/yearly), and end date. SimplifyBudget automatically generates future payments and shows them in your monthly grid and budget. No end date? It keeps creating payments for the next cycle."
+    },
+    {
+      question: "Can I customize the expense categories?",
+      answer: "You can rename, reorder, and hide/show any of the 30 categories. We don't allow deleting categories to preserve your historical data - if you had expenses in a category you no longer use, they'll still appear in your reports."
+    },
+    {
+      question: "Is my financial data private and secure?",
+      answer: "Completely. Your financial data never touches our servers - it only exists in your Google Drive. We literally cannot see your transactions, balances, or spending patterns. Even if our app was compromised, your financial data would be safe."
+    },
+    {
+      question: "How does the 'already spent' budget logic work?",
+      answer: "SimplifyBudget shows your fixed expenses (rent, subscriptions) as already spent from day 1 of each month. If you earn $3,000 but have $1,200 in fixed costs, the app shows you have $1,800 left to budget, not $3,000."
+    },
+    {
+      question: "What currencies does SimplifyBudget support?",
+      answer: "SimplifyBudget supports all major currencies. You can set your preferred currency in the settings, and all calculations and displays will use your chosen currency format."
+    }
+  ];
 
 export default function FAQSection() {
   const [openFAQs, setOpenFAQs] = useState<number[]>([]);
