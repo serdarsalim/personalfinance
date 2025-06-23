@@ -71,7 +71,7 @@ export default function Navbar() {
               Get the App
             </Link>
             <a 
-              href="https://halqa.xyz/pf" 
+              href="https://halqa.co/money" 
               className="text-gray-700 hover:text-blue-600 font-medium"
               target="_blank" 
               rel="noopener noreferrer"
