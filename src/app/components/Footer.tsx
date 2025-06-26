@@ -47,8 +47,8 @@ const Footer: React.FC = () => {
                 <h3 className="text-white font-semibold mb-3">Company</h3>
                 <ul className="space-y-2">
                   <li><Link href="/about" className="text-gray-400 hover:text-blue-400">About</Link></li>
-                  <li><Link href="/terms" className="text-gray-400 hover:text-blue-400">Terms</Link></li>
-                  <li><Link href="/privacy" className="text-gray-400 hover:text-blue-400">Privacy</Link></li>
+                  <li><Link href="/terms" className="text-gray-400 hover:text-blue-400">Terms and Conditions</Link></li>
+                  <li><Link href="/privacy" className="text-gray-400 hover:text-blue-400">Privacy Policy</Link></li>
                   <li><a href="https://halqa.xyz/pf" className="text-gray-400 hover:text-blue-400" target="_blank" rel="noopener noreferrer">Blog</a></li>
                 </ul>
               </div>
