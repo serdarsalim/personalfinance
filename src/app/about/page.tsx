@@ -18,7 +18,7 @@ const AboutContent = () => (
             About Simplify Budget
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Our mission is to help everyone achieve financial freedom through better money management
+            Powerful budget management that lives in your Google Sheets - simple, secure, and always in your control
           </p>
         </div>
       </div>
@@ -31,103 +31,175 @@ const AboutContent = () => (
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Story</h2>
             <p className="text-gray-600 mb-4">
-              I'm Serdar, the creator behind Simplify Budget. As a digital nomad who's traveled through 25 countries in the past 2 years, 
-              I've developed these financial tracking tools out of personal necessity and a belief that intentional 
-              budget management should be empowering, not burdensome.
+              I'm Serdar, the creator of Simplify Budget. As a digital nomad who's traveled through 25 countries in the past 2 years, 
+              I needed a better way to manage my finances across currencies, countries, and constantly changing circumstances.
             </p>
             <p className="text-gray-600 mb-4">
-              After manually tracking my finances for over two years, I've refined these Google Sheets templates to 
-              strike the perfect balance: automation where it makes sense (like subscription payment tracking) and 
-              intentional input where it matters for financial awareness. Each template features thoughtfully designed 
-              visualizations and reports that help users not just track spending, but actually build wealth.
+              After manually tracking my finances for over two years, I realized spreadsheets were powerful but tedious. 
+              That's why I built Simplify Budget - a web application that brings the best of both worlds: the flexibility 
+              and ownership of Google Sheets with the convenience of a modern app. No more manual calculations, no more 
+              complex formulas, just intuitive budget management that works.
+            </p>
+            <p className="text-gray-600 mb-4">
+              The app features intelligent automation for recurring transactions, beautiful visualizations, and smart 
+              reports - all while keeping your data exactly where it belongs: in your own Google Sheets. Every feature 
+              is battle-tested through my own daily use across multiple countries and currencies.
             </p>
             <p className="text-gray-600">
-              Every template available here is one I personally use daily, ensuring they're continuously improved based 
-              on real-world financial management needs. My mission is simple: to provide the most effective, accessible 
-              financial tools for people who want control without complexity.
+              Whether you're using our premium app or starting with our free budget template, you're getting tools 
+              designed by someone who actually lives by them every single day.
             </p>
           </div>
           <div className="lg:w-1/2">
             <div className="relative rounded-xl overflow-hidden shadow-xl bg-white p-4">
-              {/* Google Sheets-inspired SVG */}
+              {/* App interface preview */}
               <div className="relative">
-                {/* Sheet header */}
-                <div className="h-10 bg-[#0f9d58] rounded-t-lg flex items-center px-4">
-                  <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="white">
-                    <path d="M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z M19,5v3H5V5H19z M19,10v4H5v-4H19z M5,19v-3h14v3H5z" />
-                  </svg>
-                  <span className="text-white font-medium">Simplify-Budget.sheet</span>
-                </div>
-                
-                {/* Sheet content */}
-                <div className="border border-gray-200 rounded-b-lg">
-                  {/* Column headers */}
-                  <div className="flex border-b border-gray-200">
-                    <div className="w-10 h-8 bg-[#f1f3f4] border-r border-gray-200"></div>
-                    <div className="w-32 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">A</div>
-                    <div className="w-32 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">B</div>
-                    <div className="w-32 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">C</div>
-                    <div className="w-32 h-8 bg-[#f1f3f4] flex items-center justify-center text-xs font-medium text-gray-600">D</div>
+                {/* Browser mockup */}
+                <div className="h-8 bg-gray-200 rounded-t-lg flex items-center px-3">
+                  <div className="flex space-x-1.5">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                   </div>
-                  
-                  {/* Row 1 */}
-                  <div className="flex border-b border-gray-200">
-                    <div className="w-10 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">1</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm text-gray-800 font-medium bg-[#e6f4ea]">Category</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm text-gray-800 font-medium bg-[#e6f4ea]">Budget</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm text-gray-800 font-medium bg-[#e6f4ea]">Actual</div>
-                    <div className="w-32 h-8 flex items-center px-2 text-sm text-gray-800 font-medium bg-[#e6f4ea]">Difference</div>
-                  </div>
-                  
-                  {/* Row 2 */}
-                  <div className="flex border-b border-gray-200">
-                    <div className="w-10 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">2</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">Housing</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">$1,200</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">$1,150</div>
-                    <div className="w-32 h-8 flex items-center px-2 text-sm text-green-600">$50</div>
-                  </div>
-                  
-                  {/* Row 3 */}
-                  <div className="flex border-b border-gray-200">
-                    <div className="w-10 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">3</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">Food</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">$500</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">$520</div>
-                    <div className="w-32 h-8 flex items-center px-2 text-sm text-red-600">-$20</div>
-                  </div>
-                  
-                  {/* Row 4 */}
-                  <div className="flex border-b border-gray-200">
-                    <div className="w-10 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">4</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">Transport</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">$300</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm">$280</div>
-                    <div className="w-32 h-8 flex items-center px-2 text-sm text-green-600">$20</div>
-                  </div>
-                  
-                  {/* Row 5 */}
-                  <div className="flex">
-                    <div className="w-10 h-8 bg-[#f1f3f4] border-r border-gray-200 flex items-center justify-center text-xs font-medium text-gray-600">5</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm font-medium">Total</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm font-medium">$2,000</div>
-                    <div className="w-32 h-8 border-r border-gray-200 flex items-center px-2 text-sm font-medium">$1,950</div>
-                    <div className="w-32 h-8 flex items-center px-2 text-sm font-medium text-green-600">$50</div>
+                  <div className="ml-4 flex-1 text-center">
+                    <div className="bg-white rounded px-3 py-0.5 text-xs text-gray-600 inline-block">
+                      simplifybudget.com/app
+                    </div>
                   </div>
                 </div>
                 
-                {/* Chart representation */}
-                <div className="mt-4 h-32 bg-white border border-gray-200 rounded-lg flex items-end px-4 py-2">
-                  <div className="w-1/4 bg-blue-500 h-[40%] rounded-t"></div>
-                  <div className="w-1/4 bg-red-500 h-[60%] rounded-t mx-2"></div>
-                  <div className="w-1/4 bg-yellow-500 h-[30%] rounded-t mx-2"></div>
-                  <div className="w-1/4 bg-green-500 h-[50%] rounded-t"></div>
+                {/* App interface */}
+                <div className="border border-gray-200 rounded-b-lg bg-gray-50 p-4">
+                  {/* Header */}
+                  <div className="bg-white rounded-lg shadow-sm p-4 mb-4">
+                    <div className="flex justify-between items-center">
+                      <h3 className="text-lg font-semibold text-gray-800">October 2024 Budget</h3>
+                      <div className="text-sm text-gray-600">$1,950 / $2,000</div>
+                    </div>
+                    <div className="mt-2 w-full bg-gray-200 rounded-full h-2">
+                      <div className="bg-gradient-to-r from-blue-600 to-emerald-600 h-2 rounded-full" style={{width: '97.5%'}}></div>
+                    </div>
+                  </div>
+                  
+                  {/* Categories */}
+                  <div className="bg-slate-800 rounded-lg shadow-sm p-4 mb-4">
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center">
+                          <span className="text-2xl mr-2">🏠</span>
+                          <span className="text-sm font-medium">Housing</span>
+                        </div>
+                        <div className="text-sm">
+                          <span className="text-gray-600">$1,150</span>
+                          <span className="text-green-600 ml-2">+$50</span>
+                        </div>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center">
+                          <span className="text-2xl mr-2">🍕</span>
+                          <span className="text-sm font-medium">Food</span>
+                        </div>
+                        <div className="text-sm">
+                          <span className="text-gray-600">$520</span>
+                          <span className="text-red-600 ml-2">-$20</span>
+                        </div>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center">
+                          <span className="text-2xl mr-2">🚗</span>
+                          <span className="text-sm font-medium">Transport</span>
+                        </div>
+                        <div className="text-sm">
+                          <span className="text-gray-600">$280</span>
+                          <span className="text-green-600 ml-2">+$20</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Quick add button */}
+                  <button className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg py-3 font-medium hover:shadow-lg transition-shadow">
+                    + Add Transaction
+                  </button>
                 </div>
               </div>
               
-              {/* Subtle Google Sheets-inspired overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#0f9d58]/10 to-transparent rounded-xl pointer-events-none"></div>
+              {/* Subtle overlay */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/5 to-transparent rounded-xl pointer-events-none"></div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    {/* What We Offer Section */}
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">What We Offer</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">🚀</span>
+              <h3 className="text-xl font-bold text-gray-900">Simplify Budget App</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Our premium web application that transforms Google Sheets into a powerful budget management system. 
+              Features include:
+            </p>
+            <ul className="space-y-2 text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>One-click expense tracking with smart categorization</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Beautiful dashboards and spending insights</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Automated recurring transaction management</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Multi-currency support for travelers</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Your data stays in your Google Sheets</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">📊</span>
+              <h3 className="text-xl font-bold text-gray-900">Free Budget Template</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Perfect for getting started with budget tracking. Our free Google Sheets template includes:
+            </p>
+            <ul className="space-y-2 text-gray-600">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Pre-built budget categories and formulas</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Monthly expense tracking sheets</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Basic charts and summaries</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>Simple income vs expense calculations</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-2">✓</span>
+                <span>No signup required - just copy and use</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -140,19 +212,19 @@ const AboutContent = () => (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              title: "Accessibility",
-              description: "We believe financial tools should be accessible to everyone, regardless of their financial status or technical skills.",
-              icon: "🌟"
+              title: "Data Ownership",
+              description: "Your financial data belongs to you. Everything stays in your Google Sheets - we never store or see your transactions.",
+              icon: "🔐"
             },
             {
-              title: "Privacy",
-              description: "Your financial data is personal. Our templates live in your own Google Drive, and we never see or store your information.",
-              icon: "🔒"
+              title: "Simplicity First",
+              description: "Powerful doesn't mean complicated. Every feature is designed to make budget tracking easier, not harder.",
+              icon: "✨"
             },
             {
-              title: "Empowerment",
-              description: "We're not just selling templates - we're providing tools that empower you to take control of your financial future.",
-              icon: "💪"
+              title: "Real-World Tested",
+              description: "Built by someone who actually uses it daily across 25 countries. Every feature solves a real problem.",
+              icon: "🌍"
             }
           ].map((value, i) => (
             <div key={i} className="bg-gray-50 p-8 rounded-lg shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow">
@@ -170,14 +242,14 @@ const AboutContent = () => (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Get in Touch</h2>
         <p className="text-xl text-gray-600 mb-8">
-          Have questions about our templates or need help with your purchase?
+          Have questions about the app or need help getting started?
         </p>
         <div className="inline-flex">
           <a
-            href="mailto:contact@sheetsmaster.co"
-            className="px-6 py-3 text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition-colors text-center font-medium"
+            href="mailto:serdar.dom@gmail.com"
+            className="px-6 py-3 text-white bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center font-medium"
           >
-            Contact Us
+            Contact Support
           </a>
         </div>
       </div>
