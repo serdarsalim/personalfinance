@@ -53,7 +53,6 @@ export default function AlternativesSection() {
               {alt.message && (
                 <p className="text-lg font-semibold text-blue-600 mb-2">{alt.message}</p>
               )}
-              <p className="text-gray-600 mb-4">vs our {alt.ourPrice}</p>
               <span className="text-blue-600 group-hover:text-blue-800 font-medium">
                 See comparison →
               </span>
@@ -66,10 +65,10 @@ export default function AlternativesSection() {
             Tired of subscription fatigue? Join 150+ people who bought once and use forever.
           </p>
           <Link 
-            href="/pricing"
+            href="/app"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg font-bold text-lg hover:shadow-lg transition-all"
           >
-            See Our Simple Pricing
+            Start Your Free Trial
           </Link>
         </div>
       </div>

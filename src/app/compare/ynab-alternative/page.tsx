@@ -6,8 +6,8 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "YNAB Alternative - $15 Once vs $180/Year | Simplify Budget",
-  description: "Why pay $180/year for YNAB? Get the same budgeting power for $15 once. Calendar view, auto-subscriptions, YOUR data in YOUR Google Sheets.",
+  title: "YNAB Alternative - One-Time Payment vs $180/Year | Simplify Budget",
+  description: "Why pay $180/year for YNAB? Get the same budgeting power with a one-time payment. Calendar view, auto-subscriptions, YOUR data in YOUR Google Sheets.",
   keywords: "ynab alternative, ynab too expensive, budget app without subscription, ynab replacement, cheaper than ynab"
 };
 
@@ -19,7 +19,7 @@ export default function YNABAlternativePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
-              YNAB Costs $180/Year. We're $15 Once.
+              YNAB Costs $180/Year. We're One-Time Payment.
             </h1>
             <p className="text-2xl mb-8 text-emerald-100">
               Same budgeting power. Better features. No subscription trap.
@@ -40,8 +40,8 @@ export default function YNABAlternativePage() {
             </div>
             <div className="bg-yellow-400 text-gray-900 rounded-xl p-8 text-center transform scale-105">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Simplify Budget</h3>
-              <div className="text-5xl font-bold mb-2 text-gray-900">$15</div>
-              <p className="text-lg mb-4 text-gray-900">Once. Forever.</p>
+              <div className="text-4xl font-bold mb-2 text-gray-900">One-Time</div>
+              <p className="text-lg mb-4 text-gray-900">Pay Once. Use Forever.</p>
               <ul className="text-left space-y-2 text-gray-900">
                 <li>✅ Keep access forever</li>
                 <li>✅ No price increases ever</li>
@@ -55,7 +55,7 @@ export default function YNABAlternativePage() {
               href="https://ko-fi.com/s/4b62acb528"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors"
             >
-              Switch & Save $165/Year
+Start Your Free Trial
             </a>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function YNABAlternativePage() {
               </div>
               <div>
                 <p className="text-gray-700 mb-2">Simplify Budget Total Cost</p>
-                <p className="text-3xl font-bold text-green-600">$15 once</p>
+                <p className="text-3xl font-bold text-green-600">One-time payment</p>
               </div>
               <div>
                 <p className="text-gray-700 mb-2">You Break Even In</p>
@@ -82,7 +82,7 @@ export default function YNABAlternativePage() {
             </div>
             <div className="mt-8 text-center">
               <p className="text-lg text-gray-700">
-                After just one month, you're saving money. After one year? You've saved <span className="font-bold text-green-600">$165</span>.
+                After just one month, you're saving money. Every month after is pure savings.
               </p>
             </div>
           </div>
@@ -256,22 +256,14 @@ export default function YNABAlternativePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Stop Renting Your Budget App</h2>
           <p className="text-xl mb-8">
-            Own it for less than one month of YNAB.
+            Take control of your money without monthly fees.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/app"
-              className="inline-block px-8 py-4 bg-white text-emerald-600 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
-            >
-              Try Free Demo
-            </Link>
-            <a 
-              href="https://ko-fi.com/s/4b62acb528"
-              className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors"
-            >
-              Buy Once for $15
-            </a>
-          </div>
+          <Link 
+            href="/app"
+            className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors"
+          >
+            Start Your Free 30-Day Trial
+          </Link>
           <p className="mt-6 text-sm text-white">
             Join 150+ people who stopped paying for subscriptions
           </p>

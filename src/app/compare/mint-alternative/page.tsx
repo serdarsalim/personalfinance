@@ -7,8 +7,8 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mint Alternative That You Actually Own | One-Time $15 vs Endless Subscriptions",
-  description: "Mint shut down. YNAB costs $180/year. Simplify Budget is $15 once, forever. Your data stays in YOUR Google Sheets. No subscriptions, no data hostage.",
+  title: "Mint Alternative That You Actually Own | One-Time Payment vs Endless Subscriptions",
+  description: "Mint shut down. YNAB costs $180/year. Simplify Budget is a one-time payment, forever. Your data stays in YOUR Google Sheets. No subscriptions, no data hostage.",
   keywords: "mint alternative, mint shutdown, mint replacement, budget app no subscription, own your financial data"
 };
 
@@ -26,7 +26,7 @@ const ComparisonTable = () => (
       <tbody className="divide-y divide-gray-200">
         <tr>
           <td className="px-6 py-4 font-medium text-gray-900">Price</td>
-          <td className="px-6 py-4 text-center"><span className="text-green-600 font-bold">$15 once</span></td>
+          <td className="px-6 py-4 text-center"><span className="text-green-600 font-bold">One-time payment</span></td>
           <td className="px-6 py-4 text-center text-gray-900">Was free</td>
           <td className="px-6 py-4 text-center text-red-600 font-bold">$180/year</td>
         </tr>
@@ -75,7 +75,7 @@ export default function MintAlternativePage() {
             Mint Shut Down. Here's a Better Alternative.
           </h1>
           <p className="text-xl mb-8 text-blue-100">
-            No subscriptions. No data hostage. Just $15 once, and your financial data stays in YOUR Google Sheets forever.
+            No subscriptions. No data hostage. Just one payment, and your financial data stays in YOUR Google Sheets forever.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
 
@@ -83,7 +83,7 @@ export default function MintAlternativePage() {
               href="https://ko-fi.com/s/4b62acb528"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors text-center"
             >
-              Get Lifetime Access - $15
+Start Your Free Trial
             </a>
           </div>
         </div>
