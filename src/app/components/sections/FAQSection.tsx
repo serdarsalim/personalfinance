@@ -4,8 +4,20 @@ import { useState } from "react";
 
   const faqs = [
     {
-      question: "How does SimplifyBudget connect to my Google Sheets?",
-      answer: "You copy our Google Sheets template, then paste your sheet URL into SimplifyBudget. The app connects to your sheet and provides a visual interface for tracking expenses, but all your data stays in your own Google Drive."
+      question: "How much does SimplifyBudget cost?",
+      answer: "Normally $30, but we're offering it for $15 for a limited time. One-time payment, no monthly fees, no subscriptions. Use forever with free lifetime updates."
+    },
+    {
+      question: "Can I try it for free?",
+      answer: "Yes! Start with a 30-day free trial. All features included, no credit card required. Perfect for testing if SimplifyBudget fits your workflow."
+    },
+    {
+      question: "How is this different from YNAB or Mint?",
+      answer: "Your data stays in your Google Drive (not our servers), one-time payment (not subscription), visual monthly grid for faster expense entry, and perfect for families since multiple people can use the same budget."
+    },
+    {
+      question: "How do I set up the app?",
+      answer: "Copy our Google Sheets template to your Google Drive, then connect it to SimplifyBudget through the settings picker. Watch our YouTube setup video for a step-by-step walkthrough - it takes about 2 minutes."
     },
     {
       question: "Can multiple people use the same budget?",
@@ -34,10 +46,6 @@ import { useState } from "react";
     {
       question: "Is my financial data private and secure?",
       answer: "Completely. Your financial data never touches our servers - it only exists in your Google Drive. We literally cannot see your transactions, balances, or spending patterns. Even if our app was compromised, your financial data would be safe."
-    },
-    {
-      question: "How does the 'already spent' budget logic work?",
-      answer: "SimplifyBudget shows your fixed expenses (rent, subscriptions) as already spent from day 1 of each month. If you earn $3,000 but have $1,200 in fixed costs, the app shows you have $1,800 left to budget, not $3,000."
     },
     {
       question: "What currencies does SimplifyBudget support?",
