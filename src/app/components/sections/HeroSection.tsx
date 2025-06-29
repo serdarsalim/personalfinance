@@ -6,8 +6,11 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function HeroSection() {
-  const [activeCell, setActiveCell] = useState({ day: 15, category: 2 });
   const [currentMonth, setCurrentMonth] = useState('');
+  const [expenseEntries, setExpenseEntries] = useState<{[key: string]: string}>({});
+  const [showPopup, setShowPopup] = useState(false);
+  const [activeCell, setActiveCell] = useState<{day: number, category: number} | null>(null);
+  const [currentAmount, setCurrentAmount] = useState('');
   
   // Set current month
   useEffect(() => {
@@ -17,32 +20,59 @@ export default function HeroSection() {
     setCurrentMonth(`${monthNames[now.getMonth()]} ${now.getFullYear()}`);
   }, []);
   
-  // Animate grid interaction
+  // Simulate expense entry demo
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveCell({
-        day: Math.floor(Math.random() * 30) + 1,
-        category: Math.floor(Math.random() * 5)
-      });
-    }, 2500);
-    return () => clearInterval(interval);
+    const demoSequence = [
+      { day: 1, category: 2, amount: '$10' }, // Shopping on 1st
+      { day: 3, category: 1, amount: '$50' }, // Gas on 3rd
+      { day: 5, category: 0, amount: '$45' }, // Groceries on 5th
+      { day: 2, category: 0, amount: '$25' }, // More groceries on 2nd
+      { day: 1, category: 2, amount: '$8' },  // Another shopping on 1st
+    ];
+    
+    let currentIndex = 0;
+    
+    const runDemo = () => {
+      const entry = demoSequence[currentIndex];
+      
+      // Step 1: Show cell selection
+      setActiveCell({ day: entry.day, category: entry.category });
+      
+      setTimeout(() => {
+        // Step 2: Show popup
+        setShowPopup(true);
+        setCurrentAmount(entry.amount);
+        
+        setTimeout(() => {
+          // Step 3: Close popup and save entry
+          setShowPopup(false);
+          // Use timestamp to allow multiple entries per day/category
+          const key = `${entry.day}-${entry.category}-${Date.now()}`;
+          setExpenseEntries(prev => ({ ...prev, [key]: entry.amount }));
+          setActiveCell(null);
+          
+          // Move to next entry
+          currentIndex = (currentIndex + 1) % demoSequence.length;
+          
+          // Wait before next demo
+          setTimeout(runDemo, 3000);
+        }, 1500);
+      }, 800);
+    };
+    
+    const timer = setTimeout(runDemo, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   // Sample categories with emojis
   const categories = [
     { emoji: "🛒", name: "Groceries", total: "$340" },
     { emoji: "⛽", name: "Gas", total: "$120" },
-    { emoji: "☕", name: "Coffee", total: "$85" },
+    { emoji: "🛍️", name: "Shopping", total: "$85" },
     { emoji: "🏠", name: "Utilities", total: "$180" },
-    { emoji: "🎬", name: "Entertainment", total: "$60" },
+    { emoji: "🎉", name: "Fun", total: "$60" },
   ];
   
-  // Sample daily totals
-  const dailyTotals = Array.from({ length: 30 }, (_, i) => {
-    const day = i + 1;
-    const amount = Math.floor(Math.random() * 100) + 10;
-    return { day, amount: `$${amount}` };
-  });
 
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white pt-8 pb-16 overflow-hidden relative">
@@ -142,7 +172,7 @@ export default function HeroSection() {
               
               {/* Grid Rows - First 8 days */}
               <div className="space-y-1 max-h-64 overflow-hidden">
-                {[...Array(8)].map((_, dayIndex) => {
+                {[...Array(6)].map((_, dayIndex) => {
                   const day = dayIndex + 1;
                   const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
                   const dayName = dayNames[dayIndex % 7];
@@ -155,9 +185,19 @@ export default function HeroSection() {
                       
                       {/* Category cells */}
                       {categories.map((_, catIndex) => {
-                        const isActive = activeCell.day === day && activeCell.category === catIndex;
-                        const hasExpense = Math.random() > 0.7;
-                        const amount = hasExpense ? `$${Math.floor(Math.random() * 50) + 5}` : '';
+                        const isActive = activeCell?.day === day && activeCell?.category === catIndex;
+                        const cellKey = `${day}-${catIndex}`;
+                        
+                        // Get all entries for this day/category
+                        const allEntries = Object.entries(expenseEntries)
+                          .filter(([key]) => key.startsWith(`${day}-${catIndex}-`))
+                          .map(([_, value]) => value);
+                        
+                        const hasEntries = allEntries.length > 0;
+                        const totalAmount = allEntries.reduce((sum, entry) => {
+                          const num = parseFloat(entry.replace('$', ''));
+                          return sum + num;
+                        }, 0);
                         
                         return (
                           <div
@@ -165,11 +205,16 @@ export default function HeroSection() {
                             className={`
                               p-2 text-xs border rounded cursor-pointer transition-all duration-300
                               ${isActive ? 'bg-blue-100 border-blue-300 shadow-lg scale-105' : 'border-gray-200 hover:bg-gray-50'}
-                              ${hasExpense ? 'bg-green-50' : ''}
+                              ${hasEntries ? 'bg-green-50' : ''}
                             `}
                           >
-                            {amount && (
-                              <div className="text-green-700 font-bold">{amount}</div>
+                            {hasEntries && (
+                              <div className="text-green-700 font-bold">
+                                ${totalAmount.toFixed(0)}
+                                {allEntries.length > 1 && (
+                                  <div className="text-xs text-gray-500">({allEntries.length} items)</div>
+                                )}
+                              </div>
                             )}
                           </div>
                         );
@@ -180,6 +225,19 @@ export default function HeroSection() {
               </div>
               
             </div>
+            
+            {/* Expense Entry Popup */}
+            {showPopup && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 rounded-2xl">
+                <div className="bg-white rounded-lg p-4 shadow-xl border-2 border-blue-300 animate-in fade-in duration-200">
+                  <div className="text-center">
+                    <div className="text-sm text-gray-600 mb-2">Enter amount</div>
+                    <div className="text-2xl font-bold text-blue-600 mb-2">{currentAmount}</div>
+                    <div className="text-xs text-gray-500">Auto-saving...</div>
+                  </div>
+                </div>
+              </div>
+            )}
             
             {/* Floating feature badges */}
             <div className="absolute -top-4 -right-4 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold shadow-lg animate-pulse">
