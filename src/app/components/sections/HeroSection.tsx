@@ -98,12 +98,11 @@ export default function HeroSection() {
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 text-gray-900">
-              Enter Expenses in
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> One Tap</span>
+              Take Control of Your Money
             </h1>
             
             <p className="text-xl text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0">
-              Visual grid lets you add expenses faster than any other app. All data stays in your Google Drive.
+              Manual expense tracking that builds wealth habits. Your data stays yours forever. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 font-semibold">Without another subscription.</span>
             </p>
 
             {/* CTAs */}
