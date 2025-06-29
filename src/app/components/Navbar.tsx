@@ -68,7 +68,7 @@ export default function Navbar() {
               About
             </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
-              Get the App
+              Buy Now
             </Link>
             <a 
               href="https://halqa.co/money" 

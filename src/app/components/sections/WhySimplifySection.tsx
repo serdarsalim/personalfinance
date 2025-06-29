@@ -11,9 +11,9 @@ export default function WhySimplifySection() {
       icon: "💰"
     },
     {
-      title: "Visual Money Insights",
-      description: "Instant charts and graphs that actually help you understand where your money goes.",
-      icon: "📊"
+      title: "Family Budget Sharing",
+      description: "Multiple people can track expenses in the same spreadsheet. Perfect for couples and families.",
+      icon: "👨‍👩‍👧‍👦"
     },
     {
       title: "Revolutionary Monthly Grid",
@@ -22,14 +22,14 @@ export default function WhySimplifySection() {
       appOnly: true
     },
     {
-      title: "Track What Matters",
-      description: "30+ customizable categories with automatic calculations. Set budgets, track goals, build wealth.",
-      icon: "🎯"
+      title: "Auto Subscription Tracking",
+      description: "Catches money leaks from forgotten subscriptions. Set once, track automatically every month.",
+      icon: "🔄"
     },
     {
-      title: "Access Anywhere",
-      description: "Works on any device with a browser. Your budget is always with you, always in sync.",
-      icon: "📱"
+      title: "Build Wealth Over Time",
+      description: "Net worth tracking shows your financial progress. Watch debts shrink and assets grow month by month.",
+      icon: "📈"
     }
   ];
 
@@ -37,7 +37,7 @@ export default function WhySimplifySection() {
     <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
-          Why Simplify Budget?
+          Why <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">Simplify Budget</span>?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, i) => (

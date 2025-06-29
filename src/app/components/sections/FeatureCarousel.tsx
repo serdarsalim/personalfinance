@@ -49,20 +49,20 @@ export default function FeatureCarousel() {
     }
   ];
 
-  // Auto-advance slides
-  useEffect(() => {
-    if (!isPaused && !fullscreenImage) {
-      intervalRef.current = setInterval(() => {
-        setCurrentSlide((prev) => (prev + 1) % slides.length);
-      }, 15000); // Changed to 15 seconds
-    }
+  // Disabled auto-advance - user controls navigation
+  // useEffect(() => {
+  //   if (!isPaused && !fullscreenImage) {
+  //     intervalRef.current = setInterval(() => {
+  //       setCurrentSlide((prev) => (prev + 1) % slides.length);
+  //     }, 15000);
+  //   }
 
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
-  }, [isPaused, fullscreenImage, slides.length]);
+  //   return () => {
+  //     if (intervalRef.current) {
+  //       clearInterval(intervalRef.current);
+  //     }
+  //   };
+  // }, [isPaused, fullscreenImage, slides.length]);
 
   // Handle ESC key for fullscreen modal
   useEffect(() => {
@@ -115,7 +115,7 @@ export default function FeatureCarousel() {
     <section className="bg-gradient-to-r from-blue-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
-          See What's Inside Simplify Budget App
+          See What's Inside <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">Simplify Budget</span> App
         </h2>
         
         <div 
