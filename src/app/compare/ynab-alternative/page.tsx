@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+import ComparisonFAQSchema from '../../components/ComparisonFAQSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -269,6 +270,29 @@ Start Your Free Trial
       </section>
 
       <BreadcrumbSchema pageName="YNAB Alternative" />
+      
+      {/* FAQ Schema */}
+      <ComparisonFAQSchema 
+        competitor="YNAB"
+        questions={[
+          {
+            question: "How is SimplifyBudget different from YNAB?",
+            answer: "SimplifyBudget offers one-time payment instead of $180/year subscription, visual monthly grid view that YNAB lacks, and stores data in your Google Drive instead of their servers."
+          },
+          {
+            question: "Can I import my YNAB data to SimplifyBudget?",
+            answer: "Yes, you can export your YNAB data as CSV and import it into SimplifyBudget's Google Sheets template. We provide instructions during setup."
+          },
+          {
+            question: "Does SimplifyBudget have the same features as YNAB?",
+            answer: "SimplifyBudget focuses on core budgeting with visual expense tracking, subscription management, and reporting. It doesn't include YNAB's goals feature but adds visual monthly grid that YNAB users have requested for years."
+          },
+          {
+            question: "Why is SimplifyBudget cheaper than YNAB?",
+            answer: "SimplifyBudget uses Google Sheets for data storage, eliminating server costs. We pass these savings to you with a one-time payment model instead of recurring subscriptions."
+          }
+        ]}
+      />
     </div>
   );
 }

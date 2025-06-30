@@ -40,6 +40,9 @@ const Footer: React.FC = () => {
                 <ul className="space-y-2">
                   <li><Link href="/compare/ynab-alternative" className="text-gray-400 hover:text-blue-400">vs YNAB</Link></li>
                   <li><Link href="/compare/mint-alternative" className="text-gray-400 hover:text-blue-400">vs Mint</Link></li>
+                  <li><Link href="/compare/everydollar-alternative" className="text-gray-400 hover:text-blue-400">vs EveryDollar</Link></li>
+                  <li><Link href="/compare/pocketguard-alternative" className="text-gray-400 hover:text-blue-400">vs PocketGuard</Link></li>
+                  <li><Link href="/compare/quicken-alternative" className="text-gray-400 hover:text-blue-400">vs Quicken</Link></li>
                 </ul>
               </div>
               
@@ -52,30 +55,6 @@ const Footer: React.FC = () => {
                   <li><a href="https://halqa.xyz/pf" className="text-gray-400 hover:text-blue-400" target="_blank" rel="noopener noreferrer">Blog</a></li>
                 </ul>
               </div>
-            </div>
-          </div>
-          
-          {/* Alternatives Section */}
-          <div className="border-t border-gray-800 pt-6 mb-6">
-            <p className="text-gray-400 text-sm mb-3">
-              Simplify Budget is a better alternative to:
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link href="/compare/ynab-alternative" className="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full hover:bg-gray-700 transition-colors">
-                YNAB ($180/year)
-              </Link>
-              <Link href="/compare/mint-alternative" className="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full hover:bg-gray-700 transition-colors">
-                Mint (Shut Down)
-              </Link>
-              <span className="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full">
-                EveryDollar ($132/year)
-              </span>
-              <span className="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full">
-                Monarch ($96/year)
-              </span>
-              <span className="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full">
-                PocketGuard ($84/year)
-              </span>
             </div>
           </div>
           
