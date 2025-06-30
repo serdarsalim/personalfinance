@@ -114,7 +114,7 @@ export default function HeroSection() {
                 Start Your Free 30-Day Trial
               </a>
               <a 
-                href="#demo"
+                href="https://youtu.be/pfwtW8DKStM"
                 className="inline-block px-6 py-4 bg-white text-blue-600 rounded-lg shadow hover:shadow-md transition-all font-semibold border border-gray-200"
               >
                 Watch Demo →
