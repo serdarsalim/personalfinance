@@ -216,13 +216,7 @@ export default function PocketGuardAlternativePage() {
       </section>
 
       {/* Breadcrumb Schema */}
-      <BreadcrumbSchema 
-        items={[
-          { name: 'Home', url: 'https://simplifybudget.com' },
-          { name: 'Compare', url: 'https://simplifybudget.com/compare' },
-          { name: 'PocketGuard Alternative', url: 'https://simplifybudget.com/compare/pocketguard-alternative' }
-        ]}
-      />
+      <BreadcrumbSchema pageName="PocketGuard Alternative" />
       
       {/* FAQ Schema */}
       <ComparisonFAQSchema 

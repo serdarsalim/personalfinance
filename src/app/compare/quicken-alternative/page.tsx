@@ -271,13 +271,7 @@ export default function QuickenAlternativePage() {
       </section>
 
       {/* Breadcrumb Schema */}
-      <BreadcrumbSchema 
-        items={[
-          { name: 'Home', url: 'https://simplifybudget.com' },
-          { name: 'Compare', url: 'https://simplifybudget.com/compare' },
-          { name: 'Quicken Alternative', url: 'https://simplifybudget.com/compare/quicken-alternative' }
-        ]}
-      />
+      <BreadcrumbSchema pageName="Quicken Alternative" />
       
       {/* FAQ Schema */}
       <ComparisonFAQSchema 

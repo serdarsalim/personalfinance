@@ -153,13 +153,7 @@ export default function EveryDollarAlternativePage() {
       </section>
 
       {/* Breadcrumb Schema */}
-      <BreadcrumbSchema 
-        items={[
-          { name: 'Home', url: 'https://simplifybudget.com' },
-          { name: 'Compare', url: 'https://simplifybudget.com/compare' },
-          { name: 'EveryDollar Alternative', url: 'https://simplifybudget.com/compare/everydollar-alternative' }
-        ]}
-      />
+      <BreadcrumbSchema pageName="EveryDollar Alternative" />
       
       {/* FAQ Schema */}
       <ComparisonFAQSchema 
