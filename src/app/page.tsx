@@ -27,20 +27,20 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
 
 // Update metadata
 export const metadata: Metadata = {
-  title: "Google Sheets Budget Templates | Free & Premium Financial Trackers | Simplify Budget",
-  description: "Download free & premium Google Sheets budget templates to track expenses, manage subscriptions & build wealth. Customizable financial trackers with automatic calculations.",
-  keywords: "google sheets budget template, expense tracker spreadsheet, financial tracking template, free budget spreadsheet, subscription tracker google sheets",
+  title: "Simplify Budget - Visual Expense Tracking App | One-Time Payment Budget Software",
+  description: "Track expenses visually with one tap. Budget app that works with Google Sheets. One-time payment instead of subscriptions. 30-day free trial, no credit card required.",
+  keywords: "budget app, expense tracker app, one time payment budget software, visual expense tracking, budgeting app no subscription, mint alternative, ynab alternative",
   openGraph: {
-    title: "Google Sheets Budget Templates | Free & Premium Financial Trackers",
-    description: "Download customizable Google Sheets templates to track expenses, manage subscriptions & build wealth with automatic calculations and visualizations.",
+    title: "Simplify Budget - Visual Expense Tracking App | No Subscription",
+    description: "One-tap expense tracking with visual monthly grid. Your data stays in Google Drive. One-time payment, use forever. Try free for 30 days.",
     url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
     type: "website",
     images: [{
-      url: "https://simplifybudget.com/og-image.png",
+      url: "https://simplifybudget.com/simplifybudget.jpg",
       width: 1200,
       height: 630,
-      alt: "Simplify Budget Google Sheets Templates"
+      alt: "Simplify Budget Visual Expense Tracking App"
     }]
   }
 };

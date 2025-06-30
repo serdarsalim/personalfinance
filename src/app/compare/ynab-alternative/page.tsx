@@ -6,9 +6,9 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "YNAB Alternative - One-Time Payment vs $180/Year | Simplify Budget",
-  description: "Why pay $180/year for YNAB? Get the same budgeting power with a one-time payment. Calendar view, auto-subscriptions, YOUR data in YOUR Google Sheets.",
-  keywords: "ynab alternative, ynab too expensive, budget app without subscription, ynab replacement, cheaper than ynab"
+  title: "YNAB Alternative - One-Time Payment Budget App vs $180/Year | Simplify Budget",
+  description: "Why pay $180/year for YNAB? Get better budgeting with our visual expense tracking app. One-time payment, data stays in your Google Drive. Try free for 30 days.",
+  keywords: "ynab alternative, budget app without subscription, ynab replacement, cheaper than ynab, one time payment budget app, ynab too expensive"
 };
 
 export default function YNABAlternativePage() {
@@ -170,16 +170,14 @@ Start Your Free Trial
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">See It In Action</h2>
-          <div className="relative rounded-xl overflow-hidden shadow-2xl">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full"
-            >
-              <source src="/SimplifyBudget.mp4" type="video/mp4" />
-            </video>
+          <div className="relative rounded-xl overflow-hidden shadow-2xl aspect-video">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/pfwtW8DKStM"
+              title="Simplify Budget Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
           <p className="text-center mt-6 text-gray-700">
             The calendar view that YNAB users have been asking for since 2015.

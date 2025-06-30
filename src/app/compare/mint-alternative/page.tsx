@@ -7,9 +7,9 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mint Alternative That You Actually Own | One-Time Payment vs Endless Subscriptions",
-  description: "Mint shut down. YNAB costs $180/year. Simplify Budget is a one-time payment, forever. Your data stays in YOUR Google Sheets. No subscriptions, no data hostage.",
-  keywords: "mint alternative, mint shutdown, mint replacement, budget app no subscription, own your financial data"
+  title: "Mint Alternative - Visual Budget App You Actually Own | Simplify Budget",
+  description: "Mint shut down. We're the visual expense tracking alternative. One-time payment budget app, your data stays in Google Drive. No subscriptions. Try free 30 days.",
+  keywords: "mint alternative, mint shutdown, mint replacement, budget app after mint, visual expense tracker, one time payment budget app, mint closed"
 };
 
 const ComparisonTable = () => (

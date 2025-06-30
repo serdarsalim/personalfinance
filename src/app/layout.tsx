@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import OrganizationSchema from './components/OrganizationSchema' 
+import SoftwareApplicationSchema from './components/SoftwareApplicationSchema'
 import { Suspense } from 'react'
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
@@ -23,9 +24,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Simplify Budget | Google Sheets Templates for Budget Management',
-  description: 'Free and premium Google Sheets templates to track your finances, budget effectively, and reach your financial goals.',
-  keywords: 'google sheets, budget template, financial tracking, expense tracker, free budget template',
+  title: 'Simplify Budget | Visual Expense Tracking App for Google Sheets',
+  description: 'Track expenses with one tap using our visual budget app. Your data stays in Google Drive. One-time payment, no subscriptions. Try free for 30 days.',
+  keywords: 'budget app, expense tracker app, budgeting software, visual expense tracking, google sheets budget app, subscription tracker',
   icons: {
     icon: '/favicon.ico',
   },
@@ -57,6 +58,7 @@ export default function RootLayout({
         
         {/* Schema markup */}
         <OrganizationSchema />
+        <SoftwareApplicationSchema />
       </body>
     </html>
   )
