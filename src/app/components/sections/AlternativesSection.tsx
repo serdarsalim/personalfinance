@@ -65,7 +65,7 @@ export default function AlternativesSection() {
             Tired of subscription fatigue? Join 150+ people who bought once and use forever.
           </p>
           <Link 
-            href="/app"
+            href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg font-bold text-lg hover:shadow-lg transition-all"
           >
             Start Your Free Trial
