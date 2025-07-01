@@ -28,7 +28,7 @@ const PrivacyContent = () => (
         </p>
       </section>
 
-         <section>
+      <section>
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Information We Collect</h2>
         <p className="mb-4 text-gray-700">We collect minimal information necessary to provide our services:</p>
         <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
@@ -36,7 +36,6 @@ const PrivacyContent = () => (
           <li><strong>Purchase Information:</strong> Transaction details when you purchase access (processed by our payment provider)</li>
           <li><strong>Usage Analytics:</strong> Basic app usage statistics (feature usage, error logs) to improve the service</li>
           <li><strong>Support Communications:</strong> Any information you provide when contacting support</li>
-          <li><strong>Activity Monitoring:</strong> Email addresses and last active timestamps of users (stored securely for service improvement and support purposes)</li>
         </ul>
         <p className="mb-4 text-gray-700">
           <strong>We do NOT collect or store:</strong> Your financial data, budget information, transaction details, 

@@ -44,8 +44,12 @@ import { useState } from "react";
       answer: "You can rename, reorder, and hide/show any of the 30 categories. We don't allow deleting categories to preserve your historical data - if you had expenses in a category you no longer use, they'll still appear in your reports."
     },
     {
+ question: "Is this app safe to use?",
+ answer: "Yes. We're verified by Google for secure access to your spreadsheets. This means Google has reviewed our security practices and approved our app for accessing your data safely."
+},
+    {
       question: "Is my financial data private and secure?",
-      answer: "Completely. Your financial data never touches our servers - it only exists in your Google Drive. We literally cannot see your transactions, balances, or spending patterns. Even if our app was compromised, your financial data would be safe."
+      answer: "Your financial data never touches our servers - it only exists in your Google Drive. We literally cannot see your transactions, balances, or spending patterns. Since your data stays in your own Google account, you maintain full control and ownership."
     },
     {
       question: "What currencies does SimplifyBudget support?",
