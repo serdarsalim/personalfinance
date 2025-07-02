@@ -102,7 +102,7 @@ export default function HeroSection() {
             </h1>
             
             <p className="text-xl text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0">
-              Manual expense tracking that builds wealth habits. Your data stays yours forever. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 font-semibold">Without another subscription.</span>
+              See where your money goes with visual expense tracking that actually works. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 font-semibold">No subscriptions. Ever.</span>
             </p>
 
             {/* CTAs */}
@@ -111,7 +111,7 @@ export default function HeroSection() {
                 href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
                 className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
               >
-                Start Your Free 30-Day Trial
+                Start Tracking Now →
               </a>
               <a 
                 href="https://youtu.be/pfwtW8DKStM"
@@ -121,36 +121,48 @@ export default function HeroSection() {
               </a>
             </div>
             
-            <p className="text-sm text-gray-600 mb-8">
-              All features included. No credit card required.
-            </p>
 
-            {/* SOCIAL PROOF */}
-            <div className="flex flex-wrap gap-8 items-center justify-center lg:justify-start">
-              <div className="flex items-center gap-2">
-                <div className="text-2xl font-bold text-gray-900">150+</div>
-                <p className="text-sm text-gray-600">Happy Users</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-xl">★</span>
-                  ))}
+            {/* KILLER FEATURES */}
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <div className="mt-1 flex-shrink-0">
+                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
                 </div>
-                <p className="text-sm text-gray-600">4.8/5</p>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">See Where Every Dollar Goes</p>
+                  <p className="text-sm text-gray-600">Finally understand your spending patterns. No more "where did my money go?" moments.</p>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-sm text-gray-600">All Currencies</p>
+              <div className="flex items-start gap-3">
+                <div className="mt-1 flex-shrink-0">
+                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">Family Tracks Together</p>
+                  <p className="text-sm text-gray-600">Share the Sheet. Everyone adds expenses. See real-time spending. No "family plan" fees.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="mt-1 flex-shrink-0">
+                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">Google-Verified & Secure</p>
+                  <p className="text-sm text-gray-600">OAuth verified. Your data never touches our servers. Stays in your Drive forever.</p>
+                </div>
               </div>
             </div>
             
-            {/* Language Support */}
+            {/* Currency & Language Support */}
             <div className="mt-4 text-center lg:text-left">
               <p className="text-sm text-gray-500">
-                Available in English, German, French, Spanish & more
+                All currencies supported • Available in English, German, French, Spanish & more
               </p>
             </div>
           </div>
@@ -254,23 +266,7 @@ export default function HeroSection() {
         
         {/* Bottom section */}
         <div className="text-center mt-12">
-          <div className="flex items-center justify-center text-sm text-gray-600 mb-4">
-            <svg className="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-            <span>All your financial data stays in your Google Drive - completely private</span>
-          </div>
           
-          <p className="text-sm text-gray-500">
-            Compare with{' '}
-            <Link href="/compare/ynab-alternative" className="text-gray-600 hover:text-blue-600 hover:underline">
-              YNAB
-            </Link>
-            {' '}or{' '}
-            <Link href="/compare/mint-alternative" className="text-gray-600 hover:text-blue-600 hover:underline">
-              Mint
-            </Link>
-          </p>
         </div>
       </div>
       

@@ -27,12 +27,12 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
 
 // Update metadata
 export const metadata: Metadata = {
-  title: "Simplify Budget - Visual Expense Tracking App | One-Time Payment Budget Software",
-  description: "Track expenses visually with one tap. Budget app that works with Google Sheets. One-time payment instead of subscriptions. 30-day free trial, no credit card required.",
-  keywords: "budget app, expense tracker app, one time payment budget software, visual expense tracking, budgeting app no subscription, mint alternative, ynab alternative",
+  title: "Simplify Budget - Visual Grid Budget Tracker | $15 Once, Family Sharing Included",
+  description: "Track expenses in seconds with visual grid. Share with family instantly. Works on any device, no download needed. Google-verified secure. Your data stays in your Drive. $15 lifetime access.",
+  keywords: "visual budget tracker, family expense sharing app, one time payment budget app, google drive budget tracker, no subscription expense tracker, instant setup budget app, mint alternative, ynab alternative",
   openGraph: {
-    title: "Simplify Budget - Visual Expense Tracking App | No Subscription",
-    description: "One-tap expense tracking with visual monthly grid. Your data stays in Google Drive. One-time payment, use forever. Try free for 30 days.",
+    title: "Simplify Budget - The Smart Way Families Track Money Together",
+    description: "5-second visual expense entry. Share with spouse/kids instantly. Works on any device. Google-verified secure. Pay $15 once, own forever. 30-day free trial.",
     url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       url: "https://simplifybudget.com/simplifybudget.jpg",
       width: 1200,
       height: 630,
-      alt: "Simplify Budget Visual Expense Tracking App"
+      alt: "Simplify Budget - Visual Family Budget Tracking App"
     }]
   }
 };
