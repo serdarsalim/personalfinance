@@ -16,6 +16,7 @@ export default function TemplateSection() {
   return (
     <section id="templates" className="bg-gradient-to-r from-green-50 to-white py-20 scroll-mt-5">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="space-y-8">
           {/* Simplify Budget App - Featured */}
           <div className="relative">
@@ -112,69 +113,6 @@ export default function TemplateSection() {
             </div>
           </div>
 
-          {/* Free Template - Simpler design */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300">
-            <div className="bg-gray-100 p-6">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-1">Free Budget Tracker</h3>
-                  <p className="text-gray-600">Perfect for getting started with budget tracking</p>
-                </div>
-                <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-bold">
-                  FREE
-                </div>
-              </div>
-            </div>
-            
-            <div className="p-6">
-              <p className="text-gray-700 mb-4">
-                Track income and expenses with this powerful Google Sheets template. 
-                A great starting point for taking control of your finances.
-              </p>
-              
-              <div className="mb-6">
-                <h4 className="text-sm font-semibold text-gray-700 mb-3">Key Features:</h4>
-                <div className="grid sm:grid-cols-2 gap-2">
-                  <div className="flex items-center text-sm">
-                    <svg className="h-4 w-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                    </svg>
-                    <span className="text-gray-600">30 custom categories</span>
-                  </div>
-                  <div className="flex items-center text-sm">
-                    <svg className="h-4 w-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                    </svg>
-                    <span className="text-gray-600">Monthly budget settings</span>
-                  </div>
-                  <div className="flex items-center text-sm">
-                    <svg className="h-4 w-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                    </svg>
-                    <span className="text-gray-600">Automatic charts</span>
-                  </div>
-                  <div className="flex items-center text-sm">
-                    <svg className="h-4 w-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                    </svg>
-                    <span className="text-gray-600">Savings goals</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex justify-center">
-                <a
-                  href="https://docs.google.com/spreadsheets/d/13gCc_WQ7n5PGhAFeti8K9w2Lr-zoF-Sqa1qS5z6lSe0/copy?gid=2061588169#gid=2061588169"
-                  className="text-center px-6 py-3 text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors font-medium"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackTemplateInteraction('download', 'Free Budget Tracker')}
-                >
-                  Download Free Template
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
