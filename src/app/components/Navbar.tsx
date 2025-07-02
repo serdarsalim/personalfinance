@@ -68,7 +68,7 @@ export default function Navbar() {
               About
             </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
-              Buy Now
+              Upgrade
             </Link>
             <a 
               href="https://halqa.co/money" 
@@ -115,10 +115,10 @@ export default function Navbar() {
             About
           </Link>
           <Link href="/#templates" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
-            Templates
+            Upgrade
           </Link>
           <a 
-            href="https://halqa.xyz/pf"
+            href="https://halqa.co/money"
             className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left"
             target="_blank"
             rel="noopener noreferrer"

@@ -46,11 +46,10 @@ export default function TemplateSection() {
               </div>
               
               <div className="p-8">
-         
-                
-                <p className="text-gray-700 text-lg mb-6">
-                  Pay once, own forever. Track expenses, build budgets, and grow your wealth - all without monthly fees bleeding your accounts.
-                </p>
+                <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                  <p className="text-green-800 font-semibold mb-2">✓ Try Everything Free for 30 Days</p>
+                  <p className="text-green-700 text-sm">Use all features. No credit card required. One-time payment if you love it.</p>
+                </div>
                 
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-gray-900 mb-4">Why People Love It:</h4>
@@ -59,7 +58,7 @@ export default function TemplateSection() {
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">No download needed - works on any device with Gmail login</span>
+                      <span className="text-gray-700">Your data stays in your Google Drive - super secure</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -77,26 +76,23 @@ export default function TemplateSection() {
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Super fast expense entry reveals spending patterns</span>
+                      <span className="text-gray-700">Calendar-based entry - see your spending patterns instantly</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Auto-tracks all subscriptions to stop money leaks</span>
+                      <span className="text-gray-700">Set subscriptions once - they appear automatically every month</span>
+                    </div>
+                    <div className="flex items-start">
+                      <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span className="text-gray-700">No download needed - works on any device with Gmail login</span>
                     </div>
                   </div>
                 </div>
                 
-                {/* Privacy emphasis */}
-                <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                  <p className="text-sm text-gray-600 flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
-                    </svg>
-                    We never see or store your financial data - everything stays private in your Google Drive
-                  </p>
-                </div>
                 
                 <div className="flex justify-center">
                   <a

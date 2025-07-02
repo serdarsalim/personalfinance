@@ -153,8 +153,8 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">Google-Verified & Secure</p>
-                  <p className="text-sm text-gray-600">OAuth verified. Your data never touches our servers. Stays in your Drive forever.</p>
+                  <p className="text-sm font-semibold text-gray-900">Verified & Secure</p>
+                  <p className="text-sm text-gray-600">Verified by Google for safe access. Your financial data never leaves your Drive.</p>
                 </div>
               </div>
             </div>

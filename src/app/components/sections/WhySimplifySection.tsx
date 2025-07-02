@@ -1,19 +1,19 @@
 export default function WhySimplifySection() {
   const reasons = [
     {
-      title: "Your Data, Your Control",
-      description: "Everything stays in YOUR Google Drive. We never see or access your financial information.",
-      icon: "🔒"
+      title: "No App Download Required",
+      description: "Works instantly on any device with a browser. Already logged in through Google - no passwords to remember.",
+      icon: "📱"
     },
     {
-      title: "One-Time Payment, Forever",
-      description: "No monthly subscriptions. Pay once, use forever with free lifetime updates.",
+      title: "Test Free, Pay Once",
+      description: "Try everything for 30 days. If you like it, pay once and get free lifetime updates forever.",
       icon: "💰"
     },
     {
       title: "Family Budget Sharing",
       description: "Multiple people can track expenses in the same spreadsheet. Perfect for couples and families.",
-      icon: "👨‍👩‍👧‍👦"
+      icon: "👨‍👩‍👧"
     },
     {
       title: "Revolutionary Monthly Grid",
@@ -22,8 +22,8 @@ export default function WhySimplifySection() {
       appOnly: true
     },
     {
-      title: "Auto Subscription Tracking",
-      description: "Catches money leaks from forgotten subscriptions. Set once, track automatically every month.",
+      title: "Set Subscriptions Once",
+      description: "Enter Netflix, Spotify, etc. once - they appear automatically every month. Never forget to track them again.",
       icon: "🔄"
     },
     {
