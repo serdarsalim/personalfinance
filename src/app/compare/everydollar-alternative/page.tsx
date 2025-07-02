@@ -160,19 +160,19 @@ export default function EveryDollarAlternativePage() {
         competitor="EveryDollar"
         questions={[
           {
-            question: "Is SimplifyBudget better than EveryDollar?",
-            answer: "SimplifyBudget offers visual monthly grid view, one-time payment instead of $80/year, works with any budgeting method (not just Dave Ramsey's), and stores data in your Google Drive for complete ownership."
+            question: "Is Simplify Budget better than EveryDollar?",
+            answer: "Simplify Budget offers visual monthly grid view, one-time payment instead of $80/year, works with any budgeting method (not just Dave Ramsey's), and stores data in your Google Drive for complete ownership."
           },
           {
-            question: "Can I use SimplifyBudget without following Dave Ramsey's baby steps?",
-            answer: "Yes! Unlike EveryDollar, SimplifyBudget works with any budgeting method - zero-based, 50/30/20, or your own custom approach. You're not locked into any specific financial philosophy."
+            question: "Can I use Simplify Budget without following Dave Ramsey's baby steps?",
+            answer: "Yes! Unlike EveryDollar, SimplifyB udget works with any budgeting method - zero-based, 50/30/20, or your own custom approach. You're not locked into any specific financial philosophy."
           },
           {
-            question: "Does SimplifyBudget connect to banks like EveryDollar Plus?",
-            answer: "No, SimplifyBudget uses manual entry which research shows builds better spending awareness. Plus, manual entry means no security risks from bank connections and works with all banks globally."
+            question: "Does Simplify Budget connect to banks like EveryDollar Plus?",
+            answer: "No, Simplify Budget uses manual entry which research shows builds better spending awareness. Plus, manual entry means no security risks from bank connections and works with all banks globally."
           },
           {
-            question: "How do I switch from EveryDollar to SimplifyBudget?",
+            question: "How do I switch from EveryDollar to Simplify Budget?",
             answer: "Export your EveryDollar data, set up our Google Sheets template, and start tracking. The visual grid makes expense entry faster than EveryDollar's list view. Most users are fully switched within 30 minutes."
           }
         ]}

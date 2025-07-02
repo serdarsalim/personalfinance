@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "PocketGuard Alternative - Better Budgeting Without Ads | Simplify Budget",
   description: "Tired of PocketGuard's ads and limited features? Get visual expense tracking with one-time payment. Your data in Google Drive, no subscriptions. Try free 30 days.",
-  keywords: "pocketguard alternative, pocketguard replacement, budget app without ads, pocketguard vs simplifybudget, visual budget app"
+  keywords: "pocketguard alternative, pocketguard replacement, budget app without ads, pocketguard vs simplify Budget, visual budget app"
 };
 
 export default function PocketGuardAlternativePage() {
@@ -95,7 +95,7 @@ export default function PocketGuardAlternativePage() {
                 "Every time I open PocketGuard, there's another ad or push to upgrade. I just want to track my expenses!"
               </p>
               <p className="text-green-700 font-semibold">
-                → SimplifyBudget: No ads, ever. You own it.
+                → Simplify Budget: No ads, ever. You own it.
               </p>
             </div>
             
@@ -105,7 +105,7 @@ export default function PocketGuardAlternativePage() {
                 "The list view makes it impossible to see when I'm overspending during the month."
               </p>
               <p className="text-green-700 font-semibold">
-                → SimplifyBudget: Visual grid shows patterns instantly.
+                → Simplify Budget: Visual grid shows patterns instantly.
               </p>
             </div>
             
@@ -115,7 +115,7 @@ export default function PocketGuardAlternativePage() {
                 "17 categories isn't enough. I need more granular tracking for my business expenses."
               </p>
               <p className="text-green-700 font-semibold">
-                → SimplifyBudget: 30 fully customizable categories.
+                → Simplify Budget: 30 fully customizable categories.
               </p>
             </div>
             
@@ -125,7 +125,7 @@ export default function PocketGuardAlternativePage() {
                 "If I stop paying, I lose access to years of financial data. That's my data!"
               </p>
               <p className="text-green-700 font-semibold">
-                → SimplifyBudget: Your data stays in your Google Drive forever.
+                → Simplify Budget: Your data stays in your Google Drive forever.
               </p>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function PocketGuardAlternativePage() {
               </div>
               
               <div>
-                <h3 className="font-bold mb-4 text-gray-900">SimplifyBudget (Visual Grid)</h3>
+                <h3 className="font-bold mb-4 text-gray-900">Simplify Budget (Visual Grid)</h3>
                 <div className="grid grid-cols-5 gap-1 text-xs">
                   <div className="p-2 bg-gray-100 font-semibold">Day</div>
                   <div className="p-2 bg-gray-100 text-center">🛒</div>
@@ -223,20 +223,20 @@ export default function PocketGuardAlternativePage() {
         competitor="PocketGuard"
         questions={[
           {
-            question: "Why switch from PocketGuard to SimplifyBudget?",
-            answer: "SimplifyBudget has no ads ever, offers visual monthly grid view instead of just lists, provides 30 customizable categories vs PocketGuard's 17 limit, and uses one-time payment instead of monthly subscriptions."
+            question: "Why switch from PocketGuard to Simplify Budget?",
+            answer: "Simplify Budget has no ads ever, offers visual monthly grid view instead of just lists, provides 30 customizable categories vs PocketGuard's 17 limit, and uses one-time payment instead of monthly subscriptions."
           },
           {
-            question: "Does SimplifyBudget have as many features as PocketGuard?",
-            answer: "SimplifyBudget focuses on core budgeting with better visualization. While PocketGuard has features like bill negotiation, SimplifyBudget excels at expense tracking with its unique visual grid that shows spending patterns at a glance."
+            question: "Does Simplify Budget have as many features as PocketGuard?",
+            answer: "Simplify Budget focuses on core budgeting with better visualization. While PocketGuard has features like bill negotiation, Simplify Budget excels at expense tracking with its unique visual grid that shows spending patterns at a glance."
           },
           {
-            question: "Can I see my whole month like in SimplifyBudget if I use PocketGuard?",
-            answer: "No, PocketGuard only offers list views of transactions. SimplifyBudget's visual monthly grid is unique, showing your entire month's spending patterns in a color-coded calendar format."
+            question: "Can I see my whole month like in Simplify Budget if I use PocketGuard?",
+            answer: "No, PocketGuard only offers list views of transactions. Simplify Budget's visual monthly grid is unique, showing your entire month's spending patterns in a color-coded calendar format."
           },
           {
-            question: "Is my data safer with SimplifyBudget than PocketGuard?",
-            answer: "Yes, your data stays in your personal Google Drive with SimplifyBudget. PocketGuard stores your financial data on their servers. With SimplifyBudget, you maintain complete control and ownership of your financial information."
+            question: "Is my data safer with Simplify Budget than PocketGuard?",
+            answer: "Yes, your data stays in your personal Google Drive with Simplify Budget. PocketGuard stores your financial data on their servers. With Simplify Budget, you maintain complete control and ownership of your financial information."
           }
         ]}
       />
