@@ -14,7 +14,7 @@ export default function FeatureCarousel() {
   const slides = [
     {
       title: "Monthly Grid View",
-      description: "Revolutionary calendar view. See your entire month's spending at a glance - no more scrolling through transactions.",
+      description: "Calendar-style expense entry. See your entire month's spending at a glance - no more scrolling through transactions.",
       image: "/app-screenshots/2monthlygrid.png"
     },
     {
@@ -24,12 +24,12 @@ export default function FeatureCarousel() {
     },
     {
       title: "Recurring Expenses",
-      description: "Never miss a payment. Track all subscriptions and fixed expenses with automatic monthly reminders.",
+      description: "Set once, tracks automatically. All subscriptions and fixed expenses appear every month without manual entry.",
       image: "/app-screenshots/3recurring.png"
     },
     {
       title: "Income Tracker",
-      description: "Multiple income streams in one place. Track salary, investments, and side hustles effortlessly.",
+      description: "Track every dollar coming in. Salary, freelance work, investments, side hustles - see your complete income picture.",
       image: "/app-screenshots/4incometab.png"
     },
     {
