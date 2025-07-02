@@ -152,7 +152,7 @@ export default function QuickenAlternativePage() {
               features I didn't understand, constant upsells to the Premier version. I just wanted to see 
               where my money was going!
               <br /><br />
-              SimplifyBudget's grid view is exactly what I needed. I can see my whole month at a glance, 
+              Simplify Budget's grid view is exactly what I needed. I can see my whole month at a glance, 
               add expenses in seconds, and actually stick to my budget. Plus, I'm saving $50/year."
             </blockquote>
             <div className="flex items-center">
@@ -205,7 +205,7 @@ export default function QuickenAlternativePage() {
             </div>
             
             <div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">SimplifyBudget Interface</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">Simplify Budget Interface</h3>
               <div className="bg-white rounded-lg shadow-lg p-4">
                 <div className="grid grid-cols-6 gap-1 text-xs">
                   <div className="p-2 bg-gray-100 font-semibold">Day</div>
@@ -278,20 +278,20 @@ export default function QuickenAlternativePage() {
         competitor="Quicken"
         questions={[
           {
-            question: "Is SimplifyBudget easier to use than Quicken?",
-            answer: "Yes, SimplifyBudget is designed for simplicity. While Quicken has 500+ features built over 40 years, SimplifyBudget focuses on visual expense tracking that you can learn in 5 minutes. No complex setup or training needed."
+            question: "Is Simplify Budget easier to use than Quicken?",
+            answer: "Yes, Simplify Budget is designed for simplicity. While Quicken has 500+ features built over 40 years, Simplify Budget focuses on visual expense tracking that you can learn in 5 minutes. No complex setup or training needed."
           },
           {
-            question: "Can SimplifyBudget replace Quicken for basic budgeting?",
-            answer: "Absolutely. If you primarily use Quicken for expense tracking and budgeting (not investment tracking or business accounting), SimplifyBudget provides a cleaner, faster solution with its visual monthly grid."
+            question: "Can Simplify Budget replace Quicken for basic budgeting?",
+            answer: "Absolutely. If you primarily use Quicken for expense tracking and budgeting (not investment tracking or business accounting), Simplify Budget provides a cleaner, faster solution with its visual monthly grid."
           },
           {
-            question: "Why is SimplifyBudget so much cheaper than Quicken?",
-            answer: "Quicken charges $35-103/year for features most people don't use. SimplifyBudget offers one-time payment for just budgeting features you actually need, using Google Sheets for data storage to eliminate ongoing costs."
+            question: "Why is Simplify Budget so much cheaper than Quicken?",
+            answer: "Quicken charges $35-103/year for features most people don't use. Simplify Budget offers one-time payment for just budgeting features you actually need, using Google Sheets for data storage to eliminate ongoing costs."
           },
           {
-            question: "Do I lose any important features switching from Quicken to SimplifyBudget?",
-            answer: "SimplifyBudget focuses on expense tracking and budgeting. If you need investment portfolio tracking, rental property management, or business invoicing, keep Quicken. For everyday budgeting, SimplifyBudget is actually better with its visual approach."
+            question: "Do I lose any important features switching from Quicken to Simplify Budget?",
+            answer: "Simplify Budget focuses on expense tracking and budgeting. If you need investment portfolio tracking, rental property management, or business invoicing, keep Quicken. For everyday budgeting, Simplify Budget is actually better with its visual approach."
           }
         ]}
       />
