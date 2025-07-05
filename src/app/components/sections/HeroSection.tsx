@@ -114,10 +114,10 @@ export default function HeroSection() {
                 Start Tracking Now →
               </a>
               <a 
-                href="https://www.youtube.com/watch?v=PuX2qe4CN2A"
+                href="/demo"
                 className="inline-block px-6 py-4 bg-white text-blue-600 rounded-lg shadow hover:shadow-md transition-all font-semibold border border-gray-200"
               >
-                Watch Demo →
+                Open Demo →
               </a>
             </div>
             

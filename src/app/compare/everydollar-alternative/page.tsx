@@ -143,10 +143,10 @@ export default function EveryDollarAlternativePage() {
               Start Your Free Trial
             </a>
             <a 
-              href="https://www.youtube.com/watch?v=PuX2qe4CN2A"
+              href="/demo"
               className="inline-block px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg hover:bg-white hover:text-blue-600 transition-all font-bold text-lg"
             >
-              Watch Demo Video
+              Open Demo
             </a>
           </div>
         </div>
