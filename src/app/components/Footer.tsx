@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 <h3 className="text-white font-semibold mb-3">Product</h3>
                 <ul className="space-y-2">
                   <li><Link href="/app" className="text-gray-400 hover:text-blue-400">Open App</Link></li>
-                  <li><Link href="/#templates" className="text-gray-400 hover:text-blue-400">Templates</Link></li>
+                  <li><Link href="/#templates" className="text-gray-400 hover:text-blue-400">Upgrade</Link></li>
                 </ul>
               </div>
               

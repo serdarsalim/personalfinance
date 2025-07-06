@@ -10,20 +10,53 @@ export default function HeroSection() {
 
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white pt-8 pb-16 overflow-hidden relative">
-      {/* Floating expense bubbles animation */}
+      {/* Animated expense icons background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(5)].map((_, i) => (
-          <div
-            key={i}
-            className={`absolute w-20 h-20 rounded-full opacity-10 animate-float-${i + 1}`}
-            style={{
-              background: `linear-gradient(135deg, ${['#3B82F6', '#10B981', '#8B5CF6', '#F59E0B', '#EC4899'][i]} 0%, ${['#60A5FA', '#34D399', '#A78BFA', '#FCD34D', '#F9A8D4'][i]} 100%)`,
-              left: `${[10, 75, 25, 60, 85][i]}%`,
-              top: `${[20, 40, 60, 30, 70][i]}%`,
-              animationDelay: `${i * 0.5}s`
-            }}
-          />
-        ))}
+        {/* Rising dollar signs and expense icons */}
+        {[...Array(8)].map((_, i) => {
+          const icons = ['💵', '💳', '🛒', '⛽', '🏠', '✈️', '🍔', '💰'];
+          const positions = [5, 15, 25, 35, 50, 65, 80, 90];
+          return (
+            <div
+              key={i}
+              className="absolute text-4xl animate-rise"
+              style={{
+                left: `${positions[i]}%`,
+                animationDelay: `${i * 2}s`,
+                animationDuration: '20s',
+                opacity: 0.15
+              }}
+            >
+              {icons[i]}
+            </div>
+          );
+        })}
+        
+        {/* Diagonal moving expense cards */}
+        <div className="absolute inset-0">
+          {[...Array(3)].map((_, i) => (
+            <div
+              key={`card-${i}`}
+              className="absolute bg-white/10 backdrop-blur-sm rounded-lg p-3 animate-diagonal"
+              style={{
+                width: '120px',
+                height: '60px',
+                left: `${[20, 50, 80][i]}%`,
+                top: `${[10, 40, 70][i]}%`,
+                animationDelay: `${i * 3}s`,
+                animationDuration: '15s'
+              }}
+            >
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-400/20 to-emerald-400/20 rounded"></div>
+                <div className="flex-1">
+                  <div className="h-2 bg-gray-300/20 rounded mb-1"></div>
+                  <div className="h-2 bg-gray-300/20 rounded w-2/3"></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -149,41 +182,47 @@ export default function HeroSection() {
       
       {/* Add CSS animations */}
       <style jsx>{`
-        @keyframes float-1 {
-          0%, 100% { transform: translateY(0) translateX(0); }
-          25% { transform: translateY(-20px) translateX(10px); }
-          50% { transform: translateY(-10px) translateX(-10px); }
-          75% { transform: translateY(-30px) translateX(5px); }
+        @keyframes rise {
+          0% {
+            transform: translateY(100vh) rotate(0deg);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.15;
+          }
+          90% {
+            opacity: 0.15;
+          }
+          100% {
+            transform: translateY(-100vh) rotate(360deg);
+            opacity: 0;
+          }
         }
-        @keyframes float-2 {
-          0%, 100% { transform: translateY(0) translateX(0); }
-          25% { transform: translateY(-30px) translateX(-10px); }
-          50% { transform: translateY(-20px) translateX(10px); }
-          75% { transform: translateY(-10px) translateX(-5px); }
+        
+        @keyframes diagonal {
+          0% {
+            transform: translate(-100px, 100vh) rotate(-5deg);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.1;
+          }
+          90% {
+            opacity: 0.1;
+          }
+          100% {
+            transform: translate(100vw, -100px) rotate(5deg);
+            opacity: 0;
+          }
         }
-        @keyframes float-3 {
-          0%, 100% { transform: translateY(0) translateX(0); }
-          25% { transform: translateY(-10px) translateX(-5px); }
-          50% { transform: translateY(-30px) translateX(10px); }
-          75% { transform: translateY(-20px) translateX(-10px); }
+        
+        .animate-rise {
+          animation: rise 20s linear infinite;
         }
-        @keyframes float-4 {
-          0%, 100% { transform: translateY(0) translateX(0); }
-          25% { transform: translateY(-25px) translateX(5px); }
-          50% { transform: translateY(-15px) translateX(-5px); }
-          75% { transform: translateY(-35px) translateX(10px); }
+        
+        .animate-diagonal {
+          animation: diagonal 15s linear infinite;
         }
-        @keyframes float-5 {
-          0%, 100% { transform: translateY(0) translateX(0); }
-          25% { transform: translateY(-15px) translateX(10px); }
-          50% { transform: translateY(-25px) translateX(-5px); }
-          75% { transform: translateY(-5px) translateX(5px); }
-        }
-        .animate-float-1 { animation: float-1 8s ease-in-out infinite; }
-        .animate-float-2 { animation: float-2 10s ease-in-out infinite; }
-        .animate-float-3 { animation: float-3 12s ease-in-out infinite; }
-        .animate-float-4 { animation: float-4 9s ease-in-out infinite; }
-        .animate-float-5 { animation: float-5 11s ease-in-out infinite; }
       `}</style>
     </section>
   );
