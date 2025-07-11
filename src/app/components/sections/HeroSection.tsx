@@ -78,13 +78,13 @@ export default function HeroSection() {
                 href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
                 className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
               >
-                Start Tracking Now →
+                Get Your App →
               </a>
               <a 
                 href="/demo"
                 className="inline-block px-6 py-4 bg-white text-blue-600 rounded-lg shadow hover:shadow-md transition-all font-semibold border border-gray-200"
               >
-                Open Demo →
+                Try the Demo →
               </a>
             </div>
             
