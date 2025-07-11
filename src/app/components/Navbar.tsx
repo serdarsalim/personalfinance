@@ -67,6 +67,12 @@ export default function Navbar() {
             <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium">
               About
             </Link>
+            <Link href="/why-manual-tracking" className="text-gray-700 hover:text-blue-600 font-medium">
+              Why Manual
+            </Link>
+            <Link href="/how-it-works" className="text-gray-700 hover:text-blue-600 font-medium">
+              How It Works
+            </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
               Upgrade
             </Link>
@@ -113,6 +119,12 @@ export default function Navbar() {
           </Link>
           <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             About
+          </Link>
+          <Link href="/why-manual-tracking" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
+            Why Manual
+          </Link>
+          <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
+            How It Works
           </Link>
           <Link href="/#templates" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             Upgrade
