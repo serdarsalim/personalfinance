@@ -98,7 +98,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">See where your money goes with calendar based expense entry.</p>
+                  <p className="text-sm font-semibold text-gray-900">Complete financial dashboard - expenses, income, net worth, subscriptions in one place</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -108,7 +108,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">Use the same spreadsheet to track together.</p>
+                  <p className="text-sm font-semibold text-gray-900">Real family collaboration - everyone sees the same data, enters expenses together</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -118,7 +118,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">Verified by Google for safe access.</p>
+                  <p className="text-sm font-semibold text-gray-900">You own everything - all data lives in your Google Drive forever</p>
                 
                 </div>
               </div>
