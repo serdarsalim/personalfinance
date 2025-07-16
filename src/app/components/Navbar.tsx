@@ -74,16 +74,8 @@ export default function Navbar() {
               How It Works
             </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
-              Upgrade
+              Buy License
             </Link>
-            <a 
-              href="https://halqa.co/money" 
-              className="text-gray-700 hover:text-blue-600 font-medium"
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              Blog
-            </a>
             <Link 
               href="/app" 
               className="px-4 py-2 text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition-colors font-medium"
@@ -127,16 +119,8 @@ export default function Navbar() {
             How It Works
           </Link>
           <Link href="/#templates" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
-            Upgrade
+            Buy License
           </Link>
-          <a 
-            href="https://halqa.co/money"
-            className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Blog
-          </a>
           <Link 
             href="/app" 
             className="block px-3 py-2 text-white bg-blue-600 font-medium w-full text-left rounded mx-2"

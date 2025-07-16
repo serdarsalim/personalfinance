@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 <h3 className="text-white font-semibold mb-3">Product</h3>
                 <ul className="space-y-2">
                   <li><Link href="/app" className="text-gray-400 hover:text-blue-400">Open App</Link></li>
-                  <li><Link href="/#templates" className="text-gray-400 hover:text-blue-400">Upgrade</Link></li>
+                  <li><Link href="/#templates" className="text-gray-400 hover:text-blue-400">Buy License</Link></li>
                   <li><Link href="/why-manual-tracking" className="text-gray-400 hover:text-blue-400">Our Philosophy</Link></li>
                   <li><Link href="/how-it-works" className="text-gray-400 hover:text-blue-400">How It Works</Link></li>
                 </ul>
@@ -54,7 +54,6 @@ const Footer: React.FC = () => {
                   <li><Link href="/about" className="text-gray-400 hover:text-blue-400">About</Link></li>
                   <li><Link href="/terms" className="text-gray-400 hover:text-blue-400">Terms and Conditions</Link></li>
                   <li><Link href="/privacy" className="text-gray-400 hover:text-blue-400">Privacy Policy</Link></li>
-                  <li><a href="https://halqa.xyz/pf" className="text-gray-400 hover:text-blue-400" target="_blank" rel="noopener noreferrer">Blog</a></li>
                 </ul>
               </div>
             </div>
