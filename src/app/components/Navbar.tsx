@@ -64,11 +64,8 @@ export default function Navbar() {
             <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium">
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium">
-              About
-            </Link>
             <Link href="/why-manual-tracking" className="text-gray-700 hover:text-blue-600 font-medium">
-              Our Philosophy
+              About
             </Link>
             <Link href="/how-it-works" className="text-gray-700 hover:text-blue-600 font-medium">
               How It Works
@@ -109,11 +106,8 @@ export default function Navbar() {
           <Link href="/" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             Home
           </Link>
-          <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
-            About
-          </Link>
           <Link href="/why-manual-tracking" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
-            Our Philosophy
+            About
           </Link>
           <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             How It Works

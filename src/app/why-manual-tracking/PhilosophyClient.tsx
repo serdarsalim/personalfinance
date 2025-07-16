@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 const PhilosophyClient = () => {
   const [activeSection, setActiveSection] = useState('introduction');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(true);
 
   const sections = [
     { id: 'introduction', title: 'Introduction' },
@@ -45,6 +46,13 @@ const PhilosophyClient = () => {
           }
         }
       }
+
+      // Hide sidebar when footer is visible
+      const footer = document.querySelector('footer');
+      if (footer) {
+        const footerRect = footer.getBoundingClientRect();
+        setShowSidebar(footerRect.top > window.innerHeight);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -54,7 +62,8 @@ const PhilosophyClient = () => {
   return (
     <>
       {/* Floating Table of Contents - Desktop */}
-      <div className="hidden 2xl:block fixed top-1/2 transform -translate-y-1/2 z-40" style={{left: 'calc((100vw - 1024px) / 2 - 280px)'}}>
+      {showSidebar && (
+        <div className="hidden 2xl:block fixed top-1/2 transform -translate-y-1/2 z-40" style={{left: 'calc((100vw - 1024px) / 2 - 280px)'}}>
         <div className="bg-white rounded-lg shadow-lg border p-4 w-64">
           <h3 className="text-sm font-bold mb-3 text-gray-900">Quick Navigation</h3>
           <nav className="space-y-2">
@@ -73,7 +82,8 @@ const PhilosophyClient = () => {
             ))}
           </nav>
         </div>
-      </div>
+        </div>
+      )}
 
       {/* Mobile Menu Toggle */}
       <div className="lg:hidden fixed left-4 bottom-6 z-50">
