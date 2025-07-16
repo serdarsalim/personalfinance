@@ -143,43 +143,43 @@ export default function PocketGuardAlternativePage() {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <h3 className="font-bold mb-4 text-gray-900">PocketGuard Style (List)</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between p-2 bg-gray-50 rounded">
+                <div className="space-y-2 text-sm text-gray-900">
+                  <div className="flex justify-between p-2 bg-gray-50 rounded text-gray-900">
                     <span>Starbucks</span>
                     <span>-$5.45</span>
                   </div>
-                  <div className="flex justify-between p-2 bg-gray-50 rounded">
+                  <div className="flex justify-between p-2 bg-gray-50 rounded text-gray-900">
                     <span>Target</span>
                     <span>-$67.23</span>
                   </div>
-                  <div className="flex justify-between p-2 bg-gray-50 rounded">
+                  <div className="flex justify-between p-2 bg-gray-50 rounded text-gray-900">
                     <span>Gas Station</span>
                     <span>-$45.00</span>
                   </div>
-                  <p className="text-center text-gray-500 pt-4">😕 Hard to see patterns</p>
+                  <p className="text-center text-gray-900 pt-4">😕 Hard to see patterns</p>
                 </div>
               </div>
               
               <div>
                 <h3 className="font-bold mb-4 text-gray-900">Simplify Budget (Visual Grid)</h3>
-                <div className="grid grid-cols-5 gap-1 text-xs">
-                  <div className="p-2 bg-gray-100 font-semibold">Day</div>
-                  <div className="p-2 bg-gray-100 text-center">🛒</div>
-                  <div className="p-2 bg-gray-100 text-center">⛽</div>
-                  <div className="p-2 bg-gray-100 text-center">☕</div>
-                  <div className="p-2 bg-gray-100 text-center">🎉</div>
+                <div className="grid grid-cols-5 gap-1 text-xs text-gray-900">
+                  <div className="p-2 bg-gray-100 font-semibold text-gray-900">Day</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">🛒</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">⛽</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">☕</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">🎉</div>
                   
-                  <div className="p-2 bg-gray-50">Mon 1</div>
-                  <div className="p-2 bg-green-100 text-center">$67</div>
-                  <div className="p-2 bg-gray-50"></div>
-                  <div className="p-2 bg-green-50 text-center">$5</div>
-                  <div className="p-2 bg-gray-50"></div>
+                  <div className="p-2 bg-gray-50 text-gray-900">Mon 1</div>
+                  <div className="p-2 bg-green-100 text-center text-gray-900">$67</div>
+                  <div className="p-2 bg-gray-50 text-gray-900"></div>
+                  <div className="p-2 bg-green-50 text-center text-gray-900">$5</div>
+                  <div className="p-2 bg-gray-50 text-gray-900"></div>
                   
-                  <div className="p-2 bg-gray-50">Tue 2</div>
-                  <div className="p-2 bg-gray-50"></div>
-                  <div className="p-2 bg-green-100 text-center">$45</div>
-                  <div className="p-2 bg-gray-50"></div>
-                  <div className="p-2 bg-gray-50"></div>
+                  <div className="p-2 bg-gray-50 text-gray-900">Tue 2</div>
+                  <div className="p-2 bg-gray-50 text-gray-900"></div>
+                  <div className="p-2 bg-green-100 text-center text-gray-900">$45</div>
+                  <div className="p-2 bg-gray-50 text-gray-900"></div>
+                  <div className="p-2 bg-gray-50 text-gray-900"></div>
                   
                   <p className="text-center text-green-600 pt-4 col-span-5">😊 Patterns jump out!</p>
                 </div>

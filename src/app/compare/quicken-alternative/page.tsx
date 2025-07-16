@@ -110,7 +110,7 @@ export default function QuickenAlternativePage() {
               <div className="grid md:grid-cols-2 gap-4 mt-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">You probably don't need:</h4>
-                  <ul className="space-y-1 text-gray-600">
+                  <ul className="space-y-1 text-gray-900">
                     <li>• Investment portfolio tracking</li>
                     <li>• Rental property management</li>
                     <li>• Business invoice tracking</li>
@@ -161,7 +161,7 @@ export default function QuickenAlternativePage() {
               </div>
               <div>
                 <p className="text-gray-900 font-semibold">Jennifer M.</p>
-                <p className="text-gray-600">Former Quicken Deluxe User</p>
+                <p className="text-gray-900">Former Quicken Deluxe User</p>
               </div>
             </div>
           </div>
@@ -184,20 +184,20 @@ export default function QuickenAlternativePage() {
                 </div>
                 <div className="grid grid-cols-4 gap-2">
                   <div className="bg-white p-2 rounded shadow-sm">
-                    <div className="h-20 bg-gray-300 rounded mb-1"></div>
-                    <p className="text-gray-500">Net Worth</p>
+                    <div className="h-20 bg-slate-700 rounded mb-1"></div>
+                    <p className="text-gray-900">Net Worth</p>
                   </div>
                   <div className="bg-white p-2 rounded shadow-sm">
-                    <div className="h-20 bg-gray-300 rounded mb-1"></div>
-                    <p className="text-gray-500">Portfolio</p>
+                    <div className="h-20 bg-slate-700 rounded mb-1"></div>
+                    <p className="text-gray-900">Portfolio</p>
                   </div>
                   <div className="bg-white p-2 rounded shadow-sm">
-                    <div className="h-20 bg-gray-300 rounded mb-1"></div>
-                    <p className="text-gray-500">Tax Center</p>
+                    <div className="h-20 bg-slate-700 rounded mb-1"></div>
+                    <p className="text-gray-900">Tax Center</p>
                   </div>
                   <div className="bg-white p-2 rounded shadow-sm">
-                    <div className="h-20 bg-gray-300 rounded mb-1"></div>
-                    <p className="text-gray-500">Reports</p>
+                    <div className="h-20 bg-slate-700 rounded mb-1"></div>
+                    <p className="text-gray-900">Reports</p>
                   </div>
                 </div>
                 <p className="text-center text-red-600 mt-4">🤯 Where do I even start?</p>
@@ -207,30 +207,30 @@ export default function QuickenAlternativePage() {
             <div>
               <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">Simplify Budget Interface</h3>
               <div className="bg-white rounded-lg shadow-lg p-4">
-                <div className="grid grid-cols-6 gap-1 text-xs">
-                  <div className="p-2 bg-gray-100 font-semibold">Day</div>
-                  <div className="p-2 bg-gray-100 text-center">🛒</div>
-                  <div className="p-2 bg-gray-100 text-center">🏠</div>
-                  <div className="p-2 bg-gray-100 text-center">🚗</div>
-                  <div className="p-2 bg-gray-100 text-center">🍔</div>
-                  <div className="p-2 bg-gray-100 text-center">🎉</div>
+                <div className="grid grid-cols-6 gap-1 text-xs text-gray-900">
+                  <div className="p-2 bg-gray-100 font-semibold text-gray-900">Day</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">🛒</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">🏠</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">🚗</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">🍔</div>
+                  <div className="p-2 bg-gray-100 text-center text-gray-900">🎉</div>
                   
                   {[1, 2, 3].map(day => (
                     <React.Fragment key={day}>
-                      <div className="p-2 bg-gray-50">{day}</div>
-                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100">
+                      <div className="p-2 bg-gray-50 text-gray-900">{day}</div>
+                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100 text-gray-900">
                         {day === 1 ? '$45' : ''}
                       </div>
-                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100">
+                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100 text-gray-900">
                         {day === 2 ? '$150' : ''}
                       </div>
-                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100">
+                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100 text-gray-900">
                         {day === 3 ? '$40' : ''}
                       </div>
-                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100">
+                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100 text-gray-900">
                         {day === 1 ? '$22' : ''}
                       </div>
-                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100"></div>
+                      <div className="p-2 bg-green-50 text-center cursor-pointer hover:bg-green-100 text-gray-900"></div>
                     </React.Fragment>
                   ))}
                 </div>
