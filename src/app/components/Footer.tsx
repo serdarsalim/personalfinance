@@ -32,6 +32,8 @@ const Footer: React.FC = () => {
                 <ul className="space-y-2">
                   <li><Link href="/app" className="text-gray-400 hover:text-blue-400">Open App</Link></li>
                   <li><Link href="/#templates" className="text-gray-400 hover:text-blue-400">Upgrade</Link></li>
+                  <li><Link href="/why-manual-tracking" className="text-gray-400 hover:text-blue-400">Our Philosophy</Link></li>
+                  <li><Link href="/how-it-works" className="text-gray-400 hover:text-blue-400">How It Works</Link></li>
                 </ul>
               </div>
               

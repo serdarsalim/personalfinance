@@ -119,7 +119,7 @@ export default function EveryDollarAlternativePage() {
               ))}
             </div>
             <blockquote className="text-lg text-gray-700 mb-4">
-              "I was tired of paying $80/year for EveryDollar Plus just to connect my bank. SimplifyBudget's visual grid actually made me better at budgeting because I can see patterns. Plus, manual entry makes me more aware of spending."
+              "I was tired of paying $80/year for EveryDollar Plus just to connect my bank. Simplify Budget's visual grid actually made me better at budgeting because I can see patterns. Plus, manual entry makes me more aware of spending."
             </blockquote>
             <p className="text-gray-600 font-semibold">– Former EveryDollar Plus User</p>
           </div>

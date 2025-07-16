@@ -6,20 +6,20 @@ import HowItWorksClient from './HowItWorksClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'How SimplifyBudget Works - Complete Feature Walkthrough',
-  description: 'Detailed guide to SimplifyBudget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works.',
+  title: 'How Simplify Budget Works - Complete Feature Walkthrough',
+  description: 'Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works.',
   keywords: 'budget app features, expense tracking, subscription management, net worth tracking, family budget, Google Sheets budget, visual expense grid',
   openGraph: {
-    title: 'How SimplifyBudget Works - Complete Feature Walkthrough',
-    description: 'Detailed guide to SimplifyBudget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration.',
+    title: 'How Simplify Budget Works - Complete Feature Walkthrough',
+    description: 'Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration.',
     url: 'https://simplifybudget.com/how-it-works',
-    siteName: 'SimplifyBudget',
+    siteName: 'Simplify Budget',
     images: [
       {
         url: 'https://simplifybudget.com/app-screenshots/1budgettab.png',
         width: 1200,
         height: 630,
-        alt: 'SimplifyBudget Dashboard - How It Works',
+        alt: 'Simplify Budget Dashboard - How It Works',
       },
     ],
     locale: 'en_US',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How SimplifyBudget Works - Complete Feature Walkthrough',
-    description: 'Detailed guide to SimplifyBudget features: expense grid, subscription management, income tracking, and more.',
+    title: 'How Simplify Budget Works - Complete Feature Walkthrough',
+    description: 'Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, and more.',
     images: ['https://simplifybudget.com/app-screenshots/1budgettab.png'],
   },
   alternates: {
@@ -45,7 +45,7 @@ const HowItWorksContent = () => (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
-            How SimplifyBudget Actually Works
+            How Simplify Budget Actually Works
           </h1>
           <div className="text-xl text-gray-600 mb-8">
             A detailed walkthrough of every feature that makes financial tracking simple and effective
@@ -89,7 +89,7 @@ const HowItWorksContent = () => (
           <div className="mb-8">
             <img 
               src="/app-screenshots/1budgettab.png" 
-              alt="SimplifyBudget Dashboard Overview" 
+              alt="Simplify Budget Dashboard Overview" 
               className="w-full rounded-lg shadow-lg border"
             />
           </div>
@@ -659,7 +659,7 @@ const HowItWorksContent = () => (
                 <div className="flex items-start">
                   <span className="text-blue-600 mr-2">→</span>
                   <div className="text-gray-900">
-                    <strong>Select Existing:</strong> Choose a SimplifyBudget sheet you've already created
+                    <strong>Select Existing:</strong> Choose a Simplify Budget sheet you've already created
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -697,7 +697,7 @@ const HowItWorksContent = () => (
             
             <ul className="space-y-2 text-gray-700">
               <li>• You own the spreadsheet completely</li>
-              <li>• SimplifyBudget never sees your financial information</li>
+              <li>• Simplify Budget never sees your financial information</li>
               <li>• Can disconnect app anytime and keep all your data</li>
               <li>• Works with Google's built-in sharing and permission system</li>
             </ul>
@@ -819,7 +819,7 @@ const HowItWorksContent = () => (
               </div>
               
               <div>
-                <h4 className="font-bold text-green-900 mb-3">SimplifyBudget:</h4>
+                <h4 className="font-bold text-green-900 mb-3">Simplify Budget:</h4>
                 <ul className="space-y-2 text-green-800">
                   <li>• Click intersection → Enter amount → Done</li>
                   <li>• Spend 5 seconds entering transaction when it happens</li>
@@ -942,16 +942,16 @@ export default function HowItWorks() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Suspense fallback={<Loading />}>
         <HowItWorksContent />
-        <BreadcrumbSchema pageName="How SimplifyBudget Works" />
+        <BreadcrumbSchema pageName="How Simplify Budget Works" />
         <ArticleSchema
-          title="How SimplifyBudget Actually Works"
-          description="Detailed guide to SimplifyBudget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works."
+          title="How Simplify Budget Actually Works"
+          description="Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works."
           url="https://simplifybudget.com/how-it-works"
           imageUrl="https://simplifybudget.com/app-screenshots/1budgettab.png"
           datePublished="2024-01-15"
           dateModified={new Date().toISOString().split('T')[0]}
-          authorName="SimplifyBudget Team"
-          organizationName="SimplifyBudget"
+          authorName="Simplify Budget Team"
+          organizationName="Simplify Budget"
           keywords={['budget app features', 'expense tracking', 'subscription management', 'net worth tracking', 'family budget', 'Google Sheets budget', 'visual expense grid']}
         />
       </Suspense>

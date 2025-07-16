@@ -10,7 +10,7 @@ export default function FAQSchema() {
   const baseUrl = "https://simplifybudget.com";
   const url = `${baseUrl}${pathname}`;
   
-  // FAQ array for SimplifyBudget app
+  // FAQ array for Simplify Budget app
 
   const faqs = [
     {
