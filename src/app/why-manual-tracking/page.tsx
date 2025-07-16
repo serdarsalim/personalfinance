@@ -149,59 +149,35 @@ const ArticleContent = () => (
             </p>
           </div>
 
-          {/* The Subscription Blindness Problem */}
+          {/* The Subscription Problem */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Subscription Blindness Problem</h3>
-            
-            <p className="text-gray-700 mb-4">
-              Here's a perfect example of how automated tracking actually makes you less aware: subscription management.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              These apps that sync with your bank accounts promise to track every transaction automatically. But when your $15 Netflix charge hits, it just appears as another line item in your transaction list. No advance warning, no context about when it's coming, no reminder that you could cancel before the next billing cycle.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Users get "surprised" by their own recurring payments, even while using apps specifically designed to track spending. The automation creates a false sense of monitoring while removing the advance awareness that would actually help you make better decisions.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Compare this to knowing exactly when each subscription will hit your account, seeing it coming on your calendar, and having the opportunity to make a conscious choice about whether to continue or cancel. That's useful awareness. A line item after the fact is just expensive bookkeeping.
-            </p>
-          </div>
-
-          {/* The Subscription Trap */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Subscription Trap</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Subscription Problem</h3>
             
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <p className="text-gray-700 mb-4">
-                Speaking of subscriptions, nearly every budget app operates on a monthly fee model:
+                Nearly every budget app operates on a monthly fee model:
               </p>
               <ul className="space-y-2 text-gray-700">
                 <li>• YNAB costs $14/month</li>
-                <li>• Mint was "free" but sold your data (and just shut down)</li>
                 <li>• PocketGuard wants $12.99/month for premium features</li>
                 <li>• Goodbudget charges $8/month for more than two accounts</li>
               </ul>
             </div>
             
             <p className="text-gray-700 mb-4">
-              This creates a perverse incentive structure. These companies need you to keep paying monthly fees, which means they're optimized for engagement and feature complexity rather than actually solving your money problems. The goal becomes keeping you in the app, not improving your financial life.
+              Here's the irony: these subscription-based apps can't even help you manage your own subscriptions properly. When your $15 Netflix charge hits, it just appears as another line item in your transaction list. No advance warning, no context about when it's coming, no reminder that you could cancel before the next billing cycle.
             </p>
             
             <p className="text-gray-700 mb-4">
-              More problematically, your financial data becomes hostage to their business model. What happens when they raise prices? When they get acquired? When they shut down? Years of financial history disappear, and you're back to square one.
+              Users get "surprised" by their own recurring payments while paying monthly fees for apps specifically designed to track spending. The automation creates a false sense of monitoring while removing the advance awareness that would actually help you make better decisions.
             </p>
             
-            <p className="text-gray-700 mb-4">
-              The subscription model also makes family budgeting expensive or impossible. Most apps either charge per user or severely limit collaboration features on free plans. A family of four could easily pay $30-40/month just to track their money together.
-            </p>
+            
           </div>
 
           {/* The Privacy Nightmare */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Privacy Nightmare</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Data Privacy Issues</h3>
             
             <p className="text-gray-700 mb-4">
               Budget apps that sync with your bank accounts have access to your most sensitive financial information. They know your income, your spending patterns, your debt levels, your investment accounts—everything.
@@ -218,7 +194,7 @@ const ArticleContent = () => (
 
           {/* The Category Prison */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Category Prison</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Rigid Category Systems</h3>
             
             <p className="text-gray-700 mb-4">
               Traditional budget apps force you into rigid category systems that don't match real life. You set a $300 dining budget, spend $350, and get guilt-inducing notifications about "overspending."
@@ -242,9 +218,6 @@ const ArticleContent = () => (
         <section id="philosophy" className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">The Simplify Budget Philosophy: Six Core Principles</h2>
           
-          <p className="text-gray-700 mb-8">
-            After years of frustration with existing solutions, I developed a completely different approach to money management. Instead of trying to control spending through artificial restrictions, the focus is on building awareness that naturally leads to better decisions.
-          </p>
           
           {/* Six Principles */}
           <div className="space-y-8">
@@ -264,29 +237,29 @@ const ArticleContent = () => (
 
             {/* Principle 2 */}
             <div className="bg-emerald-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-emerald-900">2. Fixed Expenses Are "Already Spent"</h3>
+              <h3 className="text-xl font-bold mb-3 text-emerald-900">2. Fixed Expenses Auto-Appear on Their Due Dates</h3>
               <p className="text-gray-700 mb-3">
-                <strong>The Problem:</strong> Traditional budgeting pretends you have your full income available to allocate, then acts surprised when fixed costs hit.
+                <strong>The Problem:</strong> You waste time manually entering the same fixed expenses every month and get surprised by recurring charges.
               </p>
               <p className="text-gray-700 mb-3">
-                <strong>Our Approach:</strong> If you earn $3,000 and have $1,200 in rent, subscriptions, and fixed costs, you don't have $3,000 to budget. You have $1,800.
+                <strong>Our Approach:</strong> Set up your recurring expenses once. They automatically appear in the spent column on their due dates while your budget stays intact and carries over month to month.
               </p>
               <p className="text-gray-700">
-                <strong>Why It Works:</strong> Eliminates the surprise factor of fixed expenses and prevents the common budgeting mistake of over-allocating income. You budget with your actual discretionary income, not your gross income.
+                <strong>Why It Works:</strong> Saves time on data entry and provides advance visual warning of upcoming charges. You only need to adjust your budget when things actually change.
               </p>
             </div>
 
             {/* Principle 3 */}
             <div className="bg-purple-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-purple-900">3. One Savings Rate, Not Artificial Categories</h3>
+              <h3 className="text-xl font-bold mb-3 text-purple-900">3. Track Savings Rate in Expenses, Actual Money in Net Worth</h3>
               <p className="text-gray-700 mb-3">
-                <strong>The Problem:</strong> "Saving for vacation," "emergency fund," and "car fund" creates the illusion you're saving for multiple things when there's only one pile of money.
+                <strong>The Problem:</strong> Most apps mix expense tracking with asset tracking, creating confusion about what you're spending versus what you actually own.
               </p>
               <p className="text-gray-700 mb-3">
-                <strong>Our Approach:</strong> Your savings rate is simple: Income minus all expenses. What remains is savings. How you eventually use those savings is a separate decision made when the time comes.
+                <strong>Our Approach:</strong> In expenses, track one simple savings rate: income minus all expenses. In net worth, track your actual money monthly across four buckets: liquid assets, investments, physical assets, and debts.
               </p>
               <p className="text-gray-700">
-                <strong>Why It Works:</strong> Eliminates the mental gymnastics of moving money between artificial buckets. Reduces guilt about "raiding" the vacation fund for emergencies. Simplifies the entire savings conversation to what actually matters: how much you're saving total.
+                <strong>Why It Works:</strong> Keeps spending awareness separate from wealth tracking. You see your savings rate clearly while maintaining a complete picture of what you actually own and owe.
               </p>
             </div>
 
@@ -325,10 +298,10 @@ const ArticleContent = () => (
                 <strong>The Problem:</strong> Automated net worth tracking creates a false sense of precision while removing conscious awareness of what you actually own.
               </p>
               <p className="text-gray-700 mb-3">
-                <strong>Our Approach:</strong> Take deliberate monthly snapshots of your complete financial picture. At month-end, manually enter balances across all accounts, investments, and debts.
+                <strong>Our Approach:</strong> Take deliberate monthly snapshots of your complete financial picture. Last month's data automatically carries over, so you just update the numbers that changed rather than starting from scratch.
               </p>
               <p className="text-gray-700">
-                <strong>Why It Works:</strong> Forces conscious evaluation of your financial position while building a historical record. You know exactly what you have because you actively review it each month.
+                <strong>Why It Works:</strong> Forces conscious evaluation of your financial position while building a historical record. You know exactly what you have because you actively review it each month, but without the tedium of re-entering everything.
               </p>
             </div>
           </div>
@@ -373,163 +346,104 @@ const ArticleContent = () => (
                 Finances require ongoing attention. Automation removes awareness that drives better choices.
               </p>
             </div>
+            
+            <div className="bg-red-50 p-6 rounded-lg">
+              <h3 className="font-bold text-red-800 mb-3">Reconciliation</h3>
+              <p className="text-red-700">
+                Apps that promise automation but require hours of weekly reconciliation to fix what the automation broke.
+              </p>
+            </div>
           </div>
         </section>
 
         {/* The App */}
         <section id="the-app" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">The App That Implements This Philosophy</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">How Simplify Budget Solves These Issues</h2>
           
-          <p className="text-gray-700 mb-6">
-            After using a manual spreadsheet system for months, I realized that while the philosophy was sound, the execution could be much better. Google Sheets worked, but it was clunky for daily use and hard to share with family members.
+          <div className="mb-12">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-2">Clean Manual Tracking</h4>
+                <p className="text-green-700">
+                  No reconciliation headaches, no incorrect categorization, no automation failures to fix. Just clean, accurate expense tracking that works immediately.
+                </p>
+              </div>
+              
+              <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-2">Flexible Budget Management</h4>
+                <p className="text-green-700">
+                  Budget your way without rigid category restrictions. Spend time making financial decisions, not wrestling with budget software.
+                </p>
+              </div>
+              
+              <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-2">Comprehensive Net Worth Tracking</h4>
+                <p className="text-green-700">
+                  Track savings, investments, physical assets, and debt in one dashboard with visual charts. Get a complete picture of your financial health.
+                </p>
+              </div>
+              
+              <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-2">Lifetime Access</h4>
+                <p className="text-green-700">
+                  Pay once, own forever. No subscription dependency, no price increases, no losing access to your financial history.
+                </p>
+              </div>
+              
+              <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-2">Daily Spending Awareness</h4>
+                <p className="text-green-700">
+                  Enter expenses in seconds and maintain real-time awareness of your monthly spending patterns through visual feedback.
+                </p>
+              </div>
+              
+              <div className="bg-green-50 border border-green-200 p-6 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-2">Visual Spending Calendar</h4>
+                <p className="text-green-700">
+                  See spending patterns through color-coded calendar views instead of reconciling endless transaction lists.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-gray-700 mb-4">
+            The key insight is that successful manual tracking requires removing friction, not adding discipline. Most manual systems fail because they're too rigid and create perfectionist anxiety.
           </p>
           
           <p className="text-gray-700 mb-8">
-            So I built an app that implements these principles while solving the practical problems of manual tracking.
+            Our system acknowledges that life is messy. If you forget to log a $4 coffee, that's fine—the goal isn't accounting precision, it's spending awareness. The system is designed to capture the major patterns that actually affect your financial life.
           </p>
-          
-          {/* What Makes It Different */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">What Makes It Different</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="border border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">No Monthly Fees</h4>
-                <p className="text-gray-700">
-                  One-time payment, no subscriptions. Your financial tracking shouldn't cost more than your Netflix subscription.
-                </p>
-              </div>
-              
-              <div className="border border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">Complete Data Ownership</h4>
-                <p className="text-gray-700">
-                  Uses your Google Sheets for data storage. The app provides the interface, you own the information forever.
-                </p>
-              </div>
-              
-              <div className="border border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">Real Privacy</h4>
-                <p className="text-gray-700">
-                  I never see your financial data. Everything lives in your Google Drive, accessed only by you and family members you choose.
-                </p>
-              </div>
-              
-              <div className="border border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">Family Collaboration</h4>
-                <p className="text-gray-700">
-                  Multiple people can use the same budget through shared Google Sheets. No per-user fees, no complex account management.
-                </p>
-              </div>
-              
-              <div className="border border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">OAuth Verified</h4>
-                <p className="text-gray-700">
-                  Google-verified security so you can trust the app with your Google Sheets access.
-                </p>
-              </div>
-              
-              <div className="border border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">Mobile Optimized</h4>
-                <p className="text-gray-700">
-                  Works perfectly on phones and tablets for real-time expense entry.
-                </p>
-              </div>
-            </div>
-          </div>
 
           {/* How It Actually Works */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">How It Actually Works</h3>
-            
-            {/* Visual Grid System */}
-            <div className="mb-8">
-              <h4 className="text-xl font-bold mb-4 text-gray-900">Visual Grid System</h4>
-              <p className="text-gray-700 mb-4">
-                The core of the app is a visual grid where dates run along one axis and spending categories along the other. This creates an intersection-based entry system that's both fast and intuitive.
+            <div className="bg-gray-50 p-6 rounded-lg text-center">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">See How It Actually Works</h3>
+              <p className="text-gray-700 mb-6">
+                Get a detailed walkthrough of the visual grid system, smart fixed expense handling, and family collaboration features.
               </p>
-              <p className="text-gray-700 mb-4">
-                Instead of opening a form, selecting a date, choosing a category, and entering an amount, you simply click the intersection of the day and category and enter the amount. It's faster than any other expense tracking method I've used.
-              </p>
-              <p className="text-gray-700 mb-4">
-                The grid uses color intensity to show spending patterns. Heavy spending days and categories stand out immediately. You can see at a glance which days you spent more, which categories dominate your budget, and how your spending varies throughout the month.
-              </p>
-            </div>
-
-            {/* Smart Fixed Expense Handling */}
-            <div className="mb-8">
-              <h4 className="text-xl font-bold mb-4 text-gray-900">Smart Fixed Expense Handling</h4>
-              <p className="text-gray-700 mb-4">
-                One of the biggest advantages over traditional manual tracking is automated handling of fixed expenses. You enter your subscriptions, rent, car payments, and other recurring expenses once, and the system automatically places them on the calendar for their due dates.
-              </p>
-              <p className="text-gray-700 mb-4">
-                This solves two problems: you don't waste time manually entering the same fixed expenses every month, and you get advance visual warning of upcoming charges.
-              </p>
-            </div>
-
-            {/* Family Collaboration */}
-            <div className="mb-8">
-              <h4 className="text-xl font-bold mb-4 text-gray-900">Family Collaboration That Actually Works</h4>
-              <p className="text-gray-700 mb-4">
-                Most budget apps either don't support family collaboration or make it expensive and complicated. Our approach leverages Google Sheets' built-in sharing features to create seamless family budgeting.
-              </p>
-              <p className="text-gray-700 mb-4">
-                One family member creates the budget spreadsheet and shares it with others through Google Drive's normal sharing process. Each family member then connects their individual app to the same shared spreadsheet.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Everyone sees the same data in real-time, just like editing a Google Doc together. There are no separate accounts to manage, no per-user fees, and no complex synchronization issues.
-              </p>
-            </div>
-
-            {/* Net Worth Tracking */}
-            <div className="mb-8">
-              <h4 className="text-xl font-bold mb-4 text-gray-900">Net Worth Tracking</h4>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="text-gray-700 mb-4">The app includes a simple but comprehensive net worth tracker organized around four basic categories:</p>
-                <ul className="space-y-2 text-gray-700">
-                  <li><strong>Liquid Assets:</strong> Checking accounts, savings accounts, and cash</li>
-                  <li><strong>Investments:</strong> Retirement accounts, brokerage accounts, real estate</li>
-                  <li><strong>Physical Assets:</strong> Cars, electronics, furniture, and other valuables</li>
-                  <li><strong>Debts:</strong> Credit cards, loans, mortgages, and other liabilities</li>
-                </ul>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href="/demo"
+                  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Try Live Demo
+                </a>
+                <a 
+                  href="/how-it-works"
+                  className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                >
+                  Complete How-To Guide
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Why This System Works */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">Why This System Actually Works</h3>
-            
-            <p className="text-gray-700 mb-4">
-              The key insight is that successful manual tracking requires removing friction, not adding discipline. Most manual systems fail because they're too rigid and create perfectionist anxiety.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Our system acknowledges that life is messy. If you forget to log a $4 coffee, that's fine—the goal isn't accounting precision, it's spending awareness. The system is designed to capture the major patterns that actually affect your financial life.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              The visual component makes tracking satisfying rather than tedious. Seeing your spending patterns emerge in the grid creates a sense of understanding and control that lists of numbers cannot provide.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Most importantly, the system builds sustainable habits. Because it's fast, visual, and flexible, people actually keep using it month after month. And sustained tracking creates the long-term awareness that drives real behavioral change.
-            </p>
-          </div>
+
         </section>
 
         {/* Results */}
         <section id="results" className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">The Results Speak for Themselves</h2>
-          
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Personal Results</h3>
-            <p className="text-gray-700 mb-4">
-              Using this system, I've achieved complete financial independence. I haven't had a traditional job in over two years, yet I've traveled to 25+ countries while maintaining a comfortable emergency fund and growing my net worth.
-            </p>
-            <p className="text-gray-700 mb-4">
-              This didn't happen through extreme frugality or complicated investment strategies. It happened through consistent awareness of my spending patterns and deliberate choices about when to spend and when to save.
-            </p>
-          </div>
           
           <div className="mb-8">
             <h3 className="text-2xl font-bold mb-4 text-gray-900">Why Others Fail Where This Succeeds</h3>
@@ -774,16 +688,28 @@ const ArticleContent = () => (
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-3 text-gray-900">Try the Demo</h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 mb-4">
                 There's a fully functional demo available that doesn't require any authorization or signup. You can explore the visual grid system, see how the interface works, and get a feel for the approach without committing to anything.
               </p>
+              <a 
+                href="/demo"
+                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                Try Demo Now
+              </a>
             </div>
             
             <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">One-Time Payment</h3>
-              <p className="text-gray-700">
-                If the demo shows this works for your situation, it's a single purchase with no ongoing fees. Connect it to a Google Sheet in your own Drive and start tracking your actual expenses. Your data stays in your Google Sheets forever, regardless of what happens to the app or company.
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Start Free for 30 Days</h3>
+              <p className="text-gray-700 mb-4">
+                Connect a Google Sheet and start tracking your actual expenses immediately. Use the full app free for 30 days, then decide if you want to purchase lifetime access. Your data stays in your Google Sheets forever, regardless of what happens to the app or company.
               </p>
+              <a 
+                href="/app"
+                className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+              >
+                Get Started Free
+              </a>
             </div>
             
             <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-6 rounded-lg">
@@ -807,31 +733,11 @@ const ArticleContent = () => (
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Conclusion: Your Money Deserves Better</h2>
           
           <p className="text-gray-700 mb-4">
-            The personal finance industry has convinced people that good money management requires either expensive automation or extreme discipline. Both approaches miss the point.
-          </p>
-          
-          <p className="text-gray-700 mb-4">
-            Good money management requires awareness, not automation. It requires flexibility, not rigid category systems. It requires ownership of your data, not dependence on subscription services that may disappear.
-          </p>
-          
-          <p className="text-gray-700 mb-4">
-            Most importantly, it requires treating financial decisions as conscious choices rather than accidents to be prevented through artificial restrictions.
-          </p>
-          
-          <p className="text-gray-700 mb-4">
-            You don't need an app to control your spending—your spending decisions should be yours to make. But you do need clear visibility into the consequences of those decisions and the patterns they create over time.
-          </p>
-          
-          <p className="text-gray-700 mb-4">
-            The goal isn't to eliminate financial stress through automation that removes you from financial decisions. The goal is to eliminate financial stress through awareness that allows you to make better financial decisions.
-          </p>
-          
-          <p className="text-gray-700 mb-4">
-            Your money deserves a system that trusts your judgment while giving you the information needed to exercise that judgment wisely. It deserves privacy rather than surveillance. It deserves ownership rather than dependence.
+            Good money management requires awareness, not automation. It requires flexibility, not rigid category systems. It requires ownership of your data, not dependence on subscription services.
           </p>
           
           <p className="text-gray-700 mb-6">
-            Most importantly, your money deserves a system that serves your financial goals rather than a company's subscription revenue targets.
+            You don't need an app to control your spending—you need clear visibility into the consequences of your decisions and the patterns they create over time.
           </p>
           
           <div className="bg-gradient-to-r from-blue-600 to-emerald-600 p-8 rounded-lg text-white">
