@@ -9,12 +9,12 @@ const HowItWorksClient = () => {
 
   const sections = [
     { id: 'dashboard', title: 'Dashboard' },
+    { id: 'expense-grid', title: 'Expense Entry' },
     { id: 'subscriptions', title: 'Subscriptions' },
     { id: 'income', title: 'Income' },
     { id: 'networth', title: 'Net Worth' },
     { id: 'categories', title: 'Categories' },
     { id: 'settings', title: 'Settings' },
-    { id: 'expense-grid', title: 'Expense Grid' },
     { id: 'yearly', title: 'Yearly Overview' }
   ];
 

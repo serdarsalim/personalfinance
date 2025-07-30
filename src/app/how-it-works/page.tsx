@@ -48,7 +48,7 @@ const HowItWorksContent = () => (
             How Simplify Budget Actually Works
           </h1>
           <div className="text-xl text-gray-600 mb-8">
-            A detailed walkthrough of every feature that makes financial tracking simple and effective
+            Everything you need to know to start tracking your money effectively
           </div>
         </div>
       </div>
@@ -62,27 +62,13 @@ const HowItWorksContent = () => (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="prose prose-lg max-w-none">
         
-        {/* Table of Contents */}
-        <div className="bg-gray-50 rounded-lg p-6 mb-12">
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">Features Overview</h2>
-          <nav className="grid md:grid-cols-2 gap-2">
-            <a href="#dashboard" className="block text-gray-600 hover:text-blue-600">→ Dashboard: Your Financial Command Center</a>
-            <a href="#subscriptions" className="block text-gray-600 hover:text-blue-600">→ Subscription Management</a>
-            <a href="#income" className="block text-gray-600 hover:text-blue-600">→ Income Tracking</a>
-            <a href="#networth" className="block text-gray-600 hover:text-blue-600">→ Net Worth Tracking</a>
-            <a href="#categories" className="block text-gray-600 hover:text-blue-600">→ Category Management</a>
-            <a href="#settings" className="block text-gray-600 hover:text-blue-600">→ Settings & Family Sharing</a>
-            <a href="#expense-grid" className="block text-gray-600 hover:text-blue-600">→ Expense Grid: Where the Magic Happens</a>
-            <a href="#yearly" className="block text-gray-600 hover:text-blue-600">→ Yearly Overview</a>
-          </nav>
-        </div>
 
         {/* Dashboard Section */}
         <section id="dashboard" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Dashboard: Your Financial Command Center</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Dashboard: Monthly Budget Overview</h2>
           
           <p className="text-gray-700 mb-6">
-            The dashboard gives you everything you need to know about your current month at a glance.
+            The dashboard shows your monthly budget performance - how much you've spent versus your income, whether you're hitting your category targets, and how much you have left to spend. You can set budget goals directly here, while spending data flows from your expense and income tabs.
           </p>
 
           {/* Dashboard Screenshot */}
@@ -94,172 +80,155 @@ const HowItWorksContent = () => (
             />
           </div>
 
-          {/* Smart Income Budgeting */}
+          {/* Key Features */}
           <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Smart Income Budgeting</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">What You See at a Glance</h3>
             
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="font-bold text-blue-900 mb-3">Budget vs Actual</h4>
+                <p className="text-blue-800">Set budget goals for each category and see how much you've spent. Green bars = on track, red = over budget.</p>
+              </div>
+              
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-3">Money Left to Spend</h4>
+                <p className="text-green-800">Clear view of remaining budget so you know how much you can spend for the rest of the month.</p>
+              </div>
+              
+              <div className="bg-purple-50 p-6 rounded-lg">
+                <h4 className="font-bold text-purple-900 mb-3">Fixed Expenses Sidebar</h4>
+                <p className="text-purple-800">All subscriptions listed by name, due date, and amount. See total and percentage of income.</p>
+              </div>
+              
+              <div className="bg-orange-50 p-6 rounded-lg">
+                <h4 className="font-bold text-orange-900 mb-3">Spending Breakdown</h4>
+                <p className="text-orange-800">Donut chart shows what categories you spend the most on - instant visual clarity.</p>
+              </div>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <p className="text-gray-700 font-semibold">
+                <strong>Budget goals:</strong> Set and edit target amounts directly in the budgeted column. Spending data flows from your expense and income tabs. Fixed expenses are automatically included in your spent totals.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Expense Grid */}
+        <section id="expense-grid" className="mb-16 scroll-mt-20">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Expense Entry: Fast & Simple</h2>
+          
+          <p className="text-gray-700 mb-6">
+            Click where any date meets any category to add an expense. Enter the amount and description - you can add multiple entries per day or just enter the daily total for that category. It's lightning fast and fully mobile optimized.
+          </p>
+
+          {/* Expense Grid Screenshot */}
+          <div className="mb-8">
+            <img 
+              src="/app-screenshots/2monthlygrid.png" 
+              alt="Expense Grid Interface" 
+              className="w-full rounded-lg shadow-lg border"
+            />
+          </div>
+
+          {/* Entry Popup Screenshot */}
+          <div className="mb-10">
             <div className="bg-blue-50 p-6 rounded-lg mb-4">
-              <p className="text-gray-700 font-semibold mb-3">
-                Income isn't just your salary - it's whatever money you have available to spend this month.
-              </p>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Using $1,000 from emergency savings? That $1,000 becomes this month's "income"</li>
-                <li>• Got a bonus? Add it to income for that month</li>
-                <li>• Freelance payment? Income for the month it arrives</li>
+              <h4 className="font-bold text-blue-900 mb-3">Here's what happens when you open the expense popup:</h4>
+              <ul className="space-y-2 text-blue-800">
+                <li>• All existing expenses for that day/category</li>
+                <li>• Empty row to add new transactions</li>
+                <li>• Category emoji and date at the top</li>
+                <li>• Running total for that day</li>
+                <li>• No save button needed - auto-saves when you click outside</li>
+                <li>• Red X to delete any transaction instantly</li>
               </ul>
             </div>
-            
-            <p className="text-gray-700">
-              <strong>This flexible income approach matches real life</strong> - sometimes you have more available, sometimes less, and your budget adjusts accordingly.
-            </p>
-          </div>
-
-          {/* Budget Categories */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Budget Categories: Awareness Tools, Not Prison Cells</h3>
-            
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">Budgeted Column</h4>
-                <p className="text-gray-700 text-sm">Set your spending targets for each category (carries over automatically next month)</p>
-              </div>
-              
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">Spent Column</h4>
-                <p className="text-gray-700 text-sm">Shows actual spending as you enter transactions throughout the month</p>
-              </div>
-              
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-2">Percentage Bars</h4>
-                <p className="text-gray-700 text-sm">Instant visual of how you're doing - green = on track, red = over budget</p>
-              </div>
-            </div>
-
-            <div className="bg-orange-50 p-6 rounded-lg mb-4">
-              <h4 className="font-bold text-orange-900 mb-3">What happens when you go over budget?</h4>
-              <ul className="space-y-2 text-orange-800">
-                <li>• Just visual feedback - no restrictions or penalties</li>
-                <li>• You can readjust budgets during the month or leave them as-is</li>
-                <li>• Keeping original targets shows you historically whether you're a realistic budgeter</li>
-                <li>• Over-budget categories become learning tools, not sources of guilt</li>
-              </ul>
-            </div>
-            
-            <p className="text-gray-700">
-              <strong>The key insight:</strong> Categories aren't rigid containers that restrict spending. They're awareness tools that show you patterns and help you make conscious decisions.
-            </p>
-          </div>
-
-          {/* Money Assignment */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Money Assignment: Conscious Choice, Not Forced Allocation</h3>
-            
-            <div className="bg-green-50 p-6 rounded-lg mb-4">
-              <p className="text-gray-700 font-semibold mb-3">
-                "You've budgeted $2,130 with $20 left to assign"
-              </p>
-              <ul className="space-y-2 text-green-800">
-                <li>• You can leave money unassigned during the month</li>
-                <li>• At month-end, decide whether to save it or reallocate to categories</li>
-                <li>• Shows if you've allocated all your available money</li>
-                <li>• Prevents over-budgeting (can't assign more than you have)</li>
-              </ul>
-            </div>
-            
-            <p className="text-gray-700">
-              <strong>Flexible income handling:</strong> As money comes in throughout the month (freelance payments, bonuses), just add it to income and decide how to use it. No complex rebalancing required.
-            </p>
-          </div>
-
-          {/* Real-Time Family Sync */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Real-Time Family Sync</h3>
-            
-            <div className="bg-purple-50 p-6 rounded-lg">
-              <ul className="space-y-2 text-purple-800">
-                <li><strong>Smart caching system:</strong> When your wife enters an expense on her phone, it appears on your dashboard immediately</li>
-                <li><strong>Timestamp checking:</strong> System automatically detects when data changes and updates all devices</li>
-                <li><strong>No conflicts:</strong> Multiple people can use the system simultaneously without sync issues</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Fixed Expenses Integration */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Fixed Expenses Integration</h3>
             
             <div className="mb-4">
               <img 
-                src="/app-screenshots/fixedexpenses.png" 
-                alt="Fixed Expenses Integration" 
-                className="w-1/2 rounded-lg shadow-lg border mx-auto"
+                src="/app-screenshots/expenseentry.png" 
+                alt="Expense Entry Popup" 
+                className="w-full rounded-lg shadow-lg border"
               />
             </div>
+          </div>
+
+
+
+          {/* Why This Beats Traditional */}
+          <div className="bg-gradient-to-br from-slate-50 to-blue-50 p-8 rounded-xl border">
+            <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Why This Beats Traditional Apps</h3>
             
-            <div className="bg-indigo-50 p-6 rounded-lg mb-4">
-              <h4 className="font-bold text-indigo-900 mb-3">Right sidebar shows exactly what's "already spent":</h4>
-              <ul className="space-y-2 text-indigo-800">
-                <li>• All subscriptions with dates (Netflix $5 on Jun 25)</li>
-                <li>• Total fixed expenses ($264 = 12% of income)</li>
-                <li>• Advance warning of upcoming charges</li>
-              </ul>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-400">
+                <div className="flex items-center mb-4">
+                  <span className="text-2xl mr-3">😤</span>
+                  <h4 className="font-bold text-red-900 text-lg">Traditional Apps</h4>
+                </div>
+                <ul className="space-y-3 text-red-800">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 mt-1">×</span>
+                    <span>Open app → Select date → Choose category → Enter amount → Save</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 mt-1">×</span>
+                    <span>Spend 5+ minutes categorizing each bank transaction</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 mt-1">×</span>
+                    <span>Fight wrong auto-categories and duplicates</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 mt-1">×</span>
+                    <span>Cash transactions invisible or manual workarounds</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-400">
+                <div className="flex items-center mb-4">
+                  <span className="text-2xl mr-3">⚡</span>
+                  <h4 className="font-bold text-green-900 text-lg">Simplify Budget</h4>
+                </div>
+                <ul className="space-y-3 text-green-800">
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span>Click intersection → Enter amount → Done</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span>5 seconds to enter when transaction happens</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span>Data is correct because you entered it correctly</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span>Cash and card transactions entered identically</span>
+                  </li>
+                </ul>
+              </div>
             </div>
             
-            <p className="text-gray-700">
-              <strong>You can cancel subscriptions before they hit and instantly have more money available for that month.</strong>
-            </p>
-          </div>
-
-          {/* Visual Categories */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Visual Categories with Emojis</h3>
-            
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
-              <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🍽️ Dining Out</div>
-              <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🛒 Groceries</div>
-              <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🏠 Housing</div>
-              <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">💖 Personal Care</div>
-              <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🚗 Transport</div>
-              <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🎬 Fun</div>
+            <div className="mt-8 text-center">
+              <div className="bg-blue-100 p-6 rounded-lg border border-blue-200">
+                <p className="text-blue-900 font-semibold text-lg">
+                  <span className="text-2xl mr-2">🎯</span>
+                  Result: You actually use it consistently, creating the long-term awareness that drives better financial decisions.
+                </p>
+              </div>
             </div>
-            
-            <p className="text-gray-700">
-              <strong>Makes categorizing fast and intuitive</strong> - no scrolling through boring text lists.
-            </p>
-          </div>
-
-          {/* Monthly Navigation */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Monthly Navigation</h3>
-            
-            <ul className="space-y-2 text-gray-700">
-              <li>• <strong>Arrow buttons:</strong> Quick previous/next month</li>
-              <li>• <strong>Date picker:</strong> Jump to any specific month</li>
-              <li>• <strong>Auto-current:</strong> Always opens to current month</li>
-              <li>• <strong>Refresh indicator:</strong> Shows how fresh your data is</li>
-            </ul>
-          </div>
-
-          {/* Why This Dashboard Works */}
-          <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Why This Dashboard Design Works</h3>
-            
-            <ul className="space-y-2 text-gray-700">
-              <li><strong>No reconciliation needed:</strong> Since you enter expenses directly, your "spent" numbers are always accurate</li>
-              <li><strong>No surprise bills:</strong> Fixed expenses are visible and predictable</li>
-              <li><strong>No category guilt:</strong> Over-budget categories show reality, not failure</li>
-              <li><strong>No data delays:</strong> Real-time sync means everyone sees the same picture</li>
-              <li><strong>No subscription anxiety:</strong> One-time purchase, own your data forever</li>
-            </ul>
           </div>
         </section>
 
         {/* Subscription Management */}
         <section id="subscriptions" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Subscription Management: Set Once, Track Forever</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Subscription Manager: Complete Payment History</h2>
           
           <p className="text-gray-700 mb-6">
-            The subscriptions tab eliminates the biggest pain point of budget tracking - remembering and entering recurring payments.
+            Track all your active subscriptions with complete payment history from start to current month. When you stop a subscription, just set an end date to preserve the transaction history. All subscription payments automatically appear in your expense and dashboard views.
           </p>
 
           {/* Subscriptions Screenshot */}
@@ -271,65 +240,44 @@ const HowItWorksContent = () => (
             />
           </div>
 
-          {/* Smart Automation */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Smart Automation That Actually Works</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-bold text-blue-900 mb-3">Enter each subscription once with:</h4>
-                <ul className="space-y-2 text-blue-800">
-                  <li>• Name and emoji icon for easy recognition</li>
-                  <li>• Amount and currency</li>
-                  <li>• Next payment date</li>
-                  <li>• Payment account (which bank/card)</li>
-                  <li>• Frequency (monthly, quarterly, yearly)</li>
-                </ul>
-              </div>
-              
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-bold text-green-900 mb-3">System automatically:</h4>
-                <ul className="space-y-2 text-green-800">
-                  <li>• Creates transactions on due dates</li>
-                  <li>• Updates next payment date after each charge</li>
-                  <li>• Projects future payments through end of year</li>
-                  <li>• Integrates with expense grid (blue borders) and dashboard</li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
           {/* Visual Payment Timeline */}
           <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Visual Payment Timeline</h3>
-            
-            <div className="mb-4">
-              <img 
-                src="/app-screenshots/3recurring.png" 
-                alt="Subscription Timeline Chart" 
-                className="w-full rounded-lg shadow-lg border"
-              />
-            </div>
-            
-            <div className="bg-purple-50 p-6 rounded-lg">
-              <h4 className="font-bold text-purple-900 mb-3">Top chart shows your subscription costs over time:</h4>
-              <ul className="space-y-2 text-purple-800">
-                <li>• Historical payments (actual amounts charged)</li>
-                <li>• Current month spending</li>
-                <li>• <strong>Future projections</strong> through end of year</li>
-                <li>• Color-coded by subscription type</li>
-                <li>• Peak spending months visible at a glance</li>
-              </ul>
+            <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200">
+              <div className="flex items-center mb-4">
+                <span className="text-2xl mr-3">📊</span>
+                <h4 className="font-bold text-purple-900 text-lg">Subscription Chart</h4>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-3">
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-blue-400 rounded-full mr-3"></span>
+                    <span className="text-purple-800">Historical payments</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-green-400 rounded-full mr-3"></span>
+                    <span className="text-purple-800">Current month spending</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-orange-400 rounded-full mr-3"></span>
+                    <span className="text-purple-800 font-semibold">Future projections</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-purple-400 rounded-full mr-3"></span>
+                    <span className="text-purple-800">Peak spending months</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Annual Cost Awareness */}
           <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Annual Cost Awareness</h3>
-            
             <div className="bg-orange-50 p-6 rounded-lg mb-4">
               <h4 className="font-bold text-orange-900 mb-3">Summary stats show the real impact:</h4>
-              <div className="grid md:grid-cols-3 gap-4 text-center">
+              <div className="grid md:grid-cols-3 gap-4 text-center mb-4">
                 <div>
                   <p className="text-3xl font-bold text-orange-900">13</p>
                   <p className="text-orange-800">Active Subscriptions</p>
@@ -343,11 +291,10 @@ const HowItWorksContent = () => (
                   <p className="text-orange-800">Monthly Average</p>
                 </div>
               </div>
+              <p className="text-orange-800 font-semibold">
+                This makes subscription creep visible - you can see exactly how much you're spending on recurring services and make informed decisions about what to keep.
+              </p>
             </div>
-            
-            <p className="text-gray-700">
-              <strong>This makes subscription creep visible</strong> - you can see exactly how much you're spending on recurring services and make informed decisions about what to keep.
-            </p>
           </div>
 
           {/* Advance Warning System */}
@@ -368,10 +315,10 @@ const HowItWorksContent = () => (
 
         {/* Income Tracking */}
         <section id="income" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Income Tracking: Simple and Flexible</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Income Tracking</h2>
           
           <p className="text-gray-700 mb-6">
-            The income tab handles both regular and irregular income without complicated setup.
+            Add your income as it comes in - salary, freelance payments, bonuses, or any money you have available to spend this month. Income = whatever money you have available this month. Using $1,000 from emergency savings? That's this month's "income". Got a bonus? Add it as one-time income. The system adapts to irregular income patterns rather than forcing you into salary-only thinking.
           </p>
 
           {/* Income Screenshot */}
@@ -390,7 +337,7 @@ const HowItWorksContent = () => (
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h4 className="font-bold text-blue-900 mb-3">One-time income:</h4>
-                <p className="text-blue-800">Freelance payments, bonuses, side hustle earnings, investment sales</p>
+                <p className="text-blue-800">Freelance payments, bonuses, side hustle earnings, investment sales, money from savings, loans (adjust net worth accordingly)</p>
               </div>
               
               <div className="bg-green-50 p-6 rounded-lg">
@@ -400,60 +347,15 @@ const HowItWorksContent = () => (
             </div>
           </div>
 
-          {/* Income History & Analytics */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Income History & Analytics</h3>
-            
-            <div className="bg-indigo-50 p-6 rounded-lg">
-              <h4 className="font-bold text-indigo-900 mb-3">Performance metrics:</h4>
-              <div className="grid md:grid-cols-4 gap-4 text-center">
-                <div>
-                  <p className="text-2xl font-bold text-indigo-900">$21,361</p>
-                  <p className="text-indigo-800 text-sm">Year Total</p>
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-indigo-900">$1,780</p>
-                  <p className="text-indigo-800 text-sm">Monthly Average</p>
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-indigo-900">$2,010</p>
-                  <p className="text-indigo-800 text-sm">Current Month</p>
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-green-600">+11.2%</p>
-                  <p className="text-indigo-800 text-sm">Savings Rate</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Flexible Income Philosophy */}
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Flexible Income Philosophy</h3>
-            
-            <p className="text-gray-700 mb-4">
-              <strong>Income = whatever money you have available this month</strong>
-            </p>
-            
-            <ul className="space-y-2 text-gray-700">
-              <li>• Using $1,000 from emergency savings? That's this month's "income"</li>
-              <li>• Got a bonus? Add it as one-time income</li>
-              <li>• Investment sale? Add it when it happens</li>
-              <li>• Regular salary? Set up recurring income</li>
-            </ul>
-            
-            <p className="text-gray-700 mt-4">
-              <strong>This matches real life</strong> - some months you have more available money, some less. The system adapts to irregular income patterns rather than forcing you into salary-only thinking.
-            </p>
-          </div>
         </section>
 
         {/* Net Worth Tracking */}
         <section id="networth" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Net Worth Tracking: Beautiful and Simple</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Net Worth Tracking</h2>
           
           <p className="text-gray-700 mb-6">
-            The net worth tracker gives you a complete financial snapshot without the complexity of constant account syncing.
+            Track your total net worth across four simple categories: liquid assets, investments, physical assets, and debts. Update monthly with your actual account balances.
           </p>
 
           {/* Net Worth Screenshot */}
@@ -471,54 +373,31 @@ const HowItWorksContent = () => (
             
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-bold text-blue-900 mb-2">Liquid Assets ($33,701)</h4>
+                <h4 className="font-bold text-blue-900 mb-2">Liquid Assets</h4>
                 <p className="text-blue-800">Bank accounts, cash, money market - anything you can spend immediately</p>
               </div>
               
               <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-bold text-green-900 mb-2">Investments ($75,800)</h4>
+                <h4 className="font-bold text-green-900 mb-2">Investments</h4>
                 <p className="text-green-800">Stocks, crypto, retirement accounts, real estate - your wealth-building assets</p>
               </div>
               
               <div className="bg-purple-50 p-6 rounded-lg">
-                <h4 className="font-bold text-purple-900 mb-2">Physical Assets ($17,000)</h4>
+                <h4 className="font-bold text-purple-900 mb-2">Physical Assets</h4>
                 <p className="text-purple-800">Car, electronics, furniture - valuable things you own</p>
               </div>
               
               <div className="bg-orange-50 p-6 rounded-lg">
-                <h4 className="font-bold text-orange-900 mb-2">Debts ($0)</h4>
-                <p className="text-orange-800">Credit cards, loans, mortgages - what you owe (thankfully empty!)</p>
+                <h4 className="font-bold text-orange-900 mb-2">Debts</h4>
+                <p className="text-orange-800">Credit cards, loans, mortgages - what you owe</p>
               </div>
             </div>
           </div>
 
-          {/* Visual Wealth Progression */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Visual Wealth Progression</h3>
-            
-            <div className="mb-4">
-              <img 
-                src="/app-screenshots/5networth.png" 
-                alt="Net Worth Chart Progression" 
-                className="w-full rounded-lg shadow-lg border"
-              />
-            </div>
-            
-            <div className="bg-indigo-50 p-6 rounded-lg">
-              <h4 className="font-bold text-indigo-900 mb-3">Stunning stacked area chart shows:</h4>
-              <ul className="space-y-2 text-indigo-800">
-                <li>• Total net worth progression over time (157k to 120k trend visible)</li>
-                <li>• Asset allocation by category with color coding</li>
-                <li>• <strong>Future projections</strong> based on historical trends</li>
-                <li>• Monthly percentage changes (+1% this month)</li>
-                <li>• Multiple time views: 12m, 2yr, 3yr, 5yr, All time</li>
-              </ul>
-            </div>
-          </div>
 
-          {/* The Genius of Manual Updates */}
+          {/* Monthly Updates */}
           <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Genius of Manual Updates</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Monthly Updates</h3>
             
             <div className="mb-4">
               <h4 className="font-bold text-gray-900 mb-3">End of month routine:</h4>
@@ -531,17 +410,17 @@ const HowItWorksContent = () => (
             </div>
             
             <p className="text-gray-700 font-semibold">
-              No daily market stress, no sync failures, no reconciliation headaches - just a clear monthly snapshot of your complete financial picture with beautiful visualizations that actually help you understand your wealth progression.
+              No daily market stress, no sync failures, no reconciliation headaches - just a clear monthly snapshot of your complete financial picture.
             </p>
           </div>
         </section>
 
         {/* Category Management */}
         <section id="categories" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Category Management: Simple and Focused</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Category Management</h2>
           
           <p className="text-gray-700 mb-6">
-            The categories tab keeps spending organization clean and manageable.
+            Choose from 30 pre-built categories and activate only the ones you use. Rename and rearrange them to match your needs - changes automatically appear in dashboard, expense, and subscription views. Archive unused categories to keep them out of the way while preserving transaction history.
           </p>
 
           {/* Categories Screenshot */}
@@ -553,83 +432,46 @@ const HowItWorksContent = () => (
             />
           </div>
 
-          {/* 30 Predefined Categories */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">30 Predefined Categories</h3>
-            
-            <div className="mb-6">
-              <h4 className="font-bold text-gray-900 mb-3">Essential categories covered:</h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🍽️ Dining Out</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🛒 Groceries</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🏠 Housing</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">💖 Personal Care</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🚗 Transport</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🛍️ Shopping</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">💡 Utilities</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🎬 Fun</div>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-bold text-gray-900 mb-3">Lifestyle categories available:</h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">✈️ Travel</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">💝 Gifts</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">🏋️ Fitness</div>
-                <div className="bg-gray-50 p-3 rounded-lg text-center text-gray-900 font-medium">📚 Learning</div>
-              </div>
-            </div>
-          </div>
 
-          {/* Smart Category Controls */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Smart Category Controls</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-yellow-50 p-6 rounded-lg">
-                <h4 className="font-bold text-yellow-900 mb-3">Activate/Deactivate categories:</h4>
-                <ul className="space-y-2 text-yellow-800">
-                  <li>• Yellow highlight = Active categories</li>
-                  <li>• Gray/unchecked = Inactive categories</li>
-                  <li>• <strong>Only show categories you actually use</strong></li>
-                </ul>
-              </div>
-              
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-bold text-blue-900 mb-3">Customize categories:</h4>
-                <ul className="space-y-2 text-blue-800">
-                  <li>• Rename any category to match your terminology</li>
-                  <li>• Change emoji icons to your preference</li>
-                  <li>• Reorder categories by dragging and dropping</li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
           {/* Minimalist Philosophy */}
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Minimalist Philosophy</h3>
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl border border-purple-200">
+            <div className="flex items-center mb-6">
+              <span className="text-3xl mr-4">🎯</span>
+              <h3 className="text-2xl font-bold text-gray-900">Why Only 30 Categories?</h3>
+            </div>
             
-            <p className="text-gray-700 mb-4">
-              <strong>Why 30 categories maximum:</strong>
-            </p>
-            
-            <ul className="space-y-2 text-gray-700">
-              <li>• Prevents category overwhelm and decision paralysis</li>
-              <li>• Forces conscious choices about what matters</li>
-              <li>• Most people use 10-15 categories regularly anyway</li>
-              <li>• <strong>You don't even use half yourself</strong> - perfect validation of the approach</li>
-            </ul>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <span className="w-6 h-6 bg-purple-400 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1 mr-3">1</span>
+                  <span className="text-gray-700">Prevents category overwhelm and decision paralysis</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="w-6 h-6 bg-purple-400 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1 mr-3">2</span>
+                  <span className="text-gray-700">Forces conscious choices about what matters</span>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <span className="w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1 mr-3">3</span>
+                  <span className="text-gray-700">Most people use 10-15 categories regularly anyway</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1 mr-3">4</span>
+                  <span className="text-gray-700"><strong>You don't even use half yourself</strong> - perfect validation!</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Settings */}
         <section id="settings" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Settings: Simple Setup and Personalization</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Settings & Data Setup</h2>
           
           <p className="text-gray-700 mb-6">
-            The settings tab handles account setup and display preferences with minimal complexity.
+            Create a new Google Sheet in your Drive to store your financial data, or connect to an existing one. Only you have access to the sheet since it's in your own Google Drive. Share it with family members to track finances together, or disconnect anytime to unlink the current sheet.
           </p>
 
           {/* Settings Screenshot */}
@@ -641,51 +483,6 @@ const HowItWorksContent = () => (
             />
           </div>
 
-          {/* Data Connection */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Data Connection</h3>
-            
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-4">
-                <strong>Account shows your Gmail and license status</strong>
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-start">
-                  <span className="text-blue-600 mr-2">→</span>
-                  <div className="text-gray-900">
-                    <strong>New Database:</strong> Creates fresh budget sheet in your Google Drive automatically
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-blue-600 mr-2">→</span>
-                  <div className="text-gray-900">
-                    <strong>Select Existing:</strong> Choose a Simplify Budget sheet you've already created
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-blue-600 mr-2">→</span>
-                  <div className="text-gray-900">
-                    <strong>Disconnect:</strong> Unlink current sheet (data stays in your Drive)
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Family Sharing Setup */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Family Sharing Setup</h3>
-            
-            <div className="bg-green-50 p-6 rounded-lg">
-              <h4 className="font-bold text-green-900 mb-3">For couples/families:</h4>
-              <ol className="space-y-2 text-green-800">
-                <li>1. One person clicks "New Database" to create the master sheet</li>
-                <li>2. Shares the Google Sheet through normal Google Drive sharing</li>
-                <li>3. Other family members click "Select Existing" and choose the shared sheet</li>
-                <li>4. <strong>Everyone now tracks in the same budget with real-time sync</strong></li>
-              </ol>
-            </div>
-          </div>
 
           {/* Data Ownership */}
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
@@ -708,208 +505,6 @@ const HowItWorksContent = () => (
           </div>
         </section>
 
-        {/* Expense Grid */}
-        <section id="expense-grid" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Expense Grid: Where the Magic Happens</h2>
-          
-          <p className="text-gray-700 mb-6">
-            The expense entry interface is a visual calendar grid where dates run down the left side and spending categories across the top. This creates intersection-based entry that's faster than any form-based system.
-          </p>
-
-          {/* Expense Grid Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/2monthlygrid.png" 
-              alt="Expense Grid Interface" 
-              className="w-full rounded-lg shadow-lg border"
-            />
-          </div>
-
-          {/* Lightning-Fast Entry */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Lightning-Fast Entry</h3>
-            
-            <div className="bg-emerald-50 p-6 rounded-lg mb-4">
-              <p className="text-emerald-900 font-bold text-xl mb-3">
-                Click the intersection of date and category, enter the amount. Done.
-              </p>
-              <ul className="space-y-2 text-emerald-800">
-                <li>• No date selection dropdowns</li>
-                <li>• No category menus to navigate</li>
-                <li>• No forms to fill out</li>
-                <li>• Takes 5 seconds vs. 30+ seconds in traditional apps</li>
-                <li>• <strong>Fully mobile optimized</strong> - enter expenses on your phone just as easily as desktop</li>
-              </ul>
-            </div>
-
-            {/* Entry Popup Screenshot */}
-            <div className="mb-4">
-              <img 
-                src="/app-screenshots/expenseentry.png" 
-                alt="Expense Entry Popup" 
-                className="w-full rounded-lg shadow-lg border"
-              />
-            </div>
-            
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h4 className="font-bold text-blue-900 mb-3">When you click an intersection, a popup shows:</h4>
-              <ul className="space-y-2 text-blue-800">
-                <li>• All existing expenses for that day/category</li>
-                <li>• Empty row to add new transactions</li>
-                <li>• Category emoji and date at the top</li>
-                <li>• Running total for that day</li>
-                <li>• No save button needed - auto-saves when you click outside</li>
-                <li>• Red X to delete any transaction instantly</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Visual Spending Patterns */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Visual Spending Patterns</h3>
-            
-            <div className="bg-orange-50 p-6 rounded-lg mb-4">
-              <h4 className="font-bold text-orange-900 mb-3">Heat map color coding shows spending intensity:</h4>
-              <ul className="space-y-2 text-orange-800">
-                <li>• Light amounts stay white/neutral</li>
-                <li>• Heavy spending gets progressively redder</li>
-                <li>• Instantly spot your highest spending days</li>
-                <li>• Category patterns become obvious over time</li>
-              </ul>
-            </div>
-            
-            <div className="bg-yellow-50 p-6 rounded-lg">
-              <h4 className="font-bold text-yellow-900 mb-3">Smart row highlighting:</h4>
-              <ul className="space-y-2 text-yellow-800">
-                <li>• <strong>Today's row highlighted in yellow</strong> - always know where you are in the month</li>
-                <li>• <strong>Weekend rows have subtle grey background</strong> - easily distinguish weekdays vs weekends</li>
-                <li>• <strong>Blue borders on fixed expenses</strong> - see subscription/bill dates at a glance</li>
-                <li>• Monthly flow and spending patterns are visible instantly</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Perfect for Cash */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Perfect for Cash Transactions</h3>
-            
-            <div className="bg-green-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-3">
-                <strong>Most automated systems completely fail with cash payments</strong> - they can't sync what banks don't see.
-              </p>
-              <p className="text-gray-700">
-                <strong>Manual entry handles cash perfectly:</strong> You spent $20 cash on groceries? Click Groceries + today's date, enter $20. Your tracking is complete and accurate.
-              </p>
-            </div>
-          </div>
-
-          {/* Why This Beats Traditional */}
-          <div className="bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Why This Beats Traditional Expense Tracking</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-bold text-red-900 mb-3">Traditional apps:</h4>
-                <ul className="space-y-2 text-red-800">
-                  <li>• Open app → Select date → Choose category → Enter amount → Add description → Save</li>
-                  <li>• Spend 5 minutes categorizing each transaction after bank import</li>
-                  <li>• Fight with wrong auto-categories and duplicate imports</li>
-                  <li>• Cash transactions are invisible or require manual workarounds</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-bold text-green-900 mb-3">Simplify Budget:</h4>
-                <ul className="space-y-2 text-green-800">
-                  <li>• Click intersection → Enter amount → Done</li>
-                  <li>• Spend 5 seconds entering transaction when it happens</li>
-                  <li>• Your data is correct because you entered it correctly</li>
-                  <li>• Cash and card transactions are entered identically and accurately</li>
-                </ul>
-              </div>
-            </div>
-            
-            <p className="text-gray-700 mt-4 font-semibold">
-              The result: You actually use the system consistently because it's faster and easier than alternatives, creating the long-term awareness that drives better financial decisions.
-            </p>
-          </div>
-        </section>
-
-        {/* Yearly Overview */}
-        <section id="yearly" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Yearly Overview: The Big Picture</h2>
-          
-          <p className="text-gray-700 mb-6">
-            Toggle between Monthly and Yearly views to see your spending patterns at different scales.
-          </p>
-
-          {/* Yearly Overview Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/yearlyoverview.png" 
-              alt="Yearly Overview Interface" 
-              className="w-full rounded-lg shadow-lg border"
-            />
-          </div>
-
-          {/* Annual Heat Map */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Annual Heat Map</h3>
-            
-            <div className="bg-purple-50 p-6 rounded-lg">
-              <h4 className="font-bold text-purple-900 mb-3">Color intensity shows spending levels across the entire year:</h4>
-              <ul className="space-y-2 text-purple-800">
-                <li>• Heat map scale adjusts for yearly amounts ($100-1000+ range)</li>
-                <li>• Instantly spot your highest and lowest spending months</li>
-                <li>• See seasonal patterns and trends emerge</li>
-                <li>• Compare month-to-month performance at a glance</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Interactive Charts */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Interactive Charts</h3>
-            
-            <div className="mb-4">
-              <img 
-                src="/app-screenshots/interactivecharts.png" 
-                alt="Interactive Charts and Analytics" 
-                className="w-full rounded-lg shadow-lg border"
-              />
-            </div>
-            
-            <div className="bg-indigo-50 p-6 rounded-lg">
-              <h4 className="font-bold text-indigo-900 mb-3">Chart icon opens detailed visualization:</h4>
-              <ul className="space-y-2 text-indigo-800">
-                <li>• Stacked bar chart showing monthly spending breakdown by category</li>
-                <li>• Hover over any section to see exact amounts</li>
-                <li>• Income, spending, and savings trends over time</li>
-                <li>• Visual patterns that aren't obvious in raw numbers</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Real-Time Family Collaboration */}
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Real-Time Family Collaboration</h3>
-            
-            <p className="text-gray-700 mb-4 font-semibold">
-              Multiple people can enter expenses simultaneously:
-            </p>
-            
-            <ul className="space-y-2 text-gray-700">
-              <li>• Your wife enters grocery shopping on her phone</li>
-              <li>• It appears immediately on your desktop view</li>
-              <li>• No sync delays or conflicts</li>
-              <li>• Everyone sees the same real-time picture</li>
-            </ul>
-            
-            <p className="text-gray-700 mt-4">
-              <strong>Never lose track of transactions:</strong> The visual system makes it super easy to find any expense without searching through lists or complicated filters.
-            </p>
-          </div>
-        </section>
 
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-blue-600 to-emerald-600 p-8 rounded-lg text-white text-center">
