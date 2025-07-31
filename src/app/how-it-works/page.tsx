@@ -6,12 +6,12 @@ import HowItWorksClient from './HowItWorksClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'How Simplify Budget Works - Complete Feature Walkthrough',
-  description: 'Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works.',
-  keywords: 'budget app features, expense tracking, subscription management, net worth tracking, family budget, Google Sheets budget, visual expense grid',
+  title: 'How Our Budget App Works | 5-Second Expense Tracking',
+  description: 'Learn how to simplify budget tracking with visual grids. Track expenses in 5 seconds, manage subscriptions, share with family. Complete walkthrough.',
+  keywords: 'how to simplify budget, visual expense tracking, budget app tutorial, expense grid, family budget sharing, subscription tracking, budget app walkthrough',
   openGraph: {
-    title: 'How Simplify Budget Works - Complete Feature Walkthrough',
-    description: 'Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration.',
+    title: 'How Our Budget App Works | 5-Second Expense Tracking',
+    description: 'Learn how to simplify budget tracking with visual grids. Track expenses in 5 seconds, manage subscriptions, share with family.',
     url: 'https://simplifybudget.com/how-it-works',
     siteName: 'Simplify Budget',
     images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Simplify Budget Works - Complete Feature Walkthrough',
-    description: 'Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, and more.',
+    title: 'How Our Budget App Works | 5-Second Expense Tracking',
+    description: 'Learn how to simplify budget tracking with visual grids. Track expenses in 5 seconds, share with family.',
     images: ['https://simplifybudget.com/app-screenshots/1budgettab.png'],
   },
   alternates: {

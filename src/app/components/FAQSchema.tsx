@@ -26,6 +26,14 @@ export default function FAQSchema() {
       answer: "Your data stays in your Google Drive (not our servers), one-time payment (not subscription), visual monthly grid for faster expense entry, and perfect for families since multiple people can use the same budget."
     },
     {
+      question: "Is this a good YNAB alternative?",
+      answer: "Yes! Unlike YNAB's $14/month subscription, we charge $15 once for lifetime access. You get visual expense tracking, family sharing, and your data stays private in your Google Drive instead of company servers."
+    },
+    {
+      question: "What's the best Mint alternative now that Mint shut down?",
+      answer: "Simplify Budget offers what Mint users loved - expense tracking and budgeting - but with better family sharing, no ads, and complete data ownership in your Google Drive. One-time $15 payment instead of monthly fees."
+    },
+    {
       question: "How do I set up the app?",
       answer: "Open the app, go to settings, and click 'New Database'. It automatically creates a new Google Sheet in your Drive and links it. That's it - you're ready to start tracking. Takes 30 seconds."
     },

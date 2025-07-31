@@ -24,9 +24,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Simplify Budget | Visual Expense Tracking App for Google Sheets',
-  description: 'Track expenses with one tap using our visual budget app. Your data stays in Google Drive. One-time payment, no subscriptions. Try free for 30 days.',
-  keywords: 'budget app, expense tracker app, budgeting software, visual expense tracking, google sheets budget app, subscription tracker',
+  title: {
+    template: '%s | Simplify Budget',
+    default: 'Simplify Budget | Budget App That Actually Works'
+  },
+  description: 'Budget app that actually works. Track expenses in 5 seconds, share with family. No monthly fees.',
+  keywords: 'budget app, expense tracker, family budget, no subscription budget app',
   icons: {
     icon: '/favicon.ico',
   },

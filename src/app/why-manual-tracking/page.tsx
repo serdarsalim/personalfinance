@@ -6,12 +6,12 @@ import { Metadata } from 'next';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Why Budget Apps Don\'t Work (And What Does) - Simplify Budget',
-  description: 'Discover why budget apps fail and what actually works for money tracking. Learn the approach that helped users achieve financial independence.',
-  keywords: 'manual budget tracking, financial awareness, budget app philosophy, expense tracking, financial independence, conscious spending',
+  title: 'Why Budget Apps Fail (Manual Tracking Works Better)',
+  description: 'Why automated budget apps fail and manual expense tracking works better. Real psychology behind conscious spending and financial awareness.',
+  keywords: 'manual expense tracking, why budget apps fail, manual vs automated budgeting, conscious spending, financial awareness, budget app problems',
   openGraph: {
-    title: 'Why Budget Apps Don\'t Work (And What Does) - Simplify Budget',
-    description: 'Discover why budget apps fail and what actually works for money tracking. Learn the approach that helped users achieve financial independence.',
+    title: 'Why Budget Apps Fail (Manual Tracking Works Better)',
+    description: 'Why automated budget apps fail and manual expense tracking works better. Real psychology behind conscious spending.',
     url: 'https://simplifybudget.com/why-manual-tracking',
     siteName: 'Simplify Budget',
     images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Why Budget Apps Don\'t Work (And What Does) - Simplify Budget',
-    description: 'Discover why budget apps fail and what actually works for money tracking.',
+    title: 'Why Budget Apps Fail (Manual Tracking Works Better)',
+    description: 'Why automated budget apps fail and manual expense tracking works better.',
     images: ['https://simplifybudget.com/simplifybudget.jpg'],
   },
   alternates: {

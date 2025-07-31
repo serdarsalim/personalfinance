@@ -95,6 +95,25 @@ export default function FAQSection() {
             </div>
           ))}
         </div>
+        
+        {/* Internal Links Section */}
+        <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Learn More</h3>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/why-manual-tracking" 
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Why Manual Tracking Works Better
+            </a>
+            <a 
+              href="/how-it-works" 
+              className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+            >
+              See How It Works
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -21,17 +21,19 @@ export default function SoftwareApplicationSchema() {
       "ratingValue": "4.8",
       "ratingCount": "150"
     },
-    "description": "Visual expense tracking app that works with Google Sheets. Track expenses with one tap, manage subscriptions, and build wealth habits. One-time payment, no subscriptions.",
+    "description": "Budget app that actually works. Visual expense tracking with Google Sheets integration. Best YNAB and Mint alternative - no monthly fees, works for families. Track expenses in 5 seconds.",
     "screenshot": "https://simplifybudget.com/simplifybudget.jpg",
     "featureList": [
       "Visual monthly expense grid",
-      "One-tap expense entry",
-      "Subscription tracking",
-      "Budget management",
+      "5-second expense entry",
+      "Family budget sharing",
+      "YNAB alternative - no monthly fees",
+      "Mint replacement after shutdown", 
+      "Manual expense tracking",
       "Google Sheets integration",
-      "Multi-user support",
+      "Subscription management",
       "30-day free trial",
-      "One-time payment"
+      "One-time $15 payment"
     ],
     "softwareVersion": "1.0",
     "url": "https://simplifybudget.com",

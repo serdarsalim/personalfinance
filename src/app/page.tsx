@@ -27,12 +27,12 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
 
 // Update metadata
 export const metadata: Metadata = {
-  title: "Simplify Budget - Visual Grid Budget Tracker | $15 Once, Family Sharing Included",
-  description: "Track expenses in seconds with visual grid. Share with family instantly. Works on any device, no download needed. Google-verified secure. Your data stays in your Drive. $15 lifetime access.",
-  keywords: "visual budget tracker, family expense sharing app, one time payment budget app, google drive budget tracker, no subscription expense tracker, instant setup budget app, mint alternative, ynab alternative",
+  title: "Budget App That Actually Works | No Monthly Fees 2025",
+  description: "Stop forgetting where your money goes. Track expenses in 5 seconds, works for families. $15 lifetime - no subscriptions. Try free 30 days.",
+  keywords: "best budget app, budget app that works, expense tracker app, family budget app, no subscription budget app, manual expense tracking, ynab alternative, mint alternative, budget tracker 2025",
   openGraph: {
-    title: "Simplify Budget - The Smart Way Families Track Money Together",
-    description: "5-second visual expense entry. Share with spouse/kids instantly. Works on any device. Google-verified secure. Pay $15 once, own forever. 30-day free trial.",
+    title: "Budget App That Actually Works | No Monthly Fees",
+    description: "Stop forgetting where your money goes. Track expenses in 5 seconds, works for families. $15 lifetime - try free 30 days.",
     url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
     type: "website",
