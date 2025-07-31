@@ -84,7 +84,7 @@ export default function HeroSection() {
                 href="/demo"
                 className="inline-block px-6 py-4 bg-white text-blue-600 rounded-lg shadow hover:shadow-md transition-all font-semibold border border-gray-200"
               >
-                Try the Demo →
+                Demo with Example Data →
               </a>
             </div>
             
