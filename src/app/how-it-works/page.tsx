@@ -44,7 +44,7 @@ const HowItWorksContent = () => (
     <section className="bg-white pt-24 pb-8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
             How Simplify Budget Actually Works
           </h1>
           <div className="text-xl text-gray-600 mb-8">

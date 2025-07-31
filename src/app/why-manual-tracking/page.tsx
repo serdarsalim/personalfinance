@@ -44,8 +44,8 @@ const ArticleContent = () => (
     <section className="bg-white pt-24 pb-8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
-            Why Budget Apps Don't Work (And What Does)
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
+            Let us tell you about Simplify Budget
           </h1>
         </div>
       </div>
@@ -62,31 +62,15 @@ const ArticleContent = () => (
 
         {/* Introduction */}
         <section id="introduction" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Introduction</h2>
-          
-          <p className="text-gray-700 mb-4">
-            The budget app market is filled with expensive subscription services that don't solve the core problem. After analyzing why existing solutions fail, we built a system that actually works. Users have achieved financial independence, traveled extensively, and built substantial emergency funds—all while using a system that costs nothing per month and keeps financial data completely private.
-          </p>
-          
-          <p className="text-gray-700 mb-4">
-            Here's where most budget apps fall short, and how a different approach to money tracking can change your financial life.
-          </p>
-        </section>
-
-        {/* Why This System Works */}
-        <section id="my-story" className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Why We Built Something Different</h2>
           
           <p className="text-gray-700 mb-4">
-            This system has been battle-tested through real-world use by its founder, who has been living completely off investments for the past two years while traveling to more than 25 countries—all while maintaining a healthy emergency fund and growing net worth.
+            Most budget apps didn't work for us. They were either too expensive, too complicated, or required giving up control of our financial data. So we built something different—a system that has helped users achieve financial independence, travel extensively, and build substantial emergency funds, all while costing nothing per month and keeping financial data completely private.
           </p>
           
-          <p className="text-gray-700 mb-4">
-            This success didn't come from massive inheritance or crypto luck. It came from developing a money management system that actually works for real life, starting with the fundamental problems that plague existing budget apps.
-          </p>
           
           <p className="text-gray-700 mb-4">
-            The system originated from frustration with existing budget apps—they were either too complicated, too expensive, or couldn't handle real-world financial situations. The solution was a tracking system focused on awareness rather than restriction, built initially as a simple Google Sheets spreadsheet.
+            We started with a simple Google Sheets spreadsheet focused on awareness rather than restriction. But this isn't just a budget tracker—it helps you track net worth, subscriptions, and income over the long term and analyze your financial patterns over time. Most spreadsheet alternatives focus on one month only, so you can never see how you're actually doing over time.
           </p>
           
           <p className="text-gray-700 mb-4">
@@ -100,118 +84,137 @@ const ArticleContent = () => (
 
         {/* Why Apps Fail */}
         <section id="why-apps-fail" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Simplify Budget vs. Other Budget Apps</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Why people abandon their budget apps</h2>
           
           <p className="text-gray-700 mb-4">
             Every budget app wants $10-30 per month to track your money. They promise to "automate your finances" while harvesting your most sensitive data. Family tracking either doesn't work or costs extra per user. And somehow, despite all this automation and monthly fees, people still get surprised by their own subscription charges.
           </p>
           
           <p className="text-gray-700 mb-4">
-            Meanwhile, the apps that don't charge monthly fees often lack the features you actually need, or they're so complicated that you abandon them after a week.
+            Meanwhile, the apps that don't charge monthly fees often need so much maintenance and reconciliation that you just give up doing it.
           </p>
           
+
           {/* The Right Kind of Automation */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Right Kind of Automation vs. The Wrong Kind</h3>
             
-            <p className="text-gray-700 mb-4 font-semibold">
-              We're not anti-automation—we're anti-stupid automation.
-            </p>
             
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-bold text-green-800 mb-3">Smart automation we embrace:</h4>
-                <ul className="space-y-2 text-green-700">
-                  <li>• Fixed expenses automatically appear on their due dates</li>
-                  <li>• Subscriptions show up on your calendar so you can see them coming</li>
-                  <li>• Visual grids calculate totals automatically</li>
-                  <li>• Family data syncs in real-time through Google Sheets</li>
+            <div className="grid md:grid-cols-2 gap-8 mb-6">
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 p-8 rounded-xl shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                  <h4 className="font-bold text-green-900 text-lg">Smart automation we embrace</h4>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Recurring expenses appear automatically on their due dates
+                  </li>
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    All calculations for budget and analytics are done automatically
+                  </li>
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Net worth data copies automatically to the next month
+                  </li>
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Multiple family members can track expenses in the same sheet
+                  </li>
                 </ul>
               </div>
               
-              <div className="bg-red-50 p-6 rounded-lg">
-                <h4 className="font-bold text-red-800 mb-3">Stupid automation we reject:</h4>
-                <ul className="space-y-2 text-red-700">
-                  <li>• Bank syncing that imports transactions wrong</li>
-                  <li>• Auto-categorization that requires constant correction</li>
-                  <li>• "Automated" systems that need weekly manual reconciliation</li>
-                  <li>• AI that tries to guess your spending intentions</li>
+              <div className="bg-gradient-to-br from-red-50 to-rose-50 border border-red-200 p-8 rounded-xl shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
+                  <h4 className="font-bold text-red-900 text-lg">Broken automation we avoid</h4>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    Bank syncing that imports transactions wrong
+                  </li>
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    Auto-categorization that requires constant correction
+                  </li>
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    "Automated" systems that need weekly manual reconciliation
+                  </li>
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    AI that tries to guess your spending intentions
+                  </li>
                 </ul>
               </div>
             </div>
             
-            <p className="text-gray-700 mb-4">
-              <strong>The difference:</strong> Good automation handles predictable, mechanical tasks. Bad automation tries to replace human judgment about spending decisions.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              We automate the boring stuff (subscription reminders, math calculations) so you can focus on what matters: conscious spending decisions with full awareness of their impact.
-            </p>
-          </div>
-
-          {/* The Subscription Problem */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Subscription Problem</h3>
-            
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <p className="text-gray-700 mb-4">
-                Nearly every budget app operates on a monthly fee model:
-              </p>
-              <ul className="space-y-2 text-gray-700">
-                <li>• YNAB costs $14/month</li>
-                <li>• PocketGuard wants $12.99/month for premium features</li>
-                <li>• Goodbudget charges $8/month for more than two accounts</li>
-              </ul>
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-6 rounded-xl">
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+                <h4 className="font-bold text-blue-900 text-lg">Why subscription budget apps fail</h4>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <svg className="w-6 h-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-gray-800">
+                    <strong>Good automation</strong> handles predictable, mechanical tasks
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-6 h-6 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm4.707-10.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414L9 12.414l4.293-4.293a1 1 0 000-1.414z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-gray-800">
+                    <strong>Bad automation</strong> tries to replace human judgment about spending decisions
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-blue-200">
+                  <p className="text-blue-900 font-medium mb-4">
+                    We automate the boring stuff so you can focus on what matters: conscious spending decisions with full awareness of their impact.
+                  </p>
+                  <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg mb-4">
+                    <h5 className="font-bold text-slate-900 mb-2">Perfect example of bad automation:</h5>
+                    <p className="text-slate-800 text-sm">
+                      You pay monthly for budget apps that can't properly warn you about your other monthly subscriptions. Your Netflix charge just appears as another line item after it hits—no advance warning, no context, no chance to cancel beforehand.
+                    </p>
+                  </div>
+                  <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg">
+                    <h5 className="font-bold text-slate-900 mb-2">Plus they monetize your data:</h5>
+                    <p className="text-slate-800 text-sm mb-2">
+                      Budget apps with bank syncing know everything—income, debt, spending patterns, investments. Many sell "anonymized" data or earn affiliate commissions by recommending financial products.
+                    </p>
+                    <p className="text-slate-800 text-sm">
+                      Your data becomes their product. The app making money from credit card referrals has obvious conflicts when giving you spending advice.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             
-            <p className="text-gray-700 mb-4">
-              Here's the irony: these subscription-based apps can't even help you manage your own subscriptions properly. When your $15 Netflix charge hits, it just appears as another line item in your transaction list. No advance warning, no context about when it's coming, no reminder that you could cancel before the next billing cycle.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Users get "surprised" by their own recurring payments while paying monthly fees for apps specifically designed to track spending. The automation creates a false sense of monitoring while removing the advance awareness that would actually help you make better decisions.
-            </p>
-            
             
           </div>
 
-          {/* The Privacy Nightmare */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Data Privacy Issues</h3>
-            
-            <p className="text-gray-700 mb-4">
-              Budget apps that sync with your bank accounts have access to your most sensitive financial information. They know your income, your spending patterns, your debt levels, your investment accounts—everything.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Many of these companies explicitly state in their privacy policies that they analyze and sell anonymized spending data. Even when they don't sell it directly, they use your information to target financial product recommendations, earning affiliate commissions when you sign up for credit cards or loans they suggest.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Your financial data becomes a product being monetized by companies whose interests may not align with yours. The "free" budget app that makes money selling your data to credit card companies has obvious conflicts of interest when it comes to spending recommendations.
-            </p>
-          </div>
-
-          {/* The Category Prison */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Rigid Category Systems</h3>
-            
-            <p className="text-gray-700 mb-4">
-              Traditional budget apps force you into rigid category systems that don't match real life. You set a $300 dining budget, spend $350, and get guilt-inducing notifications about "overspending."
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              But money is fungible. If you spend $50 more on dining and $50 less on entertainment, your overall financial position is identical. The artificial category limits create unnecessary stress and complexity.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              Worse, these systems encourage mental gymnastics about moving money between artificial buckets. You "raid" your vacation fund for an emergency, then feel guilty about it, even though it's all the same pile of money.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              The envelope budgeting method worked when people literally used cash envelopes. In a digital world with credit cards and variable expenses, it creates more anxiety than insight.
-            </p>
-          </div>
         </section>
 
         {/* The Simplify Budget Philosophy */}
