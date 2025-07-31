@@ -10,11 +10,10 @@ const PhilosophyClient = () => {
   const sections = [
     { id: 'introduction', title: 'Why Simplify?' },
     { id: 'why-apps-fail', title: 'Why Apps Get Abandoned' },
-    { id: 'philosophy', title: 'Our Philosophy' },
-    { id: 'the-app', title: 'The App' },
-    { id: 'results', title: 'Results' },
-    { id: 'who-for', title: 'Who This Is For' },
-    { id: 'bigger-picture', title: 'The Bigger Picture' },
+    { id: 'philosophy', title: 'Our Approach' },
+    { id: 'results', title: 'Why It Works' },
+    { id: 'who-for', title: 'Who It\'s For' },
+    { id: 'bigger-picture', title: 'Awareness vs Automation' },
     { id: 'get-started', title: 'Get Started' }
   ];
 
