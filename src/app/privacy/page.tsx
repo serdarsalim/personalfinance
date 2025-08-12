@@ -156,7 +156,7 @@ const PrivacyContent = () => (
           For privacy-related questions or to exercise your rights, please contact us at:
         </p>
         <p className="text-gray-700">
-          Email: serdar.dom@gmail.com<br/>
+          Email: contact@simplifybudget.com<br/>
           Website: simplifybudget.com
         </p>
       </section>

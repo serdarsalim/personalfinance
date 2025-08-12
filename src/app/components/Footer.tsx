@@ -54,6 +54,7 @@ const Footer: React.FC = () => {
                   <li><Link href="/about" className="text-gray-400 hover:text-blue-400">About</Link></li>
                   <li><Link href="/terms" className="text-gray-400 hover:text-blue-400">Terms and Conditions</Link></li>
                   <li><Link href="/privacy" className="text-gray-400 hover:text-blue-400">Privacy Policy</Link></li>
+                  <li><a href="mailto:contact@simplifybudget.com" className="text-gray-400 hover:text-blue-400">Contact Us</a></li>
                 </ul>
               </div>
             </div>

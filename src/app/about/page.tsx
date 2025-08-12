@@ -246,7 +246,7 @@ const AboutContent = () => (
         </p>
         <div className="inline-flex">
           <a
-            href="mailto:serdar.dom@gmail.com"
+            href="mailto:contact@simplifybudget.com"
             className="px-6 py-3 text-white bg-gradient-to-r from-blue-600 to-emerald-600 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center font-medium"
           >
             Contact Support
