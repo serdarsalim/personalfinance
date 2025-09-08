@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
                 <ul className="space-y-2">
                   <li><Link href="/app" className="text-gray-400 hover:text-blue-400">Open App</Link></li>
                   <li><Link href="/#templates" className="text-gray-400 hover:text-blue-400">Buy License</Link></li>
-                  <li><Link href="/why-manual-tracking" className="text-gray-400 hover:text-blue-400">Our Philosophy</Link></li>
-                  <li><Link href="/how-it-works" className="text-gray-400 hover:text-blue-400">How It Works</Link></li>
+                  <li><Link href="/why-manual-tracking" className="text-gray-400 hover:text-blue-400">Learn More</Link></li>
+                  <li><Link href="/how-it-works" className="text-gray-400 hover:text-blue-400">App Guide</Link></li>
                 </ul>
               </div>
               
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                   <li><Link href="/about" className="text-gray-400 hover:text-blue-400">About</Link></li>
                   <li><Link href="/terms" className="text-gray-400 hover:text-blue-400">Terms and Conditions</Link></li>
                   <li><Link href="/privacy" className="text-gray-400 hover:text-blue-400">Privacy Policy</Link></li>
-                  <li><a href="mailto:contact@simplifybudget.com" className="text-gray-400 hover:text-blue-400">Contact Us</a></li>
+                  <li><a href="mailto:contact@simplifybudget.com" className="text-gray-400 hover:text-blue-400">contact@simplifybudget.com</a></li>
                 </ul>
               </div>
             </div>
@@ -80,8 +80,7 @@ const Footer: React.FC = () => {
                 Join the discussion at r/AwesomeBudgeting
               </Link>
             </div>
-            <p>© {new Date().getFullYear()} Simplify Budget. All rights reserved.</p>
-            <p className="mt-2">One-time payment. Use forever. Your data stays yours.</p>
+            <p>© {new Date().getFullYear()} Simplify Budget</p>
           </div>
         </div>
       </footer>

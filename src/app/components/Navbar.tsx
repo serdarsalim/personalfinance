@@ -68,7 +68,7 @@ export default function Navbar() {
               Learn More
             </Link>
             <Link href="/how-it-works" className="text-gray-700 hover:text-blue-600 font-medium">
-              How It Works
+              App Guide
             </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
               Buy License
@@ -110,7 +110,7 @@ export default function Navbar() {
             Learn More
           </Link>
           <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
-            How It Works
+            App Guide
           </Link>
           <Link href="/#templates" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             Buy License

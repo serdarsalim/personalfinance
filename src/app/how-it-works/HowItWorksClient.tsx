@@ -10,12 +10,11 @@ const HowItWorksClient = () => {
   const sections = [
     { id: 'dashboard', title: 'Dashboard' },
     { id: 'expense-grid', title: 'Expense Entry' },
-    { id: 'subscriptions', title: 'Subscriptions' },
+    { id: 'subscriptions', title: 'Fixed Expenses' },
     { id: 'income', title: 'Income' },
     { id: 'networth', title: 'Net Worth' },
     { id: 'categories', title: 'Categories' },
-    { id: 'settings', title: 'Settings' },
-    { id: 'yearly', title: 'Yearly Overview' }
+    { id: 'settings', title: 'Settings' }
   ];
 
   const scrollToSection = (sectionId: string) => {
