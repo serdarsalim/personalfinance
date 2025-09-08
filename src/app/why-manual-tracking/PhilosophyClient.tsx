@@ -8,7 +8,7 @@ const PhilosophyClient = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const sections = [
-    { id: 'introduction', title: 'Why Simplify?' },
+    { id: 'introduction', title: 'Learn More' },
     { id: 'philosophy', title: 'Our Approach' },
     { id: 'results', title: 'Why It Works' },
     { id: 'who-for', title: 'Who It\'s For' },
