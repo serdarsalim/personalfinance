@@ -49,11 +49,6 @@ export default function WhySimplifySection() {
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
                     {reason.title}
-                    {reason.appOnly && (
-                      <span className="ml-2 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-normal">
-                        App only
-                      </span>
-                    )}
                   </h3>
                   <p className="text-gray-600">{reason.description}</p>
                 </div>
