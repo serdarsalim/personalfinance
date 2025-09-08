@@ -6,12 +6,12 @@ import HowItWorksClient from './HowItWorksClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'How Our Budget App Works | 5-Second Expense Tracking',
-  description: 'Learn how to simplify budget tracking with visual grids. Track expenses in 5 seconds, manage subscriptions, share with family. Complete walkthrough.',
-  keywords: 'how to simplify budget, visual expense tracking, budget app tutorial, expense grid, family budget sharing, subscription tracking, budget app walkthrough',
+  title: 'Complete User Guide | How to Use Simplify Budget App 2025',
+  description: 'Step-by-step guide to using Simplify Budget. Track expenses in 5 seconds, manage fixed expenses, family collaboration. Complete app tutorial.',
+  keywords: 'budget app tutorial, how to use budget app, expense tracking guide, budget app guide, family budget app, budget app help, simplify budget tutorial',
   openGraph: {
-    title: 'How Our Budget App Works | 5-Second Expense Tracking',
-    description: 'Learn how to simplify budget tracking with visual grids. Track expenses in 5 seconds, manage subscriptions, share with family.',
+    title: 'Complete User Guide | How to Use Simplify Budget App',
+    description: 'Step-by-step guide to using Simplify Budget. Track expenses in 5 seconds, manage fixed expenses, family collaboration.',
     url: 'https://simplifybudget.com/how-it-works',
     siteName: 'Simplify Budget',
     images: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://simplifybudget.com/app-screenshots/1budgettab.png',
         width: 1200,
         height: 630,
-        alt: 'Simplify Budget Dashboard - How It Works',
+        alt: 'Simplify Budget User Guide - App Tutorial Dashboard',
       },
     ],
     locale: 'en_US',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Our Budget App Works | 5-Second Expense Tracking',
-    description: 'Learn how to simplify budget tracking with visual grids. Track expenses in 5 seconds, share with family.',
+    title: 'Complete User Guide | How to Use Simplify Budget App',
+    description: 'Step-by-step guide to using Simplify Budget. Track expenses in 5 seconds, manage fixed expenses.',
     images: ['https://simplifybudget.com/app-screenshots/1budgettab.png'],
   },
   alternates: {

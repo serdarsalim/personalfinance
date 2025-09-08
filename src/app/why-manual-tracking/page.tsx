@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: 'Why Budget Apps Fail (Manual Tracking Works Better)',
   description: 'Why automated budget apps fail and manual expense tracking works better. Real psychology behind conscious spending and financial awareness.',
-  keywords: 'manual expense tracking, why budget apps fail, manual vs automated budgeting, conscious spending, financial awareness, budget app problems',
+  keywords: 'manual expense tracking, why budget apps fail, manual vs automated budgeting, conscious spending, financial awareness, budget app problems, mint problems, ynab issues, budget app disadvantages',
   openGraph: {
     title: 'Why Budget Apps Fail (Manual Tracking Works Better)',
     description: 'Why automated budget apps fail and manual expense tracking works better. Real psychology behind conscious spending.',

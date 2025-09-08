@@ -27,9 +27,9 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
 
 // Update metadata
 export const metadata: Metadata = {
-  title: "Budget App That Actually Works | No Monthly Fees 2025",
-  description: "Stop forgetting where your money goes. Track expenses in 5 seconds, works for families. $15 lifetime - no subscriptions. Try free 30 days.",
-  keywords: "best budget app, budget app that works, expense tracker app, family budget app, no subscription budget app, manual expense tracking, ynab alternative, mint alternative, budget tracker 2025",
+  title: "Budget app that saves you money | Simple enough to stick with, smart enough to build wealth",
+  description: "Stop living paycheck to paycheck. Simple, private, no-fee budget app. Track expenses instantly, keep more money. $15 one-time payment.",
+  keywords: "best budget app 2025, budget app that works, expense tracker app, family budget app, no subscription budget app, manual expense tracking, ynab alternative, mint alternative, everydollar alternative, quicken alternative, budget tracker no fees",
   openGraph: {
     title: "Budget App That Actually Works | No Monthly Fees",
     description: "Stop forgetting where your money goes. Track expenses in 5 seconds, works for families. $15 lifetime - try free 30 days.",
