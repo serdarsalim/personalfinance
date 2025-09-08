@@ -64,13 +64,11 @@ export default function HeroSection() {
           
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 text-gray-900">
-              The budget app that helps you stop overspending
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-12 text-gray-900">
+              Set budgets, track expenses, 
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> grow your wealth</span>
             </h1>
             
-            <p className="text-xl text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0">
-              Set monthly budget, track spending as you go, monitor net worth. Built on Google Apps Script. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 font-semibold">$15 lifetime.</span>
-            </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
@@ -86,42 +84,6 @@ export default function HeroSection() {
               >
                 Demo with Example Data →
               </a>
-            </div>
-            
-
-            {/* KEY BENEFITS */}
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex-shrink-0">
-                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-900">Fixed expenses auto-populate every month</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex-shrink-0">
-                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-900">Track variable expenses as you spend them</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex-shrink-0">
-                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-900">All your data stays in your Google Drive</p>
-                
-                </div>
-              </div>
             </div>
           </div>
 
