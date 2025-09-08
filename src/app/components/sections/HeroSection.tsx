@@ -65,11 +65,11 @@ export default function HeroSection() {
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 text-gray-900">
-              Take Control of Your Money
+              The budget app that helps you stop overspending
             </h1>
             
             <p className="text-xl text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0">
-              See where your money goes with visual expense tracking that actually works. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 font-semibold">No subscriptions. Ever.</span>
+              Set monthly budget, track spending as you go, monitor net worth. Built on Google Apps Script. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 font-semibold">$15 lifetime.</span>
             </p>
 
             {/* CTAs */}
@@ -89,7 +89,7 @@ export default function HeroSection() {
             </div>
             
 
-            {/* KILLER FEATURES */}
+            {/* KEY BENEFITS */}
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="mt-1 flex-shrink-0">
@@ -98,7 +98,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">Complete financial dashboard - expenses, income, net worth, subscriptions in one place</p>
+                  <p className="text-sm font-semibold text-gray-900">Fixed expenses auto-populate every month</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -108,7 +108,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">Real family collaboration - everyone sees the same data, enters expenses together</p>
+                  <p className="text-sm font-semibold text-gray-900">Track variable expenses as you spend them</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -118,7 +118,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">You own everything - all data lives in your Google Drive forever</p>
+                  <p className="text-sm font-semibold text-gray-900">All your data stays in your Google Drive</p>
                 
                 </div>
               </div>

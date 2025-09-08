@@ -13,18 +13,18 @@ export default function FeatureCarousel() {
 
   const slides = [
     {
-      title: "Monthly Grid View",
-      description: "Calendar-style expense entry. See your entire month's spending at a glance - no more scrolling through transactions.",
+      title: "Expense Calendar",
+      description: "Monthly expense calendar. Enter expenses directly on the calendar and see your spending patterns instantly.",
       image: "/app-screenshots/2monthlygrid.png"
     },
     {
       title: "Budget Dashboard",
-      description: "Real-time budget tracking with visual progress bars. Know exactly where every dollar goes.",
+      description: "Set your budget goals and track actual spending. Fixed expenses show as spent from day one so you know how much money you have left to spend.",
       image: "/app-screenshots/1budgettab.png"
     },
     {
-      title: "Recurring Expenses",
-      description: "Set once, tracks automatically. All subscriptions and fixed expenses appear every month without manual entry.",
+      title: "Fixed Expenses Tab",
+      description: "Set your fixed expenses once and they automatically appear at the beginning of every month. Rent, subscriptions, car payments - never manually enter them again.",
       image: "/app-screenshots/3recurring.png"
     },
     {
@@ -115,7 +115,7 @@ export default function FeatureCarousel() {
     <section className="bg-gradient-to-r from-blue-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
-          See What's Inside <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">Simplify Budget</span> App
+          App Screenshots
         </h2>
         
         <div 

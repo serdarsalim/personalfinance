@@ -45,7 +45,7 @@ const ArticleContent = () => (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
-          Why should you try Simplify Budget?
+          What is this app for?
           </h1>
         </div>
       </div>
@@ -64,19 +64,23 @@ const ArticleContent = () => (
         <section id="introduction" className="mb-16">
           
      <p className="text-gray-700 mb-4">
-  Most budget apps did not work for us. They were expensive, complicated, or wanted access to our financial data. So we built our own system. It costs nothing per month and keeps your data private.
+  This budget app helps you stop overspending by showing you exactly how much money you have left to spend each month.
 </p>
 
 <p className="text-gray-700 mb-4">
-  We started with a simple Google Sheet focused on awareness, not restriction. Unlike most trackers that only show one month, this one lets you see the bigger picture: net worth, subscriptions, income, and spending patterns over time.
+  At the start of each month, set your budget and enter your fixed expenses like rent and subscriptions. The app automatically shows these as spent, so you know your remaining budget for groceries, entertainment, and other variable expenses.
 </p>
 
 <p className="text-gray-700 mb-4">
-  The sheet worked so well that we turned it into an app with Google Apps Script. The philosophy stayed the same: full visibility, no subscriptions, and no data mining.
+  Track expenses as you spend them using the monthly calendar view. See your spending patterns instantly and never overspend again.
 </p>
 
 <p className="text-gray-700 mb-4">
-  With this system, you always know where your money goes. You avoid surprises, make better decisions, and stay in control. Your data stays yours.
+  Track your net worth monthly to watch your wealth grow over time.
+</p>
+
+<p className="text-gray-700 mb-4">
+  Since all your data lives in your Google Drive, you own everything forever.
 </p> <br></br>
 
           {/* The Right Kind of Automation */}
@@ -87,14 +91,14 @@ const ArticleContent = () => (
               <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 p-8 rounded-xl shadow-sm">
                 <div className="flex items-center mb-4">
                   <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-                  <h4 className="font-bold text-green-900 text-lg">Smart automation we embrace</h4>
+                  <h4 className="font-bold text-green-900 text-lg">The automation this app uses</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start text-green-800">
                     <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    Recurring expenses appear automatically on their due dates
+                    Fixed expenses copy automatically to the next month
                   </li>
                   <li className="flex items-start text-green-800">
                     <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -112,7 +116,7 @@ const ArticleContent = () => (
                     <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    Multiple family members can track expenses in the same sheet
+                    Spending goals copy automatically to the next month since they rarely change and can be adjusted each month
                   </li>
                 </ul>
               </div>
@@ -120,7 +124,7 @@ const ArticleContent = () => (
               <div className="bg-gradient-to-br from-red-50 to-rose-50 border border-red-200 p-8 rounded-xl shadow-sm">
                 <div className="flex items-center mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
-                  <h4 className="font-bold text-red-900 text-lg">Broken automation we avoid</h4>
+                  <h4 className="font-bold text-red-900 text-lg">Fully automated other apps</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start text-red-800">
@@ -145,7 +149,7 @@ const ArticleContent = () => (
                     <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
                     </svg>
-                    AI that tries to guess your spending intentions
+                    Cash purchases are not categorised or tracked at all
                   </li>
                 </ul>
               </div>
@@ -160,10 +164,10 @@ const ArticleContent = () => (
 
         {/* The Simplify Budget Philosophy */}
         <section id="philosophy" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Our approach</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">How to do financial management using this app</h2>
           
           <p className="text-gray-700 mb-8 text-lg">
-            Our approach is manual tracking that's fast and flexible. It works across all devices and handles your complete personal finance picture—expenses, net worth, and income—without the rigidity that makes other systems fail.
+            This app tracks your money in three simple areas: monthly expenses, net worth, and income. It works on any device and takes just seconds to enter your spending.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6">
@@ -188,10 +192,10 @@ const ArticleContent = () => (
                     <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-emerald-900">Smart recurring expenses</h3>
+                <h3 className="text-lg font-bold text-emerald-900">Smart fixed expenses</h3>
               </div>
               <p className="text-emerald-800">
-                Set up recurring expenses once—they automatically appear on due dates with advance visual warning.
+                Set up fixed expenses once—they automatically appear on due dates with advance visual warning.
               </p>
             </div>
 
@@ -216,10 +220,10 @@ const ArticleContent = () => (
                     <path fillRule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-indigo-900">You own your data</h3>
+                <h3 className="text-lg font-bold text-indigo-900">Set spending goals and track progress</h3>
               </div>
               <p className="text-indigo-800">
-                All data lives in your Google Sheets. We provide the interface, you own the information forever. Family members can track together from the same sheet.
+                Set spending goals and easily track if you're sticking to them. See exactly where your money goes each month.
               </p>
             </div>
 
@@ -244,22 +248,14 @@ const ArticleContent = () => (
                     <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-orange-900">Works on all your devices</h3>
+                <h3 className="text-lg font-bold text-orange-900">Learn from your money habits</h3>
               </div>
               <p className="text-orange-800">
-                Browser-based app works on iPhone, Android, laptop, tablet—any device with internet. No separate apps to download or sync.
+                Get insights on your past spending and money habits so you can learn from them and stop being stressed about money. Know if you're getting financially secure or just burning cash.
               </p>
             </div>
           </div>
           
-          <div className="mt-8 bg-slate-50 border border-slate-200 p-6 rounded-xl">
-            <p className="text-slate-800 mb-4">
-              The key insight is that successful manual tracking requires removing friction, not adding discipline. Most manual systems fail because they're too rigid and create perfectionist anxiety.
-            </p>
-            <p className="text-slate-700">
-              Our system acknowledges that life is messy. If you forget to log a $4 coffee, that's fine—the goal isn't accounting precision, it's spending awareness. The system is designed to capture the major patterns that actually affect your financial life.
-            </p>
-          </div>
         </section>
 
 
@@ -275,19 +271,13 @@ const ArticleContent = () => (
                 href="/demo"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
-                Demo app with example data
-              </a>
-              <a 
-                href="/how-it-works"
-                className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
-              >
-                Complete How-To Guide
+                Demo with example data
               </a>
               <a 
                 href="/app"
                 className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
               >
-                Get your app
+                Get the full app now
               </a>
             </div>
           </div>
@@ -295,26 +285,20 @@ const ArticleContent = () => (
 
         {/* Results */}
         <section id="results" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Why this approach works</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">It has everything you need in a budget app and not more</h2>
           
           <div className="mb-8">
             <p className="text-gray-700 mb-4">
-              Most people avoid manual tracking because it's genuinely painful—spreadsheets aren't mobile-friendly, each month requires a new sheet with no connection to previous data, and you have to manually enter the same recurring expenses over and over.
+              This app has everything you need for managing your money, without the confusing stuff that makes other apps overwhelming.
             </p>
             <p className="text-gray-700 mb-4">
-              We removed all that friction. Our system works on mobile, connects data across months automatically, maps recurring subscriptions, and handles the boring stuff so you can focus on the decisions that matter.
+              We didn't include debt calculators, complicated savings categories, or separate sections for different income sources. We kept it simple: track your spending, set your budget, watch your net worth grow.
             </p>
             <p className="text-gray-700 mb-4">
-              You get the awareness benefits of manual tracking without the traditional pain points that make people give up.
-            </p>
-          </div>
-          
-          <div className="mb-8">
-            <p className="text-gray-700 mb-4">
-              The most important result isn't any single financial decision—it's the compound effect of thousands of small decisions made with better information.
+              Use it daily or monthly, it works both ways. Track expenses as they happen or check in once a month to categorize spending and save a snapshot of your net worth.
             </p>
             <p className="text-gray-700 mb-4">
-              When you have real-time awareness of your spending patterns, you naturally make different choices. Not because an app told you not to spend, but because you can see the cumulative impact of your decisions.
+              These core features are all most people need for solid financial management, whether you're managing money solo or with your family.
             </p>
           </div>
         </section>
@@ -338,37 +322,19 @@ const ArticleContent = () => (
                   <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-green-800"><strong>Privacy-conscious individuals</strong> who don't want companies analyzing their spending habits</span>
+                  <span className="text-green-800">People tired of monthly subscription fees</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-green-800"><strong>Families needing shared financial visibility</strong> without per-user fees</span>
+                  <span className="text-green-800">Families who want to budget together</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-green-800"><strong>People frustrated with subscription budget apps</strong> tired of monthly fees</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-green-800"><strong>Anyone who wants to OWN their financial data</strong> in a format they control</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-green-800"><strong>Small business owners tracking project expenses</strong> needing flexible categorization</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-green-800"><strong>Couples who've struggled with existing family budget solutions</strong></span>
+                  <span className="text-green-800">People who like simple, straightforward apps</span>
                 </li>
               </ul>
             </div>
@@ -380,32 +346,26 @@ const ArticleContent = () => (
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">Better alternatives if you want</h3>
+                <h3 className="text-2xl font-bold text-slate-900">Not for you if you want</h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-slate-700"><strong>Fully automated tracking</strong> without any manual engagement</span>
+                  <span className="text-slate-700">Fully automated expense importing</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-slate-700"><strong>Traditional envelope budgeting</strong> with strict category limits</span>
+                  <span className="text-slate-700">Complex investment tracking</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-slate-700"><strong>Complex investment tracking</strong> features like portfolio analysis</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-slate-700"><strong>Zero manual data entry</strong> or Google Sheets integration</span>
+                  <span className="text-slate-700">Detailed loan calculators</span>
                 </li>
               </ul>
             </div>
@@ -413,42 +373,22 @@ const ArticleContent = () => (
         </section>
 
         {/* The Bigger Picture */}
-        <section id="bigger-picture" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Financial awareness vs automation</h2>
+        <section id="simple-beats-complex" className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Simple beats complex</h2>
           
-          {/* The Fitness Parallel */}
-          <div className="mb-12">
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-4">
-                The fitness industry understands something fintech has forgotten: automation removes the very engagement that creates results. No one tries to automate away the actual workout because the "pain" of lifting weights IS what builds strength.
-              </p>
-              <p className="text-gray-700 mb-4 font-semibold">
-                The automated tracking crowd is essentially trying to get financially fit by having someone else do their workouts and texting them the results.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Manual tracking works because it creates the "pain of payment"—the psychological discomfort that comes from consciously parting with money. Just like people spend less with cash than cards, consciously recording each purchase creates awareness that influences future decisions.
-              </p>
-              <p className="text-gray-700">
-                This awareness compounds over time into an intuitive understanding of your spending patterns.
-              </p>
-            </div>
-          </div>
-
-          {/* Why automation isn't always good */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Why automation isn't always good</h3>
-            <div className="bg-slate-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-4">
-                The fintech industry has convinced people that the ideal financial system is one they never think about. "Set it and forget it" has become the gold standard, as if conscious engagement with your money is a bug rather than a feature.
-              </p>
-              <p className="text-gray-700 mb-6">
-                But financial independence isn't achieved by forgetting about money—it's achieved through conscious, informed decisions over time.
-              </p>
-              
-              <p className="text-gray-700">
-                Here's the dirty secret: "automated" budget apps create MORE manual work, not less. YNAB has a 2,000+ word help guide for weekly reconciliation because their automation imports transactions wrong, messes up categories, creates duplicates, and misses charges entirely.
-              </p>
-            </div>
+          <div className="bg-blue-50 p-6 rounded-lg">
+            <p className="text-gray-700 mb-4">
+              Sometimes complex apps with many features and automations create more work than the approach our app uses. You think you spend less time because of automations and have more control because of all the features.
+            </p>
+            <p className="text-gray-700 mb-4">
+              But you actually spend more time on these apps than with Simplify Budget app and the end result is the same. You don't have to get too granular to actually save money and build wealth.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Take YNAB for example - it has a 2,000-word guide just for weekly reconciliation. Plus with YNAB you need to pay to use it every month.
+            </p>
+            <p className="text-gray-700">
+              With Simplify Budget you'll spend less time in the app and the app comes with one-time permanent payment.
+            </p>
           </div>
         </section>
 
@@ -457,67 +397,19 @@ const ArticleContent = () => (
         <section id="get-started" className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">How to Get Started</h2>
           
-          <p className="text-gray-700 mb-6">
-            If this approach resonates with you, getting started is straightforward:
-          </p>
-          
-          <div className="space-y-6">
-            <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Demo app with example data</h3>
-              <p className="text-gray-700 mb-4">
-                There's a fully functional demo available that doesn't require any authorization or signup. You can explore the visual grid system, see how the interface works, and get a feel for the approach without committing to anything.
-              </p>
-              <a 
-                href="/demo"
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-              >
-               Open Demo App
-              </a>
-            </div>
-            
-            <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Start tracking your money today</h3>
-              <p className="text-gray-700 mb-4">
-                Connect a Google Sheet and track your first expense in under 2 minutes. No payment required—decide later if you want lifetime access. Your data stays in your Google Sheets forever.
-              </p>
-              <a 
-                href="/app"
-                className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
-              >
-                Get your App
-              </a>
-            </div>
-            
-            <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Family Setup</h3>
-              <p className="text-gray-700">
-                If you want to track finances as a family, one person purchases the app and shares their Google Sheet with family members. Everyone else can then connect their own free version of the app to the shared sheet.
-              </p>
-            </div>
-            
-            <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Your Data, Your Terms</h3>
-              <p className="text-gray-700">
-                Everything lives in your Google Drive. You can export, modify, or analyze your data using any tools you prefer. If you decide to stop using the app, your financial history remains accessible in the most universal format possible.
-              </p>
-            </div>
+          <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-8 rounded-lg text-center">
+            <p className="text-gray-700 mb-6 text-lg">
+              Get the app and start tracking your expenses today. You can use the full features for 30 days free and only pay for permanent license if you're happy with the app.
+            </p>
+            <a 
+              href="/app"
+              className="inline-block bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors text-lg"
+            >
+              Get the full app now
+            </a>
           </div>
         </section>
 
-        {/* Conclusion */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Conclusion: Your Money Deserves Better</h2>
-          
-          <p className="text-gray-700 mb-4">
-            Good money management requires awareness, not automation. It requires flexibility, not rigid category systems. It requires ownership of your data, not dependence on subscription services.
-          </p>
-          
-          <p className="text-gray-700 mb-6">
-            You don't need an app to control your spending—you need clear visibility into the consequences of your decisions and the patterns they create over time.
-          </p>
-          
-     
-        </section>
 
         </div>
       </div>

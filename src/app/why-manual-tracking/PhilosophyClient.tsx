@@ -12,7 +12,7 @@ const PhilosophyClient = () => {
     { id: 'philosophy', title: 'Our Approach' },
     { id: 'results', title: 'Why It Works' },
     { id: 'who-for', title: 'Who It\'s For' },
-    { id: 'bigger-picture', title: 'Awareness vs Automation' },
+    { id: 'simple-beats-complex', title: 'Simple beats complex' },
     { id: 'get-started', title: 'Get Started' }
   ];
 

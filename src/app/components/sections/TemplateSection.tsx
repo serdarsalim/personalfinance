@@ -36,7 +36,7 @@ export default function TemplateSection() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div>
                     <h3 className="text-3xl font-bold mb-2">Simplify Budget App</h3>
-                    <p className="text-blue-100">Complete financial control in your browser</p>
+                    <p className="text-blue-100">Budget app that helps you stop overspending</p>
                   </div>
                   <div className="text-left sm:text-right">
                     <p className="text-sm line-through opacity-75">$30</p>
@@ -47,48 +47,47 @@ export default function TemplateSection() {
               
               <div className="p-8">
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                  <p className="text-green-800 font-semibold mb-2">✓ Try Everything Free for 30 Days</p>
-                  <p className="text-green-700 text-sm">Use all features. No credit card required. One-time payment if you love it.</p>
+                  <p className="text-green-800 font-semibold mb-2">✓ Try the full version free for 30 days before you buy</p>
                 </div>
                 
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-gray-900 mb-4">Why People Love It:</h4>
-                  <div className="grid sm:grid-cols-2 gap-3">
+                  <div className="grid sm:grid-cols-1 gap-3">
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Your data stays in your Google Drive - super secure</span>
+                      <span className="text-gray-700">Easier than tracking expenses on the spreadsheet itself</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Perfect for families - multiple people can track expenses</span>
+                      <span className="text-gray-700">Fixed expenses populate automatically so you know how much to spend for the rest of the month</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Track wealth growth and debt payoff over time</span>
+                      <span className="text-gray-700">Expense calendar where you can easily enter expenses and see your spending behavior</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Calendar-based entry - see your spending patterns instantly</span>
+                      <span className="text-gray-700">Multiple people can track on the same spreadsheet (the app connects to your spreadsheet)</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Set subscriptions once - they appear automatically every month</span>
+                      <span className="text-gray-700">Record a snapshot of your net worth with all your assets and debt - helps you live debt free and grow wealth</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">No download needed - works on any device with Gmail login</span>
+                      <span className="text-gray-700">Can't forget your login because it's a Google app</span>
                     </div>
                   </div>
                 </div>
@@ -102,7 +101,7 @@ export default function TemplateSection() {
                     rel="noopener noreferrer"
                     onClick={() => trackTemplateInteraction('download', 'Simplify Budget App')}
                   >
-                    Get Lifetime Access
+                    Get Simplify Budget App License
                   </a>
                 </div>
               </div>

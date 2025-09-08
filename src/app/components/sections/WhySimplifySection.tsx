@@ -1,35 +1,34 @@
 export default function WhySimplifySection() {
   const reasons = [
     {
-      title: "No App Download Required",
-      description: "Works instantly on any device with a browser. Already logged in through Google - no passwords to remember.",
+      title: "Know Your Budget at Month Start",
+      description: "Set your monthly budget once. Fixed expenses like rent and subscriptions auto-populate so you know exactly how much you have left to spend.",
+      icon: "📅"
+    },
+    {
+      title: "Track as You Spend",
+      description: "Add expenses in seconds while you're out spending, even from your mobile. See your remaining budget in real-time so you never overspend.",
       icon: "📱"
     },
     {
-      title: "Test Free, Pay Once",
-      description: "Try everything for 30 days. If you like it, pay once and get free lifetime updates forever.",
-      icon: "💰"
-    },
-    {
-      title: "Family Budget Sharing",
-      description: "Multiple people can track expenses in the same spreadsheet. Perfect for couples and families.",
-      icon: "👨‍👩‍👧"
-    },
-    {
-      title: "Revolutionary Monthly Grid",
-      description: "See your entire month at a glance. No more scrolling through endless transaction lists.",
-      icon: "📅",
-      appOnly: true
-    },
-    {
-      title: "Set Subscriptions Once",
-      description: "Enter Netflix, Spotify, etc. once - they appear automatically every month. Never forget to track them again.",
-      icon: "🔄"
-    },
-    {
-      title: "Build Wealth Over Time",
-      description: "Net worth tracking shows your financial progress. Watch debts shrink and assets grow month by month.",
+      title: "Monitor Your Net Worth",
+      description: "Track your assets and debts monthly to watch your wealth grow over time. See your financial progress and celebrate every milestone.",
       icon: "📈"
+    },
+    {
+      title: "Works for Families",
+      description: "Multiple people can track expenses in the same Google Sheet. Perfect for couples managing money together.",
+      icon: "🏠"
+    },
+    {
+      title: "You Own Your Data",
+      description: "Everything lives in your Google Drive. No company can lock you out or delete your financial history.",
+      icon: "🔒"
+    },
+    {
+      title: "Built on Google Apps Script & Verified",
+      description: "Our app has been verified by Google to provide a secure and trustworthy experience when you connect your Google Account.",
+      icon: "✅"
     }
   ];
 
@@ -37,7 +36,7 @@ export default function WhySimplifySection() {
     <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
-          Why <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">Simplify Budget</span>?
+          How it works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, i) => (
