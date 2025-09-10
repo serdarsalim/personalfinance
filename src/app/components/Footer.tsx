@@ -65,14 +65,7 @@ const Footer: React.FC = () => {
               <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11H15.8V16H8.2V11H9.2V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.4,8.7 10.4,10V11H13.6V10C13.6,8.7 12.8,8.2 12,8.2Z"/>
               </svg>
-              <a 
-                href="https://developers.google.com/apps-script/guides/client-verification"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-colors"
-              >
-                Your data stays in your Google Drive
-              </a>
+              <span className="text-gray-400">Your data stays in your Google Drive</span>
             </div>
             <p>© {new Date().getFullYear()} Simplify Budget</p>
           </div>
