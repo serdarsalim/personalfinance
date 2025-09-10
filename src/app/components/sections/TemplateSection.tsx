@@ -35,8 +35,8 @@ export default function TemplateSection() {
               <div className="bg-gradient-to-r from-blue-600 to-emerald-600 p-6 text-white">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div>
-                    <h3 className="text-3xl font-bold mb-2">Simplify Budget App</h3>
-                    <p className="text-blue-100">Budget app that helps you stop overspending</p>
+                    <h3 className="text-3xl font-bold mb-2">Simplify Budget License</h3>
+                    <p className="text-blue-100">One-time payment • Lifetime updates included</p>
                   </div>
                   <div className="text-left sm:text-right">
                     <p className="text-sm line-through opacity-75">$30</p>
@@ -47,7 +47,7 @@ export default function TemplateSection() {
               
               <div className="p-8">
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                  <p className="text-green-800 font-semibold mb-2">✓ Try the full version free for 30 days before you buy</p>
+                  <p className="text-green-800 font-semibold mb-2">✓ You can try the full version free for 30 days before you buy</p>
                 </div>
                 
                 <div className="mb-6">
@@ -57,7 +57,7 @@ export default function TemplateSection() {
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Easier than tracking expenses on the spreadsheet itself</span>
+                      <span className="text-gray-700">Your data stays on your Google Drive (not company servers)</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -81,7 +81,7 @@ export default function TemplateSection() {
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                       </svg>
-                      <span className="text-gray-700">Record a snapshot of your net worth with all your assets and debt - helps you live debt free and grow wealth</span>
+                      <span className="text-gray-700">Track your net worth to grow wealth and live debt free</span>
                     </div>
                     <div className="flex items-start">
                       <svg className="h-5 w-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -101,7 +101,7 @@ export default function TemplateSection() {
                     rel="noopener noreferrer"
                     onClick={() => trackTemplateInteraction('download', 'Simplify Budget App')}
                   >
-                    Get Simplify Budget App License
+                    Get License
                   </a>
                 </div>
               </div>
