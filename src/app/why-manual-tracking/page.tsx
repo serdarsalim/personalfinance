@@ -209,7 +209,7 @@ const ArticleContent = () => (
                 <h3 className="text-lg font-bold text-purple-900">Visual spending patterns</h3>
               </div>
               <p className="text-purple-800">
-                Monthly and yearly calendar grids with categories on top, days/months on the side. See all your spending patterns at a glance in one visual grid.
+                Monthly and yearly calendar views with categories on top, days/months on the side. See all your spending patterns at a glance in one Monthly Expense Calendar.
               </p>
             </div>
 
@@ -264,7 +264,7 @@ const ArticleContent = () => (
           <div className="bg-gray-50 p-6 rounded-lg text-center">
             <h3 className="text-2xl font-bold mb-4 text-gray-900">See How It Actually Works</h3>
             <p className="text-gray-700 mb-6">
-              Get a detailed walkthrough of the visual grid system, smart fixed expense handling, and family collaboration features.
+              Get a detailed walkthrough of the Monthly Expense Calendar system, smart fixed expense handling, and family collaboration features.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

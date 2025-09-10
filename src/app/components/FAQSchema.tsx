@@ -23,7 +23,7 @@ export default function FAQSchema() {
     },
     {
       question: "How is this different from YNAB or Mint?",
-      answer: "Your data stays in your Google Drive (not our servers), one-time payment (not subscription), visual monthly grid for faster expense entry, and perfect for families since multiple people can use the same budget."
+      answer: "Your data stays in your Google Drive (not our servers), one-time payment (not subscription), Monthly Expense Calendar for faster expense entry, and perfect for families since multiple people can use the same budget."
     },
     {
       question: "Is this a good YNAB alternative?",
@@ -46,7 +46,7 @@ export default function FAQSchema() {
       answer: "Your financial data stays in your Google Sheets forever. Since we don't store your data on our servers, you can stop using the app anytime and still access all your financial history in Google Sheets."
     },
     {
-      question: "How does the visual monthly grid work?",
+      question: "How does the Monthly Expense Calendar work?",
       answer: "Imagine a calendar where days are rows and your spending categories (food, gas, shopping) are columns. To track an expense, just tap where the day meets the category - like Monday + Food = $12 lunch. You see your whole month's spending at once."
     },
     {
@@ -55,7 +55,7 @@ export default function FAQSchema() {
     },
     {
       question: "How does the subscription tracker work?",
-      answer: "Set up each recurring payment once with its amount, frequency (monthly/quarterly/yearly), and end date. Simplify Budget automatically generates future payments and shows them in your monthly grid and budget. No end date? It keeps creating payments for the next cycle."
+      answer: "Set up each recurring payment once with its amount, frequency (monthly/quarterly/yearly), and end date. Simplify Budget automatically generates future payments and shows them in your Monthly Expense Calendar and budget. No end date? It keeps creating payments for the next cycle."
     },
     {
       question: "Can I customize the expense categories?",

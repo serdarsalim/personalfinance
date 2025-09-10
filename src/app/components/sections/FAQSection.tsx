@@ -13,7 +13,7 @@ import { useState } from "react";
     },
     {
       question: "How is this different from YNAB or Mint?",
-      answer: "Your data stays in your Google Drive (not our servers), one-time payment (not subscription), visual monthly grid for faster expense entry, and perfect for families since multiple people can use the same budget."
+      answer: "Your data stays in your Google Drive (not our servers), one-time payment (not subscription), Monthly Expense Calendar for faster expense entry, and perfect for families since multiple people can use the same budget."
     },
     {
       question: "How do I set up the app?",
@@ -28,7 +28,7 @@ import { useState } from "react";
       answer: "Your financial data stays in your Google Sheets forever. Since we don't store your data on our servers, you can stop using the app anytime and still access all your financial history in Google Sheets."
     },
     {
-      question: "How does the visual monthly grid work?",
+      question: "How does the Monthly Expense Calendar work?",
       answer: "Imagine a calendar where days are rows and your spending categories (food, gas, shopping) are columns. To track an expense, just tap where the day meets the category - like Monday + Food = $12 lunch. You see your whole month's spending at once."
     },
     {
@@ -37,7 +37,7 @@ import { useState } from "react";
     },
     {
       question: "How does the subscription tracker work?",
-      answer: "Set up each recurring payment once with its amount, frequency (monthly/quarterly/yearly), and end date. Simplify Budget automatically generates future payments and shows them in your monthly grid and budget. No end date? It keeps creating payments for the next cycle."
+      answer: "Set up each recurring payment once with its amount, frequency (monthly/quarterly/yearly), and end date. Simplify Budget automatically generates future payments and shows them in your Monthly Expense Calendar and budget. No end date? It keeps creating payments for the next cycle."
     },
     {
       question: "Can I customize the expense categories?",
@@ -50,6 +50,10 @@ import { useState } from "react";
     {
       question: "What currencies does Simplify Budget support?",
       answer: "Simplify Budget supports all major currencies. You can set your preferred currency in the settings, and all calculations and displays will use your chosen currency format."
+    },
+    {
+      question: "Is Simplify Budget verified by Google?",
+      answer: "Yes! Simplify Budget has passed Google's OAuth verification process for Google Apps Script applications. This means Google has reviewed our app for security and privacy compliance, and users see a 'verified' badge instead of security warnings when granting permissions. The verification covers our privacy policy, data handling practices, and ensures we follow Google's security standards. Your data is protected by Google's security infrastructure and never leaves your Google account."
     }
   ];
 

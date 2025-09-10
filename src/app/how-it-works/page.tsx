@@ -359,7 +359,7 @@ export default function HowItWorks() {
           dateModified={new Date().toISOString().split('T')[0]}
           authorName="Simplify Budget Team"
           organizationName="Simplify Budget"
-          keywords={['budget app features', 'expense tracking', 'subscription management', 'net worth tracking', 'family budget', 'Google Sheets budget', 'visual expense grid']}
+          keywords={['budget app features', 'expense tracking', 'subscription management', 'net worth tracking', 'family budget', 'Google Sheets budget', 'monthly expense calendar']}
         />
       </Suspense>
     </div>

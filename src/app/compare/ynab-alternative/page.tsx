@@ -277,7 +277,7 @@ Start Your Free Trial
         questions={[
           {
             question: "How is Simplify Budget different from YNAB?",
-            answer: "Simplify Budget offers one-time payment instead of $180/year subscription, visual monthly grid view that YNAB lacks, and stores data in your Google Drive instead of their servers."
+            answer: "Simplify Budget offers one-time payment instead of $180/year subscription, Monthly Expense Calendar view that YNAB lacks, and stores data in your Google Drive instead of their servers."
           },
           {
             question: "Can I import my YNAB data to Simplify Budget?",
@@ -285,7 +285,7 @@ Start Your Free Trial
           },
           {
             question: "Does Simplify Budget have the same features as YNAB?",
-            answer: "Simplify Budget focuses on core budgeting with visual expense tracking, subscription management, and reporting. It doesn't include YNAB's goals feature but adds visual monthly grid that YNAB users have requested for years."
+            answer: "Simplify Budget focuses on core budgeting with visual expense tracking, subscription management, and reporting. It doesn't include YNAB's goals feature but adds Monthly Expense Calendar that YNAB users have requested for years."
           },
           {
             question: "Why is Simplify Budget cheaper than YNAB?",

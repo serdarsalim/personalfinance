@@ -119,7 +119,7 @@ export default function EveryDollarAlternativePage() {
               ))}
             </div>
             <blockquote className="text-lg text-gray-700 mb-4">
-              "I was tired of paying $80/year for EveryDollar Plus just to connect my bank. Simplify Budget's visual grid actually made me better at budgeting because I can see patterns. Plus, manual entry makes me more aware of spending."
+              "I was tired of paying $80/year for EveryDollar Plus just to connect my bank. Simplify Budget's Monthly Expense Calendar actually made me better at budgeting because I can see patterns. Plus, manual entry makes me more aware of spending."
             </blockquote>
             <p className="text-gray-600 font-semibold">– Former EveryDollar Plus User</p>
           </div>
@@ -161,7 +161,7 @@ export default function EveryDollarAlternativePage() {
         questions={[
           {
             question: "Is Simplify Budget better than EveryDollar?",
-            answer: "Simplify Budget offers visual monthly grid view, one-time payment instead of $80/year, works with any budgeting method (not just Dave Ramsey's), and stores data in your Google Drive for complete ownership."
+            answer: "Simplify Budget offers Monthly Expense Calendar view, one-time payment instead of $80/year, works with any budgeting method (not just Dave Ramsey's), and stores data in your Google Drive for complete ownership."
           },
           {
             question: "Can I use Simplify Budget without following Dave Ramsey's baby steps?",
@@ -173,7 +173,7 @@ export default function EveryDollarAlternativePage() {
           },
           {
             question: "How do I switch from EveryDollar to Simplify Budget?",
-            answer: "Export your EveryDollar data, set up our Google Sheets template, and start tracking. The visual grid makes expense entry faster than EveryDollar's list view. Most users are fully switched within 30 minutes."
+            answer: "Export your EveryDollar data, set up our Google Sheets template, and start tracking. The Monthly Expense Calendar makes expense entry faster than EveryDollar's list view. Most users are fully switched within 30 minutes."
           }
         ]}
       />

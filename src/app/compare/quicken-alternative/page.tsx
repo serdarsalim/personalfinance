@@ -283,7 +283,7 @@ export default function QuickenAlternativePage() {
           },
           {
             question: "Can Simplify Budget replace Quicken for basic budgeting?",
-            answer: "Absolutely. If you primarily use Quicken for expense tracking and budgeting (not investment tracking or business accounting), Simplify Budget provides a cleaner, faster solution with its visual monthly grid."
+            answer: "Absolutely. If you primarily use Quicken for expense tracking and budgeting (not investment tracking or business accounting), Simplify Budget provides a cleaner, faster solution with its Monthly Expense Calendar."
           },
           {
             question: "Why is Simplify Budget so much cheaper than Quicken?",

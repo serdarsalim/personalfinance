@@ -224,15 +224,15 @@ export default function PocketGuardAlternativePage() {
         questions={[
           {
             question: "Why switch from PocketGuard to Simplify Budget?",
-            answer: "Simplify Budget has no ads ever, offers visual monthly grid view instead of just lists, provides 30 customizable categories vs PocketGuard's 17 limit, and uses one-time payment instead of monthly subscriptions."
+            answer: "Simplify Budget has no ads ever, offers Monthly Expense Calendar view instead of just lists, provides 30 customizable categories vs PocketGuard's 17 limit, and uses one-time payment instead of monthly subscriptions."
           },
           {
             question: "Does Simplify Budget have as many features as PocketGuard?",
-            answer: "Simplify Budget focuses on core budgeting with better visualization. While PocketGuard has features like bill negotiation, Simplify Budget excels at expense tracking with its unique visual grid that shows spending patterns at a glance."
+            answer: "Simplify Budget focuses on core budgeting with better visualization. While PocketGuard has features like bill negotiation, Simplify Budget excels at expense tracking with its unique Monthly Expense Calendar that shows spending patterns at a glance."
           },
           {
             question: "Can I see my whole month like in Simplify Budget if I use PocketGuard?",
-            answer: "No, PocketGuard only offers list views of transactions. Simplify Budget's visual monthly grid is unique, showing your entire month's spending patterns in a color-coded calendar format."
+            answer: "No, PocketGuard only offers list views of transactions. Simplify Budget's Monthly Expense Calendar is unique, showing your entire month's spending patterns in a color-coded calendar format."
           },
           {
             question: "Is my data safer with Simplify Budget than PocketGuard?",

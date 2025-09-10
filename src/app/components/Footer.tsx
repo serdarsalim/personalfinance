@@ -62,13 +62,17 @@ const Footer: React.FC = () => {
           
           <div className="mt-8 text-center text-gray-500 text-sm border-t border-gray-800 pt-6">
             <div className="flex items-center justify-center gap-2 mb-3">
-              <svg className="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5"/>
+              <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11H15.8V16H8.2V11H9.2V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.4,8.7 10.4,10V11H13.6V10C13.6,8.7 12.8,8.2 12,8.2Z"/>
               </svg>
-              <span className="text-gray-400">Verified by Google for secure access</span>
-              <svg className="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
+              <a 
+                href="https://developers.google.com/apps-script/guides/client-verification"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-green-400 transition-colors"
+              >
+                Your data stays in your Google Drive
+              </a>
             </div>
             <p>© {new Date().getFullYear()} Simplify Budget</p>
           </div>
