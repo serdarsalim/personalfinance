@@ -62,9 +62,9 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <WhySimplifySection />
       <TemplateSection />
       <FeatureCarousel />
-      <WhySimplifySection />
       <FAQSection />
       <FAQSchema />
     </main>
