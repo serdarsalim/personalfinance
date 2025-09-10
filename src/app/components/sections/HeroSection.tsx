@@ -2,7 +2,6 @@
 
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -77,29 +76,29 @@ export default function HeroSection() {
                 href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
                 className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
               >
-                Get Your App →
+                Start Using Simplify Budget
               </a>
-              <a 
-                href="/demo"
-                className="inline-block px-6 py-4 bg-white text-blue-600 rounded-lg shadow hover:shadow-md transition-all font-semibold border border-gray-200"
-              >
-                Demo with Example Data →
-              </a>
+            </div>
+            
+            {/* Trust note */}
+            <div className="text-sm text-gray-600 text-center lg:text-left mb-4">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
             </div>
           </div>
 
-          {/* Right side - Visual Grid Demo */}
+          {/* Right side - Visual Grid */}
           <div className="relative">
-            <Link href="/demo" className="block max-w-xl mx-auto transform hover:scale-105 transition-transform duration-300">
+            <div className="block max-w-xl mx-auto">
               <Image
                 src="/simplify-monthly-grid.png"
                 alt="Simplify Monthly Expense Grid"
                 width={700}
                 height={580}
-                className="w-full h-auto rounded-lg border border-gray-200 shadow-lg cursor-pointer"
+                className="w-full h-auto rounded-lg border border-gray-200 shadow-lg"
                 priority
               />
-            </Link>
+            </div>
             
        
           </div>
