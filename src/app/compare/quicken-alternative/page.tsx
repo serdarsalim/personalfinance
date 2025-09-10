@@ -62,7 +62,7 @@ export default function QuickenAlternativePage() {
                 </div>
                 <div className="flex items-start">
                   <span className="text-green-600 mr-2">💰</span>
-                  <span>One-time payment, use forever</span>
+                  <span>$15 one-time, use forever</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-green-600 mr-2">⚡</span>
@@ -85,8 +85,12 @@ export default function QuickenAlternativePage() {
               href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
             >
-              Try Simple Budgeting Free →
+              Start Using Simplify Budget
             </a>
+            <div className="mt-4 text-sm text-white">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
+            </div>
           </div>
         </div>
       </section>
@@ -152,7 +156,7 @@ export default function QuickenAlternativePage() {
               features I didn't understand, constant upsells to the Premier version. I just wanted to see 
               where my money was going!
               <br /><br />
-              Simplify Budget's grid view is exactly what I needed. I can see my whole month at a glance, 
+              Simplify Budget's expense calendar is exactly what I needed. I can see my whole month at a glance, 
               add expenses in seconds, and actually stick to my budget. Plus, I'm saving $50/year."
             </blockquote>
             <div className="flex items-center">
@@ -250,19 +254,17 @@ export default function QuickenAlternativePage() {
           <p className="text-xl mb-8 text-indigo-100">
             Not everyone needs Wall Street-level financial software. Sometimes simple is better.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="text-center">
             <a 
               href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-white text-indigo-600 rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg"
             >
-              Start Simple - Try Free
+              Start Using Simplify Budget
             </a>
-            <a 
-              href="https://youtu.be/pfwtW8DKStM"
-              className="inline-block px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg hover:bg-white hover:text-indigo-600 transition-all font-bold text-lg"
-            >
-              See How Simple It Is
-            </a>
+            <div className="mt-4 text-sm text-white">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
+            </div>
           </div>
           <p className="text-indigo-100 mt-6">
             Join 150+ people who chose simple over complex

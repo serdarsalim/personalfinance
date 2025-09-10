@@ -24,7 +24,7 @@ export default function SoftwareApplicationSchema() {
     "description": "Budget app that actually works. Visual expense tracking with Google Sheets integration. Best YNAB and Mint alternative - no monthly fees, works for families. Track expenses in 5 seconds.",
     "screenshot": "https://simplifybudget.com/simplifybudget.jpg",
     "featureList": [
-      "Visual monthly expense grid",
+      "Visual monthly expense calendar",
       "5-second expense entry",
       "Family budget sharing",
       "YNAB alternative - no monthly fees",

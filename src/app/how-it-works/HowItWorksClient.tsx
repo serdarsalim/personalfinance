@@ -9,7 +9,7 @@ const HowItWorksClient = () => {
 
   const sections = [
     { id: 'dashboard', title: 'Dashboard' },
-    { id: 'expense-grid', title: 'Expense Entry' },
+    { id: 'expense-calendar', title: 'Expense Entry' },
     { id: 'subscriptions', title: 'Fixed Expenses' },
     { id: 'income', title: 'Income' },
     { id: 'networth', title: 'Net Worth' },

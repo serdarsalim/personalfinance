@@ -26,7 +26,7 @@ const ComparisonTable = () => (
       <tbody className="divide-y divide-gray-200">
         <tr>
           <td className="px-6 py-4 font-medium text-gray-900">Price</td>
-          <td className="px-6 py-4 text-center"><span className="text-green-600 font-bold">One-time payment</span></td>
+          <td className="px-6 py-4 text-center"><span className="text-green-600 font-bold">$15 one-time</span></td>
           <td className="px-6 py-4 text-center text-gray-900">Was free</td>
           <td className="px-6 py-4 text-center text-red-600 font-bold">$180/year</td>
         </tr>
@@ -78,13 +78,16 @@ export default function MintAlternativePage() {
             No subscriptions. No data hostage. Just one payment, and your financial data stays in YOUR Google Sheets forever.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-
             <a 
-              href="https://ko-fi.com/s/4b62acb528"
+              href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors text-center"
             >
-Start Your Free Trial
+Start Using Simplify Budget
             </a>
+          </div>
+          <div className="mt-4 text-sm text-blue-100">
+            <p>Sign in with Google to create your budget</p>
+            <p>Try free for 30 days without credit card requirement</p>
           </div>
         </div>
       </section>
@@ -133,7 +136,7 @@ Start Your Free Trial
                 </div>
               </div>
               <div className="ml-4">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">Calendar Grid View</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Expense Calendar</h3>
                 <p className="text-gray-700">See your entire month at a glance. Find today's date, find your expense category, enter amount. Done. No endless scrolling through transactions.</p>
               </div>
             </div>
@@ -175,12 +178,15 @@ Start Your Free Trial
           <h2 className="text-3xl font-bold mb-6">Ready to Own Your Financial Data?</h2>
           <p className="text-xl mb-8">Join 150+ users who made the switch from subscription apps.</p>
           <a 
-            href="https://ko-fi.com/s/4b62acb528"
+            href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
             className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors"
           >
-            Get Lifetime Access for $15
+            Start Using Simplify Budget
           </a>
-          <p className="mt-4 text-sm text-white">One-time payment. Use forever. Cancel anytime = keep your data.</p>
+          <div className="mt-4 text-sm text-white">
+            <p>Sign in with Google to create your budget</p>
+            <p>Try free for 30 days without credit card requirement</p>
+          </div>
         </div>
       </section>
 

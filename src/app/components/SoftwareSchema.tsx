@@ -29,7 +29,7 @@ export default function SoftwareSchema() {
     },
     "screenshot": "https://simplifybudget.com/app-screenshots/1budgettab.png",
     "featureList": [
-      "Calendar grid view for easy expense entry",
+      "Expense calendar for easy expense entry",
       "Auto-fill recurring subscriptions",
       "30+ customizable expense categories",
       "Net worth tracking",

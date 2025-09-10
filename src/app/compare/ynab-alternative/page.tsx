@@ -53,11 +53,15 @@ export default function YNABAlternativePage() {
           
           <div className="text-center mt-12">
             <a 
-              href="https://ko-fi.com/s/4b62acb528"
+              href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors"
             >
-Start Your Free Trial
+Start Using Simplify Budget
             </a>
+            <div className="mt-4 text-sm text-white">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
+            </div>
           </div>
         </div>
       </section>
@@ -74,7 +78,7 @@ Start Your Free Trial
               </div>
               <div>
                 <p className="text-gray-700 mb-2">Simplify Budget Total Cost</p>
-                <p className="text-3xl font-bold text-green-600">One-time payment</p>
+                <p className="text-3xl font-bold text-green-600">$15 one-time</p>
               </div>
               <div>
                 <p className="text-gray-700 mb-2">You Break Even In</p>
@@ -136,7 +140,7 @@ Start Your Free Trial
                 <li className="flex items-start">
                   <span className="text-blue-500 mr-3">★</span>
                   <div>
-                    <strong className="text-gray-900">Calendar grid view</strong>
+                    <strong className="text-gray-900">Expense calendar</strong>
                     <p className="text-gray-700">See your entire month at once - no scrolling</p>
                   </div>
                 </li>
@@ -261,8 +265,12 @@ Start Your Free Trial
             href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
             className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors"
           >
-            Start Your Free 30-Day Trial
+            Start Using Simplify Budget
           </Link>
+          <div className="mt-4 text-sm text-white">
+            <p>Sign in with Google to create your budget</p>
+            <p>Try free for 30 days without credit card requirement</p>
+          </div>
           <p className="mt-6 text-sm text-white">
             Join 150+ people who stopped paying for subscriptions
           </p>

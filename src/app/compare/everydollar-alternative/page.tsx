@@ -40,7 +40,7 @@ export default function EveryDollarAlternativePage() {
             </div>
             <div className="bg-yellow-400 text-gray-900 rounded-xl p-8 text-center transform scale-105">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Simplify Budget</h3>
-              <div className="text-4xl font-bold mb-2 text-gray-900">One-Time</div>
+              <div className="text-4xl font-bold mb-2 text-gray-900">$15 one-time</div>
               <p className="text-lg mb-4 text-gray-900">Pay Once. Own Forever.</p>
               <ul className="text-left space-y-2 text-gray-900">
                 <li>✅ Keep access forever</li>
@@ -56,8 +56,12 @@ export default function EveryDollarAlternativePage() {
               href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
             >
-              Try Free for 30 Days →
+              Start Using Simplify Budget
             </a>
+            <div className="mt-4 text-sm text-white">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
+            </div>
           </div>
         </div>
       </section>
@@ -76,7 +80,7 @@ export default function EveryDollarAlternativePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Visual Monthly Grid</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">Visual Expense Calendar</h3>
               <p className="text-gray-600">
                 See your entire month at a glance. EveryDollar's list view makes it hard to spot spending patterns.
               </p>
@@ -135,19 +139,17 @@ export default function EveryDollarAlternativePage() {
           <p className="text-xl mb-8 text-blue-100">
             Join 150+ people who switched from subscription budgeting to ownership.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="text-center">
             <a 
               href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg"
             >
-              Start Your Free Trial
+              Start Using Simplify Budget
             </a>
-            <a 
-              href="/demo"
-              className="inline-block px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg hover:bg-white hover:text-blue-600 transition-all font-bold text-lg"
-            >
-              Open Demo
-            </a>
+            <div className="mt-4 text-sm text-white">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
+            </div>
           </div>
         </div>
       </section>

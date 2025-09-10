@@ -39,7 +39,7 @@ export default function PocketGuardAlternativePage() {
                 <tr className="border-b border-white/10">
                   <td className="p-6 text-white">Price</td>
                   <td className="p-6 text-center text-white">$8-13/month forever</td>
-                  <td className="p-6 text-center text-yellow-300 font-bold">One-time payment</td>
+                  <td className="p-6 text-center text-yellow-300 font-bold">$15 one-time</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-6 text-white">Ads in Free Version</td>
@@ -49,7 +49,7 @@ export default function PocketGuardAlternativePage() {
                 <tr className="border-b border-white/10">
                   <td className="p-6 text-white">Visual Monthly View</td>
                   <td className="p-6 text-center text-white">❌ List only</td>
-                  <td className="p-6 text-center text-yellow-300 font-bold">✅ Calendar grid</td>
+                  <td className="p-6 text-center text-yellow-300 font-bold">✅ Expense calendar</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-6 text-white">Category Limits</td>
@@ -64,7 +64,7 @@ export default function PocketGuardAlternativePage() {
                 <tr>
                   <td className="p-6 text-white">Manual Entry Speed</td>
                   <td className="p-6 text-center text-white">Multiple taps</td>
-                  <td className="p-6 text-center text-yellow-300 font-bold">One tap on grid</td>
+                  <td className="p-6 text-center text-yellow-300 font-bold">One tap on calendar</td>
                 </tr>
               </tbody>
             </table>
@@ -75,8 +75,12 @@ export default function PocketGuardAlternativePage() {
               href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
             >
-              Start Free Trial (No Ads!) →
+              Start Using Simplify Budget
             </a>
+            <div className="mt-4 text-sm text-white">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
+            </div>
           </div>
         </div>
       </section>
@@ -105,7 +109,7 @@ export default function PocketGuardAlternativePage() {
                 "The list view makes it impossible to see when I'm overspending during the month."
               </p>
               <p className="text-green-700 font-semibold">
-                → Simplify Budget: Visual grid shows patterns instantly.
+                → Simplify Budget: Expense calendar shows patterns instantly.
               </p>
             </div>
             
@@ -161,7 +165,7 @@ export default function PocketGuardAlternativePage() {
               </div>
               
               <div>
-                <h3 className="font-bold mb-4 text-gray-900">Simplify Budget (Visual Grid)</h3>
+                <h3 className="font-bold mb-4 text-gray-900">Simplify Budget (Expense Calendar)</h3>
                 <div className="grid grid-cols-5 gap-1 text-xs text-gray-900">
                   <div className="p-2 bg-gray-100 font-semibold text-gray-900">Day</div>
                   <div className="p-2 bg-gray-100 text-center text-gray-900">🛒</div>
@@ -198,19 +202,17 @@ export default function PocketGuardAlternativePage() {
           <p className="text-xl mb-8 text-purple-100">
             Pay once. Own your budgeting tool forever. No ads, no limits.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="text-center">
             <a 
               href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-white text-purple-600 rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg"
             >
-              Try Free for 30 Days
+              Start Using Simplify Budget
             </a>
-            <Link 
-              href="/"
-              className="inline-block px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg hover:bg-white hover:text-purple-600 transition-all font-bold text-lg"
-            >
-              Learn More
-            </Link>
+            <div className="mt-4 text-sm text-white">
+              <p>Sign in with Google to create your budget</p>
+              <p>Try free for 30 days without credit card requirement</p>
+            </div>
           </div>
         </div>
       </section>

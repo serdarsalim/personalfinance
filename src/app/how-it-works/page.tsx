@@ -108,19 +108,19 @@ const HowItWorksContent = () => (
           </div>
         </section>
 
-        {/* Expense Grid */}
-        <section id="expense-grid" className="mb-16 scroll-mt-20">
+        {/* Expense Calendar */}
+        <section id="expense-calendar" className="mb-16 scroll-mt-20">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Expense Entry: Fast & Simple</h2>
           
           <p className="text-gray-700 mb-6">
             Click where any date meets any category to add an expense. Enter the amount and description. You can add multiple entries per day or just enter the daily total for that category. It's lightning fast and works perfectly on your phone.
           </p>
 
-          {/* Expense Grid Screenshot */}
+          {/* Expense Calendar Screenshot */}
           <div className="mb-8">
             <img 
               src="/app-screenshots/2monthlygrid.png" 
-              alt="Expense Grid Interface" 
+              alt="Expense Calendar Interface" 
               className="w-full rounded-lg shadow-lg border"
             />
           </div>
@@ -352,7 +352,7 @@ export default function HowItWorks() {
         <BreadcrumbSchema pageName="App Guide" />
         <ArticleSchema
           title="How to Use Simplify Budget App"
-          description="Detailed guide to Simplify Budget features: expense grid, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works."
+          description="Detailed guide to Simplify Budget features: expense calendar, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works."
           url="https://simplifybudget.com/how-it-works"
           imageUrl="https://simplifybudget.com/app-screenshots/1budgettab.png"
           datePublished="2024-01-15"

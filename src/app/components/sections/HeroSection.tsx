@@ -87,12 +87,12 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right side - Visual Grid */}
+          {/* Right side - Visual Calendar */}
           <div className="relative">
             <div className="block max-w-xl mx-auto">
               <Image
                 src="/simplify-monthly-grid.png"
-                alt="Simplify Monthly Expense Grid"
+                alt="Simplify Monthly Expense Calendar"
                 width={700}
                 height={580}
                 className="w-full h-auto rounded-lg border border-gray-200 shadow-lg"
