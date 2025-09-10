@@ -10,21 +10,21 @@ export default function HeroSection() {
 
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white pt-8 pb-16 overflow-hidden relative">
-      {/* Animated expense icons background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Rising dollar signs and expense icons */}
-        {[...Array(8)].map((_, i) => {
-          const icons = ['💵', '💳', '🛒', '⛽', '🏠', '✈️', '🍔', '💰'];
-          const positions = [5, 15, 25, 35, 50, 65, 80, 90];
+      {/* Optimized animated expense icons background - reduced from 11 to 5 elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
+        {/* Rising icons - 5 emojis */}
+        {[...Array(5)].map((_, i) => {
+          const icons = ['💵', '💳', '💰', '🛒', '🏠'];
+          const positions = [15, 30, 50, 70, 85];
           return (
             <div
               key={i}
-              className="absolute text-4xl animate-rise"
+              className="absolute text-3xl animate-rise-optimized will-change-transform"
               style={{
                 left: `${positions[i]}%`,
-                animationDelay: `${i * 2}s`,
-                animationDuration: '20s',
-                opacity: 0.15
+                animationDelay: `${i * 4}s`,
+                opacity: 0,
+                transform: 'translate3d(0, 100vh, 0)'
               }}
             >
               {icons[i]}
@@ -32,26 +32,27 @@ export default function HeroSection() {
           );
         })}
         
-        {/* Diagonal moving expense cards */}
+        {/* Reduced diagonal cards - only 2 now */}
         <div className="absolute inset-0">
-          {[...Array(3)].map((_, i) => (
+          {[...Array(2)].map((_, i) => (
             <div
               key={`card-${i}`}
-              className="absolute bg-white/10 backdrop-blur-sm rounded-lg p-3 animate-diagonal"
+              className="absolute bg-white/8 rounded-lg p-3 animate-diagonal-optimized will-change-transform"
               style={{
-                width: '120px',
-                height: '60px',
-                left: `${[20, 50, 80][i]}%`,
-                top: `${[10, 40, 70][i]}%`,
-                animationDelay: `${i * 3}s`,
-                animationDuration: '15s'
+                width: '100px',
+                height: '50px',
+                left: `${[30, 70][i]}%`,
+                top: `${[20, 60][i]}%`,
+                animationDelay: `${i * 6}s`,
+                opacity: 0,
+                transform: 'translate3d(-50px, 50vh, 0)'
               }}
             >
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400/20 to-emerald-400/20 rounded"></div>
+                <div className="w-6 h-6 bg-gradient-to-br from-blue-400/15 to-emerald-400/15 rounded"></div>
                 <div className="flex-1">
-                  <div className="h-2 bg-gray-300/20 rounded mb-1"></div>
-                  <div className="h-2 bg-gray-300/20 rounded w-2/3"></div>
+                  <div className="h-1.5 bg-gray-300/15 rounded mb-1"></div>
+                  <div className="h-1.5 bg-gray-300/15 rounded w-2/3"></div>
                 </div>
               </div>
             </div>
@@ -139,48 +140,52 @@ export default function HeroSection() {
         </div>
       </div>
       
-      {/* Add CSS animations */}
+      {/* Optimized CSS animations with accessibility support */}
       <style jsx>{`
-        @keyframes rise {
-          0% {
-            transform: translateY(100vh) rotate(0deg);
-            opacity: 0;
-          }
-          10% {
-            opacity: 0.15;
-          }
-          90% {
-            opacity: 0.15;
-          }
-          100% {
-            transform: translateY(-100vh) rotate(360deg);
-            opacity: 0;
+        @media (prefers-reduced-motion: reduce) {
+          .animate-rise-optimized,
+          .animate-diagonal-optimized {
+            animation: none !important;
+            opacity: 0.05 !important;
           }
         }
         
-        @keyframes diagonal {
+        @keyframes rise-optimized {
           0% {
-            transform: translate(-100px, 100vh) rotate(-5deg);
+            transform: translate3d(0, 100vh, 0);
             opacity: 0;
           }
-          10% {
-            opacity: 0.1;
-          }
-          90% {
+          5%, 95% {
             opacity: 0.1;
           }
           100% {
-            transform: translate(100vw, -100px) rotate(5deg);
+            transform: translate3d(0, -20vh, 0);
             opacity: 0;
           }
         }
         
-        .animate-rise {
-          animation: rise 20s linear infinite;
+        @keyframes diagonal-optimized {
+          0% {
+            transform: translate3d(-50px, 50vh, 0);
+            opacity: 0;
+          }
+          5%, 95% {
+            opacity: 0.08;
+          }
+          100% {
+            transform: translate3d(50vw, -50px, 0);
+            opacity: 0;
+          }
         }
         
-        .animate-diagonal {
-          animation: diagonal 15s linear infinite;
+        .animate-rise-optimized {
+          animation: rise-optimized 12s ease-in-out infinite;
+          opacity: 0;
+        }
+        
+        .animate-diagonal-optimized {
+          animation: diagonal-optimized 10s ease-in-out infinite;
+          opacity: 0;
         }
       `}</style>
     </section>
