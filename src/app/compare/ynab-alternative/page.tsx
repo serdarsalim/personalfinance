@@ -7,12 +7,12 @@ import ComparisonFAQSchema from '../../components/ComparisonFAQSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "YNAB Alternative - $15 One-Time vs $180/Year | Expense Calendar Budget App",
-  description: "Stop paying $180/year for YNAB! Get our expense calendar budget app for $15 one-time payment. Visual monthly tracking, data in your Google Drive, no subscriptions ever.",
-  keywords: "ynab alternative, budget app without subscription, ynab replacement, cheaper than ynab, $15 budget app, expense calendar, visual budget tracker, google sheets budget, ynab too expensive, one time payment budget app",
+  title: "Best YNAB Alternatives - $15 vs $180/Year + Free Options Compared",
+  description: "Looking for YNAB alternatives? Compare the best options: our $15 expense calendar vs free alternatives vs $180/year YNAB. See why users choose us over free apps.",
+  keywords: "ynab alternatives, best ynab alternative, ynab alternative, free ynab alternative, ynab alternative free, ynab replacement, cheaper than ynab, you need a budget alternatives, budget app without subscription, $15 budget app, expense calendar, visual budget tracker, google sheets budget, ynab too expensive, free alternatives to ynab, apps like ynab, better than ynab",
   openGraph: {
-    title: "YNAB Alternative - $15 One-Time vs $180/Year | Expense Calendar Budget App",
-    description: "Stop paying $180/year for YNAB! Get our expense calendar budget app for $15 one-time payment.",
+    title: "Best YNAB Alternatives - $15 vs $180/Year + Free Options Compared",
+    description: "Compare the best YNAB alternatives: our $15 expense calendar vs free options vs $180/year YNAB.",
     url: "https://simplifybudget.com/compare/ynab-alternative",
     siteName: "Simplify Budget",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png",
         width: 1200,
         height: 630,
-        alt: "Expense Calendar Budget App - YNAB Alternative"
+        alt: "Best YNAB Alternative - Expense Calendar Budget App Comparison"
       }
     ]
   }
@@ -34,7 +34,7 @@ export default function YNABAlternativePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
-              YNAB Costs $180/Year. We're One-Time Payment.
+              Best YNAB Alternatives: $15 vs Free vs $180/Year
             </h1>
             <p className="text-2xl mb-8 text-emerald-100">
               Same budgeting power. Better features. No subscription trap.
@@ -264,6 +264,69 @@ Start Using Simplify Budget
                 it works like a native app. No app store fees = lower price for you.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Free YNAB Alternatives vs Paid */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Free YNAB Alternatives vs $15 One-Time: The Truth</h2>
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+              <h3 className="text-xl font-bold mb-4 text-red-600 text-center">Free Alternatives</h3>
+              <div className="text-center mb-4">
+                <span className="text-3xl font-bold text-red-600">$0</span>
+                <p className="text-sm text-red-600">But at what cost?</p>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li>❌ Limited features to push upgrades</li>
+                <li>❌ Ads and constant upselling</li>
+                <li>❌ Data on company servers</li>
+                <li>❌ Can disappear or change pricing anytime</li>
+                <li>❌ Usually lack visual calendar view</li>
+              </ul>
+            </div>
+            
+            <div className="bg-yellow-50 rounded-xl p-6 border-2 border-yellow-400 transform scale-105">
+              <div className="text-center mb-2">
+                <span className="bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">BEST VALUE</span>
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">Simplify Budget</h3>
+              <div className="text-center mb-4">
+                <span className="text-3xl font-bold text-gray-900">$15</span>
+                <p className="text-sm text-gray-700">One-time payment</p>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li>✅ Visual expense calendar (unique)</li>
+                <li>✅ Your data in YOUR Google Drive</li>
+                <li>✅ No ads, no upselling ever</li>
+                <li>✅ Own it forever</li>
+                <li>✅ 30+ customizable categories</li>
+              </ul>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h3 className="text-xl font-bold mb-4 text-gray-600 text-center">YNAB</h3>
+              <div className="text-center mb-4">
+                <span className="text-3xl font-bold text-gray-600">$180</span>
+                <p className="text-sm text-gray-600">Every year forever</p>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li>✅ Full features</li>
+                <li>❌ Expensive subscription</li>
+                <li>❌ Lose access if you stop paying</li>
+                <li>❌ No visual calendar view</li>
+                <li>❌ Your data locked in their system</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="mt-8 bg-blue-50 rounded-lg p-6 text-center">
+            <p className="text-lg text-blue-800">
+              <strong>Why most people choose the $15 option:</strong> True ownership, unique features, and no ongoing costs. 
+              Free alternatives usually end up costing more through hidden fees or by becoming paid later.
+            </p>
           </div>
         </div>
       </section>

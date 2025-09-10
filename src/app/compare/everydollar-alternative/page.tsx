@@ -5,12 +5,12 @@ import ComparisonFAQSchema from '../../components/ComparisonFAQSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EveryDollar Alternative - $15 vs $80/Year | No Dave Ramsey Tax",
-  description: "Stop paying Dave Ramsey's $80/year EveryDollar tax! Get our $15 expense calendar budget app. Any budgeting method, visual tracking, data in your Google Drive.",
-  keywords: "everydollar alternative, everydollar plus alternative, dave ramsey budget app alternative, $15 budget app, expense calendar, visual budget tracker, budget app without ramsey, everydollar replacement, no dave ramsey fees, google sheets budget",
+  title: "EveryDollar Alternative - $15 vs $80/Year | Every Dollar Replacement",
+  description: "Best EveryDollar alternative: $15 expense calendar vs $80/year EveryDollar Plus. No Dave Ramsey tax, any budgeting method, visual tracking, data in your Google Drive.",
+  keywords: "everydollar alternative, every dollar alternative, everydollar plus alternative, best alternative to everydollar, every dollar replacement, dave ramsey budget app alternative, $15 budget app, expense calendar, visual budget tracker, budget app without ramsey, everydollar replacement, no dave ramsey fees, google sheets budget, alternatives to every dollar",
   openGraph: {
-    title: "EveryDollar Alternative - $15 vs $80/Year | No Dave Ramsey Tax",
-    description: "Stop paying Dave Ramsey's $80/year EveryDollar tax! Get our $15 expense calendar budget app.",
+    title: "EveryDollar Alternative - $15 vs $80/Year | Every Dollar Replacement",
+    description: "Best EveryDollar alternative: $15 expense calendar vs $80/year EveryDollar Plus. No Dave Ramsey tax.",
     url: "https://simplifybudget.com/compare/everydollar-alternative", 
     siteName: "Simplify Budget",
     images: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png",
         width: 1200,
         height: 630,
-        alt: "Expense Calendar Budget App - EveryDollar Alternative Without Dave Ramsey Fees"
+        alt: "Best EveryDollar Alternative - Expense Calendar Budget App Without Dave Ramsey Fees"
       }
     ]
   }

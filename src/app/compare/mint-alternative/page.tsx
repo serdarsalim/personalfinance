@@ -7,12 +7,12 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mint Alternative After Shutdown - $15 Expense Calendar You Own Forever",
-  description: "Mint is dead. Get the visual expense calendar budget app for $15 one-time payment. Your data in YOUR Google Drive forever, not company servers. No monthly fees ever.",
-  keywords: "mint alternative, mint shutdown, mint replacement, budget app after mint, visual expense calendar, $15 budget app, google drive budget, mint closed, expense tracker owns data, budget app no subscription",
+  title: "Best Mint Alternatives After Shutdown - #1 is $15 vs Free Apps",
+  description: "Mint shut down. Here's the best mint alternative for $15 one-time payment. Visual expense calendar, data in YOUR Google Drive, beats all free mint alternatives and apps.",
+  keywords: "mint alternatives, best mint alternative, mint alternative, mint shutdown, mint replacement, alternative to mint, apps like mint, mint app alternatives, budget app after mint, visual expense calendar, $15 budget app, google drive budget, mint closed, free mint alternatives, best alternatives to mint, mint.com alternatives",
   openGraph: {
-    title: "Mint Alternative After Shutdown - $15 Expense Calendar You Own Forever", 
-    description: "Mint is dead. Get the visual expense calendar budget app for $15 one-time payment.",
+    title: "Best Mint Alternatives After Shutdown - #1 is $15 vs Free Apps", 
+    description: "Mint shut down. Here's the best mint alternative for $15 one-time payment. Beats all free alternatives.",
     url: "https://simplifybudget.com/compare/mint-alternative",
     siteName: "Simplify Budget",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png",
         width: 1200,
         height: 630,
-        alt: "Expense Calendar Budget App - Mint Alternative After Shutdown"
+        alt: "Best Mint Alternative - Expense Calendar Budget App After Mint Shutdown"
       }
     ]
   }
@@ -86,7 +86,7 @@ export default function MintAlternativePage() {
       <section className="bg-gradient-to-r from-blue-600 to-emerald-600 text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
-            Mint Shut Down. Here's a Better Alternative.
+            Best Mint Alternative After Shutdown (2024)
           </h1>
           <p className="text-xl mb-8 text-blue-100">
             No subscriptions. No data hostage. Just one payment, and your financial data stays in YOUR Google Sheets forever.
@@ -181,6 +181,45 @@ Start Using Simplify Budget
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-700 mb-4">"I love that my data stays in my Google Drive. When Mint shut down, I lost 5 years of history. Never again."</p>
               <p className="text-sm text-gray-700">- Michael T., former Mint user</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Free vs Paid Alternatives */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Free Mint Alternatives vs Paid: Why $15 Beats "Free"</h2>
+          <div className="bg-gray-50 rounded-xl p-8">
+            <p className="text-lg text-gray-700 mb-6">
+              Searching for free Mint alternatives? Here's why most users end up choosing our $15 option instead:
+            </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold mb-4 text-red-600">Free Apps After Mint Shutdown</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>❌ Still vulnerable to shutdowns (like Mint)</li>
+                  <li>❌ Your data on their servers</li>
+                  <li>❌ Limited features to push paid plans</li>
+                  <li>❌ Ads and constant upselling</li>
+                  <li>❌ No guarantee they'll stay free</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-4 text-green-600">Simplify Budget ($15 Once)</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>✅ Your data in YOUR Google Drive forever</li>
+                  <li>✅ No monthly fees, ever</li>
+                  <li>✅ Visual expense calendar (unique feature)</li>
+                  <li>✅ No ads, no upselling</li>
+                  <li>✅ Own it forever, even if we disappear</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <p className="text-blue-800 font-semibold">
+                💡 The Mint lesson: "Free" apps can disappear overnight. $15 once gives you true ownership and peace of mind.
+              </p>
             </div>
           </div>
         </div>
