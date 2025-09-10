@@ -5,9 +5,23 @@ import ComparisonFAQSchema from '../../components/ComparisonFAQSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Quicken Alternative - Simple Budget Tracking Without the Bloat | Simplify Budget",
-  description: "Skip Quicken's $35-103/year complexity. Get simple visual expense tracking that actually works. One-time payment, your data in Google Drive. Try free 30 days.",
-  keywords: "quicken alternative, quicken replacement, simple budget app, quicken too complex, visual expense tracker, quicken simplify alternative"
+  title: "Quicken Alternative - $15 Simple Budget vs $103/Year Complexity",
+  description: "Quicken is overkill for budgeting. Get our simple $15 expense calendar instead of paying $35-103/year for features you'll never use. Just budgeting, no bloat.",
+  keywords: "quicken alternative, quicken replacement, simple budget app, $15 budget app, quicken too complex, visual expense calendar, expense tracker simple, quicken simplify alternative, budget app no complexity, google sheets budget",
+  openGraph: {
+    title: "Quicken Alternative - $15 Simple Budget vs $103/Year Complexity",
+    description: "Quicken is overkill for budgeting. Get our simple $15 expense calendar instead of paying $35-103/year.",
+    url: "https://simplifybudget.com/compare/quicken-alternative",
+    siteName: "Simplify Budget",
+    images: [
+      {
+        url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png", 
+        width: 1200,
+        height: 630,
+        alt: "Simple Expense Calendar Budget App - Quicken Alternative Without Complexity"
+      }
+    ]
+  }
 };
 
 export default function QuickenAlternativePage() {

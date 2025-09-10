@@ -7,9 +7,23 @@ import BreadcrumbSchema from '../../components/BreadcrumbSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mint Alternative - Visual Budget App You Actually Own | Simplify Budget",
-  description: "Mint shut down. We're the visual expense tracking alternative. One-time payment budget app, your data stays in Google Drive. No subscriptions. Try free 30 days.",
-  keywords: "mint alternative, mint shutdown, mint replacement, budget app after mint, visual expense tracker, one time payment budget app, mint closed"
+  title: "Mint Alternative After Shutdown - $15 Expense Calendar You Own Forever",
+  description: "Mint is dead. Get the visual expense calendar budget app for $15 one-time payment. Your data in YOUR Google Drive forever, not company servers. No monthly fees ever.",
+  keywords: "mint alternative, mint shutdown, mint replacement, budget app after mint, visual expense calendar, $15 budget app, google drive budget, mint closed, expense tracker owns data, budget app no subscription",
+  openGraph: {
+    title: "Mint Alternative After Shutdown - $15 Expense Calendar You Own Forever", 
+    description: "Mint is dead. Get the visual expense calendar budget app for $15 one-time payment.",
+    url: "https://simplifybudget.com/compare/mint-alternative",
+    siteName: "Simplify Budget",
+    images: [
+      {
+        url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png",
+        width: 1200,
+        height: 630,
+        alt: "Expense Calendar Budget App - Mint Alternative After Shutdown"
+      }
+    ]
+  }
 };
 
 const ComparisonTable = () => (

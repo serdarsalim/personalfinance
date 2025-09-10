@@ -5,9 +5,23 @@ import ComparisonFAQSchema from '../../components/ComparisonFAQSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PocketGuard Alternative - Better Budgeting Without Ads | Simplify Budget",
-  description: "Tired of PocketGuard's ads and limited features? Get visual expense tracking with one-time payment. Your data in Google Drive, no subscriptions. Try free 30 days.",
-  keywords: "pocketguard alternative, pocketguard replacement, budget app without ads, pocketguard vs simplify Budget, visual budget app"
+  title: "PocketGuard Alternative - $15 vs $13/Month | No Ads, No Limits",
+  description: "Escape PocketGuard's constant ads and $13/month fees! Get our $15 expense calendar with 30 categories, no ads ever, and data in your Google Drive.",
+  keywords: "pocketguard alternative, pocketguard replacement, budget app without ads, $15 budget app, expense calendar, visual budget tracker, pocketguard vs simplify budget, budget app no subscription, 30 categories budget, google drive budget",
+  openGraph: {
+    title: "PocketGuard Alternative - $15 vs $13/Month | No Ads, No Limits",
+    description: "Escape PocketGuard's constant ads and $13/month fees! Get our $15 expense calendar with 30 categories.",
+    url: "https://simplifybudget.com/compare/pocketguard-alternative",
+    siteName: "Simplify Budget", 
+    images: [
+      {
+        url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png",
+        width: 1200,
+        height: 630,
+        alt: "Expense Calendar Budget App - PocketGuard Alternative Without Ads"
+      }
+    ]
+  }
 };
 
 export default function PocketGuardAlternativePage() {

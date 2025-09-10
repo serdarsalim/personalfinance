@@ -7,9 +7,23 @@ import ComparisonFAQSchema from '../../components/ComparisonFAQSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "YNAB Alternative - One-Time Payment Budget App vs $180/Year | Simplify Budget",
-  description: "Why pay $180/year for YNAB? Get better budgeting with our visual expense tracking app. One-time payment, data stays in your Google Drive. Try free for 30 days.",
-  keywords: "ynab alternative, budget app without subscription, ynab replacement, cheaper than ynab, one time payment budget app, ynab too expensive"
+  title: "YNAB Alternative - $15 One-Time vs $180/Year | Expense Calendar Budget App",
+  description: "Stop paying $180/year for YNAB! Get our expense calendar budget app for $15 one-time payment. Visual monthly tracking, data in your Google Drive, no subscriptions ever.",
+  keywords: "ynab alternative, budget app without subscription, ynab replacement, cheaper than ynab, $15 budget app, expense calendar, visual budget tracker, google sheets budget, ynab too expensive, one time payment budget app",
+  openGraph: {
+    title: "YNAB Alternative - $15 One-Time vs $180/Year | Expense Calendar Budget App",
+    description: "Stop paying $180/year for YNAB! Get our expense calendar budget app for $15 one-time payment.",
+    url: "https://simplifybudget.com/compare/ynab-alternative",
+    siteName: "Simplify Budget",
+    images: [
+      {
+        url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png",
+        width: 1200,
+        height: 630,
+        alt: "Expense Calendar Budget App - YNAB Alternative"
+      }
+    ]
+  }
 };
 
 export default function YNABAlternativePage() {

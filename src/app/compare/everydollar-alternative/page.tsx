@@ -5,9 +5,23 @@ import ComparisonFAQSchema from '../../components/ComparisonFAQSchema';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EveryDollar Alternative - No Dave Ramsey Fees | Simplify Budget",
-  description: "Skip the $80/year EveryDollar Plus. Get better budgeting with our visual expense tracker. One-time payment, your data in Google Drive. Try free 30 days.",
-  keywords: "everydollar alternative, everydollar plus alternative, dave ramsey budget app alternative, budget app without ramsey, everydollar replacement"
+  title: "EveryDollar Alternative - $15 vs $80/Year | No Dave Ramsey Tax",
+  description: "Stop paying Dave Ramsey's $80/year EveryDollar tax! Get our $15 expense calendar budget app. Any budgeting method, visual tracking, data in your Google Drive.",
+  keywords: "everydollar alternative, everydollar plus alternative, dave ramsey budget app alternative, $15 budget app, expense calendar, visual budget tracker, budget app without ramsey, everydollar replacement, no dave ramsey fees, google sheets budget",
+  openGraph: {
+    title: "EveryDollar Alternative - $15 vs $80/Year | No Dave Ramsey Tax",
+    description: "Stop paying Dave Ramsey's $80/year EveryDollar tax! Get our $15 expense calendar budget app.",
+    url: "https://simplifybudget.com/compare/everydollar-alternative", 
+    siteName: "Simplify Budget",
+    images: [
+      {
+        url: "https://simplifybudget.com/app-screenshots/2monthlygrid.png",
+        width: 1200,
+        height: 630,
+        alt: "Expense Calendar Budget App - EveryDollar Alternative Without Dave Ramsey Fees"
+      }
+    ]
+  }
 };
 
 export default function EveryDollarAlternativePage() {
