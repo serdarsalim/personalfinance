@@ -97,6 +97,8 @@ export default function HeroSection() {
                 height={580}
                 className="w-full h-auto rounded-lg border border-gray-200 shadow-lg"
                 priority
+                sizes="(max-width: 768px) 400px, (max-width: 1024px) 600px, 700px"
+                quality={85}
               />
             </div>
             

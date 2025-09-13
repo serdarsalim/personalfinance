@@ -108,7 +108,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link href="/why-manual-tracking" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
-            Learn More
+            Why Manual Tracking
           </Link>
           <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             App Guide

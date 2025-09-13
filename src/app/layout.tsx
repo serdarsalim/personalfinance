@@ -45,6 +45,9 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://simplifybudget.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
       <body className={`${inter.variable} font-sans`}>
         {/* GTM components - moved to client component */}

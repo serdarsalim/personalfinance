@@ -148,6 +148,8 @@ export default function FeatureCarousel() {
                           height={1000}
                           className="w-full h-auto"
                           priority={index === 0}
+                          sizes="(max-width: 768px) 400px, (max-width: 1024px) 600px, 800px"
+                          quality={85}
                         />
                         {/* Click to expand indicator */}
                         <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm flex items-center">

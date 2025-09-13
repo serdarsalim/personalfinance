@@ -11,6 +11,11 @@ const nextConfig = {
   },
   // Optimize bundle for modern browsers
   swcMinify: true,
+  // Target modern browsers to eliminate polyfills
+  compiler: {
+    // Removes console.* in production
+    removeConsole: process.env.NODE_ENV === "production",
+  },
   // Improve performance
   output: 'standalone'
 };
