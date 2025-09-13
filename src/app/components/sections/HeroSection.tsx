@@ -91,7 +91,7 @@ export default function HeroSection() {
           <div className="relative">
             <div className="block max-w-xl mx-auto">
               <Image
-                src="/simplify-monthly-grid.png"
+                src="/simplify-monthly-grid.webp"
                 alt="Simplify Monthly Expense Calendar"
                 width={700}
                 height={580}

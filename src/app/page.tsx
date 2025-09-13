@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Simplify Budget",
     type: "website",
     images: [{
-      url: "https://simplifybudget.com/simplifybudget.jpg",
+      url: "https://simplifybudget.com/simplifybudget.webp",
       width: 1200,
       height: 630,
       alt: "Simplify Budget - Visual Family Budget Tracking App"

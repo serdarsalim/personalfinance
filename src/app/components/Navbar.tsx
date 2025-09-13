@@ -65,7 +65,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link href="/why-manual-tracking" className="text-gray-700 hover:text-blue-600 font-medium">
-              Learn More
+              Why Manual Tracking
             </Link>
             <Link href="/how-it-works" className="text-gray-700 hover:text-blue-600 font-medium">
               App Guide
@@ -91,6 +91,7 @@ export default function Navbar() {
                   mobileMenu.classList.toggle('hidden');
                 }
               }}
+              aria-label="Toggle mobile menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />

@@ -1,7 +1,7 @@
 "use client";
 
 import Script from 'next/script';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 // Declare dataLayer for TypeScript
@@ -16,7 +16,6 @@ const GTM_ID = 'GTM-M9LLX3SW';
 
 export default function GoogleTagManager() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -27,13 +26,17 @@ export default function GoogleTagManager() {
     window.dataLayer = window.dataLayer || [];
     
     if (pathname) {
+      // Get search params client-side only when needed
+      const searchParams = new URLSearchParams(window.location.search);
+      const query = Object.fromEntries(searchParams.entries());
+      
       window.dataLayer.push({
         event: 'pageview',
         page: pathname,
-        query: searchParams ? Object.fromEntries(searchParams.entries()) : {}
+        query: query
       });
     }
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   // Only render script on client-side to prevent hydration mismatch
   if (!isClient) return null;

@@ -15,37 +15,37 @@ export default function FeatureCarousel() {
     {
       title: "Expense Calendar",
       description: "Monthly expense calendar. Enter expenses directly on the calendar and see your spending patterns instantly.",
-      image: "/app-screenshots/2monthlygrid.png"
+      image: "/app-screenshots/2monthlygrid.webp"
     },
     {
       title: "Budget Dashboard",
       description: "Set your budget goals and track actual spending. Fixed expenses show as spent from day one so you know how much money you have left to spend.",
-      image: "/app-screenshots/1budgettab.png"
+      image: "/app-screenshots/1budgettab.webp"
     },
     {
       title: "Fixed Expenses Tab",
       description: "Set your fixed expenses once and they automatically appear at the beginning of every month. Rent, subscriptions, car payments - never manually enter them again.",
-      image: "/app-screenshots/3recurring.png"
+      image: "/app-screenshots/3recurring.webp"
     },
     {
       title: "Income Tracker",
       description: "Track every dollar coming in. Salary, freelance work, investments, side hustles - see your complete income picture.",
-      image: "/app-screenshots/4incometab.png"
+      image: "/app-screenshots/4incometab.webp"
     },
     {
       title: "Net Worth Tracking",
       description: "Track assets, investments, and debts over time. Watch your wealth grow month by month.",
-      image: "/app-screenshots/5networth.png"
+      image: "/app-screenshots/5networth.webp"
     },
     {
       title: "Financial Reports",
       description: "See your complete financial picture. Income trends, spending patterns, and savings rate in beautiful charts.",
-      image: "/app-screenshots/6reports.png"
+      image: "/app-screenshots/6reports.webp"
     },
     {
       title: "Custom Categories",
       description: "30 customizable categories with emojis. Reorder, rename, and track exactly what matters to you.",
-      image: "/app-screenshots/7categories.png"
+      image: "/app-screenshots/7categories.webp"
     }
   ];
 
