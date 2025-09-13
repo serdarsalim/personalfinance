@@ -48,6 +48,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            body{margin:0;color:#171717;background:#ffffff;font-family:${inter.style.fontFamily},Arial,sans-serif}
+            .min-h-screen{min-height:100vh}
+            .flex{display:flex}
+            .items-center{align-items:center}
+            .justify-center{justify-content:center}
+            .bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}
+            .from-blue-50{--tw-gradient-from:#eff6ff;--tw-gradient-to:rgb(239 246 255 / 0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+            .to-white{--tw-gradient-to:#fff}
+          `
+        }} />
       </head>
       <body className={`${inter.variable} font-sans`}>
         {/* GTM components - moved to client component */}
