@@ -2,7 +2,7 @@ export default function AboutFounderSection() {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">
+        <h2 className="text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
           Meet the Founder
         </h2>
 

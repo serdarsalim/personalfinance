@@ -25,7 +25,7 @@ export default function WhySimplifySection() {
   return (
     <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-gray-900">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
           Here's How It Works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -59,11 +59,20 @@ export default function WhySimplifySection() {
           <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
             <div className="flex items-center justify-center mb-3">
               <span className="text-2xl mr-3">🏠</span>
-              <h3 className="text-lg font-semibold text-gray-900">Works for Families</h3>
+              <h3 className="text-lg font-semibold text-gray-900">Great for Personal or Family Budgeting</h3>
             </div>
-            <p className="text-gray-700">
+            <p className="text-gray-700 mb-4">
               Multiple people can track expenses on the same Google Sheet. The app connects to a Google Sheet in your Drive.
             </p>
+            <a
+              href="/how-it-works"
+              className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Learn more about how it works
+              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

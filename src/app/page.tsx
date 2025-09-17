@@ -46,6 +46,12 @@ export const metadata: Metadata = {
       height: 630,
       alt: "Simplify Budget - Visual Family Budget Tracking App"
     }]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Budget App That Actually Works | No Monthly Fees',
+    description: 'Stop forgetting where your money goes. Track expenses in 5 seconds, works for families. $15 lifetime - try free 30 days.',
+    images: ['https://simplifybudget.com/simplifybudget.webp'],
   }
 };
 

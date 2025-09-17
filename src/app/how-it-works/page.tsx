@@ -1,25 +1,25 @@
 import React, { Suspense } from "react";
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
 import ArticleSchema from '../components/ArticleSchema';
+import PhilosophyClient from './PhilosophyClient';
 import { Metadata } from 'next';
-import HowItWorksClient from './HowItWorksClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Complete User Guide | How to Use Simplify Budget App 2025',
-  description: 'Step-by-step guide to using Simplify Budget. Track expenses in 5 seconds, manage fixed expenses, family collaboration. Complete app tutorial.',
-  keywords: 'budget app tutorial, how to use budget app, expense tracking guide, budget app guide, family budget app, budget app help, simplify budget tutorial',
+  title: 'How Simplify Budget Works - Complete Financial Management Made Easy',
+  description: 'Learn how Simplify Budget provides complete financial management with smart automation, visual expense tracking, and net worth monitoring. See why it works better than traditional budget apps.',
+  keywords: 'how simplify budget works, financial management app, smart budgeting, expense tracking, net worth tracking, budget calendar, family budgeting, google sheets budget',
   openGraph: {
-    title: 'Complete User Guide | How to Use Simplify Budget App',
-    description: 'Step-by-step guide to using Simplify Budget. Track expenses in 5 seconds, manage fixed expenses, family collaboration.',
+    title: 'How Simplify Budget Works - Complete Financial Management Made Easy',
+    description: 'Learn how Simplify Budget provides complete financial management with smart automation and visual expense tracking.',
     url: 'https://simplifybudget.com/how-it-works',
     siteName: 'Simplify Budget',
     images: [
       {
-        url: 'https://simplifybudget.com/app-screenshots/1budgettab.png',
+        url: 'https://simplifybudget.com/simplifybudget.jpg',
         width: 1200,
         height: 630,
-        alt: 'Simplify Budget User Guide - App Tutorial Dashboard',
+        alt: 'Simplify Budget - How It Works Guide',
       },
     ],
     locale: 'en_US',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Complete User Guide | How to Use Simplify Budget App',
-    description: 'Step-by-step guide to using Simplify Budget. Track expenses in 5 seconds, manage fixed expenses.',
-    images: ['https://simplifybudget.com/app-screenshots/1budgettab.png'],
+    title: 'How Simplify Budget Works - Complete Financial Management Made Easy',
+    description: 'Learn how Simplify Budget provides complete financial management with smart automation and visual expense tracking.',
+    images: ['https://simplifybudget.com/simplifybudget.jpg'],
   },
   alternates: {
     canonical: 'https://simplifybudget.com/how-it-works',
@@ -38,21 +38,21 @@ export const metadata: Metadata = {
 
 const Loading = () => <div className="min-h-screen flex items-center justify-center">Loading...</div>;
 
-const HowItWorksContent = () => (
+const ArticleContent = () => (
   <>
     {/* Hero Section */}
     <section className="bg-white pt-24 pb-8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
-            How to Use Simplify Budget App
+          How Simplify Budget Works
           </h1>
         </div>
       </div>
     </section>
 
     {/* Client-side Navigation */}
-    <HowItWorksClient />
+    <PhilosophyClient />
 
     {/* Article Content */}
     <article className="bg-white pb-16">
@@ -60,282 +60,355 @@ const HowItWorksContent = () => (
         <div className="prose prose-lg max-w-none">
         
 
-        {/* Dashboard Section */}
-        <section id="dashboard" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Dashboard: Monthly Budget Overview</h2>
+        {/* Introduction */}
+        <section id="introduction" className="mb-16">
           
-          <p className="text-gray-700 mb-6">
-            The dashboard displays your income, expenditures broken down by spending categories, and remaining budget. You can set both spending and saving goals to track your financial targets.
-          </p>
-          
-          <p className="text-gray-700 mb-6">
-            A fixed expenses list shows all monthly subscriptions next to the budget table. These fixed expenses automatically appear as spent from day 1 in their spending categories so you know exactly how much money you have left to spend.
-          </p>
-          
+     <p className="text-gray-700 mb-4">
+  This budget app helps you stop overspending by showing you exactly how much money you have left to spend each month.
+</p>
 
-          {/* Dashboard Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/1budgettab.png" 
-              alt="Simplify Budget Dashboard Overview" 
-              className="w-full rounded-lg shadow-lg border"
-            />
-          </div>
+<p className="text-gray-700 mb-4">
+  At the start of each month, set your budget and enter your fixed expenses like rent and subscriptions. The app automatically shows these as spent, so you know your remaining budget for groceries, entertainment, and other variable expenses.
+</p>
 
-          {/* Key Features */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">What You See at a Glance</h3>
+<p className="text-gray-700 mb-4">
+  Track expenses as you spend them using the monthly calendar view. See your spending patterns instantly and never overspend again.
+</p>
+
+<p className="text-gray-700 mb-4">
+  Track your net worth monthly to watch your wealth grow over time.
+</p>
+
+<p className="text-gray-700 mb-4">
+  Since all your data lives in your Google Drive, you own everything forever.
+</p> <br></br>
+
+          {/* The Right Kind of Automation */}
+          <div className="mb-12">
             
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-bold text-green-900 mb-3">Money Left to Spend</h4>
-                <p className="text-green-800">See exactly how much you can still spend this month. Whatever you don't spend becomes your savings automatically.</p>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-6">
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 p-8 rounded-xl shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                  <h4 className="font-bold text-green-900 text-lg">The automation this app uses</h4>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Fixed expenses copy automatically to the next month
+                  </li>
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    All calculations for budget and analytics are done automatically
+                  </li>
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Net worth data copies automatically to the next month
+                  </li>
+                  <li className="flex items-start text-green-800">
+                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Spending goals copy automatically to the next month since they rarely change and can be adjusted each month
+                  </li>
+                </ul>
               </div>
               
-              <div className="bg-purple-50 p-6 rounded-lg">
-                <h4 className="font-bold text-purple-900 mb-3">Fixed Expenses List</h4>
-                <p className="text-purple-800">All fixed expenses are listed so you don't miss their due dates. They already show as spent in the budget table so you know how much money you've left for the month.</p>
+              <div className="bg-gradient-to-br from-red-50 to-rose-50 border border-red-200 p-8 rounded-xl shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
+                  <h4 className="font-bold text-red-900 text-lg">Fully automated other apps</h4>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    Bank syncing that imports transactions wrong
+                  </li>
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    Auto-categorization that requires constant correction
+                  </li>
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    "Automated" systems that need weekly manual reconciliation
+                  </li>
+                  <li className="flex items-start text-red-800">
+                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                    </svg>
+                    Cash purchases are not categorised or tracked at all
+                  </li>
+                </ul>
               </div>
-              
             </div>
             
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700">
-                <strong>Budget goals:</strong> Set and edit target amounts directly in the budgeted column. Spending data flows from your expense and income tabs. Fixed expenses are automatically included in your spent totals. Goals automatically carry over to the next month, which you can adjust if needed or leave as is - since most people have similar spending goals each month, this carryover feature saves time.
-              </p>
-            </div>
-          </div>
-        </section>
 
-        {/* Expense Calendar */}
-        <section id="expense-calendar" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Expense Entry: Fast & Simple</h2>
-          
-          <p className="text-gray-700 mb-6">
-            Click where any date meets any category to add an expense. Enter the amount and description. You can add multiple entries per day or just enter the daily total for that category. It's lightning fast and works perfectly on your phone.
-          </p>
-
-          {/* Expense Calendar Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/2monthlygrid.png" 
-              alt="Expense Calendar Interface" 
-              className="w-full rounded-lg shadow-lg border"
-            />
-          </div>
-
-          {/* Entry Popup Screenshot */}
-          <div className="mb-10">
-            <div className="bg-blue-50 p-6 rounded-lg mb-4">
-              <h4 className="font-bold text-blue-900 mb-3">Here's what happens when you open the expense popup:</h4>
-              <ul className="space-y-2 text-blue-800">
-                <li>• All existing expenses for that day/category</li>
-                <li>• Empty row to add new transactions</li>
-                <li>• Category emoji and date at the top</li>
-                <li>• Running total for that day</li>
-                <li>• No save button needed - auto-saves when you click outside</li>
-                <li>• Red X to delete any transaction instantly</li>
-              </ul>
-            </div>
             
-            <div className="mb-4">
-              <img 
-                src="/app-screenshots/expenseentry.png" 
-                alt="Expense Entry Popup" 
-                className="w-full rounded-lg shadow-lg border"
-              />
-            </div>
+            
           </div>
-
-
 
         </section>
 
-        {/* Fixed Expenses */}
-        <section id="subscriptions" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Fixed Expenses: Enter them once and they'll appear automatically on each pay cycle</h2>
+        {/* The Simplify Budget Philosophy */}
+        <section id="philosophy" className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">How to do financial management using this app</h2>
           
-          <p className="text-gray-700 mb-6">
-            Manage your active fixed payments (bills, subscriptions, and memberships). Anything that automatically charges your account monthly, quarterly, or yearly gets entered here once, and you'll see when payments are due so you never get surprised by charges.
+          <p className="text-gray-700 mb-8 text-lg">
+            This app tracks your money in three simple areas: monthly expenses, net worth, and income. It works on any device and takes just seconds to enter your spending.
           </p>
-
-          {/* Subscriptions Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/3recurring.png" 
-              alt="Subscription Management Overview" 
-              className="w-full rounded-lg shadow-lg border"
-            />
-          </div>
-
-          <div className="mb-10">
-            <div className="bg-yellow-50 p-6 rounded-lg">
-              <p className="text-yellow-800">
-                The list is ordered by due dates first so you never get surprised by bills or payments coming up.
-              </p>
-            </div>
-          </div>
-
-          {/* Visual Payment Timeline */}
-          <div className="mb-10">
-            <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200">
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 p-6 rounded-xl">
               <div className="flex items-center mb-4">
-                <span className="text-2xl mr-3">📊</span>
-                <h4 className="font-bold text-purple-900 text-lg">Subscription Chart</h4>
+                <div className="bg-blue-500 rounded-full p-2 mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-blue-900">Track as you spend, not after</h3>
+              </div>
+              <p className="text-blue-800">
+                Enter expenses when they happen to create real-time awareness. The awareness happens when it can actually influence decisions.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 border border-emerald-200 p-6 rounded-xl">
+              <div className="flex items-center mb-4">
+                <div className="bg-emerald-500 rounded-full p-2 mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-emerald-900">Smart fixed expenses</h3>
+              </div>
+              <p className="text-emerald-800">
+                Set up fixed expenses once—they automatically appear on due dates with advance visual warning.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 p-6 rounded-xl">
+              <div className="flex items-center mb-4">
+                <div className="bg-purple-500 rounded-full p-2 mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-purple-900">Visual spending patterns</h3>
               </div>
               <p className="text-purple-800">
-                The chart shows you current year's subscriptions with projected payments through the end of the year. You can toggle it on and off.
+                Monthly and yearly calendar views with categories on top, days/months on the side. See all your spending patterns at a glance in one Monthly Expense Calendar.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 border border-indigo-200 p-6 rounded-xl">
+              <div className="flex items-center mb-4">
+                <div className="bg-indigo-500 rounded-full p-2 mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-indigo-900">Set spending goals and track progress</h3>
+              </div>
+              <p className="text-indigo-800">
+                Set spending goals and easily track if you're sticking to them. See exactly where your money goes each month.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 border border-teal-200 p-6 rounded-xl">
+              <div className="flex items-center mb-4">
+                <div className="bg-teal-500 rounded-full p-2 mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-teal-900">Net worth and income tracking</h3>
+              </div>
+              <p className="text-teal-800">
+                Track your complete financial picture over time—assets, debts, and income trends. Previous month's data copies over automatically.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 p-6 rounded-xl">
+              <div className="flex items-center mb-4">
+                <div className="bg-orange-500 rounded-full p-2 mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-orange-900">Learn from your money habits</h3>
+              </div>
+              <p className="text-orange-800">
+                Get insights on your past spending and money habits so you can learn from them and stop being stressed about money. Know if you're getting financially secure or just burning cash.
               </p>
             </div>
           </div>
-
-
+          
         </section>
 
-        {/* Income Tracking */}
-        <section id="income" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Income Tracking</h2>
-          
-          <p className="text-gray-700 mb-6">
-            Add money when you get it - paychecks, side hustle earnings, gifts, whatever. You can set it as recurring income or one-time to track what's coming in each month.
-          </p>
 
-          {/* Income Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/4incometab.png" 
-              alt="Income Tracking Interface" 
-              className="w-full rounded-lg shadow-lg border"
-            />
-          </div>
-
-          {/* Two Income Types */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Two Income Types</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-bold text-blue-900 mb-3">One-time income:</h4>
-                <p className="text-blue-800">Freelance payments, bonuses, side hustle earnings, investment sales, money from savings, loans (adjust net worth accordingly)</p>
-              </div>
-              
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-bold text-green-900 mb-3">Recurring income:</h4>
-                <p className="text-green-800">Salary, passive income, regular dividends</p>
-              </div>
+        {/* The App */}
+        <section id="the-app" className="mb-16">
+          <div className="bg-gray-50 p-6 rounded-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">See How It Actually Works</h3>
+            <p className="text-gray-700 mb-6">
+              Get a detailed walkthrough of the Monthly Expense Calendar system, smart fixed expense handling, and family collaboration features.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/demo"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                Demo with example data
+              </a>
+              <a 
+                href="/app"
+                className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
+              >
+                Get the full app now
+              </a>
             </div>
           </div>
-
-
         </section>
 
-        {/* Net Worth Tracking */}
-        <section id="networth" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Net Worth Tracking</h2>
+        {/* Results */}
+        <section id="results" className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">It has everything you need in a budget app and not more</h2>
           
-          <p className="text-gray-700 mb-6">
-            Track your total net worth across four simple categories: liquid assets, investments, physical assets, and debts. Update monthly with your actual account balances.
-          </p>
-
-          {/* Net Worth Screenshot */}
           <div className="mb-8">
-            <img 
-              src="/app-screenshots/5networth.png" 
-              alt="Net Worth Tracking Overview" 
-              className="w-full rounded-lg shadow-lg border"
-            />
-          </div>
-
-          {/* Four Simple Buckets */}
-          <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Four Simple Buckets</h3>
-            
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h4 className="font-bold text-blue-900 mb-2">Liquid Assets</h4>
-                <p className="text-blue-800">Bank accounts, cash, money market - anything you can spend immediately</p>
-              </div>
-              
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h4 className="font-bold text-green-900 mb-2">Investments</h4>
-                <p className="text-green-800">Stocks, crypto, retirement accounts, real estate - your wealth-building assets</p>
-              </div>
-              
-              <div className="bg-purple-50 p-6 rounded-lg">
-                <h4 className="font-bold text-purple-900 mb-2">Physical Assets</h4>
-                <p className="text-purple-800">Car, electronics, furniture - valuable things you own</p>
-              </div>
-              
-              <div className="bg-orange-50 p-6 rounded-lg">
-                <h4 className="font-bold text-orange-900 mb-2">Debts</h4>
-                <p className="text-orange-800">Credit cards, loans, mortgages - what you owe</p>
-              </div>
-            </div>
-          </div>
-
-
-          {/* Monthly Updates */}
-          <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Monthly Updates</h3>
-            
-            <div className="mb-4">
-              <h4 className="font-bold text-gray-900 mb-3">End of month routine:</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Check bank account balance → Enter in Liquid Assets</li>
-                <li>• Check investment account value → Enter in Investments</li>
-                <li>• Estimate physical asset values if changed → Update Physical Assets</li>
-                <li>• <strong>Done in 5 minutes, accurate forever</strong></li>
-              </ul>
-            </div>
-            
-            <p className="text-gray-700 font-semibold">
-              No daily market stress, no sync failures, no reconciliation headaches - just a clear monthly snapshot of your complete financial picture.
+            <p className="text-gray-700 mb-4">
+              This app has everything you need for managing your money, without the confusing stuff that makes other apps overwhelming.
+            </p>
+            <p className="text-gray-700 mb-4">
+              We didn't include debt calculators, complicated savings categories, or separate sections for different income sources. We kept it simple: track your spending, set your budget, watch your net worth grow.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Use it daily or monthly, it works both ways. Track expenses as they happen or check in once a month to categorize spending and save a snapshot of your net worth.
+            </p>
+            <p className="text-gray-700 mb-4">
+              These core features are all most people need for solid financial management, whether you're managing money solo or with your family.
             </p>
           </div>
         </section>
 
-        {/* Category Management */}
-        <section id="categories" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Category Management</h2>
+        {/* Who This Is For */}
+        <section id="who-for" className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Who Simplify Budget is for</h2>
           
-          <p className="text-gray-700 mb-6">
-            Choose from 30 pre-built categories and activate only the ones you use. Rename and rearrange them to match your needs - changes automatically appear in dashboard, expense, and subscription views. Archive unused categories to keep them out of the way while preserving transaction history.
-          </p>
-
-          {/* Categories Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/7categories.png" 
-              alt="Category Management Interface" 
-              className="w-full rounded-lg shadow-lg border"
-            />
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 p-8 rounded-xl">
+              <div className="flex items-center mb-6">
+                <div className="bg-green-500 rounded-full p-2 mr-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-green-900">Great for</h3>
+              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-green-800">People tired of monthly subscription fees</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-green-800">Families who want to budget together</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-green-800">People who like simple, straightforward apps</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-gradient-to-br from-slate-50 to-gray-50 border border-slate-200 p-8 rounded-xl">
+              <div className="flex items-center mb-6">
+                <div className="bg-slate-500 rounded-full p-2 mr-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900">Not for you if you want</h3>
+              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-slate-700">Fully automated expense importing</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-slate-700">Complex investment tracking</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-slate-700">Detailed loan calculators</span>
+                </li>
+              </ul>
+            </div>
           </div>
-
-
-
         </section>
 
-        {/* Settings */}
-        <section id="settings" className="mb-16 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Settings & Data Setup</h2>
+        {/* The Bigger Picture */}
+        <section id="simple-beats-complex" className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Simple beats complex</h2>
           
-          <p className="text-gray-700 mb-6">
-            Create a new Google Sheet in your Drive to store your financial data, or connect to an existing one. Only you have access to the sheet since it's in your own Google Drive. Share it with family members to track finances together, or disconnect anytime to unlink the current sheet.
-          </p>
-
-          {/* Settings Screenshot */}
-          <div className="mb-8">
-            <img 
-              src="/app-screenshots/8settings.png" 
-              alt="Settings and Configuration" 
-              className="w-full rounded-lg shadow-lg border"
-            />
+          <div className="bg-blue-50 p-6 rounded-lg">
+            <p className="text-gray-700 mb-4">
+              Sometimes complex apps with many features and automations create more work than the approach our app uses. You think you spend less time because of automations and have more control because of all the features.
+            </p>
+            <p className="text-gray-700 mb-4">
+              But you actually spend more time on these apps than with Simplify Budget app and the end result is the same. You don't have to get too granular to actually save money and build wealth.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Take YNAB for example - it has a 2,000-word guide just for weekly reconciliation. Plus with YNAB you need to pay to use it every month.
+            </p>
+            <p className="text-gray-700">
+              With Simplify Budget you'll spend less time in the app and the app comes with one-time permanent payment.
+            </p>
           </div>
-
-
         </section>
 
+
+        {/* How to Get Started */}
+        <section id="get-started" className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">How to Get Started</h2>
+          
+          <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-8 rounded-lg text-center">
+            <p className="text-gray-700 mb-6 text-lg">
+              Get the app and start tracking your expenses today. You can use the full features for 30 days free and only pay for permanent license if you're happy with the app.
+            </p>
+            <a 
+              href="/app"
+              className="inline-block bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors text-lg"
+            >
+              Get the full app now
+            </a>
+          </div>
+        </section>
 
 
         </div>
@@ -344,22 +417,22 @@ const HowItWorksContent = () => (
   </>
 );
 
-export default function HowItWorks() {
+export default function WhyManualTracking() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Suspense fallback={<Loading />}>
-        <HowItWorksContent />
-        <BreadcrumbSchema pageName="App Guide" />
+        <ArticleContent />
+        <BreadcrumbSchema pageName="How Simplify Budget Works" />
         <ArticleSchema
-          title="How to Use Simplify Budget App"
-          description="Detailed guide to Simplify Budget features: expense calendar, subscription management, income tracking, net worth, categories, and family collaboration. See how it all works."
+          title="How Simplify Budget Works - Complete Financial Management Made Easy"
+          description="Learn how Simplify Budget provides complete financial management with smart automation, visual expense tracking, and net worth monitoring."
           url="https://simplifybudget.com/how-it-works"
-          imageUrl="https://simplifybudget.com/app-screenshots/1budgettab.png"
+          imageUrl="https://simplifybudget.com/simplifybudget.jpg"
           datePublished="2024-01-15"
           dateModified={new Date().toISOString().split('T')[0]}
           authorName="Simplify Budget Team"
           organizationName="Simplify Budget"
-          keywords={['budget app features', 'expense tracking', 'subscription management', 'net worth tracking', 'family budget', 'Google Sheets budget', 'monthly expense calendar']}
+          keywords={['how simplify budget works', 'financial management', 'smart budgeting', 'expense tracking', 'net worth tracking', 'budget calendar', 'family budgeting']}
         />
       </Suspense>
     </div>

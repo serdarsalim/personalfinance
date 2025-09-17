@@ -1,8 +1,35 @@
-"use client";
-
 import React, { Suspense } from "react";
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
+import { Metadata } from 'next';
 export const dynamic = 'force-dynamic';
+
+export const metadata: Metadata = {
+  title: 'About Serdar Salim - Former Twitter Program Manager & Founder of Simplify Budget 2025',
+  description: 'Meet Serdar Salim, former Twitter Program Manager who built Simplify Budget after 9 years managing systems for millions of users. Learn his story and why he created this financial management app.',
+  keywords: 'Serdar Salim, Simplify Budget founder, Twitter Program Manager, budget app creator, financial management expert, budget tracking',
+  openGraph: {
+    title: 'About Serdar Salim - Founder of Simplify Budget',
+    description: 'Meet the former Twitter Program Manager who built Simplify Budget to solve real budgeting problems.',
+    url: 'https://simplifybudget.com/about',
+    siteName: 'Simplify Budget',
+    type: 'website',
+    images: [{
+      url: 'https://simplifybudget.com/simplifybudget.webp',
+      width: 1200,
+      height: 630,
+      alt: 'About Serdar Salim - Simplify Budget Founder'
+    }]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Serdar Salim - Founder of Simplify Budget',
+    description: 'Meet the former Twitter Program Manager who built Simplify Budget to solve real budgeting problems.',
+    images: ['https://simplifybudget.com/simplifybudget.webp'],
+  },
+  alternates: {
+    canonical: 'https://simplifybudget.com/about',
+  },
+};
 
 // Simple loading component
 const Loading = () => <div className="min-h-screen flex items-center justify-center">Loading...</div>;

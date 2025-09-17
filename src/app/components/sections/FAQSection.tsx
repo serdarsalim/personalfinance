@@ -71,7 +71,7 @@ export default function FAQSection() {
   return (
     <section className="bg-gradient-to-r from-emerald-50 to-white py-20 scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 sm:mb-12 text-center text-gray-900">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 sm:mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">
@@ -103,14 +103,14 @@ export default function FAQSection() {
         {/* Internal Links Section */}
         <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/why-manual-tracking" 
+            <a
+              href="/how-it-works"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
-              Why Manual Tracking Works
+              How It Works
             </a>
-            <a 
-              href="/how-it-works" 
+            <a
+              href="/app-guide"
               className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
             >
               How to Use
