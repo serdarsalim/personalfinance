@@ -24,6 +24,10 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
   ssr: true,
   loading: () => <SectionLoader />
 });
+const AboutFounderSection = dynamic(() => import("./components/sections/AboutFounderSection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
 
 // Update metadata
 export const metadata: Metadata = {
@@ -62,6 +66,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <AboutFounderSection />
       <WhySimplifySection />
       <TemplateSection />
       <FeatureCarousel />
