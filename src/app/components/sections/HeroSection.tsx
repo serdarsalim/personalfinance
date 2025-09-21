@@ -65,16 +65,16 @@ export default function HeroSection() {
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-12 text-gray-900">
-              Set budgets, track expenses, 
+              Set goals, track expenses,
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> grow your wealth</span>
             </h1>
             
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
-              <a 
+            <div className="mb-8">
+              <a
                 href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
-                className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
+                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
               >
                 Start Using Simplify Budget
               </a>
