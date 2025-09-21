@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import Image from 'next/image';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
 import { Metadata } from 'next';
 export const dynamic = 'force-dynamic';
@@ -40,14 +41,27 @@ const AboutContent = () => (
     {/* Hero Section */}
     <section className="bg-white pt-24 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl font-bold mb-12 text-gray-900 font-serif">
+        <h1 className="text-4xl font-bold mb-8 text-gray-900 font-serif">
           About the Founder
         </h1>
+
+        <div className="flex justify-center mb-8">
+          <div className="relative w-40 h-40">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-full blur-lg opacity-20"></div>
+            <Image
+              src="/serdarsalim.webp"
+              alt="Serdar Salim, Founder of Simplify Budget"
+              width={160}
+              height={160}
+              className="relative rounded-full object-cover border-4 border-white shadow-xl"
+            />
+          </div>
+        </div>
 
         <div className="text-xl text-gray-700 space-y-8 leading-relaxed font-serif max-w-3xl mx-auto">
           <p>
             I'm Serdar Salim, the founder of Simplify Budget. I spent 9 years at Twitter as a Program Manager,
-            managing critical systems that served millions of users daily. During this time, I was also managing my own finances
+            where I led global customer support agent training globally. During this time, I was also managing my own finances
             and struggling with the same budgeting problems everyone faces.
           </p>
 
@@ -58,7 +72,7 @@ const AboutContent = () => (
 
           <p>
             I needed something that captured my real spending patterns without hours of data entry.
-            Something that worked whether I was paying cash at a coffee shop or setting up automatic bill payments. <strong>So I built my own.</strong>
+            Something that worked whether I was paying cash at a coffee shop or setting up automatic bill payments. So I built my own.
           </p>
 
           <p>

@@ -1,33 +1,62 @@
+import Image from 'next/image';
+
 export default function AboutFounderSection() {
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
-          Meet the Founder
-        </h2>
+    <section className="relative py-20 overflow-hidden">
+      {/* Background with subtle pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-emerald-50"></div>
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-10 w-20 h-20 border border-blue-300 rounded-full"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 border border-emerald-300 rounded-full"></div>
+        <div className="absolute bottom-20 left-1/4 w-12 h-12 border border-blue-300 rounded-full"></div>
+      </div>
 
-        <div className="bg-white rounded-xl p-8 shadow-md">
-          <div className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            <p className="mb-6">
-              I'm Serdar Salim, former Twitter Program Manager who managed critical systems for millions of users.
-              But like everyone else, I struggled with budgeting. Cash payments, multiple accounts, and apps that either broke or were too complicated.
-            </p>
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-2xl p-12 shadow-xl">
+          <div className="grid lg:grid-cols-[1.5fr_1fr] gap-12 items-center">
+            {/* Left side - Content */}
+            <div className="order-2 lg:order-1">
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                This is my solution to managing money and it works
+              </h2>
 
-            <p className="mb-6">
-              <strong>So I built my own system.</strong> One that actually works in real life, takes less than a minute to use daily,
-              and gives me the financial security to sleep better at night.
-            </p>
+              <div className="space-y-4 text-lg text-gray-600 mb-8">
+                <p>
+                  I spent 9 years at Twitter leading global customer support training. I knew how to solve complex problems for millions of users.
+                </p>
+                <p>
+                  <span className="text-gray-900 font-semibold">But I couldn't solve my own budgeting problem.</span> Every app was either too simple or too complex. So I built what I needed: a budget app that actually works in real life.
+                </p>
+              </div>
 
-            <div className="flex justify-center">
-              <a
-                href="/about"
-                className="inline-flex items-center px-6 py-3 text-blue-600 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors font-medium"
-              >
-                Read my full story
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
+              <div>
+                <a
+                  href="/about"
+                  className="text-blue-600 hover:text-blue-700 font-medium underline decoration-2 underline-offset-4"
+                >
+                  More about my story →
+                </a>
+              </div>
+            </div>
+
+            {/* Right side - Image */}
+            <div className="order-1 lg:order-2">
+              <div className="flex justify-center">
+                <div className="text-center">
+                  <div className="relative w-48 h-48 mx-auto mb-6">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-emerald-500/20 rounded-full blur-xl"></div>
+                    <Image
+                      src="/serdarsalim.webp"
+                      alt="Serdar Salim"
+                      width={192}
+                      height={192}
+                      className="relative rounded-full object-cover shadow-lg border-4 border-white"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">Serdar Salim</h3>
+                  <p className="text-gray-600 mt-1">Founder</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

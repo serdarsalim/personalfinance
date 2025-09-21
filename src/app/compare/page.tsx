@@ -22,68 +22,233 @@ export const metadata: Metadata = {
 
 const ComparisonTable = () => (
   <div className="overflow-x-auto">
-    <table className="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
-      <thead className="bg-gray-100">
-        <tr>
-          <th className="px-6 py-4 text-left text-gray-900 font-bold">Feature</th>
-          <th className="px-6 py-4 text-center text-blue-600 font-bold">Simplify Budget</th>
-          <th className="px-6 py-4 text-center text-gray-900 font-bold">YNAB</th>
-          <th className="px-6 py-4 text-center text-gray-900 font-bold">EveryDollar</th>
-          <th className="px-6 py-4 text-center text-gray-900 font-bold">PocketGuard</th>
-          <th className="px-6 py-4 text-center text-gray-900 font-bold">Free Apps</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-gray-200">
-        <tr>
-          <td className="px-6 py-4 font-medium text-gray-900">Price</td>
-          <td className="px-6 py-4 text-center"><span className="text-green-600 font-bold">$15 one-time</span></td>
-          <td className="px-6 py-4 text-center text-red-600">$180/year</td>
-          <td className="px-6 py-4 text-center text-red-600">$80/year</td>
-          <td className="px-6 py-4 text-center text-orange-600">$8/month</td>
-          <td className="px-6 py-4 text-center text-gray-600">Free + ads</td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="px-6 py-4 font-medium text-gray-900">Access when you stop paying</td>
-          <td className="px-6 py-4 text-center"><span className="text-green-600 font-bold">Forever yours</span></td>
-          <td className="px-6 py-4 text-center text-red-600">Locked out</td>
-          <td className="px-6 py-4 text-center text-red-600">Locked out</td>
-          <td className="px-6 py-4 text-center text-red-600">Locked out</td>
-          <td className="px-6 py-4 text-center text-orange-600">Limited features</td>
-        </tr>
-        <tr>
-          <td className="px-6 py-4 font-medium text-gray-900">Data ownership</td>
-          <td className="px-6 py-4 text-center text-green-600">Your Google Drive</td>
-          <td className="px-6 py-4 text-center text-gray-600">Their servers</td>
-          <td className="px-6 py-4 text-center text-gray-600">Their servers</td>
-          <td className="px-6 py-4 text-center text-gray-600">Their servers</td>
-          <td className="px-6 py-4 text-center text-gray-600">Their servers</td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="px-6 py-4 font-medium text-gray-900">Monthly calendar view</td>
-          <td className="px-6 py-4 text-center text-green-600 text-xl">✅</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-        </tr>
-        <tr>
-          <td className="px-6 py-4 font-medium text-gray-900">Auto-fill subscriptions</td>
-          <td className="px-6 py-4 text-center text-green-600 text-xl">✅</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-          <td className="px-6 py-4 text-center text-red-600 text-xl">❌</td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="px-6 py-4 font-medium text-gray-900">Ads/upselling</td>
-          <td className="px-6 py-4 text-center text-green-600">None</td>
-          <td className="px-6 py-4 text-center text-green-600">None</td>
-          <td className="px-6 py-4 text-center text-orange-600">Ramsey content</td>
-          <td className="px-6 py-4 text-center text-red-600">Heavy ads</td>
-          <td className="px-6 py-4 text-center text-red-600">Constant</td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="min-w-full bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-200">
+      {/* Header */}
+      <div className="grid grid-cols-6 bg-gradient-to-r from-blue-600 to-emerald-600 text-white">
+        <div className="px-6 py-6 font-bold text-lg">Feature</div>
+        <div className="px-6 py-6 text-center">
+          <div className="font-bold text-lg">Simplify Budget</div>
+          <div className="text-sm text-blue-100">Own forever</div>
+        </div>
+        <div className="px-6 py-6 text-center">
+          <div className="font-bold text-lg">YNAB</div>
+          <div className="text-sm text-blue-100">Expensive subscription</div>
+        </div>
+        <div className="px-6 py-6 text-center">
+          <div className="font-bold text-lg">EveryDollar</div>
+          <div className="text-sm text-blue-100">Ramsey method only</div>
+        </div>
+        <div className="px-6 py-6 text-center">
+          <div className="font-bold text-lg">PocketGuard</div>
+          <div className="text-sm text-blue-100">Ad-heavy</div>
+        </div>
+        <div className="px-6 py-6 text-center">
+          <div className="font-bold text-lg">Free Apps</div>
+          <div className="text-sm text-blue-100">Limited features</div>
+        </div>
+      </div>
+
+      {/* Rows */}
+      <div className="divide-y divide-gray-100">
+        {/* Price Row */}
+        <div className="grid grid-cols-6 hover:bg-gray-50 transition-colors">
+          <div className="px-6 py-3 font-semibold text-gray-900 flex items-center">
+            <span className="mr-3 text-xl">💰</span>
+            Price
+          </div>
+          <div className="px-6 py-3 text-center bg-green-50 border-l-4 border-green-500">
+            <div className="font-bold text-green-800">
+              <span className="mr-2">🎉</span>
+              $15 one-time
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="font-semibold text-red-700">
+              <span className="mr-2">💸</span>
+              $180/year
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="font-semibold text-red-700">
+              <span className="mr-2">💸</span>
+              $80/year
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="font-semibold text-orange-700">
+              <span className="mr-2">🔄</span>
+              $8/month
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-gray-700">
+              <span className="mr-2">📢</span>
+              Free + ads
+            </div>
+          </div>
+        </div>
+
+        {/* Access Row */}
+        <div className="grid grid-cols-6 hover:bg-gray-50 transition-colors bg-gray-25">
+          <div className="px-6 py-3 font-semibold text-gray-900 flex items-center">
+            <span className="mr-3 text-xl">🔐</span>
+            Access when you stop paying
+          </div>
+          <div className="px-6 py-3 text-center bg-green-50 border-l-4 border-green-500">
+            <div className="font-bold text-green-800">
+              <span className="mr-2">♾️</span>
+              Forever yours
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-red-700">
+              <span className="mr-2">🚫</span>
+              Locked out
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-red-700">
+              <span className="mr-2">🚫</span>
+              Locked out
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-red-700">
+              <span className="mr-2">🚫</span>
+              Locked out
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-orange-700">
+              <span className="mr-2">⚠️</span>
+              Limited features
+            </div>
+          </div>
+        </div>
+
+        {/* Data Ownership */}
+        <div className="grid grid-cols-6 hover:bg-gray-50 transition-colors">
+          <div className="px-6 py-3 font-semibold text-gray-900 flex items-center">
+            <span className="mr-3 text-xl">🗄️</span>
+            Data ownership
+          </div>
+          <div className="px-6 py-3 text-center bg-green-50 border-l-4 border-green-500">
+            <div className="font-bold text-green-800">
+              <span className="mr-2">☁️</span>
+              Your Google Drive
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-gray-700">
+              <span className="mr-2">🏢</span>
+              Their servers
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-gray-700">
+              <span className="mr-2">🏢</span>
+              Their servers
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-gray-700">
+              <span className="mr-2">🏢</span>
+              Their servers
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-gray-700">
+              <span className="mr-2">🏢</span>
+              Their servers
+            </div>
+          </div>
+        </div>
+
+        {/* Calendar View */}
+        <div className="grid grid-cols-6 hover:bg-gray-50 transition-colors bg-gray-25">
+          <div className="px-6 py-3 font-semibold text-gray-900 flex items-center">
+            <span className="mr-3 text-xl">📅</span>
+            Monthly calendar view
+          </div>
+          <div className="px-6 py-3 text-center bg-green-50 border-l-4 border-green-500">
+            <span className="text-2xl text-green-600">✅</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+        </div>
+
+        {/* Auto-fill Subscriptions */}
+        <div className="grid grid-cols-6 hover:bg-gray-50 transition-colors">
+          <div className="px-6 py-3 font-semibold text-gray-900 flex items-center">
+            <span className="mr-3 text-xl">🔄</span>
+            Auto-fill subscriptions
+          </div>
+          <div className="px-6 py-3 text-center bg-green-50 border-l-4 border-green-500">
+            <span className="text-2xl text-green-600">✅</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <span className="text-2xl text-red-600">❌</span>
+          </div>
+        </div>
+
+        {/* Ads/Upselling */}
+        <div className="grid grid-cols-6 hover:bg-gray-50 transition-colors bg-gray-25">
+          <div className="px-6 py-3 font-semibold text-gray-900 flex items-center">
+            <span className="mr-3 text-xl">📢</span>
+            Ads/upselling
+          </div>
+          <div className="px-6 py-3 text-center bg-green-50 border-l-4 border-green-500">
+            <div className="font-bold text-green-800">
+              <span className="mr-2">🚫</span>
+              None
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-green-800">
+              <span className="mr-2">🚫</span>
+              None
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-orange-700">
+              <span className="mr-2">📚</span>
+              Ramsey content
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-red-700">
+              <span className="mr-2">📢</span>
+              Heavy ads
+            </div>
+          </div>
+          <div className="px-6 py-3 text-center">
+            <div className="text-red-700">
+              <span className="mr-2">🔄</span>
+              Constant
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
@@ -126,127 +291,201 @@ export default function ComparePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Detailed App Comparisons</h2>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="space-y-16">
             {/* YNAB Comparison */}
-            <div id="ynab" className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Simplify Budget vs YNAB</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Annual cost</span>
+            <div id="ynab" className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-2xl blur-xl"></div>
+              <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-blue-100">
+                <div className="flex items-center justify-between mb-8">
+                  <h3 className="text-3xl font-bold text-gray-900">Simplify Budget vs YNAB</h3>
                   <div className="text-right">
-                    <div className="text-green-600 font-bold">$15 total</div>
-                    <div className="text-red-600">vs $180/year</div>
+                    <div className="text-sm text-gray-500">Annual savings</div>
+                    <div className="text-2xl font-bold text-green-600">$165</div>
                   </div>
                 </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Calendar view</span>
-                  <div className="text-right">
-                    <div className="text-green-600">✅ Monthly grid</div>
-                    <div className="text-red-600">vs ❌ Lists only</div>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-lg font-semibold text-blue-600 mb-4">What YNAB Users Actually Complain About</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">$180/year with frequent price increases (doubled for early users)</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">Limited reports not available on mobile</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">2000-word weekly reconciliation guide (too complex)</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">99+ technical outages tracked in 2024</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-green-600 mb-4">How Simplify Budget Fixes This</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">$15 once - price locked forever</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">Expense calendar view YNAB users have begged for since 2015</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">Auto-fill fixed expenses (Netflix, rent) - set once, works forever</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">Google Apps Script - can't go down like traditional apps</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Data ownership</span>
-                  <div className="text-right">
-                    <div className="text-green-600">Your Google Drive</div>
-                    <div className="text-red-600">vs Their servers</div>
-                  </div>
+
+                <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+                  <p className="text-blue-800 font-semibold">
+                    💡 <strong>Break even in 1 month.</strong> Save $495 over 3 years vs YNAB's subscription trap.
+                  </p>
                 </div>
-              </div>
-              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                <p className="text-sm text-blue-800">
-                  <strong>Break even:</strong> 1 month. After that, pure savings.
-                </p>
               </div>
             </div>
 
             {/* EveryDollar Comparison */}
-            <div id="everydollar" className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Simplify Budget vs EveryDollar</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Annual cost</span>
+            <div id="everydollar" className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-2xl blur-xl"></div>
+              <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-green-100">
+                <div className="flex items-center justify-between mb-8">
+                  <h3 className="text-3xl font-bold text-gray-900">Simplify Budget vs EveryDollar</h3>
                   <div className="text-right">
-                    <div className="text-green-600 font-bold">$15 total</div>
-                    <div className="text-red-600">vs $80/year</div>
+                    <div className="text-sm text-gray-500">No Ramsey tax</div>
+                    <div className="text-2xl font-bold text-green-600">$80 saved</div>
                   </div>
                 </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Budget methods</span>
-                  <div className="text-right">
-                    <div className="text-green-600">Any method</div>
-                    <div className="text-red-600">vs Ramsey only</div>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-lg font-semibold text-red-600 mb-4">What EveryDollar Users Complain About</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">$120/year "shady" pricing for basic bank sync</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">Android app "often freezes & glitches" with login issues</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">Rigid baby steps system - "trying to shove yourself into a box"</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">❌</span>
+                        <span className="text-gray-700 text-sm">"Absolutely terrible" customer service that takes days to respond</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-green-600 mb-4">How Simplify Budget is Different</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">Simple budgeting - no forced Dave Ramsey methodology</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">Web-based - works reliably on all devices</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">Expense calendar view shows spending patterns EveryDollar hides</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-500 mr-3 mt-1 text-sm">✅</span>
+                        <span className="text-gray-700 text-sm">Your data in your Google Drive - true ownership</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Visual tracking</span>
-                  <div className="text-right">
-                    <div className="text-green-600">Calendar view</div>
-                    <div className="text-red-600">vs Lists only</div>
-                  </div>
+
+                <div className="mt-8 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200">
+                  <p className="text-green-800 font-semibold">
+                    🚫 <strong>Budget your way</strong> without Dave Ramsey's rigid baby steps framework.
+                  </p>
                 </div>
-              </div>
-              <div className="mt-6 p-4 bg-green-50 rounded-lg">
-                <p className="text-sm text-green-800">
-                  <strong>No "Ramsey tax":</strong> Use any budgeting philosophy you want.
-                </p>
               </div>
             </div>
 
             {/* Mint Alternative */}
-            <div id="mint" className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Why Mint Users Choose Us</h3>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <span className="text-green-500 mr-3 mt-1">✓</span>
-                  <div>
-                    <strong className="text-gray-900">Data can't disappear</strong>
-                    <p className="text-gray-600 text-sm">Your data in YOUR Google Drive forever</p>
+            <div id="mint" className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-xl"></div>
+              <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-purple-100">
+                <div className="flex items-center justify-between mb-8">
+                  <h3 className="text-3xl font-bold text-gray-900">After Mint's Shutdown</h3>
+                  <div className="text-right">
+                    <div className="text-sm text-gray-500">Data security</div>
+                    <div className="text-2xl font-bold text-purple-600">Forever</div>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-green-500 mr-3 mt-1">✓</span>
-                  <div>
-                    <strong className="text-gray-900">Visual expense calendar</strong>
-                    <p className="text-gray-600 text-sm">See spending patterns Mint never showed</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-green-500 mr-3 mt-1">✓</span>
-                  <div>
-                    <strong className="text-gray-900">No subscription trap</strong>
-                    <p className="text-gray-600 text-sm">$15 once vs potential future fees</p>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6 p-4 bg-gray-100 rounded-lg">
-                <p className="text-sm text-gray-700">
-                  💀 <strong>Mint lesson:</strong> Free apps can shut down overnight. Own your data.
-                </p>
-              </div>
-            </div>
 
-            {/* Free Apps vs Paid */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Free Apps vs $15 One-Time</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-red-600 mb-2">Free Apps Problems:</h4>
-                  <ul className="space-y-1 text-sm text-gray-600">
-                    <li>❌ Limited features to push upgrades</li>
-                    <li>❌ Constant ads and upselling</li>
-                    <li>❌ Your data on their servers</li>
-                    <li>❌ Can become paid anytime</li>
-                  </ul>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-lg font-semibold text-red-600 mb-4">Why Mint Users Were Devastated</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">💀</span>
+                        <span className="text-gray-700 text-sm">10+ years of financial data lost overnight in 2024</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">💀</span>
+                        <span className="text-gray-700 text-sm">Forced migration to Credit Karma (no budgeting features)</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">💀</span>
+                        <span className="text-gray-700 text-sm">Free model was unsustainable - data costs too expensive</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-red-500 mr-3 mt-1 text-sm">💀</span>
+                        <span className="text-gray-700 text-sm">Users "blown away" and disappointed after years of loyalty</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-purple-600 mb-4">Why This Can't Happen to You</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <span className="text-purple-500 mr-3 mt-1 text-sm">🛡️</span>
+                        <span className="text-gray-700 text-sm">Google Apps Script architecture - runs on Google's infrastructure</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-purple-500 mr-3 mt-1 text-sm">🛡️</span>
+                        <span className="text-gray-700 text-sm">Your data lives in YOUR Google Drive forever</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-purple-500 mr-3 mt-1 text-sm">🛡️</span>
+                        <span className="text-gray-700 text-sm">Manual entry builds better financial awareness than auto-sync</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-purple-500 mr-3 mt-1 text-sm">🛡️</span>
+                        <span className="text-gray-700 text-sm">Works with any bank globally - no integration dependencies</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-green-600 mb-2">$15 One-Time Benefits:</h4>
-                  <ul className="space-y-1 text-sm text-gray-600">
-                    <li>✅ Full features forever</li>
-                    <li>✅ No ads, no upselling</li>
-                    <li>✅ Your data, your control</li>
-                    <li>✅ Own it forever</li>
-                  </ul>
+
+                <div className="mt-8 p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border border-purple-200">
+                  <p className="text-purple-800 font-semibold">
+                    💡 <strong>Mint's lesson:</strong> Never trust free apps with years of financial data. Own your data.
+                  </p>
                 </div>
               </div>
             </div>
@@ -334,15 +573,15 @@ export default function ComparePage() {
             <div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Can I import data from YNAB/EveryDollar?</h3>
               <p className="text-gray-700">
-                Yes! Export your data as CSV from any budget app and import it into your Google Sheet.
-                Takes about 5 minutes and we provide step-by-step instructions.
+                You start fresh - takes just minutes to set up and start budgeting. The app keeps your history
+                so you can compare months and check previous data. Clean slate, better habits.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">What if you shut down like Mint did?</h3>
               <p className="text-gray-700">
-                Your data stays in YOUR Google Drive forever. The Google Sheets template works independently.
-                Even if we disappear, you keep full access to your financial data and budgeting system.
+                It can't shut down like Mint because it's a Google Apps Script that runs on Google's infrastructure
+                and saves data to YOUR Google Drive. Works as long as Google exists - pretty safe bet.
               </p>
             </div>
             <div>
