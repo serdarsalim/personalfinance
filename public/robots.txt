@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /demo
-Disallow: /app
 
 Sitemap: https://simplifybudget.com/sitemap.xml

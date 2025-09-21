@@ -40,11 +40,10 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-white font-semibold mb-3">Compare</h3>
                 <ul className="space-y-2">
-                  <li><Link href="/compare/ynab-alternative" className="text-gray-400 hover:text-blue-400">vs YNAB</Link></li>
-                  <li><Link href="/compare/mint-alternative" className="text-gray-400 hover:text-blue-400">vs Mint</Link></li>
-                  <li><Link href="/compare/everydollar-alternative" className="text-gray-400 hover:text-blue-400">vs EveryDollar</Link></li>
-                  <li><Link href="/compare/pocketguard-alternative" className="text-gray-400 hover:text-blue-400">vs PocketGuard</Link></li>
-                  <li><Link href="/compare/quicken-alternative" className="text-gray-400 hover:text-blue-400">vs Quicken</Link></li>
+                  <li><Link href="/compare" className="text-gray-400 hover:text-blue-400">vs All Budget Apps</Link></li>
+                  <li><a href="/compare#ynab" className="text-gray-400 hover:text-blue-400">vs YNAB</a></li>
+                  <li><a href="/compare#everydollar" className="text-gray-400 hover:text-blue-400">vs EveryDollar</a></li>
+                  <li><a href="/compare#mint" className="text-gray-400 hover:text-blue-400">vs Mint</a></li>
                 </ul>
               </div>
               

@@ -31,12 +31,12 @@ const AboutFounderSection = dynamic(() => import("./components/sections/AboutFou
 
 // Update metadata
 export const metadata: Metadata = {
-  title: "Budget app that saves you money | Simple enough to stick with, smart enough to build wealth",
-  description: "Stop living paycheck to paycheck. Simple, private, no-fee budget app. Track expenses instantly, keep more money. $15 one-time payment.",
-  keywords: "best budget app 2025, budget app that works, expense tracker app, family budget app, no subscription budget app, manual expense tracking, ynab alternative, mint alternative, everydollar alternative, quicken alternative, budget tracker no fees",
+  title: "Stop Forgetting Where Your Money Goes | Budget App That Actually Works",
+  description: "Stop living paycheck to paycheck. Simple budget app that takes 30 seconds to use. Track expenses instantly, keep more money. $15 one-time payment.",
+  keywords: "budget app, stop overspending, track expenses, family budget, no subscription budget app",
   openGraph: {
-    title: "Budget App That Actually Works | No Monthly Fees",
-    description: "Stop forgetting where your money goes. Track expenses in 5 seconds, works for families. $15 lifetime - try free 30 days.",
+    title: "Stop Forgetting Where Your Money Goes",
+    description: "Simple budget app that takes 30 seconds to use. $15 lifetime - try free 30 days.",
     url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
     type: "website",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Budget App That Actually Works | No Monthly Fees',
-    description: 'Stop forgetting where your money goes. Track expenses in 5 seconds, works for families. $15 lifetime - try free 30 days.',
+    title: 'Stop Forgetting Where Your Money Goes',
+    description: 'Simple budget app that takes 30 seconds to use. $15 lifetime - try free 30 days.',
     images: ['https://simplifybudget.com/simplifybudget.webp'],
   }
 };
