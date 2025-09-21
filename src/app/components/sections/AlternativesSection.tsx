@@ -11,14 +11,14 @@ export default function AlternativesSection() {
       price: "$180/year",
       ourPrice: "$15 once",
       savings: "$165/year",
-      link: "/compare/ynab-alternative"
+      link: "/compare#ynab"
     },
     {
       name: "Mint",
       status: "Shut Down",
-      ourPrice: "$15 once", 
+      ourPrice: "$15 once",
       message: "Your data, forever",
-      link: "/compare/mint-alternative"
+      link: "/compare#mint"
     }
   ];
 

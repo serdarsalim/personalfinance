@@ -17,7 +17,37 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   // Improve performance
-  output: 'standalone'
+  output: 'standalone',
+  // Redirects for consolidated comparison pages
+  async redirects() {
+    return [
+      {
+        source: '/compare/ynab-alternative',
+        destination: '/compare#ynab',
+        permanent: true,
+      },
+      {
+        source: '/compare/mint-alternative',
+        destination: '/compare#mint',
+        permanent: true,
+      },
+      {
+        source: '/compare/everydollar-alternative',
+        destination: '/compare#everydollar',
+        permanent: true,
+      },
+      {
+        source: '/compare/pocketguard-alternative',
+        destination: '/compare',
+        permanent: true,
+      },
+      {
+        source: '/compare/quicken-alternative',
+        destination: '/compare',
+        permanent: true,
+      },
+    ]
+  }
 };
 
 module.exports = nextConfig;
