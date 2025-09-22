@@ -2,74 +2,48 @@
 
 import Script from 'next/script';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
-// Declare dataLayer for TypeScript
+// Declare gtag for TypeScript
 declare global {
   interface Window {
-    dataLayer: any[];
+    gtag: (command: string, id: string, config?: { [key: string]: any; page_path?: string }) => void;
   }
 }
 
-// Your GTM container ID
-const GTM_ID = 'GTM-M9LLX3SW';
+// Your GA4 Measurement ID
+const GA_MEASUREMENT_ID = 'G-SE5CEND7KJ';
 
-export default function GoogleTagManager() {
+export default function GoogleAnalytics() {
   const pathname = usePathname();
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // Mark component as client-side rendered
-    setIsClient(true);
-    
-    // Initialize dataLayer
-    window.dataLayer = window.dataLayer || [];
-    
-    if (pathname) {
-      // Get search params client-side only when needed
-      const searchParams = new URLSearchParams(window.location.search);
-      const query = Object.fromEntries(searchParams.entries());
-      
-      window.dataLayer.push({
-        event: 'pageview',
-        page: pathname,
-        query: query
+    if (pathname && window.gtag) {
+      window.gtag('config', GA_MEASUREMENT_ID, {
+        page_path: pathname,
       });
     }
   }, [pathname]);
 
-  // Only render script on client-side to prevent hydration mismatch
-  if (!isClient) return null;
-
   return (
     <>
-      {/* Google Tag Manager - Script */}
+      {/* Google Analytics */}
       <Script
-        id="gtm-script"
-        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','${GTM_ID}');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
           `
         }}
-        onError={(e) => {
-          console.error('GTM script failed to load:', e);
-        }}
       />
-      
-      {/* Google Tag Manager - No Script */}
-      <noscript>
-        <iframe
-          src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-          height="0"
-          width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
-        />
-      </noscript>
     </>
   );
 }

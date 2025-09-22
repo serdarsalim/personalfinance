@@ -6,7 +6,7 @@ import SoftwareApplicationSchema from './components/SoftwareApplicationSchema'
 import { Suspense } from 'react'
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import GoogleTagManager from './components/GoogleTagManager'
+import GoogleAnalytics from './components/GoogleTagManager'
 import ErrorBoundary from './ErrorBoundary'
 
 // Simple loading component
@@ -63,8 +63,8 @@ export default function RootLayout({
         }} />
       </head>
       <body className={`${inter.variable} font-sans`}>
-        {/* GTM components - moved to client component */}
-        <GoogleTagManager />
+        {/* Google Analytics */}
+        <GoogleAnalytics />
         
         {/* Main content */}
         <ErrorBoundary>
