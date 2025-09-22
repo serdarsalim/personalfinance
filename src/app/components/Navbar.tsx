@@ -116,6 +116,9 @@ export default function Navbar() {
           <Link href="/app-guide" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             App Guide
           </Link>
+          <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
+            Blog
+          </Link>
           <Link href="/#templates" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             Buy License
           </Link>
