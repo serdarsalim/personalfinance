@@ -31,12 +31,12 @@ const AboutFounderSection = dynamic(() => import("./components/sections/AboutFou
 
 // Update metadata
 export const metadata: Metadata = {
-  title: "Stop Forgetting Where Your Money Goes | Budget App That Actually Works",
-  description: "Stop living paycheck to paycheck. Simple budget app that takes 30 seconds to use. Track expenses instantly, keep more money. $15 one-time payment.",
-  keywords: "budget app, stop overspending, track expenses, family budget, no subscription budget app",
+  title: "Budget app that helps you take control of your money | Simplify Budget",
+  description: "Budgeting for individuals and families, net worth tracking included. Simple, effective, free to try. $15 one-time payment.",
+  keywords: "budget app, take control of money, family budget, net worth tracking, no subscription budget app",
   openGraph: {
-    title: "Stop Forgetting Where Your Money Goes",
-    description: "Simple budget app that takes 30 seconds to use. $15 lifetime - try free 30 days.",
+    title: "Budget app that helps you take control of your money",
+    description: "Budgeting for individuals and families, net worth tracking included. Simple, effective, free to try.",
     url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
     type: "website",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Stop Forgetting Where Your Money Goes',
-    description: 'Simple budget app that takes 30 seconds to use. $15 lifetime - try free 30 days.',
+    title: 'Budget app that helps you take control of your money',
+    description: 'Budgeting for individuals and families, net worth tracking included. Simple, effective, free to try.',
     images: ['https://simplifybudget.com/simplifybudget.webp'],
   }
 };

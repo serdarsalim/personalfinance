@@ -70,6 +70,9 @@ export default function Navbar() {
             <Link href="/app-guide" className="text-gray-700 hover:text-blue-600 font-medium">
               App Guide
             </Link>
+            <Link href="/blog" className="text-gray-700 hover:text-blue-600 font-medium">
+              Blog
+            </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
               Buy License
             </Link>
