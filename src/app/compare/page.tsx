@@ -269,7 +269,7 @@ export default function ComparePage() {
               href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
               className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors"
             >
-              Start Using Simplify Budget
+              Sign Up with Google
             </a>
             <div className="mt-4 text-sm text-blue-100">
               <p>Try free for 30 days • Sign in with Google</p>

@@ -76,13 +76,13 @@ export default function HeroSection() {
                 href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
                 className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
               >
-                Start Using Simplify Budget
+                Sign Up with Google
               </a>
             </div>
             
             {/* Trust note */}
             <div className="text-sm text-gray-600 text-center lg:text-left mb-4">
-              <p>Sign in with Google to create your budget</p>
+              <p>Simplify Budget is a Browser Based Google App</p>
               <p>Try free for 30 days without credit card requirement</p>
             </div>
           </div>
