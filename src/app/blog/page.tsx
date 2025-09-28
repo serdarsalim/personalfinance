@@ -21,10 +21,47 @@ export const metadata: Metadata = {
 const blogArticles = [
   {
     id: 1,
+    title: "When Will You Have Enough Money to Escape the Job You Hate?",
+    date: "28 Sep 25",
+    views: "15k",
+    likes: "13",
+    content: `You're calculating FIRE numbers, aiming for 25x your annual expenses before 60, dreaming of never working again. Meanwhile, you're grinding through a job that drains your soul, competing for promotions that mean nothing to you, living like a hermit for the next 15-20 years while your prime years slip away.
+
+Here's the brutal truth: Even when you hit those magical millions, you'll still hesitate. I've seen people with $3M in assets and rental income asking Reddit if they can afford $5K monthly expenses. If millionaires can't recognize "enough," what makes you think you'll be different?
+
+The real breakthrough isn't financial independence—it's financial security.
+
+For 15 years, I've only taken jobs I genuinely wanted. Not for the highest salary, but for work that aligned with my mission. I saved aggressively and invested consistently, but I didn't sacrifice my present for an uncertain future.
+
+**Here's my framework:**
+
+**Build 12 months of cash runway plus 2-3 years in liquid investments** - This isn't FIRE money, but it's freedom money. When you have this buffer, you can walk away from toxic situations.
+
+**Develop income-generating skills that aren't tied to employment** - Trading, consulting, creating digital products. Skills that work whether you're employed or not.
+
+**Stop waiting for permission from spreadsheets and calculators** - The perfect number doesn't exist. Financial security gives you options; perfectionism gives you paralysis.
+
+This approach gave me the freedom to leave corporate entirely three years ago. I've traveled to 25 countries while building projects that matter. I maintain my financial runway through trading—a few focused hours weekly keeps my security intact while my passion projects develop.
+
+The skill of maintaining financial security is more achievable than FIRE and infinitely more practical.
+
+When you master this, you can take calculated risks, launch meaningful projects, and work only for organizations whose missions align with your values. Three years of expenses in reserve provides more real freedom than most people achieve in a lifetime.
+
+**Your next steps:**
+
+1. **Calculate your true monthly expenses** (not your current lifestyle inflation)
+2. **Build that 12-month cash buffer**
+3. **Identify one skill that can generate income independently**
+4. **Set the date when you'll make the jump**
+
+Stop treating your life like a dress rehearsal. Financial security gives you the foundation to build the life you want now, not in two decades.`
+  },
+  {
+    id: 2,
     title: "My 5 rules to live a life without corporate slavery",
     date: "20 Sep 25",
-    views: "14k",
-    likes: "28",
+    views: "56k",
+    likes: "96",
     content: `Here are 5 rules that will help you avoid being trapped in corporate dependency:
 1. **Build Your Safety Net First** - Save 6-12 months of expenses. This isn't just emergency money—it's your freedom fund. When you have this cushion, you can take risks, say no to bad opportunities, and negotiate from a position of strength.
 2. **Create Multiple Income Streams** - Don't put all your financial eggs in one corporate basket. Side projects, investments, freelance work, or even a small business. When one stream dries up, you have others flowing.
@@ -38,8 +75,8 @@ The key is starting before you feel trapped. When you need these rules most, it'
     id: 2,
     title: "How to invest without crying every time the market dips",
     date: "18 Sep 25",
-    views: "11k",
-    likes: "26",
+    views: "14k",
+    likes: "30",
     content: `Here are 4 steps that will help you avoid all the rookie investing mistakes:
 1. **Build an emergency fund first** - 6 months of living expenses in cash. If the market tanks, you don't want to sell investments just to buy ramen.
 2. **Start small & boring** - Put a portion of your income into a low-cost index fund every month. And continue learning diversification from there.
