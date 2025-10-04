@@ -6,12 +6,12 @@ import { Metadata } from 'next';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'How Simplify Budget Works - Complete Financial Management Made Easy',
-  description: 'Learn how Simplify Budget provides complete financial management with smart automation, visual expense tracking, and net worth monitoring. See why it works better than traditional budget apps.',
+  title: 'How to Manage Finances with Simplify Budget - Complete Guide',
+  description: 'Learn how to manage your finances effectively with Simplify Budget. Smart automation, visual expense tracking, and net worth monitoring made simple.',
   keywords: 'how simplify budget works, financial management app, smart budgeting, expense tracking, net worth tracking, budget calendar, family budgeting, google sheets budget',
   openGraph: {
-    title: 'How Simplify Budget Works - Complete Financial Management Made Easy',
-    description: 'Learn how Simplify Budget provides complete financial management with smart automation and visual expense tracking.',
+    title: 'How to Manage Finances with Simplify Budget - Complete Guide',
+    description: 'Learn how to manage your finances effectively with Simplify Budget. Smart automation, visual expense tracking, and net worth monitoring made simple.',
     url: 'https://simplifybudget.com/how-it-works',
     siteName: 'Simplify Budget',
     images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Simplify Budget Works - Complete Financial Management Made Easy',
-    description: 'Learn how Simplify Budget provides complete financial management with smart automation and visual expense tracking.',
+    title: 'How to Manage Finances with Simplify Budget - Complete Guide',
+    description: 'Learn how to manage your finances effectively with Simplify Budget. Smart automation, visual expense tracking, and net worth monitoring made simple.',
     images: ['https://simplifybudget.com/simplifybudget.jpg'],
   },
   alternates: {
@@ -45,7 +45,7 @@ const ArticleContent = () => (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
-          How Simplify Budget Works
+          How to Manage Finances with Simplify
           </h1>
         </div>
       </div>
@@ -62,195 +62,91 @@ const ArticleContent = () => (
 
         {/* Introduction */}
         <section id="introduction" className="mb-16">
-          
-     <p className="text-gray-700 mb-4">
-  This budget app helps you stop overspending by showing you exactly how much money you have left to spend each month.
-</p>
 
-<p className="text-gray-700 mb-4">
-  At the start of each month, set your budget and enter your fixed expenses like rent and subscriptions. The app automatically shows these as spent, so you know your remaining budget for groceries, entertainment, and other variable expenses.
-</p>
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <p className="text-gray-700 text-lg mb-4">
+              A great way to manage personal finances is by tracking monthly income and expenses and setting monthly goals for them.
+            </p>
 
-<p className="text-gray-700 mb-4">
-  Track expenses as you spend them using the monthly calendar view. See your spending patterns instantly and never overspend again.
-</p>
+            <p className="text-gray-700 text-lg mb-4">
+              You can achieve your money goals if you know how much your fixed expenses are at the start of the month. This gives you mental clarity on how much money you have to spend.
+            </p>
 
-<p className="text-gray-700 mb-4">
-  Track your net worth monthly to watch your wealth grow over time.
-</p>
+            <p className="text-gray-700 text-lg mb-4">
+              Then you just track your expenses as they happen ideally in a calendar view. This will reveal your spending patterns and prevent overspending.
+            </p>
 
-<p className="text-gray-700 mb-4">
-  Since all your data lives in your Google Drive, you own everything forever.
-</p> <br></br>
+            <p className="text-gray-700 text-lg mb-6">
+              Each month track your net worth by recording your investments, liquid assets, debts and physical assets. This gives you the complete picture of your financial progress over time.
+            </p>
 
-          {/* The Right Kind of Automation */}
-          <div className="mb-12">
-            
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-6">
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 p-8 rounded-xl shadow-sm">
-                <div className="flex items-center mb-4">
-                  <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-                  <h4 className="font-bold text-green-900 text-lg">The automation this app uses</h4>
-                </div>
-                <ul className="space-y-3">
-                  <li className="flex items-start text-green-800">
-                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Fixed expenses copy automatically to the next month
-                  </li>
-                  <li className="flex items-start text-green-800">
-                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    All calculations for budget and analytics are done automatically
-                  </li>
-                  <li className="flex items-start text-green-800">
-                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Net worth data copies automatically to the next month
-                  </li>
-                  <li className="flex items-start text-green-800">
-                    <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Spending goals copy automatically to the next month since they rarely change and can be adjusted each month
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="bg-gradient-to-br from-red-50 to-rose-50 border border-red-200 p-8 rounded-xl shadow-sm">
-                <div className="flex items-center mb-4">
-                  <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
-                  <h4 className="font-bold text-red-900 text-lg">Fully automated other apps</h4>
-                </div>
-                <ul className="space-y-3">
-                  <li className="flex items-start text-red-800">
-                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                    </svg>
-                    Bank syncing that imports transactions wrong
-                  </li>
-                  <li className="flex items-start text-red-800">
-                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                    </svg>
-                    Auto-categorization that requires constant correction
-                  </li>
-                  <li className="flex items-start text-red-800">
-                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                    </svg>
-                    "Automated" systems that need weekly manual reconciliation
-                  </li>
-                  <li className="flex items-start text-red-800">
-                    <svg className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                    </svg>
-                    Cash purchases are not categorised or tracked at all
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
+            <h3 className="text-lg font-bold text-gray-900 mb-4">Simplify Budget handles:</h3>
 
-            
-            
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span className="text-gray-700">Fixed expenses copy automatically to the next month</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span className="text-gray-700">All calculations for budget and analytics are done automatically</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span className="text-gray-700">Net worth data copies automatically to the next month</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-3">✓</span>
+                <span className="text-gray-700">Spending goals copy automatically to the next month since they rarely change and can be adjusted each month</span>
+              </li>
+            </ul>
           </div>
 
         </section>
 
         {/* The Simplify Budget Philosophy */}
         <section id="philosophy" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">How to do financial management using this app</h2>
-          
-          <p className="text-gray-700 mb-8 text-lg">
-            This app tracks your money in three simple areas: monthly expenses, net worth, and income. It works on any device and takes just seconds to enter your spending.
-          </p>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Simplify Budget approach to money management</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <div className="bg-blue-500 rounded-full p-2 mr-3">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-blue-900">Track as you spend, not after</h3>
-              </div>
-              <p className="text-blue-800">
+            <div className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 p-6 rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+              <h3 className="text-lg font-bold text-blue-900 mb-3">Track as you spend, not after</h3>
+              <p className="text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Enter expenses when they happen to create real-time awareness. The awareness happens when it can actually influence decisions.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 border border-emerald-200 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <div className="bg-emerald-500 rounded-full p-2 mr-3">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-emerald-900">Smart fixed expenses</h3>
-              </div>
-              <p className="text-emerald-800">
+            <div className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 p-6 rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+              <h3 className="text-lg font-bold text-blue-900 mb-3">Smart fixed expenses</h3>
+              <p className="text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Set up fixed expenses once—they automatically appear on due dates with advance visual warning.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <div className="bg-purple-500 rounded-full p-2 mr-3">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-purple-900">Visual spending patterns</h3>
-              </div>
-              <p className="text-purple-800">
+            <div className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 p-6 rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+              <h3 className="text-lg font-bold text-blue-900 mb-3">Visual spending patterns</h3>
+              <p className="text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Monthly and yearly calendar views with categories on top, days/months on the side. See all your spending patterns at a glance in one Monthly Expense Calendar.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 border border-indigo-200 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <div className="bg-indigo-500 rounded-full p-2 mr-3">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-indigo-900">Set spending goals and track progress</h3>
-              </div>
-              <p className="text-indigo-800">
+            <div className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 p-6 rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+              <h3 className="text-lg font-bold text-blue-900 mb-3">Set spending goals and track progress</h3>
+              <p className="text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Set spending goals and easily track if you're sticking to them. See exactly where your money goes each month.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100 border border-teal-200 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <div className="bg-teal-500 rounded-full p-2 mr-3">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-teal-900">Net worth and income tracking</h3>
-              </div>
-              <p className="text-teal-800">
+            <div className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 p-6 rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+              <h3 className="text-lg font-bold text-blue-900 mb-3">Net worth and income tracking</h3>
+              <p className="text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Track your complete financial picture over time—assets, debts, and income trends. Previous month's data copies over automatically.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <div className="bg-orange-500 rounded-full p-2 mr-3">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-orange-900">Learn from your money habits</h3>
-              </div>
-              <p className="text-orange-800">
+            <div className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 p-6 rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+              <h3 className="text-lg font-bold text-blue-900 mb-3">Learn from your money habits</h3>
+              <p className="text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Get insights on your past spending and money habits so you can learn from them and stop being stressed about money. Know if you're getting financially secure or just burning cash.
               </p>
             </div>
