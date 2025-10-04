@@ -1,68 +1,84 @@
 export default function WhySimplifySection() {
-  const reasons = [
+  const steps = [
     {
-      title: "Know Your Budget",
-      description: "Set your income, fixed expenses, and budget. Fixed expenses appear as already spent so you see your remaining budget instantly.",
-      icon: "📅"
+      title: "Set Your Budget",
+      description: "Enter your monthly income and fixed expenses like rent, utilities, subscriptions. See your available spending money instantly.",
+      icon: "💰",
+      gradient: "from-blue-500 to-cyan-500",
+      delay: "0s"
     },
     {
-      title: "Track as You Spend",
-      description: "Log all your expenses visually in a calendar format throughout the month. The app is mobile optimized.",
-      icon: "📱"
+      title: "Track Daily Expenses",
+      description: "Use our visual calendar to log expenses as you spend. Find today, find category, enter amount. Takes 5 seconds.",
+      icon: "📱",
+      gradient: "from-emerald-500 to-teal-500",
+      delay: "0.2s"
     },
     {
-      title: "Review if You Met Your Goals",
-      description: "At the end of the month review your spending and adjust budgets if needed for next month.",
-      icon: "📊"
+      title: "Monitor Progress",
+      description: "Watch your spending in real-time. See which categories you're overspending in before it's too late.",
+      icon: "📊",
+      gradient: "from-purple-500 to-pink-500",
+      delay: "0.4s"
     },
     {
-      title: "Enter a Snapshot of Your Net Worth",
-      description: "Track your assets and debts and visually see your wealth grow over time.",
-      icon: "📈"
+      title: "Grow Your Wealth",
+      description: "Track net worth monthly. See your debts shrink and assets grow with beautiful visual charts.",
+      icon: "📈",
+      gradient: "from-orange-500 to-red-500",
+      delay: "0.6s"
     }
   ];
 
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
-          Here's How Simplify Budget Works
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {reasons.map((reason, i) => (
-            <div key={i} className="relative">
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 h-full">
-                <div className="text-center">
-                  <div className="text-4xl mb-4">{reason.icon}</div>
-                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-4">
-                    {i + 1}
+    <section className="relative py-24 overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 bg-gray-50">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-emerald-200 rounded-full blur-xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        </div>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
+            Here's How Simplify Budget Works
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Stop struggling with complex budget apps. Our simple 4-step process gets you budgeting in minutes, not hours.
+          </p>
+        </div>
+
+        {/* Simple Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {steps.map((step, i) => (
+            <div key={i} className="group">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+                <div className="flex items-center mb-6">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${step.gradient} flex items-center justify-center text-2xl shadow-lg`}>
+                    {step.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">
-                    {reason.title}
-                  </h3>
-                  <p className="text-gray-600">{reason.description}</p>
+                  <div className="ml-4">
+                    <div className="text-sm font-bold text-gray-500 mb-1">STEP {i + 1}</div>
+                    <h3 className="text-2xl font-bold text-gray-900">{step.title}</h3>
+                  </div>
                 </div>
+                <p className="text-gray-600 text-lg leading-relaxed">{step.description}</p>
               </div>
-              {i < reasons.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                  <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </div>
-              )}
             </div>
           ))}
         </div>
-        
+
         {/* Family sharing note */}
-        <div className="mt-12 text-center">
-          <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+        <div className="mt-16 text-center">
+          <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-md">
             <div className="flex items-center justify-center mb-3">
               <span className="text-2xl mr-3">🏠</span>
-              <h3 className="text-lg font-semibold text-gray-900">Great for Personal or Family Budgeting</h3>
+              <h3 className="text-lg font-semibold text-gray-900">Great for Family Budgeting</h3>
             </div>
-            <p className="text-gray-700 mb-4">
-              Multiple people can track expenses on the same Google Sheet. The app connects to a Google Sheet in your Drive.
+            <p className="text-gray-600 mb-4">
+              Multiple people can track expenses on the same Google Sheet. Perfect for couples and families.
             </p>
             <a
               href="/how-it-works"
@@ -76,6 +92,7 @@ export default function WhySimplifySection() {
           </div>
         </div>
       </div>
+
     </section>
   );
 }

@@ -4,7 +4,7 @@ export default function AboutFounderSection() {
   return (
     <section className="relative py-20 overflow-hidden">
       {/* Background with subtle pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-emerald-50"></div>
+      <div className="absolute inset-0 bg-white"></div>
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-20 h-20 border border-blue-300 rounded-full"></div>
         <div className="absolute top-40 right-20 w-16 h-16 border border-emerald-300 rounded-full"></div>

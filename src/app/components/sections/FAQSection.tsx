@@ -69,8 +69,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-emerald-50 to-white py-20 scroll-mt-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-20 scroll-mt-20">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 sm:mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
           Simplify Budget FAQ
         </h2>

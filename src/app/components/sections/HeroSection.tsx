@@ -8,7 +8,7 @@ export default function HeroSection() {
   
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white pt-8 pb-16 overflow-hidden relative">
+    <section className="bg-gradient-to-b from-gray-50 to-white pt-8 pb-16 overflow-hidden relative">
       {/* Optimized animated expense icons background - reduced from 11 to 5 elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         {/* Rising icons - 5 emojis */}

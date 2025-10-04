@@ -69,6 +69,9 @@ export default function Navbar() {
             <Link href="/blog" className="text-gray-700 hover:text-blue-600 font-medium">
               Blog
             </Link>
+            <Link href="/compare" className="text-gray-700 hover:text-blue-600 font-medium">
+              Compare
+            </Link>
             <Link href="/#templates" className="text-blue-600 hover:text-blue-800 font-medium">
               Buy License
             </Link>
@@ -114,6 +117,9 @@ export default function Navbar() {
           </Link>
           <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             Blog
+          </Link>
+          <Link href="/compare" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
+            Compare
           </Link>
           <Link href="/#templates" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium w-full text-left">
             Buy License

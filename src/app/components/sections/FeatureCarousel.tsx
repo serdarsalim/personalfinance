@@ -115,7 +115,7 @@ export default function FeatureCarousel() {
     <section className="bg-gradient-to-r from-blue-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
-          App Screenshots
+          See Simplify Budget in Action
         </h2>
         
         <div 
