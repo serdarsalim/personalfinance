@@ -107,8 +107,8 @@ const ArticleContent = () => (
         {/* The Simplify Budget Philosophy */}
         <section id="philosophy" className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Simplify Budget approach to money management</h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
+
+          <div className="grid md:grid-cols-2 gap-6 md:animate-none animate-fade-in-up">
             <div className="group bg-blue-50 hover:bg-blue-100 border border-blue-200 p-6 rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
               <h3 className="text-lg font-bold text-blue-900 mb-3">Track as you spend, not after</h3>
               <p className="text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -181,20 +181,20 @@ const ArticleContent = () => (
 
         {/* Results */}
         <section id="results" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">It has everything you need in a budget app and not more</h2>
-          
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Why It Works: Focus on What Actually Matters</h2>
+
           <div className="mb-8">
             <p className="text-gray-700 mb-4">
-              This app has everything you need for managing your money, without the confusing stuff that makes other apps overwhelming.
+              Most budget apps fail because they're either too simple (just expense tracking) or too complex (trying to be everything to everyone). Simplify Budget works because it focuses on the 3 things that actually build wealth.
             </p>
             <p className="text-gray-700 mb-4">
-              We didn't include debt calculators, complicated savings categories, or separate sections for different income sources. We kept it simple: track your spending, set your budget, watch your net worth grow.
+              Track your spending in real-time so you make better decisions in the moment. Set clear budgets so you know exactly how much you can spend. Monitor your net worth so you see your progress over time.
             </p>
             <p className="text-gray-700 mb-4">
-              Use it daily or monthly, it works both ways. Track expenses as they happen or check in once a month to categorize spending and save a snapshot of your net worth.
+              These three habits - when done consistently - are what separate people who build wealth from people who don't. Everything else is just noise.
             </p>
             <p className="text-gray-700 mb-4">
-              These core features are all most people need for solid financial management, whether you're managing money solo or with your family.
+              Whether you check in daily or monthly, these core actions compound into serious financial progress.
             </p>
           </div>
         </section>
