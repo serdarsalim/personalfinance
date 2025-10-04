@@ -31,12 +31,12 @@ const AboutFounderSection = dynamic(() => import("./components/sections/AboutFou
 
 // Update metadata
 export const metadata: Metadata = {
-  title: "Budget app that helps you take control of your money | Simplify Budget",
-  description: "Budgeting for individuals and families, net worth tracking included. Simple, effective, free to try. $15 one-time payment.",
-  keywords: "budget app, take control of money, family budget, net worth tracking, no subscription budget app",
+  title: "Simplify Budget - Budget App That Actually Works | YNAB Alternative",
+  description: "Simplify Budget: The budget app that works. YNAB alternative with no monthly subscription. Track expenses, family budgeting, net worth tracking. $15 one-time payment.",
+  keywords: "simplify budget, budget app, ynab alternative, family budget, net worth tracking, no subscription budget app, expense tracker",
   openGraph: {
-    title: "Budget app that helps you take control of your money",
-    description: "Budgeting for individuals and families, net worth tracking included. Simple, effective, free to try.",
+    title: "Simplify Budget - Budget App That Actually Works",
+    description: "YNAB alternative budget app with no monthly subscription. Track expenses, family budgeting, net worth tracking. $15 one-time payment.",
     url: "https://simplifybudget.com",
     siteName: "Simplify Budget",
     type: "website",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Budget app that helps you take control of your money',
-    description: 'Budgeting for individuals and families, net worth tracking included. Simple, effective, free to try.',
+    title: 'Simplify Budget - Budget App That Actually Works',
+    description: 'YNAB alternative budget app with no monthly subscription. Track expenses, family budgeting, net worth tracking.',
     images: ['https://simplifybudget.com/simplifybudget.webp'],
   }
 };

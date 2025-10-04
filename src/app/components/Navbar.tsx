@@ -47,16 +47,12 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Image 
-                src="/logo.png" 
-                alt="Simplify Budget Logo" 
-                width={40} 
+              <Image
+                src="/logo.png"
+                alt="Simplify Budget Logo"
+                width={40}
                 height={40}
-                className="mr-2" 
               />
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
-                Simplify Budget
-              </span>
             </Link>
           </div>
           

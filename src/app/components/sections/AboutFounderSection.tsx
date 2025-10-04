@@ -17,7 +17,7 @@ export default function AboutFounderSection() {
             {/* Left side - Content */}
             <div className="order-2 lg:order-1">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                This is my solution to managing money and it works
+                Why I Built This Budget App
               </h2>
 
               <div className="space-y-4 text-lg text-gray-600 mb-8">
@@ -25,7 +25,7 @@ export default function AboutFounderSection() {
                   I spent 9 years at Twitter leading global customer support training. I knew how to solve complex problems for millions of users.
                 </p>
                 <p>
-                  <span className="text-gray-900 font-semibold">But I couldn't solve my own budgeting problem.</span> Every app was either too simple or too complex. So I built what I needed: a budget app that actually works in real life.
+                  <span className="text-gray-900 font-semibold">But I couldn't solve my own budgeting problem.</span> Every budget app was either too simple or too complex. YNAB was too expensive, Mint shut down. So I built what I needed: a budget app that actually works in real life.
                 </p>
               </div>
 
@@ -54,7 +54,7 @@ export default function AboutFounderSection() {
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">Serdar Salim</h3>
-                  <p className="text-gray-600 mt-1">Founder</p>
+                  <p className="text-gray-600 mt-1">Problem Solver</p>
                 </div>
               </div>
             </div>

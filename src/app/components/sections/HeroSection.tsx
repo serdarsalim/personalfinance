@@ -64,9 +64,8 @@ export default function HeroSection() {
           
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-12 text-gray-900">
-              Set goals, track expenses,
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600"> grow your wealth</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
+              Simplify: The budget app to track your expenses and net worth
             </h1>
             
 
@@ -82,8 +81,7 @@ export default function HeroSection() {
             
             {/* Trust note */}
             <div className="text-sm text-gray-600 text-center lg:text-left mb-4">
-              <p>Simplify Budget is a Browser Based Google App</p>
-              <p>Try free for 30 days without credit card requirement</p>
+              <p><strong>YNAB and Mint Alternative</strong> - Browser-based budget app with no monthly subscription. Try free for 30 days without credit card requirement</p>
             </div>
           </div>
 
@@ -92,7 +90,7 @@ export default function HeroSection() {
             <div className="block max-w-xl mx-auto">
               <Image
                 src="/simplify-monthly-grid.webp"
-                alt="Simplify Monthly Expense Calendar"
+                alt="Simplify Budget expense dashboard view"
                 width={700}
                 height={580}
                 className="w-full h-auto rounded-lg border border-gray-200 shadow-lg"
