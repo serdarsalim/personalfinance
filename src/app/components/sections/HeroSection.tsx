@@ -64,8 +64,8 @@ export default function HeroSection() {
           
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
-              Simplify: The budget app to track your expenses and net worth
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 pb-1 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
+              Calendar-based budgeting that lives in your Google Drive
             </h1>
             
 
@@ -75,13 +75,15 @@ export default function HeroSection() {
                 href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec"
                 className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all font-bold text-lg hover:scale-105 transform"
               >
-                Sign Up with Google
+                Start 30-Day Trial
               </a>
             </div>
             
             {/* Trust note */}
             <div className="text-sm text-gray-600 text-center lg:text-left mb-4">
-              <p><strong>YNAB and Mint Alternative</strong> - Browser-based budget app with no monthly subscription. Try free for 30 days without credit card requirement</p>
+              <p>
+                <strong>YNAB alternative • Mint replacement</strong> - Calendar-based budgeting that stores your data in your own Google Drive. No monthly subscription. Free 30‑day trial, no credit card.
+              </p>
             </div>
           </div>
 

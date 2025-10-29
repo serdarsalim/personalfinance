@@ -21,14 +21,14 @@ export default function SoftwareApplicationSchema() {
       "ratingValue": "4.8",
       "ratingCount": "150"
     },
-    "description": "Budget app that actually works. Visual expense tracking with Google Sheets integration. Best YNAB and Mint alternative - no monthly fees, works for families. Track expenses in 5 seconds.",
+    "description": "Calendar-based budgeting that saves your data to your own Google Drive. YNAB alternative and Mint replacement with no monthly fees. Fast expense entry, family sharing, and a 30-day free trial.",
     "screenshot": "https://simplifybudget.com/simplifybudget.jpg",
     "featureList": [
       "Visual monthly expense calendar",
       "5-second expense entry",
       "Family budget sharing",
       "YNAB alternative - no monthly fees",
-      "Mint replacement after shutdown", 
+      "Mint replacement after shutdown",
       "Manual expense tracking",
       "Google Sheets integration",
       "Subscription management",
@@ -43,7 +43,7 @@ export default function SoftwareApplicationSchema() {
     "potentialAction": {
       "@type": "ViewAction",
       "target": "https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec",
-      "name": "Start Free Trial"
+      "name": "Start 30-Day Trial"
     }
   };
 

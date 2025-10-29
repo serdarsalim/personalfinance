@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: '%s | Simplify Budget',
     default: 'Simplify Budget | Budget App That Actually Works'
   },
-  description: 'Budget app that actually works. Track expenses in 5 seconds, share with family. No monthly fees.',
+  description: 'Budget app that helps you save money and stick with it for years. Track expenses in 5 seconds, share with family. No monthly fees.',
   keywords: 'budget app, expense tracker, family budget, no subscription budget app',
   icons: {
     icon: '/favicon.ico',
