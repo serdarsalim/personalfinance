@@ -54,7 +54,7 @@ export default function AboutFounderSection() {
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">Serdar Salim</h3>
-                  <p className="text-gray-600 mt-1">Problem Solver</p>
+                  <p className="text-gray-600 mt-1">Founder</p>
                 </div>
               </div>
             </div>

@@ -15,7 +15,7 @@ export default function TemplateSection() {
 
   return (
     <section id="templates" className="bg-gradient-to-r from-green-50 to-white py-20 scroll-mt-5">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="space-y-8">
           {/* Simplify Budget App - Featured */}

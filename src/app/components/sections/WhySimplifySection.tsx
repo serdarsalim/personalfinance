@@ -31,7 +31,7 @@ export default function WhySimplifySection() {
   ];
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gray-50">
         <div className="absolute inset-0 opacity-30">
@@ -40,12 +40,12 @@ export default function WhySimplifySection() {
         </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
             Here's How Simplify Budget Works
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Stop struggling with complex budget apps. Our simple 4-step process gets you budgeting in minutes, not hours.
           </p>
         </div>

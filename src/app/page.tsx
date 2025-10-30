@@ -70,6 +70,24 @@ export default function Home() {
       <HeroSection />
       <AboutFounderSection />
       <WhySimplifySection />
+      {/* Flow CTA band to guide next step */}
+      <section className="py-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+            <p className="text-gray-800 text-lg mb-4">
+              Want to see how it works in practice?
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec" className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                Start free trial
+              </a>
+              <a href="/how-it-works" className="px-6 py-3 bg-white text-blue-700 border border-blue-200 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                Learn how it works
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <TemplateSection />
       <FAQSection />
       <FAQSchema />
