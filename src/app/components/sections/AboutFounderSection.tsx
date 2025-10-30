@@ -25,7 +25,7 @@ export default function AboutFounderSection() {
                   I spent 9 years at Twitter leading global customer support training. I knew how to solve complex problems for millions of users.
                 </p>
                 <p>
-                  <span className="text-gray-900 font-semibold">But I couldn't solve my own budgeting problem.</span> Every budget app was either too simple or too complex. YNAB was too expensive, Mint shut down. So I built what I needed: a budget app that helps me save money and that I could stick with for years—not just a few weeks.
+                  <span className="text-gray-900 font-semibold">But I couldn't solve my own budgeting problem.</span> Every budget app was either too simple or too complex. YNAB was too expensive, Mint shut down. So I built what I needed: a budget app that helps me save money and that I could stick with for years and not just a few weeks.
                 </p>
               </div>
 

@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
-export default function FeatureCarousel() {
+export default function FeatureCarousel({ hideTitle = false }: { hideTitle?: boolean }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
@@ -114,9 +114,11 @@ export default function FeatureCarousel() {
   return (
     <section className="bg-gradient-to-r from-blue-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
-          See Simplify Budget in Action
-        </h2>
+        {!hideTitle && (
+          <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
+            See Simplify Budget in Action
+          </h2>
+        )}
         
         <div 
           className="relative"

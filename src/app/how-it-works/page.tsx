@@ -3,14 +3,15 @@ import BreadcrumbSchema from '../components/BreadcrumbSchema';
 import ArticleSchema from '../components/ArticleSchema';
 import PhilosophyClient from './PhilosophyClient';
 import { Metadata } from 'next';
+import FeatureCarousel from '../components/sections/FeatureCarousel';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'How to Manage Finances with Simplify Budget - Complete Guide',
+  title: 'Manage your money with Simplify Budget - Complete Guide',
   description: 'Learn how to manage your finances effectively with Simplify Budget. Smart automation, visual expense tracking, and net worth monitoring made simple.',
   keywords: 'how simplify budget works, financial management app, smart budgeting, expense tracking, net worth tracking, budget calendar, family budgeting, google sheets budget',
   openGraph: {
-    title: 'How to Manage Finances with Simplify Budget - Complete Guide',
+    title: 'Manage your money with Simplify Budget - Complete Guide',
     description: 'Learn how to manage your finances effectively with Simplify Budget. Smart automation, visual expense tracking, and net worth monitoring made simple.',
     url: 'https://simplifybudget.com/how-it-works',
     siteName: 'Simplify Budget',
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Manage Finances with Simplify Budget - Complete Guide',
+    title: 'Manage your money with Simplify Budget - Complete Guide',
     description: 'Learn how to manage your finances effectively with Simplify Budget. Smart automation, visual expense tracking, and net worth monitoring made simple.',
     images: ['https://simplifybudget.com/simplifybudget.jpg'],
   },
@@ -41,11 +42,11 @@ const Loading = () => <div className="min-h-screen flex items-center justify-cen
 const ArticleContent = () => (
   <>
     {/* Hero Section */}
-    <section className="bg-white pt-24 pb-8">
+    <section className="bg-white pt-24 pb-4">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
-          How to Manage Finances with Simplify
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600 leading-tight pb-2">
+            Manage your money with Simplify Budget
           </h1>
         </div>
       </div>
@@ -63,41 +64,41 @@ const ArticleContent = () => (
         {/* Introduction */}
         <section id="introduction" className="mb-16">
 
-          <div className="bg-gray-50 p-8 rounded-lg">
+          <div className="p-8 rounded-lg">
             <p className="text-gray-700 text-lg mb-4">
-              A great way to manage personal finances is by tracking monthly income and expenses and setting monthly goals for them.
+              One of the best ways to manage personal finances is by setting monthly spending goals against your income and tracking throughout the month.
             </p>
 
             <p className="text-gray-700 text-lg mb-4">
-              You can achieve your money goals if you know how much your fixed expenses are at the start of the month. This gives you mental clarity on how much money you have to spend.
+              If you list all your fixed expenses in the beginning of the month and set aside the money to cover them this will allow you to achieve your goals much easier.
             </p>
 
             <p className="text-gray-700 text-lg mb-4">
-              Then you just track your expenses as they happen ideally in a calendar view. This will reveal your spending patterns and prevent overspending.
+              For a complete financial management you also need to track your net worth on a monthly basis. Treat your life as a company and see if you're doing better over time financially or not.
             </p>
 
             <p className="text-gray-700 text-lg mb-6">
-              Each month track your net worth by recording your investments, liquid assets, debts and physical assets. This gives you the complete picture of your financial progress over time.
+              You can achieve this by tracking your investments, liquid assets, physical assets and debts.
             </p>
 
-            <h3 className="text-lg font-bold text-gray-900 mb-4">Simplify Budget handles:</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">ALL of the above will assist you to live a debt-free and financially stable life and Simplify Budget makes it easy to do this:</h3>
 
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-green-600 mr-3">✓</span>
-                <span className="text-gray-700">Fixed expenses copy automatically to the next month</span>
+                <span className="text-gray-700">You set your fixed expenses once and they calculate automatically for each month</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-3">✓</span>
-                <span className="text-gray-700">All calculations for budget and analytics are done automatically</span>
+                <span className="text-gray-700">You can easily see your spending patterns through logging your expenses into a calendar</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-3">✓</span>
-                <span className="text-gray-700">Net worth data copies automatically to the next month</span>
+                <span className="text-gray-700">Net worth charts show you if your net worth increases, debt decreases over time and what you need to watch out for to remain financially stable</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-3">✓</span>
-                <span className="text-gray-700">Spending goals copy automatically to the next month since they rarely change and can be adjusted each month</span>
+                <span className="text-gray-700">Amounts like spending goals and net worth copy to the next month so it's easier to update them in the next month</span>
               </li>
             </ul>
           </div>
@@ -154,10 +155,15 @@ const ArticleContent = () => (
           
         </section>
 
+        
+        {/* See in Action */}
+        <section id="see-in-action" className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">See in Action</h2>
+          <div className="mt-4">
+            <FeatureCarousel hideTitle />
+          </div>
 
-        {/* The App */}
-        <section id="the-app" className="mb-16">
-          <div className="bg-gray-50 p-6 rounded-lg text-center">
+          <div className="bg-gray-50 p-6 rounded-lg text-center mt-10">
             <h3 className="text-2xl font-bold mb-4 text-gray-900">See How It Actually Works</h3>
             <p className="text-gray-700 mb-6">
               Get a detailed walkthrough of the Monthly Expense Calendar system, smart fixed expense handling, and family collaboration features.
@@ -185,16 +191,26 @@ const ArticleContent = () => (
 
           <div className="mb-8">
             <p className="text-gray-700 mb-4">
-              Most budget apps fail because they're either too simple (just expense tracking) or too complex (trying to be everything to everyone). Simplify Budget works because it focuses on the 3 things that actually build wealth.
+              Simplify Budget works because it focuses on the 3 areas that actually build wealth:
+            </p>
+
+            <ol className="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+              <li>
+                Focus on tracking variable spending after fixed expenses so you make better decisions in the moment.
+              </li>
+              <li>
+                Set clear budget and saving goal for the spending categories so you have a better spending discipline
+              </li>
+              <li>
+                Monitor your net worth so you see how your financial life is evolving through time.
+              </li>
+            </ol>
+
+            <p className="text-gray-700 mb-4">
+              These three habits separate people who build wealth from people who don't.
             </p>
             <p className="text-gray-700 mb-4">
-              Track your spending in real-time so you make better decisions in the moment. Set clear budgets so you know exactly how much you can spend. Monitor your net worth so you see your progress over time.
-            </p>
-            <p className="text-gray-700 mb-4">
-              These three habits - when done consistently - are what separate people who build wealth from people who don't. Everything else is just noise.
-            </p>
-            <p className="text-gray-700 mb-4">
-              Whether you check in daily or monthly, these core actions compound into serious financial progress.
+              Whether you check in daily or monthly, these core actions compound into serious financial stability you deserve in your life.
             </p>
           </div>
         </section>
@@ -203,7 +219,7 @@ const ArticleContent = () => (
         <section id="who-for" className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Who Simplify Budget is for</h2>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-1 gap-8 mb-8">
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 p-8 rounded-xl">
               <div className="flex items-center mb-6">
                 <div className="bg-green-500 rounded-full p-2 mr-3">
@@ -218,53 +234,23 @@ const ArticleContent = () => (
                   <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-green-800">People tired of monthly subscription fees</span>
+                  <span className="text-green-800">People tired of monthly subscription fees: Simplify Budget is one-time pay only and you'll get lifetime free updates.</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-green-800">Families who want to budget together</span>
+                  <span className="text-green-800">Families who want to budget together: Your data is saved on a spreadsheet you have full access to on your Google Drive. You can share the sheet with other people and track together on the same sheet.</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-green-800">People who like simple, straightforward apps</span>
+                  <span className="text-green-800">People who like simple, straightforward apps: The app login is via Google in the browser. You don't need to download any software and it works on all browsers on any device instantly.</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-gradient-to-br from-slate-50 to-gray-50 border border-slate-200 p-8 rounded-xl">
-              <div className="flex items-center mb-6">
-                <div className="bg-slate-500 rounded-full p-2 mr-3">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900">Not for you if you want</h3>
-              </div>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-slate-700">Fully automated expense importing</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-slate-700">Complex investment tracking</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-slate-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-slate-700">Detailed loan calculators</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
 

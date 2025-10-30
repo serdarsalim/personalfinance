@@ -10,6 +10,7 @@ const PhilosophyClient = () => {
   const sections = [
     { id: 'introduction', title: 'Getting Started' },
     { id: 'philosophy', title: 'Simplify Approach' },
+    { id: 'see-in-action', title: 'See in Action' },
     { id: 'results', title: 'Why It Works' },
     { id: 'who-for', title: 'Who It\'s For' },
     { id: 'simple-beats-complex', title: 'Simple beats complex' },
@@ -62,7 +63,7 @@ const PhilosophyClient = () => {
       {showSidebar && (
         <div className="hidden 2xl:block fixed top-1/2 transform -translate-y-1/2 z-40" style={{left: 'calc((100vw - 1024px) / 2 - 280px)'}}>
         <div className="bg-white rounded-lg shadow-lg border p-4 w-64">
-          <h3 className="text-sm font-bold mb-3 text-gray-900">Quick Navigation</h3>
+          <h3 className="text-sm font-bold mb-3 text-gray-900">How it works</h3>
           <nav className="space-y-2">
             {sections.map((section) => (
               <button
@@ -106,7 +107,7 @@ const PhilosophyClient = () => {
         <div className="absolute left-4 top-16 bottom-16 bg-white shadow-xl rounded-lg w-auto min-w-[200px]">
           <div className="p-6 h-full flex flex-col">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-lg font-bold text-gray-900">Navigation</h3>
+              <h3 className="text-lg font-bold text-gray-900">How it works</h3>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-gray-400 hover:text-gray-600"

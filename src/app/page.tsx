@@ -8,10 +8,6 @@ const TemplateSection = dynamic(() => import("./components/sections/TemplateSect
   ssr: true,
   loading: () => <SectionLoader />
 });
-const FeatureCarousel = dynamic(() => import("./components/sections/FeatureCarousel"), {
-  ssr: true,
-  loading: () => <SectionLoader />
-});
 const WhySimplifySection = dynamic(() => import("./components/sections/WhySimplifySection"), {
   ssr: true,
   loading: () => <SectionLoader />
@@ -75,7 +71,6 @@ export default function Home() {
       <AboutFounderSection />
       <WhySimplifySection />
       <TemplateSection />
-      <FeatureCarousel />
       <FAQSection />
       <FAQSchema />
     </main>
