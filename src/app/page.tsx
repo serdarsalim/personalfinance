@@ -69,6 +69,30 @@ export default function Home() {
     <main>
       <HeroSection />
       <AboutFounderSection />
+
+      {/* YouTube Tutorial Video */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              See Simplify Budget in Action
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Watch this quick tutorial to see how easy it is to manage your budget
+            </p>
+          </div>
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/ziE2S8SgEo8"
+              title="Simplify Budget Tutorial"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
       <WhySimplifySection />
       {/* Flow CTA band to guide next step */}
       <section className="py-10">

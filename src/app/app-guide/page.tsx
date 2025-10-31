@@ -51,6 +51,31 @@ const HowItWorksContent = () => (
       </div>
     </section>
 
+    {/* YouTube Video Tutorial */}
+    <section className="bg-white pb-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-blue-50 to-emerald-50 p-8 rounded-xl border border-blue-200">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Complete Video Tutorial
+            </h2>
+            <p className="text-gray-600">
+              Watch the full walkthrough to learn every feature of Simplify Budget
+            </p>
+          </div>
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/ziE2S8SgEo8"
+              title="Complete Simplify Budget Tutorial - How to Use the App"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* Client-side Navigation */}
     <HowItWorksClient />
 
