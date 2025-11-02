@@ -85,7 +85,7 @@ export default function SecurityPermissions() {
                   Why did we build it this way?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Because using spreadsheets for budgeting is very limiting and creating a full mobile app also doesn't solve the problem since then it's not device independent and you can't track with others. This approach brings all the benefits of tracking on the spreadsheet in an app experience. You are now able to access your transactions from all devices that have a mobile browser which is optimized for any device type and manage your finances through it.
+                  Spreadsheets alone are limiting. Dedicated mobile apps lock you to specific devices and 3rd party databases. Our solution: Google Apps Script that works with a Google Sheet gives you the best of both: work from any device with a browser, share budgets with family, and own your data forever.
                 </p>
               </div>
             </div>
