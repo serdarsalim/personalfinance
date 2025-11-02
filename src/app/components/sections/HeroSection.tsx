@@ -82,7 +82,7 @@ export default function HeroSection() {
             {/* Trust note */}
             <div className="text-sm text-gray-600 text-center lg:text-left mb-4">
               <p>
-                <strong>YNAB alternative • Mint replacement</strong> - Calendar-based budgeting that stores your data in your own Google Drive. No monthly subscription. Free 30‑day trial, no credit card.
+                Calendar-based budgeting that stores your data in your own Google Drive. No monthly subscription. <a href="https://www.youtube.com/watch?v=wtfvLmDqhQ8" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">Watch video to learn how to set up</a>. Free 30‑day trial, no credit card.
               </p>
             </div>
           </div>
