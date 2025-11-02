@@ -13,7 +13,7 @@ export default function SecurityPermissions() {
               </svg>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-3">
-              Our Security System Explained
+              How Your Data Stays Private
             </h2>
             <p className="text-lg text-gray-600">
               Simplify Budget is a Google App that creates a Google Sheet in your Drive to write and update all transactions.
