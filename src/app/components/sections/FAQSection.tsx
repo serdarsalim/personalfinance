@@ -12,6 +12,14 @@ import { useState } from "react";
       answer: "Yes! Start with a 30-day free trial. All features included, no credit card required. Perfect for testing if Simplify Budget fits your workflow."
     },
     {
+      question: "What's your refund policy?",
+      answer: "No refunds. Try the app free for 30 days before buying. If you haven't tested it yet, use the free trial first. All sales are final."
+    },
+    {
+      question: "What Google permissions does the app need and why?",
+      answer: "Simplify Budget needs permission to create ONE Google Sheet in your Drive and read/write to that sheet only. It cannot access anything else - not your emails, not your other files, nothing. Your financial data stays 100% private in your own Google account. This limited permission model is actually a security feature that protects your privacy."
+    },
+    {
       question: "How is this different from YNAB or Mint?",
       answer: "Your data stays in your Google Drive (not our servers), one-time payment (not subscription), Monthly Expense Calendar for faster expense entry, and perfect for families since multiple people can use the same budget."
     },

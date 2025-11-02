@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import FAQSchema from './components/FAQSchema';
 
 // Dynamically import components with error boundaries
-const TemplateSection = dynamic(() => import("./components/sections/TemplateSection"), { 
+const TemplateSection = dynamic(() => import("./components/sections/TemplateSection"), {
   ssr: true,
   loading: () => <SectionLoader />
 });
@@ -21,6 +21,10 @@ const HeroSection = dynamic(() => import("./components/sections/HeroSection"), {
   loading: () => <SectionLoader />
 });
 const AboutFounderSection = dynamic(() => import("./components/sections/AboutFounderSection"), {
+  ssr: true,
+  loading: () => <SectionLoader />
+});
+const SecurityPermissions = dynamic(() => import("./components/sections/SecurityPermissions"), {
   ssr: true,
   loading: () => <SectionLoader />
 });
@@ -94,24 +98,7 @@ export default function Home() {
       </section>
 
       <WhySimplifySection />
-      {/* Flow CTA band to guide next step */}
-      <section className="py-10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-            <p className="text-gray-800 text-lg mb-4">
-              Want to see how it works in practice?
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="https://script.google.com/macros/s/AKfycbxzQyt4DRFwscUe5INomAYM2yDsYVbU1PuPkGJQyPSMb5pfPeL4XWxoDIBeOYmCoaax/exec" className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Start free trial
-              </a>
-              <a href="/how-it-works" className="px-6 py-3 bg-white text-blue-700 border border-blue-200 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-                Learn how it works
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SecurityPermissions />
       <TemplateSection />
       <FAQSection />
       <FAQSchema />

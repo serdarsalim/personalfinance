@@ -46,10 +46,6 @@ export default function TemplateSection() {
               </div>
               
               <div className="p-8">
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                  <p className="text-green-800 font-semibold mb-2">✓ You can try the full version free for 30 days before you buy</p>
-                </div>
-                
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-gray-900 mb-4">Why People Love It:</h4>
                   <div className="grid sm:grid-cols-1 gap-3">
@@ -91,8 +87,7 @@ export default function TemplateSection() {
                     </div>
                   </div>
                 </div>
-                
-                
+
                 <div className="flex justify-center">
                   <a
                     href="https://ko-fi.com/s/4b62acb528"

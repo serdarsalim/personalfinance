@@ -66,8 +66,8 @@ const TermsContent = () => (
       <section>
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">5. Refund Policy</h2>
         <p className="mb-4 text-gray-700">
-          We offer a 30-day money-back guarantee. If you're not satisfied with Simplify Budget, contact us within 
-          30 days of purchase for a full refund. Refunds may be denied if we detect abuse of this policy.
+          All sales are final. No refunds will be issued. A 30-day free trial with full feature access is available
+          prior to purchase. No credit card is required for the trial period.
         </p>
       </section>
 
